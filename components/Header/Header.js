@@ -1,69 +1,95 @@
-import React from "react";
-import Link from "next/link";
-import styled from "styled-components";
-import { media } from "../../globals/breakpoints";
+import React, { Component } from 'react'
+import Link from 'next/link'
+import styled from 'styled-components'
+import { media } from '../../globals/breakpoints'
 
-const Header = () => {
-  return (
-    <HeaderContainer>
-      <HeaderContainerCenter>
-        <StyledLink to="\">
-          <MenuItem>mif</MenuItem>
-        </StyledLink>
-        <Menu>
-          <StyledLink href="work">
-            <MenuItem>work</MenuItem>
+class Header extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      lastScroll: 0,
+      isScroollingUp: true
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', e => {
+      if (window.scrollY < this.state.lastScroll) {
+        this.setState({
+          isScroollingUp: true
+        })
+      } else {
+        this.setState({
+          isScroollingUp: false
+        })
+      }
+      this.setState({
+        lastScroll: window.scrollY
+      })
+    })
+  }
+  render() {
+    return (
+      <HeaderContainer isUp={this.state.isScroollingUp}>
+        <HeaderContainerCenter>
+          <StyledLink href="/">
+            <Logo>mif</Logo>
           </StyledLink>
-          <StyledLink href="services">
-            <MenuItem>services</MenuItem>
-          </StyledLink>
-          <StyledLink href="about">
-            <MenuItem>about</MenuItem>
-          </StyledLink>
-          <StyledLink href="contact">
-            <MenuItem>contact</MenuItem>
-          </StyledLink>
-          <StyledLink href="blog">
-            <MenuItem>blog</MenuItem>
-          </StyledLink>
-        </Menu>
-        {/* <LanguageSwitcher>Language: En</LanguageSwitcher> */}
-      </HeaderContainerCenter>
-    </HeaderContainer>
-  );
-};
+          <Menu>
+            <StyledLink href="work">
+              <MenuItem>work</MenuItem>
+            </StyledLink>
+            <StyledLink href="services">
+              <MenuItem>services</MenuItem>
+            </StyledLink>
+            <StyledLink href="about">
+              <MenuItem>about</MenuItem>
+            </StyledLink>
+            <StyledLink href="contact">
+              <MenuItem>contact</MenuItem>
+            </StyledLink>
+          </Menu>
+          {/* <LanguageSwitcher>Language: En</LanguageSwitcher> */}
+        </HeaderContainerCenter>
+      </HeaderContainer>
+    )
+  }
+}
 
 const HeaderContainer = styled.div`
   width: 100%;
-  height: 100px;
+  height: 50px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
   position: fixed;
+  top: ${props => (props.isUp ? `0` : `-100px`)};
+  transition: 0.4s;
   z-index: 200;
-  font-family: Averta;
-`;
+`
 
 const HeaderContainerCenter = styled.div`
   width: 1024px;
-  height: 100px;
+  height: 40px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
+`
 
 const Logo = styled.div`
   color: #ff7e6d;
   font-size: 24px;
   font-weight: 800;
-`;
+  cursor:pointer;
+`
 
 const Menu = styled.ul`
   display: flex;
-`;
+`
 
 const MenuItem = styled.li`
   list-style: none;
@@ -72,20 +98,21 @@ const MenuItem = styled.li`
   font-size: 18px;
   font-weight: 800;
   cursor: pointer;
-`;
+`
 
 const StyledLink = styled(Link)`
+  cursor: pointer;
   text-decoration: none;
-`;
+`
 
 const LanguageSwitcher = styled.div`
   color: #fff;
   font-size: 20px;
-`;
+`
 
 const SubMenuLink = styled(Link)`
   text-decoration: none;
-`;
+`
 
 const SubMenuItem = styled.div`
   list-style: none;
@@ -97,6 +124,6 @@ const SubMenuItem = styled.div`
   &:hover {
     background-color: #333;
   }
-`;
+`
 
-export default Header;
+export default Header

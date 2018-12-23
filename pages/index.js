@@ -1,41 +1,68 @@
-import React from "react";
+import React,{ Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import { Header, PostItem } from "../components";
+import { Header, PostItem, Slider } from "../components";
 import RightArrow from "../static/svg/RightArrow";
+import Strapi from 'strapi-sdk-javascript/build/main';
+const strapiApi = new Strapi('http://localhost:1337');
 
-export default () => {
-  return (
-    <Container>
-      {" "}
-      <GlobalStyle />
-      <Header />
-      <MainContainer>
-        {" "}
-        <MainContainerCenter>Svg Illustration Here</MainContainerCenter>
-        <News>
-          <NewsCenter>
-            <NewsHeader>
-              <NewsHeaderLeft>Latest News</NewsHeaderLeft>
-              <NewsHeaderRight>
-                All News
-                <Icon>
-                  <RightArrow width={15} height={15} fill={"#27cba4"} />
-                </Icon>
-              </NewsHeaderRight>
-            </NewsHeader>
-            <Posts>
-              {" "}
-              <PostItem />
-              <PostItem />
-              <PostItem />
-              <PostItem />
-            </Posts>{" "}
-          </NewsCenter>
-        </News>
-      </MainContainer>
-    </Container>
-  );
-};
+class HomePage extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: [],
+      news: [],
+    }
+  }
+  
+  async componentDidMount() {  
+    try {
+      // const posts = await strapi.getEntries('Blogposts')
+      const news = await strapiApi.getEntries('News')
+      this.setState({ news });
+    } 
+    catch(err) {
+     alert(err);
+    }
+   }
+   
+  
+
+  render() { 
+    const { news } = this.state
+		console.log("​HomePage -> render -> news", news)
+    return ( 
+        <Container>
+        <GlobalStyle />
+        <Header />
+        <MainContainer>
+          {" "}
+          <MainContainerCenter>Svg Illustration Here</MainContainerCenter>
+          <News>
+            <NewsCenter>
+              <NewsHeader>
+                <NewsHeaderLeft>Latest News</NewsHeaderLeft>
+                <NewsHeaderRight>
+                  All News
+                  <Icon>
+                    <RightArrow width={15} height={15} fill={"#27cba4"} />
+                  </Icon>
+                </NewsHeaderRight>
+              </NewsHeader>
+              <Posts>
+                { news.map(item => <PostItem data={item} /> ) }
+              </Posts>{" "}
+              <Slider />
+            </NewsCenter>
+          </News>
+        </MainContainer>
+      </Container>
+     );
+  }
+}
+ 
+export default HomePage;
+
 
 const Container = styled.div`
   width: 100%;

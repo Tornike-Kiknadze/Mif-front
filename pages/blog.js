@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import Header from "../components/Header/Header";
 import { Link } from "next/link";
@@ -6,86 +6,83 @@ import Footer from "../components/Footer";
 import SvgCalendar from "./Assets/Svg";
 import SvgCategory from "./Assets/Category";
 import Responsive from "../components/Responsive/Footer";
+import Strapi from 'strapi-sdk-javascript/build/main';
 
-export default () => {
-  return (
-    <Container>
-      {" "}
+const BackUrl = 'http://localhost:1337'
+const strapiApi = new Strapi('http://localhost:1337');
+
+class Blog extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      post:{}
+    }
+  }
+
+  async componentDidMount() {
+    const id = this.props.url.query.id
+    const post = await strapiApi.getEntries(`News/${id}`)
+    this.setState({ post });
+  }
+
+  render() { 
+    const { Title, category, content, createdAt, date, ending, mainImage,
+      media1, media2, media3, paragraph1, paragraph2, paragraph3 } = this.state.post
+    return (  
+      <Container>
       <GlobalStyle />
       <Header />
       <SectionHeader>
-        {" "}
         {/*  <SectionHeader>Contact</SectionHeader> */}
+        {mainImage && <MainImage image={`${BackUrl}/${mainImage.url}`} />}
       </SectionHeader>
       <Section>
+        <SectionHeadThing />
         <SectionContentDate>
           <Ul>
             <Li>
               <SvgCalendar width={20} height={20} />
-              <p>May 10th 2018</p>
+              <p>{date}</p>
             </Li>
             <Li>
-              {" "}
               <SvgCategory width={20} height={20} />
               <p>Design</p>
             </Li>
           </Ul>
         </SectionContentDate>
         <SectionContent>
-          {" "}
-          iamsteve is a blog written by Steve McKinney, focusing on the design
-          and build of websites. The aim is to bridge the gap between the two in
-          building your design. It started — and remains — a way to encourage
-          self learning and sharing, iamsteve is a blog written by Steve
-          McKinney, focusing on the design and build of websites. The aim is to
-          bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andiamsteve is a blog written
-          by Steve McKinney, focusing on the design and build of websites. The
-          aim is to bridge the gap between the two in building your design. It
-          started — and remains — a way to encourage self learning and sharing,
-          through a mixture of in depth tutorials andthrough a mixture of in
-          depth tutorials and quick tips. You can find me elsewhere dribbble,
-          twitter, behance and{" "}
+          <BlogTitle>{Title}</BlogTitle>
+          <Paragraph>{paragraph1}</Paragraph>
+          {media1 &&
+            <Media>
+              <MediaImage src={`${BackUrl}/${media1.url}`} />
+          </Media>
+          } 
+          <Paragraph>{paragraph2}</Paragraph>
+          {media2 &&
+            <Media>
+              <MediaImage src={`${BackUrl}/${media2.url}`} />
+          </Media>
+          } 
+          <Paragraph>{paragraph3}</Paragraph>
+          {media3 &&
+            <Media>
+              <MediaImage src={`${BackUrl}/${media3.url}`} />
+          </Media>
+          }
+          <Ending>
+              {ending}
+          </Ending>
         </SectionContent>
       </Section>
       <Footer />
-      <Responsive /> <Responsive /> <Responsive /> <Responsive /> <Responsive />
     </Container>
-  );
-};
+    )
+  }
+}
+ 
+export default Blog;
 
 const Container = styled.div`
   width: 100%;
@@ -98,11 +95,25 @@ const SectionHeader = styled.div`
   padding-top: 6rem;
   box-sizing: border-box;
   background-color: #eafaf6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+`;
+
+const MainImage = styled.div`
+  width: 300px;
+  height: 300px;
+  background-image:url(${props => props.image});
+  background-size:cover;
+  background-position:center center;
+  border-radius:100%;
+  box-shadow : 0 5px 15px rgba(0, 0, 0, 0.47), 0 10px 23px rgba(0, 0, 0, 0.20);
 `;
 
 const Section = styled.div`
-  width: 100%;
-  height: auto;
+  width: 70%;
+  max-width:1825px;
+  margin: auto;
   background-color: #fff;
   text-align: justify;
   font-size: 1.2rem;
@@ -110,37 +121,80 @@ const Section = styled.div`
   display: flex;
   line-height: 2rem;
   align-items: center;
-
+  justify-content:center;
   box-sizing: border-box;
+  position:relative;
 `;
+
+const SectionHeadThing = styled.div`
+    width: 100%;
+    height: 110px;
+    background: #fff;
+    position: absolute;
+    top: -50px;
+    background: #fff;
+    border-radius: 30px;
+`;
+
 
 const SectionContent = styled.div`
   width: 100%;
   height: auto;
-
   align-content: center;
   flex: 0 0 55%;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
 `;
 
-const SectionContentDate = styled.div`
-  height: 50%;
-  padding-left: 3rem;
-  align-self: flex-start;
-  flex: 0 0 5%;
-  color: #c0b3b9;
-  text-align: justify;
-  list-style: none;
+const BlogTitle = styled.div`
+    color: #ff7e6d;
+    font-size: 48px;
+    font-weight:800;
+    letter-spacing: -1px;
 `;
+
+const Paragraph = styled.div`
+    margin-top: 24px;
+    font-size: 21px;
+    letter-spacing: -1px;
+    color: #62535c;
+`;
+
+const Media = styled.div`
+  width: 100%;
+  height:auto;
+  margin-top:25px;
+  /* background-image: url(${props => props.img}); */
+`
+
+const MediaImage = styled.img`
+  width:100%;
+  object-fit:cover;
+`
+
+const Ending = styled.div`
+    margin-top: 24px;
+    font-size: 21px;
+    letter-spacing: -1px;
+    color: #62535c;
+`
+
+
+const SectionContentDate = styled.div`
+  display:flex;
+  align-self: flex-start;
+  color: #c0b3b9;
+`;
+
 
 const Ul = styled.ul`
   list-style: none;
-
   font-size: 0.9rem;
   display: flex;
   flex-wrap: wrap;
   width: 210px;
+  padding:0;
 `;
 const Li = styled.li`
   flex: 1 1 100%;
@@ -154,13 +208,7 @@ const Li = styled.li`
   }
 `;
 
-const SectionContentMessage = styled.div`
-  height: 50%;
 
-  flex: 1;
-  padding: 2rem 2rem 2rem 0;
-  text-align: justify;
-`;
 
 const Form = styled.form`
   display: flex;

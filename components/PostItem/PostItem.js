@@ -4,35 +4,35 @@ import styled from "styled-components";
 import { media } from "../../globals/breakpoints";
 import Dash from "../../static/svg/Dash";
 import RightArrow from "../../static/svg/RightArrow";
+const BackUrl = 'http://localhost:1337'
 
-const PostItem = () => {
+const PostItem = ({ data }) => {
+  const { id, Title, category, date, mainImage, content } = data
   return (
     <Container>
-      <Top>1</Top>
+      <Top image={`${BackUrl}${mainImage.url}`}></Top>
       <Date>
-        <Time>May 10th 2018</Time>
+        <Time>{date}</Time>
         <Dashes>
           <Dash />
-          {/* <Dash /> */}
         </Dashes>
       </Date>
       <Bottom>
-        <Title>Tips for using colour effectively in web illustration </Title>
+        <PostTitle>{Title}</PostTitle>
         <Content>
-          Finding and settling on a way to use colour within your illustrations
-          is a fun challenge. Once you do, it becomes much easier going forward
-          to make your illustrations. In this post, I’ll share the things I have
-          found worked for me.
+            {content}
         </Content>
         <Footer>
-          <Category>Design</Category>
+          <Category>{category}</Category>
           <Dash />
-          <ContinueReading>
-            <Text> Continue Reading</Text>
-            <Icon>
-              <RightArrow width={15} height={15} fill={"#27cba4"} />
-            </Icon>
-          </ContinueReading>
+            <Link href={{ pathname: '/blog', query: { id } }}>
+               <ContinueReading>
+                  <Text> Continue Reading</Text>
+                  <Icon>
+                    <RightArrow width={15} height={15} fill={"#27cba4"} />
+                  </Icon>
+               </ContinueReading>
+            </Link>
         </Footer>
       </Bottom>
     </Container>
@@ -49,7 +49,7 @@ const Container = styled.div`
 const Top = styled.div`
   width: 100%;
   height: 300px;
-  background-image: url("../../static/img/Selection_003.jpg");
+  background-image:url( ${props => (props.image)});
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -83,7 +83,7 @@ const Bottom = styled.div`
   flex-direction: column;
 `;
 
-const Title = styled.div`
+const PostTitle = styled.div`
   width: 100%;
   color: #ff7e6d;
   font-weight: bold;
