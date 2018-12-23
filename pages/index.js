@@ -26,8 +26,6 @@ class HomePage extends Component {
     }
    }
    
-  
-
   render() { 
     const { news } = this.state
 		console.log("​HomePage -> render -> news", news)
@@ -52,7 +50,9 @@ class HomePage extends Component {
               <Posts>
                 { news.map(item => <PostItem data={item} /> ) }
               </Posts>{" "}
-              <Slider />
+              <ProjectsSlider>
+                <Slider />
+              </ProjectsSlider>
             </NewsCenter>
           </News>
         </MainContainer>
@@ -87,7 +87,6 @@ const MainContainerCenter = styled.div`
 
 const News = styled.div`
   width: 100%;
-  height: 100vh;
   background: #ffffff;
   margin: 30px 0;
 `;
@@ -129,6 +128,10 @@ const Posts = styled.div`
   align-items: center;
   flex-wrap: wrap;
 `;
+
+const ProjectsSlider = styled.div`
+  
+`
 
 const NewsCenter = styled.div`
   width: 1224px;

@@ -936,67 +936,67 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 33
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 34
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Header"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 35
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainContainer, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 36
         },
         __self: this
       }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainContainerCenter, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 38
         },
         __self: this
       }, "Svg Illustration Here"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(News, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsCenter, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsHeader, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsHeaderLeft, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 42
         },
         __self: this
       }, "Latest News"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsHeaderRight, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 43
         },
         __self: this
       }, "All News", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Icon, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1005,13 +1005,13 @@ function (_Component) {
         fill: "#27cba4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 46
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Posts, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 50
         },
         __self: this
       }, news.map(function (item) {
@@ -1019,17 +1019,23 @@ function (_Component) {
           data: item,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 51
           },
           __self: this
         });
-      })), " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Slider"], {
+      })), " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsSlider, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 53
         },
         __self: this
-      })))));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Slider"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
+      }))))));
     }
   }]);
 
@@ -1052,7 +1058,7 @@ var MainContainerCenter = styled_components__WEBPACK_IMPORTED_MODULE_2___default
 var News = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "pages__News",
   componentId: "sc-1wbo52z-3"
-})(["width:100%;height:100vh;background:#ffffff;margin:30px 0;"]);
+})(["width:100%;background:#ffffff;margin:30px 0;"]);
 var NewsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "pages__NewsHeader",
   componentId: "sc-1wbo52z-4"
@@ -1073,9 +1079,13 @@ var Posts = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withCon
   displayName: "pages__Posts",
   componentId: "sc-1wbo52z-8"
 })(["width:100%;margin-top:30px;display:flex;align-items:center;flex-wrap:wrap;"]);
+var ProjectsSlider = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "pages__ProjectsSlider",
+  componentId: "sc-1wbo52z-9"
+})([""]);
 var NewsCenter = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "pages__NewsCenter",
-  componentId: "sc-1wbo52z-9"
+  componentId: "sc-1wbo52z-10"
 })(["width:1224px;height:100%;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;"]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject());
 
