@@ -383,6 +383,142 @@ var SubMenuItem = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.w
 
 /***/ }),
 
+/***/ "./components/Responsive/Assets/AboutSvg.js":
+/*!**************************************************!*\
+  !*** ./components/Responsive/Assets/AboutSvg.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/AboutSvg.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+var SvgAbout = function SvgAbout(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    viewBox: "0 0 482.9 482.9"
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M239.7 260.2h3.2c29.3-.5 53-10.8 70.5-30.5 38.5-43.4 32.1-117.8 31.4-124.9-2.5-53.3-27.7-78.8-48.5-90.7C280.8 5.2 262.7.4 242.5 0H240.8c-11.1 0-32.9 1.8-53.8 13.7-21 11.9-46.6 37.4-49.1 91.1-.7 7.1-7.1 81.5 31.4 124.9 17.4 19.7 41.1 30 70.4 30.5zm-75.1-152.9c0-.3.1-.6.1-.8 3.3-71.7 54.2-79.4 76-79.4H241.9c27 .6 72.9 11.6 76 79.4 0 .3 0 .6.1.8.1.7 7.1 68.7-24.7 104.5-12.6 14.2-29.4 21.2-51.5 21.4h-1c-22-.2-38.9-7.2-51.4-21.4-31.7-35.6-24.9-103.9-24.8-104.5z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M446.8 383.6v-.3c0-.8-.1-1.6-.1-2.5-.6-19.8-1.9-66.1-45.3-80.9-.3-.1-.7-.2-1-.3-45.1-11.5-82.6-37.5-83-37.8-6.1-4.3-14.5-2.8-18.8 3.3-4.3 6.1-2.8 14.5 3.3 18.8 1.7 1.2 41.5 28.9 91.3 41.7 23.3 8.3 25.9 33.2 26.6 56 0 .9 0 1.7.1 2.5.1 9-.5 22.9-2.1 30.9-16.2 9.2-79.7 41-176.3 41-96.2 0-160.1-31.9-176.4-41.1-1.6-8-2.3-21.9-2.1-30.9 0-.8.1-1.6.1-2.5.7-22.8 3.3-47.7 26.6-56 49.8-12.8 89.6-40.6 91.3-41.7 6.1-4.3 7.6-12.7 3.3-18.8-4.3-6.1-12.7-7.6-18.8-3.3-.4.3-37.7 26.3-83 37.8-.4.1-.7.2-1 .3-43.4 14.9-44.7 61.2-45.3 80.9 0 .9 0 1.7-.1 2.5v.3c-.1 5.2-.2 31.9 5.1 45.3 1 2.6 2.8 4.8 5.2 6.3 3 2 74.9 47.8 195.2 47.8s192.2-45.9 195.2-47.8c2.3-1.5 4.2-3.7 5.2-6.3 5-13.3 4.9-40 4.8-45.2z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgAbout);
+
+/***/ }),
+
+/***/ "./components/Responsive/Assets/BlogSvg.js":
+/*!*************************************************!*\
+  !*** ./components/Responsive/Assets/BlogSvg.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/BlogSvg.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+var SvgBlog = function SvgBlog(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    height: "511pt",
+    viewBox: "0 0 511 512",
+    width: "511pt"
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M444.465 4.395c-5.856-5.86-15.356-5.86-21.211 0L307.648 120H45.5c-24.812 0-45 20.188-45 45v209.996c0 24.816 20.188 45 45 45h16v77a15 15 0 0 0 25.723 10.492l85.586-87.492H347.5c24.813 0 45-20.184 45-45V204.852L508.105 89.246c5.856-5.86 5.856-15.355 0-21.215zM306.578 248.344l-42.426-42.426L391.434 78.641l42.425 42.425zm-58.406-15.98l31.96 31.96-54.78 22.82zM362.5 374.995c0 8.274-6.73 15-15 15h-181a15.006 15.006 0 0 0-10.723 4.512L91.5 460.215v-55.219c0-8.281-6.715-15-15-15h-31c-8.27 0-15-6.726-15-15V165c0-8.273 6.73-15 15-15h232.145l-45.313 45.312a15.329 15.329 0 0 0-3.312 5.012L187.5 300h-81c-8.285 0-15 6.715-15 15 0 8.281 6.715 14.988 15 14.988h91.004c1.93 0 4-.394 5.894-1.207l108.774-45.304c1.812-.707 3.64-1.938 5.015-3.313l45.313-45.312zm92.57-275.144l-42.425-42.426 21.214-21.211 42.426 42.426zm0 0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgBlog);
+
+/***/ }),
+
+/***/ "./components/Responsive/Assets/ContactSvg.js":
+/*!****************************************************!*\
+  !*** ./components/Responsive/Assets/ContactSvg.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/ContactSvg.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+var SvgContact = function SvgContact(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    viewBox: "0 0 44 44"
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M43 6H1a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h42a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-1 27.581L29.612 21.194l-1.414 1.414L41.59 36H2.41l13.392-13.392-1.414-1.414L2 33.581V8h40v25.581z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M39.979 8L22 25.979 4.021 8H2v.807L21.293 28.1a.999.999 0 0 0 1.414 0L42 8.807V8h-2.021z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgContact);
+
+/***/ }),
+
 /***/ "./components/Responsive/Assets/HomeSvg.js":
 /*!*************************************************!*\
   !*** ./components/Responsive/Assets/HomeSvg.js ***!
@@ -446,7 +582,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Assets_HomeSvg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Assets/HomeSvg */ "./components/Responsive/Assets/HomeSvg.js");
+/* harmony import */ var _Assets_BlogSvg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Assets/BlogSvg */ "./components/Responsive/Assets/BlogSvg.js");
+/* harmony import */ var _Assets_AboutSvg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Assets/AboutSvg */ "./components/Responsive/Assets/AboutSvg.js");
+/* harmony import */ var _Assets_ContactSvg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Assets/ContactSvg */ "./components/Responsive/Assets/ContactSvg.js");
 var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Footer.js";
+
+
+
 
 
 
@@ -456,64 +598,110 @@ var Responsive = function Responsive() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContainerText, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Responsive, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgItem, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 13
     },
     __self: this
-  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Responsive, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Responsive, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Responsive, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Responsive, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_HomeSvg__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_HomeSvg__WEBPACK_IMPORTED_MODULE_3__["default"], {
     width: 40,
     height: 40,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_AboutSvg__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    width: 40,
+    height: 40,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "about")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_BlogSvg__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    width: 40,
+    height: 40,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_ContactSvg__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    width: 40,
+    height: 40,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "contact"))));
 };
 
 var ContainerText = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Footer__ContainerText",
   componentId: "sc-1u71pxo-0"
-})(["display:flex;"]);
+})(["display:flex;justify-content:space-around;"]);
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Footer__Container",
   componentId: "sc-1u71pxo-1"
-})(["width:100%;display:flex;height:auto;align-items:bottom;justify-content:space-between;padding:3rem 8rem 3rem 6rem;box-sizing:border-box;background-color:tomato;"]);
+})(["width:100%;height:auto;align-items:bottom;justify-content:space-between;padding:3rem 8rem 3rem 6rem;box-sizing:border-box;background-color:white;"]);
+var SvgItem = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "Footer__SvgItem",
+  componentId: "sc-1u71pxo-2"
+})(["text-align:center;"]);
 /* harmony default export */ __webpack_exports__["default"] = (Responsive);
 
 /***/ }),
@@ -706,8 +894,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var BackUrl = 'http://localhost:1337';
-var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9___default.a('http://localhost:1337');
+var BackUrl = "http://localhost:1337";
+var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9___default.a("http://192.168.0.105:1337");
 
 var Blog =
 /*#__PURE__*/
@@ -779,62 +967,68 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 46
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 47
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionHeader, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 48
         },
         __self: this
       }, mainImage && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainImage, {
         image: "".concat(BackUrl, "/").concat(mainImage.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 50
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Section, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionHeadThing, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 53
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContentDate, {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 54
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContentDate, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ul, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Assets_Svg__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -842,19 +1036,19 @@ function (_Component) {
         height: 20,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 58
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 59
         },
         __self: this
-      }, date)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+      }, date, "dasdasdasd")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 61
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Assets_Category__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -862,94 +1056,94 @@ function (_Component) {
         height: 20,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 62
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 63
         },
         __self: this
       }, "Design")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContent, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BlogTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 68
         },
         __self: this
       }, Title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 69
         },
         __self: this
       }, paragraph1), media1 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 71
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
         src: "".concat(BackUrl, "/").concat(media1.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 72
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 75
         },
         __self: this
       }, paragraph2), media2 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
         src: "".concat(BackUrl, "/").concat(media2.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 78
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 81
         },
         __self: this
-      }, paragraph3), media3 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
+      }, paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident..", " ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident..", " "), media3 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 98
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
         src: "".concat(BackUrl, "/").concat(media3.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 99
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ending, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 102
         },
         __self: this
-      }, ending))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, ending)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 106
         },
         __self: this
       }));
@@ -971,7 +1165,7 @@ var SectionHeader = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div
 var MainImage = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blog__MainImage",
   componentId: "sc-1gx8z8c-2"
-})(["width:300px;height:300px;background-image:url(", ");background-size:cover;background-position:center center;border-radius:100%;box-shadow:0 5px 15px rgba(0,0,0,0.47),0 10px 23px rgba(0,0,0,0.20);"], function (props) {
+})(["width:300px;height:300px;background-image:url(", ");background-size:cover;background-position:center center;border-radius:100%;box-shadow:0 5px 15px rgba(0,0,0,0.47),0 10px 23px rgba(0,0,0,0.2);"], function (props) {
   return props.image;
 });
 var Section = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
@@ -982,66 +1176,46 @@ var SectionHeadThing = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.
   displayName: "blog__SectionHeadThing",
   componentId: "sc-1gx8z8c-4"
 })(["width:100%;height:110px;background:#fff;position:absolute;top:-50px;background:#fff;border-radius:30px;"]);
+var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "blog__Wrapper",
+  componentId: "sc-1gx8z8c-5"
+})(["width:100%;display:flex;"]);
 var SectionContent = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blog__SectionContent",
-  componentId: "sc-1gx8z8c-5"
-})(["width:100%;height:auto;align-content:center;flex:0 0 55%;box-sizing:border-box;display:flex;flex-direction:column;"]);
+  componentId: "sc-1gx8z8c-6"
+})([""]);
 var BlogTitle = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blog__BlogTitle",
-  componentId: "sc-1gx8z8c-6"
+  componentId: "sc-1gx8z8c-7"
 })(["color:#ff7e6d;font-size:48px;font-weight:800;letter-spacing:-1px;"]);
 var Paragraph = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blog__Paragraph",
-  componentId: "sc-1gx8z8c-7"
+  componentId: "sc-1gx8z8c-8"
 })(["margin-top:24px;font-size:21px;letter-spacing:-1px;color:#62535c;"]);
 var Media = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blog__Media",
-  componentId: "sc-1gx8z8c-8"
+  componentId: "sc-1gx8z8c-9"
 })(["width:100%;height:auto;margin-top:25px;"]);
 var MediaImage = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.img.withConfig({
   displayName: "blog__MediaImage",
-  componentId: "sc-1gx8z8c-9"
+  componentId: "sc-1gx8z8c-10"
 })(["width:100%;object-fit:cover;"]);
 var Ending = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blog__Ending",
-  componentId: "sc-1gx8z8c-10"
+  componentId: "sc-1gx8z8c-11"
 })(["margin-top:24px;font-size:21px;letter-spacing:-1px;color:#62535c;"]);
 var SectionContentDate = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blog__SectionContentDate",
-  componentId: "sc-1gx8z8c-11"
-})(["display:flex;align-self:flex-start;color:#c0b3b9;"]);
+  componentId: "sc-1gx8z8c-12"
+})(["padding-top:1rem;color:#c0b3b9;"]);
 var Ul = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.ul.withConfig({
   displayName: "blog__Ul",
-  componentId: "sc-1gx8z8c-12"
+  componentId: "sc-1gx8z8c-13"
 })(["list-style:none;font-size:0.9rem;display:flex;flex-wrap:wrap;width:210px;padding:0;"]);
 var Li = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.li.withConfig({
   displayName: "blog__Li",
-  componentId: "sc-1gx8z8c-13"
-})(["flex:1 1 100%;display:flex;align-items:center;margin:0.4rem;position:relative;& > *{margin:0.2rem;}"]);
-var Form = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.form.withConfig({
-  displayName: "blog__Form",
   componentId: "sc-1gx8z8c-14"
-})(["display:flex;flex-wrap:wrap;"]);
-var InputGroup = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "blog__InputGroup",
-  componentId: "sc-1gx8z8c-15"
-})(["width:100%;display:flex;flex-direction:column;"]);
-var Input = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.input.withConfig({
-  displayName: "blog__Input",
-  componentId: "sc-1gx8z8c-16"
-})(["flex:1;height:2.5rem;background:linear-gradient(to bottom,#ebe1e6,#fbf9fa 6px,#fff);box-shadow:inset 0 2px #c5b9c0,inset 0 0 0 2px #d4cbd0,0 2px 2px rgba(255,255,255,0.8);-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;outline:none;max-width:100%;color:#301d28;line-height:normal;width:100%;border-radius:0.3rem;font-size:1.1rem;padding-left:0.5rem;"]);
-var Label = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.label.withConfig({
-  displayName: "blog__Label",
-  componentId: "sc-1gx8z8c-17"
-})(["margin:1.2rem 0 0.8rem 0;font-weight:600;"]);
-var Textarea = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.textarea.withConfig({
-  displayName: "blog__Textarea",
-  componentId: "sc-1gx8z8c-18"
-})(["flex:1;padding:0.5rem 0 0 0.5rem;font-size:1.5rem;background:linear-gradient(to bottom,#ebe1e6,#fbf9fa 6px,#fff);box-shadow:inset 0 2px #c5b9c0,inset 0 0 0 2px #d4cbd0,0 2px 2px rgba(255,255,255,0.8);-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;outline:none;max-width:100%;color:#301d28;line-height:normal;width:100%;border-radius:0.3rem;"]);
-var Button = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.button.withConfig({
-  displayName: "blog__Button",
-  componentId: "sc-1gx8z8c-19"
-})(["user-select:none;-webkit-appearance:none;-moz-appearance:none;border:none;background-clip:padding-box;position:relative;cursor:pointer;line-height:normal;font-weight:700;display:inline-block;vertical-align:top;padding:14px 24px;border-radius:4px;color:currentcolor;font-size:18px !important;margin-top:1rem;outline:none;color:#543243;transition:all ease 0.2s;background-color:#ffdd74;box-shadow:inset 0 0 0 2px #dba758,0 1px 3px rgba(190,216,216,0.6);&:hover{background-color:#ffcc33;outline:none;box-shadow:inset 0 0 0 2px #dba758,1px 5px 10px rgba(190,216,216,1);}&:active{box-shadow:inset 0 0 0 2px #dba758,0px 3px 5px rgba(190,216,216,0.61);outline:none;background-color:#ffdd74;}"]);
+})(["flex:1 1 100%;display:flex;align-items:center;margin:0.4rem;position:relative;& > *{margin:0.2rem;}"]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject());
 
 /***/ }),

@@ -3,37 +3,39 @@ import styled, { createGlobalStyle } from "styled-components";
 import Header from "../components/Header/Header";
 import { Link } from "next/link";
 import Footer from "../components/Footer";
-
+import Responsive from "../components/Responsive/Footer";
 export default () => {
   return (
-    <Container>
-      <GlobalStyle />
-      <Header />
-      <Section>
-        <SectionHeader>About</SectionHeader>
-        <SectionContent>
-          <SectionContentText>
-            Feedback <br />
-            Feedback is really helpful, as I will be able to improve posts
-            further. It also helps me to focus on the right topics. If you have
-            any feedback or suggestions, I’ll be grateful for you taking the
-            time. <br /> Issues with a post <br /> If you’re stuck with a post,
-            I’ll be happy to steer you in the right direction. The following
-            will help speed things up: Don’t send login details by email
-            Promoting If you’re trying to promote a product, service or build
-            links, it’s very unlikely it’s relevant (based upon previous
-            experience). I encourage you to think twice about sending a message.
-            I don’t take readers time & attention for granted. Hiring me I’m
-            available for short term design related consulting. However, for
-            sake of clarity, I’m not available for longer term design projects.
-            If you have a project you think I can add value to, send a messgae
-            and we’ll see if there’s a good fit. Find me elsewhere dribbble,
-            twitter, behance and linkedin.
-          </SectionContentText>
-        </SectionContent>{" "}
-        <Footer />
-      </Section>
-    </Container>
+    <React.Fragment>
+      <Container>
+        <GlobalStyle />
+        <Header />
+        <Section>
+          <SectionHeader>About</SectionHeader>
+          <SectionContent>
+            <SectionContentText>
+              Feedback <br />
+              Feedback is really helpful, as I will be able to improve posts
+              further. It also helps me to focus on the right topics. If you
+              have any feedback or suggestions, I’ll be grateful for you taking
+              the time. <br /> Issues with a post <br /> If you’re stuck with a
+              post, I’ll be happy to steer you in the right direction. The
+              following will help speed things up: Don’t send login details by
+              email Promoting If you’re trying to promote a product, service or
+              build links, it’s very unlikely it’s relevant (based upon previous
+              experience). I encourage you to think twice about sending a
+              message. I don’t take readers time & attention for granted. Hiring
+              me I’m available for short term design related consulting.
+              However, for sake of clarity, I’m not available for longer term
+              design projects. If you have a project you think I can add value
+              to, send a messgae and we’ll see if there’s a good fit. Find me
+              elsewhere dribbble, twitter, behance and linkedin.
+            </SectionContentText>
+          </SectionContent>{" "}
+          <Footer /> <Responsive />
+        </Section>
+      </Container>
+    </React.Fragment>
   );
 };
 
