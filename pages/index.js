@@ -1,36 +1,35 @@
-import React,{ Component } from "react";
+import React, { Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { Header, PostItem, Slider } from "../components";
 import RightArrow from "../static/svg/RightArrow";
-import Strapi from 'strapi-sdk-javascript/build/main';
-const strapiApi = new Strapi('http://localhost:1337');
+/* import Strapi from "strapi-sdk-javascript/build/main"; */
+import Responsive from "../components/Responsive/Footer";
+/* const strapiApi = new Strapi("http://localhost:1337"); */
 
 class HomePage extends Component {
-  
   constructor(props) {
     super(props);
     this.state = {
       posts: [],
-      news: [],
-    }
+      news: []
+    };
   }
-  
-  async componentDidMount() {  
+
+  /*  async componentDidMount() {
     try {
       // const posts = await strapi.getEntries('Blogposts')
-      const news = await strapiApi.getEntries('News')
+      const news = await strapiApi.getEntries("News");
       this.setState({ news });
-    } 
-    catch(err) {
-     alert(err);
+    } catch (err) {
+      alert(err);
     }
-   }
-   
-  render() { 
-    const { news } = this.state
-		console.log("​HomePage -> render -> news", news)
-    return ( 
-        <Container>
+  } */
+
+  render() {
+    const { news } = this.state;
+    console.log("​HomePage -> render -> news", news);
+    return (
+      <Container>
         <GlobalStyle />
         <Header />
         <MainContainer>
@@ -48,7 +47,9 @@ class HomePage extends Component {
                 </NewsHeaderRight>
               </NewsHeader>
               <Posts>
-                { news.map(item => <PostItem data={item} /> ) }
+                {news.map(item => (
+                  <PostItem data={item} />
+                ))}
               </Posts>{" "}
               <ProjectsSlider>
                 <Slider />
@@ -57,12 +58,11 @@ class HomePage extends Component {
           </News>
         </MainContainer>
       </Container>
-     );
+    );
   }
 }
- 
-export default HomePage;
 
+export default HomePage;
 
 const Container = styled.div`
   width: 100%;
@@ -129,9 +129,7 @@ const Posts = styled.div`
   flex-wrap: wrap;
 `;
 
-const ProjectsSlider = styled.div`
-  
-`
+const ProjectsSlider = styled.div``;
 
 const NewsCenter = styled.div`
   width: 1224px;
