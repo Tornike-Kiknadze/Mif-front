@@ -50,8 +50,4 @@ const SvgItem = styled.div`
   text-align: center;
 `;
 
-const SvgAbout = styled.div`
-  display: flex;
-  justify-content: space-around;
-`;
 export default Responsive;
