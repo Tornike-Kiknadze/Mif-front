@@ -49,4 +49,5 @@ const Container = styled.div`
 const SvgItem = styled.div`
   text-align: center;
 `;
+
 export default Responsive;
