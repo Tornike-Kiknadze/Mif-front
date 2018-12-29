@@ -1,108 +1,189 @@
-import React, { Component } from "react";
-import styled, { createGlobalStyle } from "styled-components";
-import { Header, PostItem, Slider } from "../components";
-import RightArrow from "../static/svg/RightArrow";
-/* import Strapi from "strapi-sdk-javascript/build/main"; */
-import Responsive from "../components/Responsive/Footer";
-/* const strapiApi = new Strapi("http://localhost:1337"); */
+import React, { Component } from 'react'
+import styled, { createGlobalStyle } from 'styled-components'
+import { Header, PostItem, Slider } from '../components'
+import RightArrow from '../static/svg/RightArrow'
+import Strapi from 'strapi-sdk-javascript/build/main'
+import MainIcon from '../static/svg/mainIcon.svg'
+const strapiApi = new Strapi('http://localhost:1337')
 
 class HomePage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       posts: [],
       news: []
-    };
+    }
   }
 
-  /*  async componentDidMount() {
+  async componentDidMount() {
     try {
       // const posts = await strapi.getEntries('Blogposts')
-      const news = await strapiApi.getEntries("News");
-      this.setState({ news });
+      const news = await strapiApi.getEntries('News')
+      const projects = await strapiApi.getEntries('Projects')
+      this.setState({ news, projects })
     } catch (err) {
-      alert(err);
+      alert(err)
     }
-  } */
+  }
 
   render() {
-    const { news } = this.state;
-    console.log("​HomePage -> render -> news", news);
+    const { news, projects } = this.state
     return (
       <Container>
         <GlobalStyle />
         <Header />
         <MainContainer>
-          {" "}
-          <MainContainerCenter>Svg Illustration Here</MainContainerCenter>
+          <HeadContainer>
+            <HeadContainerLeft>
+              <h1>Media Inovation Foundation</h1>
+              <span>
+                This is a such a great slogan that, when kyle mynouge saw it she
+                become waffle, This is a such a great slogan that, when kyle
+                mynouge saw it she become waffle,This is a such a great slogan
+                that, when kyle mynouge saw it she become waffle, This is a such
+                a great slogan that, when kyle mynouge saw it she become waffle
+              </span>
+            </HeadContainerLeft>
+            <HeadContainerRight img={MainIcon} />
+          </HeadContainer>
           <News>
             <NewsCenter>
               <NewsHeader>
-                <NewsHeaderLeft>Latest News</NewsHeaderLeft>
-                <NewsHeaderRight>
-                  All News
+                <h1>Latest News</h1>
+                <span>
+                  We Are Very Active Guys So We Need News, Read Them And Give us
+                  Your Money
+                </span>
+                {/* <NewsHeaderRight>
                   <Icon>
-                    <RightArrow width={15} height={15} fill={"#27cba4"} />
+                    <RightArrow width={15} height={15} fill={'#27cba4'} />
                   </Icon>
-                </NewsHeaderRight>
+                </NewsHeaderRight> */}
               </NewsHeader>
               <Posts>
                 {news.map(item => (
                   <PostItem data={item} />
                 ))}
-              </Posts>{" "}
+              </Posts>{' '}
               <ProjectsSlider>
-                <Slider />
+                <ProjectsHeader>
+                  <ProjectsBG />
+                  <Span>Projects</Span>
+                </ProjectsHeader>
+                <Slider data={projects} />
               </ProjectsSlider>
             </NewsCenter>
           </News>
         </MainContainer>
       </Container>
-    );
+    )
   }
 }
 
-export default HomePage;
+export default HomePage
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
-`;
+`
 
 const MainContainer = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background: #fff5f3;
-`;
+`
 
-const MainContainerCenter = styled.div`
-  width: 1224px;
+const HeadContainer = styled.div`
+  width: 100%;
   height: 100%;
   margin: auto;
+  padding: 0 120px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
-`;
+`
+
+const HeadContainerLeft = styled.div`
+  flex: 1;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: 26px;
+  color: #ff7e6d;
+  font-weight: bold;
+  flex-direction: column;
+  text-align: left;
+  h1 {
+    width: 400px;
+    line-height: 55px;
+    letter-spacing: 7px;
+  }
+  span {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #444053;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+`
+
+const HeadContainerRight = styled.div`
+  flex: 1;
+  height: 100%;
+  background-image: url(${props => props.img});
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+`
 
 const News = styled.div`
   width: 100%;
   background: #ffffff;
-  margin: 30px 0;
-`;
+  padding: 30px 0;
+  background: #f5f5f5;
+`
 
 const NewsHeader = styled.div`
   width: 100%;
-  margin-top: 50px;
   color: #543243;
   font-weight: 800;
   font-size: 18px;
   padding-left: 10px;
   display: flex;
-  justify-content: space-between;
-`;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    color: #ff7e6d;
+  }
+  span {
+    margin-top: 10px;
+    /* color:#ff7e6d */
+  }
+`
 
-const NewsHeaderLeft = styled.div``;
+const ProjectsHeader = styled.div`
+  width: 100%;
+  margin-top: 30px;
+  color: #301d28;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+`
+
+const ProjectsBG = styled.div`
+  width: 80px;
+  height: 80%;
+  position: absolute;
+  top: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+`
+
+const Span = styled.div``
 
 const NewsHeaderRight = styled.div`
   display: flex;
@@ -111,7 +192,7 @@ const NewsHeaderRight = styled.div`
   &:hover {
     color: #27cba4;
   }
-`;
+`
 
 const Icon = styled.div`
   margin-left: 8px;
@@ -119,7 +200,7 @@ const Icon = styled.div`
   ${NewsHeaderRight}:hover & {
     transform: translateX(5px);
   }
-`;
+`
 
 const Posts = styled.div`
   width: 100%;
@@ -127,9 +208,11 @@ const Posts = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-`;
+`
 
-const ProjectsSlider = styled.div``;
+const ProjectsSlider = styled.div`
+  width: 100%;
+`
 
 const NewsCenter = styled.div`
   width: 1224px;
@@ -140,7 +223,7 @@ const NewsCenter = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 16px;
-`;
+`
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -153,4 +236,4 @@ const GlobalStyle = createGlobalStyle`
     font-family: Averta;
     src: url('../static/fonts/Averta.otf');
   }
-`;
+`
