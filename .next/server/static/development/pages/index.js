@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -109,7 +109,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Header/Header.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Header\\Header.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -343,7 +343,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
 /* harmony import */ var _static_svg_Dash__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../static/svg/Dash */ "./static/svg/Dash.js");
 /* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/RightArrow */ "./static/svg/RightArrow.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/PostItem/PostItem.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\PostItem\\PostItem.js";
 
 
 
@@ -541,7 +541,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _static_svg_Right__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/Right */ "./static/svg/Right.js");
 /* harmony import */ var _static_svg_Left__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../static/svg/Left */ "./static/svg/Left.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Slider/Slider.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Slider\\Slider.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -809,7 +809,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/svg/mainIcon.svg */ "./static/svg/mainIcon.svg");
 /* harmony import */ var _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6__);
 
-var _jsxFileName = "/home/reziko/projects/mif/client/pages/index.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\pages\\index.js";
 
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n  body{\n    font-family:Averta\n  }\n  @font-face {\n    font-family: Averta;\n    src: url('../static/fonts/Averta.otf');\n  }\n"]);
@@ -851,7 +851,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default.a('http://localhost:1337');
+var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default.a("http://localhost:1337");
 
 var HomePage =
 /*#__PURE__*/
@@ -884,12 +884,12 @@ function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return strapiApi.getEntries('News');
+                return strapiApi.getEntries("News");
 
               case 3:
                 news = _context.sent;
                 _context.next = 6;
-                return strapiApi.getEntries('Projects');
+                return strapiApi.getEntries("Projects");
 
               case 6:
                 projects = _context.sent;
@@ -1008,10 +1008,10 @@ function (_Component) {
           lineNumber: 53
         },
         __self: this
-      }, "We Are Very Active Guys So We Need News, Read Them And Give us Your Money")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Posts, {
+      }, "We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money We Are Very Active Guys So We Need News, Read Them And Give us Your Money")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Posts, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 100
         },
         __self: this
       }, news.map(function (item) {
@@ -1019,39 +1019,39 @@ function (_Component) {
           data: item,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 102
           },
           __self: this
         });
-      })), ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsSlider, {
+      })), " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsSlider, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsHeader, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 106
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsBG, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 107
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Span, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 108
         },
         __self: this
       }, "Projects")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Slider"], {
         data: projects,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 110
         },
         __self: this
       }))))));
@@ -1139,7 +1139,7 @@ var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createG
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/Dash.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Dash.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -1186,7 +1186,7 @@ var Dash = function Dash(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/Left.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Left.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -1226,7 +1226,7 @@ var SvgComponent = function SvgComponent(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/Right.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Right.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -1266,7 +1266,7 @@ var SvgComponent = function SvgComponent(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/RightArrow.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\RightArrow.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -1306,7 +1306,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyBpZD0iYjFmZjliYjItN2Y0Zi00NDE4
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

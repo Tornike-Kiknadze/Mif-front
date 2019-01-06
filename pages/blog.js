@@ -50,22 +50,21 @@ class Blog extends Component {
           {mainImage && <MainImage image={`${BackUrl}/${mainImage.url}`} />}
         </SectionHeader>
         <Section>
-          <SectionHeadThing />
+          <SectionContentDate>
+            <Ul>
+              <Li>
+                <SvgCalendar width={20} height={20} />
+                <p>{date}dasdasdasd</p>
+              </Li>
+              <Li>
+                <SvgCategory width={20} height={20} />
+                <p>Design</p>
+              </Li>
+            </Ul>
+          </SectionContentDate>
           <Wrapper>
-            <SectionContentDate>
-              <Ul>
-                <Li>
-                  <SvgCalendar width={20} height={20} />
-                  <p>{date}dasdasdasd</p>
-                </Li>
-                <Li>
-                  <SvgCategory width={20} height={20} />
-                  <p>Design</p>
-                </Li>
-              </Ul>
-            </SectionContentDate>
             <SectionContent>
-              <BlogTitle>{Title}</BlogTitle>
+              <BlogTitle>Title</BlogTitle>
               <Paragraph>{paragraph1}</Paragraph>
               {media1 && (
                 <Media>
@@ -113,7 +112,7 @@ export default Blog;
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
 `;
 
 const SectionHeader = styled.div`
@@ -144,7 +143,7 @@ const Section = styled.div`
   background-color: #fff;
   text-align: justify;
   font-size: 1.2rem;
-  padding: 6rem 0 6rem 0;
+  padding: 1rem 0 6rem 0;
   display: flex;
   line-height: 2rem;
   align-items: center;
@@ -153,35 +152,29 @@ const Section = styled.div`
   position: relative;
 `;
 
-const SectionHeadThing = styled.div`
-  width: 100%;
-  height: 110px;
-  background: #fff;
-  position: absolute;
-  top: -50px;
-  background: #fff;
-  border-radius: 30px;
-`;
-
 const Wrapper = styled.div`
   width: 100%;
   display: flex;
+  padding: 1.5rem 6rem 6rem 6rem;
+  position: relative;
+  justify-content: center;
 `;
 
 const SectionContent = styled.div``;
 
 const BlogTitle = styled.div`
   color: #ff7e6d;
+  width: 1rem;
   font-size: 48px;
   font-weight: 800;
-  letter-spacing: -1px;
+  text-align: center;
+  width: 100%;
 `;
 
 const Paragraph = styled.div`
   margin-top: 24px;
   font-size: 21px;
   letter-spacing: -1px;
-  color: #62535c;
 `;
 
 const Media = styled.div`
@@ -206,6 +199,9 @@ const Ending = styled.div`
 const SectionContentDate = styled.div`
   padding-top: 1rem;
   color: #c0b3b9;
+  position: absolute;
+  top: 4rem;
+  left: -5rem;
 `;
 
 const Ul = styled.ul`

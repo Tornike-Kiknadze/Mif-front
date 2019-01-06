@@ -1,33 +1,33 @@
-import React, { Component } from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
-import { Header, PostItem, Slider } from '../components'
-import RightArrow from '../static/svg/RightArrow'
-import Strapi from 'strapi-sdk-javascript/build/main'
-import MainIcon from '../static/svg/mainIcon.svg'
-const strapiApi = new Strapi('http://localhost:1337')
+import React, { Component } from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import { Header, PostItem, Slider } from "../components";
+import RightArrow from "../static/svg/RightArrow";
+import Strapi from "strapi-sdk-javascript/build/main";
+import MainIcon from "../static/svg/mainIcon.svg";
+const strapiApi = new Strapi("http://localhost:1337");
 
 class HomePage extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       posts: [],
       news: []
-    }
+    };
   }
 
   async componentDidMount() {
     try {
       // const posts = await strapi.getEntries('Blogposts')
-      const news = await strapiApi.getEntries('News')
-      const projects = await strapiApi.getEntries('Projects')
-      this.setState({ news, projects })
+      const news = await strapiApi.getEntries("News");
+      const projects = await strapiApi.getEntries("Projects");
+      this.setState({ news, projects });
     } catch (err) {
-      alert(err)
+      alert(err);
     }
   }
 
   render() {
-    const { news, projects } = this.state
+    const { news, projects } = this.state;
     return (
       <Container>
         <GlobalStyle />
@@ -52,7 +52,44 @@ class HomePage extends Component {
                 <h1>Latest News</h1>
                 <span>
                   We Are Very Active Guys So We Need News, Read Them And Give us
-                  Your Money
+                  Your Money We Are Very Active Guys So We Need News, Read Them
+                  And Give us Your Money We Are Very Active Guys So We Need
+                  News, Read Them And Give us Your Money We Are Very Active Guys
+                  So We Need News, Read Them And Give us Your Money We Are Very
+                  Active Guys So We Need News, Read Them And Give us Your Money
+                  We Are Very Active Guys So We Need News, Read Them And Give us
+                  Your Money We Are Very Active Guys So We Need News, Read Them
+                  And Give us Your Money We Are Very Active Guys So We Need
+                  News, Read Them And Give us Your Money We Are Very Active Guys
+                  So We Need News, Read Them And Give us Your Money We Are Very
+                  Active Guys So We Need News, Read Them And Give us Your Money
+                  We Are Very Active Guys So We Need News, Read Them And Give us
+                  Your Money We Are Very Active Guys So We Need News, Read Them
+                  And Give us Your Money We Are Very Active Guys So We Need
+                  News, Read Them And Give us Your Money We Are Very Active Guys
+                  So We Need News, Read Them And Give us Your Money We Are Very
+                  Active Guys So We Need News, Read Them And Give us Your Money
+                  We Are Very Active Guys So We Need News, Read Them And Give us
+                  Your Money We Are Very Active Guys So We Need News, Read Them
+                  And Give us Your Money We Are Very Active Guys So We Need
+                  News, Read Them And Give us Your Money We Are Very Active Guys
+                  So We Need News, Read Them And Give us Your Money We Are Very
+                  Active Guys So We Need News, Read Them And Give us Your Money
+                  We Are Very Active Guys So We Need News, Read Them And Give us
+                  Your Money We Are Very Active Guys So We Need News, Read Them
+                  And Give us Your Money We Are Very Active Guys So We Need
+                  News, Read Them And Give us Your Money We Are Very Active Guys
+                  So We Need News, Read Them And Give us Your Money We Are Very
+                  Active Guys So We Need News, Read Them And Give us Your Money
+                  We Are Very Active Guys So We Need News, Read Them And Give us
+                  Your Money We Are Very Active Guys So We Need News, Read Them
+                  And Give us Your Money We Are Very Active Guys So We Need
+                  News, Read Them And Give us Your Money We Are Very Active Guys
+                  So We Need News, Read Them And Give us Your Money We Are Very
+                  Active Guys So We Need News, Read Them And Give us Your Money
+                  We Are Very Active Guys So We Need News, Read Them And Give us
+                  Your Money We Are Very Active Guys So We Need News, Read Them
+                  And Give us Your Money
                 </span>
                 {/* <NewsHeaderRight>
                   <Icon>
@@ -64,7 +101,7 @@ class HomePage extends Component {
                 {news.map(item => (
                   <PostItem data={item} />
                 ))}
-              </Posts>{' '}
+              </Posts>{" "}
               <ProjectsSlider>
                 <ProjectsHeader>
                   <ProjectsBG />
@@ -76,22 +113,22 @@ class HomePage extends Component {
           </News>
         </MainContainer>
       </Container>
-    )
+    );
   }
 }
 
-export default HomePage
+export default HomePage;
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
-`
+`;
 
 const MainContainer = styled.div`
   width: 100%;
   height: 100vh;
   background: #fff5f3;
-`
+`;
 
 const HeadContainer = styled.div`
   width: 100%;
@@ -103,7 +140,7 @@ const HeadContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 16px;
-`
+`;
 
 const HeadContainerLeft = styled.div`
   flex: 1;
@@ -129,7 +166,7 @@ const HeadContainerLeft = styled.div`
     line-height: 25px;
     letter-spacing: 2px;
   }
-`
+`;
 
 const HeadContainerRight = styled.div`
   flex: 1;
@@ -138,14 +175,14 @@ const HeadContainerRight = styled.div`
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-`
+`;
 
 const News = styled.div`
   width: 100%;
   background: #ffffff;
   padding: 30px 0;
   background: #f5f5f5;
-`
+`;
 
 const NewsHeader = styled.div`
   width: 100%;
@@ -163,7 +200,7 @@ const NewsHeader = styled.div`
     margin-top: 10px;
     /* color:#ff7e6d */
   }
-`
+`;
 
 const ProjectsHeader = styled.div`
   width: 100%;
@@ -172,7 +209,7 @@ const ProjectsHeader = styled.div`
   font-size: 18px;
   font-weight: bold;
   position: relative;
-`
+`;
 
 const ProjectsBG = styled.div`
   width: 80px;
@@ -181,9 +218,9 @@ const ProjectsBG = styled.div`
   top: 10px;
   background: rgba(255, 255, 255, 0.6);
   z-index: -1;
-`
+`;
 
-const Span = styled.div``
+const Span = styled.div``;
 
 const NewsHeaderRight = styled.div`
   display: flex;
@@ -192,7 +229,7 @@ const NewsHeaderRight = styled.div`
   &:hover {
     color: #27cba4;
   }
-`
+`;
 
 const Icon = styled.div`
   margin-left: 8px;
@@ -200,7 +237,7 @@ const Icon = styled.div`
   ${NewsHeaderRight}:hover & {
     transform: translateX(5px);
   }
-`
+`;
 
 const Posts = styled.div`
   width: 100%;
@@ -208,11 +245,11 @@ const Posts = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-`
+`;
 
 const ProjectsSlider = styled.div`
   width: 100%;
-`
+`;
 
 const NewsCenter = styled.div`
   width: 1224px;
@@ -223,7 +260,7 @@ const NewsCenter = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 16px;
-`
+`;
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -236,4 +273,4 @@ const GlobalStyle = createGlobalStyle`
     font-family: Averta;
     src: url('../static/fonts/Averta.otf');
   }
-`
+`;
