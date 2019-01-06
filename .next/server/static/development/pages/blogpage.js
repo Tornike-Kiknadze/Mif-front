@@ -897,24 +897,24 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var BackUrl = 'http://localhost:1337';
 var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9___default.a(BackUrl);
 
-var BlogPage =
+var Blog =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(BlogPage, _Component);
+  _inherits(Blog, _Component);
 
-  function BlogPage(props) {
+  function Blog(props) {
     var _this;
 
-    _classCallCheck(this, BlogPage);
+    _classCallCheck(this, Blog);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(BlogPage).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Blog).call(this, props));
     _this.state = {
       post: {}
     };
     return _this;
   }
 
-  _createClass(BlogPage, [{
+  _createClass(Blog, [{
     key: "componentDidMount",
     value: function () {
       var _componentDidMount = _asyncToGenerator(
@@ -1001,34 +1001,22 @@ function (_Component) {
           lineNumber: 52
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionHeadThing, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContentDate, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 53
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ul, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 54
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContentDate, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ul, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Assets_Svg__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -1036,19 +1024,19 @@ function (_Component) {
         height: 20,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 56
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 57
         },
         __self: this
       }, date, "dasdasdasd")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Assets_Category__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -1056,108 +1044,114 @@ function (_Component) {
         height: 20,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 60
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 61
         },
         __self: this
-      }, "Design")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContent, {
+      }, "Design")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 65
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContent, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BlogTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 67
         },
         __self: this
-      }, Title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
+      }, "Title"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 68
         },
         __self: this
       }, paragraph1), media1 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 70
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
         src: "".concat(BackUrl, "/").concat(media1.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 71
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 74
         },
         __self: this
       }, paragraph2), media2 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 76
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
         src: "".concat(BackUrl, "/").concat(media2.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 77
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 80
         },
         __self: this
-      }, paragraph3), media3 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
+      }, paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident..", ' ', paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident..", ' '), media3 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
         src: "".concat(BackUrl, "/").concat(media3.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 98
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ending, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 101
         },
         __self: this
       }, ending)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 105
         },
         __self: this
       }));
     }
   }]);
 
-  return BlogPage;
+  return Blog;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (BlogPage);
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__Container",
   componentId: "sc-1mknfz0-0"
-})(["width:100%;height:100vh;"]);
+})(["width:100%;height:auto;"]);
 var SectionHeader = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__SectionHeader",
   componentId: "sc-1mknfz0-1"
@@ -1171,50 +1165,46 @@ var MainImage = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.wit
 var Section = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__Section",
   componentId: "sc-1mknfz0-3"
-})(["width:70%;max-width:1825px;margin:auto;background-color:#fff;text-align:justify;font-size:1.2rem;padding:6rem 0 6rem 0;display:flex;line-height:2rem;align-items:center;justify-content:center;box-sizing:border-box;position:relative;"]);
-var SectionHeadThing = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "blogpage__SectionHeadThing",
-  componentId: "sc-1mknfz0-4"
-})(["width:100%;height:110px;background:#fff;position:absolute;top:-50px;background:#fff;border-radius:30px;"]);
+})(["width:70%;max-width:1825px;margin:auto;background-color:#fff;text-align:justify;font-size:1.2rem;padding:1rem 0 6rem 0;display:flex;line-height:2rem;align-items:center;justify-content:center;box-sizing:border-box;position:relative;"]);
 var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__Wrapper",
-  componentId: "sc-1mknfz0-5"
-})(["width:100%;display:flex;"]);
+  componentId: "sc-1mknfz0-4"
+})(["width:100%;display:flex;padding:1.5rem 6rem 6rem 6rem;position:relative;justify-content:center;"]);
 var SectionContent = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__SectionContent",
-  componentId: "sc-1mknfz0-6"
+  componentId: "sc-1mknfz0-5"
 })([""]);
 var BlogTitle = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__BlogTitle",
-  componentId: "sc-1mknfz0-7"
-})(["color:#ff7e6d;font-size:48px;font-weight:800;letter-spacing:-1px;"]);
+  componentId: "sc-1mknfz0-6"
+})(["color:#ff7e6d;width:1rem;font-size:48px;font-weight:800;text-align:center;width:100%;"]);
 var Paragraph = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__Paragraph",
-  componentId: "sc-1mknfz0-8"
-})(["margin-top:24px;font-size:21px;letter-spacing:-1px;color:#62535c;"]);
+  componentId: "sc-1mknfz0-7"
+})(["margin-top:24px;font-size:21px;letter-spacing:-1px;"]);
 var Media = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__Media",
-  componentId: "sc-1mknfz0-9"
+  componentId: "sc-1mknfz0-8"
 })(["width:100%;height:auto;margin-top:25px;"]);
 var MediaImage = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.img.withConfig({
   displayName: "blogpage__MediaImage",
-  componentId: "sc-1mknfz0-10"
+  componentId: "sc-1mknfz0-9"
 })(["width:100%;object-fit:cover;"]);
 var Ending = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__Ending",
-  componentId: "sc-1mknfz0-11"
+  componentId: "sc-1mknfz0-10"
 })(["margin-top:24px;font-size:21px;letter-spacing:-1px;color:#62535c;"]);
 var SectionContentDate = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "blogpage__SectionContentDate",
-  componentId: "sc-1mknfz0-12"
-})(["padding-top:1rem;color:#c0b3b9;"]);
+  componentId: "sc-1mknfz0-11"
+})(["padding-top:1rem;color:#c0b3b9;position:absolute;top:4rem;left:-5rem;"]);
 var Ul = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.ul.withConfig({
   displayName: "blogpage__Ul",
-  componentId: "sc-1mknfz0-13"
+  componentId: "sc-1mknfz0-12"
 })(["list-style:none;font-size:0.9rem;display:flex;flex-wrap:wrap;width:210px;padding:0;"]);
 var Li = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.li.withConfig({
   displayName: "blogpage__Li",
-  componentId: "sc-1mknfz0-14"
+  componentId: "sc-1mknfz0-13"
 })(["flex:1 1 100%;display:flex;align-items:center;margin:0.4rem;position:relative;& > *{margin:0.2rem;}"]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject());
 

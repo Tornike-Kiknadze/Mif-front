@@ -11,7 +11,7 @@ import Strapi from 'strapi-sdk-javascript/build/main'
 const BackUrl = 'http://localhost:1337'
 const strapiApi = new Strapi(BackUrl)
 
-class BlogPage extends Component {
+class Blog extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -50,22 +50,21 @@ class BlogPage extends Component {
           {mainImage && <MainImage image={`${BackUrl}/${mainImage.url}`} />}
         </SectionHeader>
         <Section>
-          <SectionHeadThing />
+          <SectionContentDate>
+            <Ul>
+              <Li>
+                <SvgCalendar width={20} height={20} />
+                <p>{date}dasdasdasd</p>
+              </Li>
+              <Li>
+                <SvgCategory width={20} height={20} />
+                <p>Design</p>
+              </Li>
+            </Ul>
+          </SectionContentDate>
           <Wrapper>
-            <SectionContentDate>
-              <Ul>
-                <Li>
-                  <SvgCalendar width={20} height={20} />
-                  <p>{date}dasdasdasd</p>
-                </Li>
-                <Li>
-                  <SvgCategory width={20} height={20} />
-                  <p>Design</p>
-                </Li>
-              </Ul>
-            </SectionContentDate>
             <SectionContent>
-              <BlogTitle>{Title}</BlogTitle>
+              <BlogTitle>Title</BlogTitle>
               <Paragraph>{paragraph1}</Paragraph>
               {media1 && (
                 <Media>
@@ -78,7 +77,22 @@ class BlogPage extends Component {
                   <MediaImage src={`${BackUrl}/${media2.url}`} />
                 </Media>
               )}
-              <Paragraph>{paragraph3}</Paragraph>
+              <Paragraph>
+                {paragraph3} Elit dolor culpa officia sunt labore deserunt culpa
+                Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex
+                proident.. {paragraph3} Elit dolor culpa officia sunt labore
+                deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit
+                pariatur ea ex proident.. {paragraph3} Elit dolor culpa officia
+                sunt labore deserunt culpa Lorem enim dolore labore do Laboris
+                fugiat mollit pariatur ea ex proident.. {paragraph3} Elit dolor
+                culpa officia sunt labore deserunt culpa Lorem enim dolore
+                labore do Laboris fugiat mollit pariatur ea ex proident..{' '}
+                {paragraph3} Elit dolor culpa officia sunt labore deserunt culpa
+                Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex
+                proident.. {paragraph3} Elit dolor culpa officia sunt labore
+                deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit
+                pariatur ea ex proident..{' '}
+              </Paragraph>
               {media3 && (
                 <Media>
                   <MediaImage src={`${BackUrl}/${media3.url}`} />
@@ -94,11 +108,11 @@ class BlogPage extends Component {
   }
 }
 
-export default BlogPage
+export default Blog
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
 `
 
 const SectionHeader = styled.div`
@@ -129,7 +143,7 @@ const Section = styled.div`
   background-color: #fff;
   text-align: justify;
   font-size: 1.2rem;
-  padding: 6rem 0 6rem 0;
+  padding: 1rem 0 6rem 0;
   display: flex;
   line-height: 2rem;
   align-items: center;
@@ -138,35 +152,29 @@ const Section = styled.div`
   position: relative;
 `
 
-const SectionHeadThing = styled.div`
-  width: 100%;
-  height: 110px;
-  background: #fff;
-  position: absolute;
-  top: -50px;
-  background: #fff;
-  border-radius: 30px;
-`
-
 const Wrapper = styled.div`
   width: 100%;
   display: flex;
+  padding: 1.5rem 6rem 6rem 6rem;
+  position: relative;
+  justify-content: center;
 `
 
 const SectionContent = styled.div``
 
 const BlogTitle = styled.div`
   color: #ff7e6d;
+  width: 1rem;
   font-size: 48px;
   font-weight: 800;
-  letter-spacing: -1px;
+  text-align: center;
+  width: 100%;
 `
 
 const Paragraph = styled.div`
   margin-top: 24px;
   font-size: 21px;
   letter-spacing: -1px;
-  color: #62535c;
 `
 
 const Media = styled.div`
@@ -191,6 +199,9 @@ const Ending = styled.div`
 const SectionContentDate = styled.div`
   padding-top: 1rem;
   color: #c0b3b9;
+  position: absolute;
+  top: 4rem;
+  left: -5rem;
 `
 
 const Ul = styled.ul`
