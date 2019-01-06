@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
-import { Header, PostItem, Slider } from '../components'
+import { Header, PostItem, Slider, Footer } from '../components'
 import RightArrow from '../static/svg/RightArrow'
 import Strapi from 'strapi-sdk-javascript/build/main'
 import MainIcon from '../static/svg/mainIcon.svg'
+import Link from 'next/link'
+import ProjectItem from '../components/ProjectItem'
+
 const strapiApi = new Strapi('http://localhost:1337')
 
 class HomePage extends Component {
@@ -17,8 +20,7 @@ class HomePage extends Component {
 
   async componentDidMount() {
     try {
-      // const posts = await strapi.getEntries('Blogposts')
-      const news = await strapiApi.getEntries('News')
+      const news = await strapiApi.getEntries('News?_limit=9')
       const projects = await strapiApi.getEntries('Projects')
       this.setState({ news, projects })
     } catch (err) {
@@ -57,23 +59,37 @@ class HomePage extends Component {
                 {/* <NewsHeaderRight>
                   <Icon>
                     <RightArrow width={15} height={15} fill={'#27cba4'} />
-                  </Icon>
+                  </Icon>              {projects && projects.map(item => <ProjectItem data={item} />)}
+              {projects && projects.map(item => <ProjectItem data={item} />)}
+              {projects && projects.map(item => <ProjectItem data={item} />)}
+
                 </NewsHeaderRight> */}
               </NewsHeader>
-              <Posts>
-                {news.map(item => (
+              <NewsItems>
+                {news.map((item, index) => (
                   <PostItem data={item} />
                 ))}
-              </Posts>{' '}
-              <ProjectsSlider>
-                <ProjectsHeader>
-                  <ProjectsBG />
-                  <Span>Projects</Span>
-                </ProjectsHeader>
-                <Slider data={projects} />
-              </ProjectsSlider>
+                <ViewAllNews>
+                  <ViewAllNewsContent>
+                    <Link href={{ pathname: '/news' }}>All News</Link>
+                    <Icon>
+                      <RightArrow width={20} height={20} fill={'#27cba4'} />
+                    </Icon>
+                  </ViewAllNewsContent>
+                </ViewAllNews>
+              </NewsItems>
             </NewsCenter>
           </News>
+          <ProjectsSlider>
+            <ProjectsHeader>
+              <ProjectsBG />
+              <Span>Projects</Span>
+            </ProjectsHeader>
+            <Slider>
+              {projects && projects.map(item => <ProjectItem data={item} />)}
+            </Slider>
+          </ProjectsSlider>
+          <Footer />
         </MainContainer>
       </Container>
     )
@@ -167,11 +183,13 @@ const NewsHeader = styled.div`
 
 const ProjectsHeader = styled.div`
   width: 100%;
-  margin-top: 30px;
+  text-align: center;
+  margin: 60px 0 0px 0;
   color: #301d28;
-  font-size: 18px;
   font-weight: bold;
   position: relative;
+  color: #ff7e6d;
+  font-size: 2em;
 `
 
 const ProjectsBG = styled.div`
@@ -194,24 +212,57 @@ const NewsHeaderRight = styled.div`
   }
 `
 
+const NewsItems = styled.div`
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  @media (min-width: 30em) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 60em) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+`
+
+const ViewAllNews = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const ViewAllNewsContent = styled.div`
+  display: flex;
+  a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 800;
+    color: #543243;
+    transition: 0.2s;
+    &:hover {
+      color: #27cba4;
+    }
+  }
+`
+
 const Icon = styled.div`
-  margin-left: 8px;
+  display: flex;
+  align-items: center;
   transition: 0.3s;
-  ${NewsHeaderRight}:hover & {
+  margin-left: 5px;
+  ${ViewAllNewsContent}:hover & {
     transform: translateX(5px);
   }
 `
 
-const Posts = styled.div`
-  width: 100%;
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-`
-
 const ProjectsSlider = styled.div`
   width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
 `
 
 const NewsCenter = styled.div`
@@ -236,4 +287,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: Averta;
     src: url('../static/fonts/Averta.otf');
   }
+`
+
+const Space = styled.div`
+  margin: 0 5px;
 `

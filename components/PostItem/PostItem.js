@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
 import { media } from '../../globals/breakpoints'
@@ -9,56 +9,65 @@ const BackUrl = 'http://localhost:1337'
 const PostItem = ({ data }) => {
   const { id, Title, category, date, mainImage, content } = data
   return (
-    <Container>
-      <Top image={`${BackUrl}${mainImage.url}`} />
-      {/* <Date>
+    <Link href={{ pathname: '/blogpage', query: { id } }}>
+      <Container>
+        {mainImage && (
+          <Top image={`${BackUrl}${mainImage.url}`} className="top" />
+        )}
+        {/* <Date>
         <Time>{date}</Time>
-        <Dashes>
+        <Dashes>p
           <Dash />
         </Dashes>
       </Date> */}
-      <Bottom>
-        <PostTitle>{Title}</PostTitle>
-        <Content>{content}</Content>
-        <Footer>
-          {/* <Category>{category}</Category> */}
-          <Dash />
-          <Link href={{ pathname: '/blog', query: { id } }}>
+        <Bottom>
+          <BottomTop>
+            <PostTitle>{Title}</PostTitle>
+            <Content>{content}</Content>
+          </BottomTop>
+          <Footer>
+            {/* <Category>{category}</Category> */}
             <ContinueReading>
               <Text> Continue Reading</Text>
               <Icon>
                 <RightArrow width={15} height={15} fill={'#27cba4'} />
               </Icon>
             </ContinueReading>
-          </Link>
-        </Footer>
-      </Bottom>
-    </Container>
+          </Footer>
+        </Bottom>
+      </Container>
+    </Link>
   )
 }
 
 const Container = styled.div`
-  flex: 1 0 350px;
-  max-width: 388px;
-  height: auto;
-  margin: 10px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  position: relative;
   cursor: pointer;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  top: 0;
+  transition: all 0.1s ease-in;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* &:nth-child(1) {
+    grid-column: 1 / span 2;
+    .top {
+      padding-bottom: 40%;
+    }
+  } */
   &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
 `
 
 const Top = styled.div`
   width: 100%;
-  height: 200px;
+  padding-bottom: 60%;
   background-image: url(${props => props.image});
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 `
 
 const Date = styled.div`
@@ -83,21 +92,21 @@ const Dashes = styled.div`
 
 const Bottom = styled.div`
   width: 100%;
-  min-height: 200px;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   box-sizing: border-box;
   background: #ffffff;
 `
+const BottomTop = styled.div``
 
 const PostTitle = styled.div`
   width: 100%;
   color: #ff7e6d;
   font-weight: bold;
   font-size: 20px;
-  text-align: center;
 `
 
 const Content = styled.div`
@@ -105,7 +114,7 @@ const Content = styled.div`
   font-size: 14px;
   font-weight: bold;
   margin-top: 10px;
-  max-height: 8ch;
+  max-height: 15ch;
   overflow: hidden;
   text-align: justify;
 `
@@ -136,6 +145,9 @@ const ContinueReading = styled.div`
   &:hover {
     color: #27cba4;
   }
+  ${Container}:hover & {
+    color: #27cba4;
+  }
 `
 
 const Text = styled.p`
@@ -147,6 +159,9 @@ const Icon = styled.div`
   align-items: center;
   transition: 0.3s;
   ${ContinueReading}:hover & {
+    transform: translateX(5px);
+  }
+  ${Container}:hover & {
     transform: translateX(5px);
   }
 `
