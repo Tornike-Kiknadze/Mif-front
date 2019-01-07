@@ -4,7 +4,7 @@ import { Header, PostItem, Slider } from "../components";
 import RightArrow from "../static/svg/RightArrow";
 import Strapi from "strapi-sdk-javascript/build/main";
 import MainIcon from "../static/svg/mainIcon.svg";
-const strapiApi = new Strapi("http://localhost:1337");
+const strapiApi = new Strapi("http://192.168.0.106:1337");
 
 class HomePage extends Component {
   constructor(props) {

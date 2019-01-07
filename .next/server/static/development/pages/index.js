@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -583,7 +583,7 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SimpleSlider).call(this, props));
     _this.state = {
-      backUrl: 'http://localhost:1337'
+      backUrl: "http://localhost:1337"
     };
     return _this;
   }
@@ -639,7 +639,7 @@ function (_Component) {
             lineNumber: 36
           },
           __self: this
-        }, item.MainImage.url && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ItemImage, {
+        }, item.MainImage && item.MainImage.url && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ItemImage, {
           img: "".concat(backUrl, "/").concat(item.MainImage.url),
           __source: {
             fileName: _jsxFileName,
@@ -670,7 +670,7 @@ function (_Component) {
 var Override = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Slider__Override",
   componentId: "m8xi2w-0"
-})([".slick-slide:focus{outline:none;}.slick-slide{&:focus,a{outline:none;}.slick-prev,.slick-next{font-size:0;line-height:0;position:absolute;top:50%;display:block;width:20px;height:20px;padding:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);cursor:pointer;color:transparent;border:none;outline:none;background:transparent;}.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{color:transparent;outline:none;background:transparent;}.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before{opacity:1;}.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before{opacity:0.25;}.slick-prev:before,.slick-next:before{font-family:'slick';font-size:20px;line-height:1;opacity:0.75;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.slick-prev{left:-25px;}[dir='rtl'] .slick-prev{right:-25px;left:auto;}.slick-prev:before{content:'\u2190';}[dir='rtl'] .slick-prev:before{content:'\u2192';}.slick-next{right:-25px;}[dir='rtl'] .slick-next{right:auto;left:-25px;}.slick-next:before{content:'\u2192';}[dir='rtl'] .slick-next:before{content:'\u2190';}}.slick-slide,.slick-slide *{outline:none !important;}"]);
+})([".slick-slide:focus{outline:none;}.slick-slide{&:focus,a{outline:none;}.slick-prev,.slick-next{font-size:0;line-height:0;position:absolute;top:50%;display:block;width:20px;height:20px;padding:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);cursor:pointer;color:transparent;border:none;outline:none;background:transparent;}.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{color:transparent;outline:none;background:transparent;}.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before{opacity:1;}.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before{opacity:0.25;}.slick-prev:before,.slick-next:before{font-family:\"slick\";font-size:20px;line-height:1;opacity:0.75;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.slick-prev{left:-25px;}[dir=\"rtl\"] .slick-prev{right:-25px;left:auto;}.slick-prev:before{content:\"\u2190\";}[dir=\"rtl\"] .slick-prev:before{content:\"\u2192\";}.slick-next{right:-25px;}[dir=\"rtl\"] .slick-next{right:auto;left:-25px;}.slick-next:before{content:\"\u2192\";}[dir=\"rtl\"] .slick-next:before{content:\"\u2190\";}}.slick-slide,.slick-slide *{outline:none !important;}"]);
 var SliderItem = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Slider__SliderItem",
   componentId: "m8xi2w-1"
@@ -851,7 +851,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default.a("http://localhost:1337");
+var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default.a("http://192.168.0.106:1337");
 
 var HomePage =
 /*#__PURE__*/
@@ -1306,7 +1306,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyBpZD0iYjFmZjliYjItN2Y0Zi00NDE4
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

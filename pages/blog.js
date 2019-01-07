@@ -52,14 +52,14 @@ class Blog extends Component {
         <Section>
           <SectionContentDate>
             <Ul>
-              <Li>
+              <Date>
                 <SvgCalendar width={20} height={20} />
-                <p>{date}dasdasdasd</p>
-              </Li>
-              <Li>
+                <p>{date}01.02.2019 </p>
+              </Date>
+              <Date>
                 <SvgCategory width={20} height={20} />
                 <p>Design</p>
-              </Li>
+              </Date>
             </Ul>
           </SectionContentDate>
           <Wrapper>
@@ -114,7 +114,15 @@ const Container = styled.div`
   width: 100%;
   height: auto;
 `;
-
+const Date = styled.li`
+  width: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  & * {
+    margin: 0.5rem;
+  }
+`;
 const SectionHeader = styled.div`
   width: 100%;
   height: 90vh;
@@ -200,8 +208,9 @@ const SectionContentDate = styled.div`
   padding-top: 1rem;
   color: #c0b3b9;
   position: absolute;
-  top: 4rem;
+  top: 4.5rem;
   left: -5rem;
+  display: flex;
 `;
 
 const Ul = styled.ul`
