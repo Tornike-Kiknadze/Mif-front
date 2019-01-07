@@ -10599,12 +10599,12 @@ module.exports = __webpack_require__(/*! ./dist/lib/link */ "./node_modules/next
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_867dae24614556400265 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_4fa5fe59a0158b551b2e ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_867dae24614556400265 */ "dll-reference dll_867dae24614556400265"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_4fa5fe59a0158b551b2e */ "dll-reference dll_4fa5fe59a0158b551b2e"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -11247,12 +11247,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_867dae24614556400265 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_4fa5fe59a0158b551b2e ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_867dae24614556400265 */ "dll-reference dll_867dae24614556400265"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_4fa5fe59a0158b551b2e */ "dll-reference dll_4fa5fe59a0158b551b2e"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -11860,12 +11860,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_867dae24614556400265 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_4fa5fe59a0158b551b2e ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_867dae24614556400265 */ "dll-reference dll_867dae24614556400265"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_4fa5fe59a0158b551b2e */ "dll-reference dll_4fa5fe59a0158b551b2e"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -12865,12 +12865,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_867dae24614556400265 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_4fa5fe59a0158b551b2e ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_867dae24614556400265 */ "dll-reference dll_867dae24614556400265"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_4fa5fe59a0158b551b2e */ "dll-reference dll_4fa5fe59a0158b551b2e"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -15495,12 +15495,12 @@ var canUseDOM = exports.canUseDOM = function canUseDOM() {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_867dae24614556400265 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_4fa5fe59a0158b551b2e ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_867dae24614556400265 */ "dll-reference dll_867dae24614556400265"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_4fa5fe59a0158b551b2e */ "dll-reference dll_4fa5fe59a0158b551b2e"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -21281,13 +21281,7 @@ function (_Component) {
           lineNumber: 54
         },
         __self: this
-      }, "Latest News"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, "We Are Very Active Guys So We Need News, Read Them And Give us Your Money")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsItems, {
+      }, "Latest News")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsItems, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 68
@@ -21416,15 +21410,15 @@ var HeadContainerRight = styled_components__WEBPACK_IMPORTED_MODULE_2__["default
 var News = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__News",
   componentId: "sc-1wbo52z-5"
-})(["width:100%;background:#ffffff;padding:30px 0;background:#f5f5f5;"]);
+})(["width:100%;background:#ffffff;padding:80px 0 120px 0;background:#f7fbfb;"]);
 var NewsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__NewsHeader",
   componentId: "sc-1wbo52z-6"
-})(["width:100%;color:#543243;font-weight:800;font-size:18px;padding-left:10px;display:flex;align-items:center;flex-direction:column;h1{color:#ff7e6d;}span{margin-top:10px;}"]);
+})(["width:100%;margin-bottom:15px;color:#543243;font-weight:800;font-size:18px;padding-left:10px;display:flex;flex-direction:column;h1{color:#543243;font-size:18px;}span{margin-top:10px;}"]);
 var ProjectsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ProjectsHeader",
   componentId: "sc-1wbo52z-7"
-})(["width:100%;text-align:center;margin:60px 0 0px 0;color:#301d28;font-weight:bold;position:relative;color:#ff7e6d;font-size:2em;"]);
+})(["width:100%;display:flex;align-items:center;color:#301d28;font-weight:bold;position:relative;color:#ff7e6d;font-size:2em;"]);
 var ProjectsBG = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ProjectsBG",
   componentId: "sc-1wbo52z-8"
@@ -21432,7 +21426,7 @@ var ProjectsBG = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.w
 var Span = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__Span",
   componentId: "sc-1wbo52z-9"
-})([""]);
+})(["color:#543243;font-size:18px;"]);
 var NewsHeaderRight = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__NewsHeaderRight",
   componentId: "sc-1wbo52z-10"
@@ -21440,7 +21434,7 @@ var NewsHeaderRight = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].
 var NewsItems = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__NewsItems",
   componentId: "sc-1wbo52z-11"
-})(["width:100%;margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;grid-gap:20px;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(4,1fr);}"]);
+})(["width:100%;margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;grid-gap:20px;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(3,1fr);}"]);
 var ViewAllNews = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ViewAllNews",
   componentId: "sc-1wbo52z-12"
@@ -21456,7 +21450,7 @@ var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withCon
 var ProjectsSlider = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ProjectsSlider",
   componentId: "sc-1wbo52z-15"
-})(["width:100%;background:#fff;display:flex;flex-direction:column;"]);
+})(["width:1224px;margin:auto;background:#fff;display:flex;flex-direction:column;padding:80px 0 0 0;"]);
 var NewsCenter = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__NewsCenter",
   componentId: "sc-1wbo52z-16"
@@ -21680,14 +21674,14 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_867dae24614556400265":
+/***/ "dll-reference dll_4fa5fe59a0158b551b2e":
 /*!*******************************************!*\
-  !*** external "dll_867dae24614556400265" ***!
+  !*** external "dll_4fa5fe59a0158b551b2e" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_867dae24614556400265;
+module.exports = dll_4fa5fe59a0158b551b2e;
 
 /***/ })
 

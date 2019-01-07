@@ -52,10 +52,10 @@ class HomePage extends Component {
             <NewsCenter>
               <NewsHeader>
                 <h1>Latest News</h1>
-                <span>
+                {/* <span>
                   We Are Very Active Guys So We Need News, Read Them And Give us
                   Your Money
-                </span>
+                </span> */}
                 {/* <NewsHeaderRight>
                   <Icon>
                     <RightArrow width={15} height={15} fill={'#27cba4'} />
@@ -159,21 +159,23 @@ const HeadContainerRight = styled.div`
 const News = styled.div`
   width: 100%;
   background: #ffffff;
-  padding: 30px 0;
-  background: #f5f5f5;
+  padding: 80px 0 120px 0;
+  background: #f7fbfb;
 `
 
 const NewsHeader = styled.div`
   width: 100%;
+  margin-bottom: 15px;
   color: #543243;
   font-weight: 800;
   font-size: 18px;
   padding-left: 10px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   h1 {
-    color: #ff7e6d;
+    color: #543243;
+    font-size: 18px;
   }
   span {
     margin-top: 10px;
@@ -183,8 +185,8 @@ const NewsHeader = styled.div`
 
 const ProjectsHeader = styled.div`
   width: 100%;
-  text-align: center;
-  margin: 60px 0 0px 0;
+  display: flex;
+  align-items: center;
   color: #301d28;
   font-weight: bold;
   position: relative;
@@ -201,7 +203,10 @@ const ProjectsBG = styled.div`
   z-index: -1;
 `
 
-const Span = styled.div``
+const Span = styled.div`
+  color: #543243;
+  font-size: 18px;
+`
 
 const NewsHeaderRight = styled.div`
   display: flex;
@@ -214,7 +219,7 @@ const NewsHeaderRight = styled.div`
 
 const NewsItems = styled.div`
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -224,7 +229,7 @@ const NewsItems = styled.div`
   }
 
   @media (min-width: 60em) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 `
 
@@ -259,10 +264,12 @@ const Icon = styled.div`
 `
 
 const ProjectsSlider = styled.div`
-  width: 100%;
+  width: 1224px;
+  margin: auto;
   background: #fff;
   display: flex;
   flex-direction: column;
+  padding: 80px 0 0 0;
 `
 
 const NewsCenter = styled.div`
