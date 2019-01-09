@@ -46,18 +46,14 @@ const Container = styled.div`
   position: relative;
   cursor: pointer;
   top: 0;
-  transition: all 0.1s ease-in;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-  /* &:nth-child(1) {
-    grid-column: 1 / span 2;
-    .top {
-      padding-bottom: 40%;
-    }
-  } */
+  transition: all 0.3s ease-in;
+  box-shadow: 9px 10px 9px -10px #777;
+  border-radius: 4px;
+  overflow: hidden;
   &:hover {
     top: -2px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.16);
+    transform: translate(0, -8px);
   }
 `
 
@@ -99,6 +95,7 @@ const Bottom = styled.div`
   padding: 20px;
   box-sizing: border-box;
   background: #ffffff;
+  min-height: 350px;
 `
 const BottomTop = styled.div``
 
