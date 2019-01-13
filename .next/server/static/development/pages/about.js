@@ -232,7 +232,7 @@ function (_Component) {
       var _this2 = this;
 
       window.addEventListener('scroll', function (e) {
-        if (window.scrollY < _this2.state.lastScroll) {
+        if (window.scrollY <= _this2.state.lastScroll) {
           _this2.setState({
             isScroollingUp: true
           });
@@ -283,7 +283,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: "news",
+        href: "/news",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
@@ -296,7 +296,7 @@ function (_Component) {
         },
         __self: this
       }, "news")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: "projects",
+        href: "/projects",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42
@@ -309,7 +309,7 @@ function (_Component) {
         },
         __self: this
       }, "projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: "about",
+        href: "/about",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45
@@ -322,7 +322,7 @@ function (_Component) {
         },
         __self: this
       }, "about")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: "contact",
+        href: "/contact",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 48
@@ -344,7 +344,7 @@ function (_Component) {
 var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Header__HeaderContainer",
   componentId: "sc-1hc63ty-0"
-})(["width:100%;height:50px;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;position:fixed;top:", ";transition:0.4s;z-index:200;"], function (props) {
+})(["width:100%;height:50px;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;position:fixed;top:", ";transition:0.4s;z-index:9999;"], function (props) {
   return props.isUp ? "0" : "-100px";
 });
 var HeaderContainerCenter = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
@@ -359,14 +359,14 @@ var Menu = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.ul.withConfi
   displayName: "Header__Menu",
   componentId: "sc-1hc63ty-3"
 })(["display:flex;"]);
-var MenuItem = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.li.withConfig({
+var MenuItem = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.a.withConfig({
   displayName: "Header__MenuItem",
   componentId: "sc-1hc63ty-4"
-})(["list-style:none;color:#ff7e6d;margin-left:15px;font-size:18px;font-weight:800;cursor:pointer;"]);
+})(["color:#ff7e6d;margin-left:15px;font-size:18px;font-weight:800;cursor:pointer;&:hover{transform:scale(1.1);transition:0.1s;}"]);
 var StyledLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default()(next_link__WEBPACK_IMPORTED_MODULE_1___default.a).withConfig({
   displayName: "Header__StyledLink",
   componentId: "sc-1hc63ty-5"
-})(["cursor:pointer;text-decoration:none;"]);
+})(["display:block;cursor:pointer;text-decoration:none;"]);
 var LanguageSwitcher = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Header__LanguageSwitcher",
   componentId: "sc-1hc63ty-6"

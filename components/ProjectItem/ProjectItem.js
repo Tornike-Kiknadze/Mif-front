@@ -5,113 +5,103 @@ import styled from 'styled-components'
 import { media } from '../../globals/breakpoints'
 import Dash from '../../static/svg/Dash'
 import RightArrow from '../../static/svg/RightArrow'
-const BackUrl = 'http://localhost:1337'
+/* const BackUrl = "http://localhost:1337"; */
 
-const ProjectItem = ({ data }) => {
-  const { id, Title, category, date, mainImage, content } = data
+const ProjectItem = () => {
+  /*   const { id, Title, category, date, mainImage, content } = data; */
   return (
     <Container>
-      <Img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-      <Info>
-        <h1>Mountain</h1>
-        <p>
-          Lorem Ipsum is simply dummy text from the printing and typeseting
-          industry
-        </p>
-        <Link href={{ pathname: '/projectpage', query: { id } }}>
-          <InfoButton>Read More</InfoButton>
+      <ImgContainer>
+        <Link href="google.com">
+          <Img src="https://source.unsplash.com/random" />
         </Link>
-      </Info>
+      </ImgContainer>
+      <h2>
+        <SpanCategory>
+          <Link href="#">Projects</Link>
+        </SpanCategory>
+        <Span>
+          <Link href="#">
+            Designing the First All-in-One, Wearable Breast Pump
+          </Link>
+        </Span>
+      </h2>
     </Container>
   )
 }
 
 const Container = styled.div`
-  margin: 20px;
-  display: block;
-  width: 280px;
-  height: 360px;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-sizing: border-box;
-  background: white;
-  position: relative;
   display: flex;
-  align-items: flex-end;
-  transition: 0.4s ease-out;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0;
-  }
-  &:hover {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-
-  &:hover:before {
-    opacity: 1;
-  }
-
-  h1 {
-    margin: 0px;
-  }
-
-  p {
-    letter-spacing: 1px;
-    font-size: 15px;
-    margin-top: 8px;
-  }
-`
-
-const InfoButton = styled.button`
-  margin-top: 10px;
-  padding: 0.6rem;
-  outline: none;
-  border: none;
-  border-radius: 3px;
+  overflow: hidden;
+  flex: 1 0 280px;
+  max-width: 369px;
+  height: 360px;
+  margin: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
   background: white;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.4s ease;
-  &:hover {
-    background: #27cba4;
-    color: white;
+  border-bottom: 8px solid #dedede;
+  text-align: justify;
+  transition: 0.4s ease-out;
+  /* box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); */
+
+  a {
+    background-image: linear-gradient(to bottom, transparent 90%, #000 25%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-decoration: none;
+    color: #464242;
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: background-size 0.4s ease;
+    &:hover,
+    &:focus {
+      background-size: 100% 100%;
+      cursor: pointer;
+    }
   }
 `
 
-const Info = styled.div`
-  position: relative;
-  z-index: 3;
-  color: white;
-  opacity: 0;
-  -webkit-transform: translateY(30px);
-  transform: translateY(30px);
-  transition: 0.5s;
-  ${Container}:hover & {
-    opacity: 1;
-    transform: translateY(0px);
+const Text = styled.div`
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: tan;
+`
+const Span = styled.div`
+  padding: 1rem;
+`
+const SpanCategory = styled.div`
+  padding-left: 1rem;
+
+  a {
+    font-size: 1rem;
+    color: #ff988a;
   }
+`
+
+const ImgContainer = styled.div`
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  border-bottom: 0.5rem solid #ff988a;
+  align-self: flex-start;
 `
 
 const Img = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 15px;
+  transition: transform 200ms ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
 `
+
 export default ProjectItem
