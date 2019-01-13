@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { Header, PostItem, Slider, Footer } from "../components";
@@ -6,6 +7,17 @@ import Strapi from "strapi-sdk-javascript/build/main";
 import MainIcon from "../static/svg/mainIcon.svg";
 import Link from "next/link";
 import ProjectItem from "../components/ProjectItem";
+=======
+import React, { Component } from 'react'
+import styled, { createGlobalStyle } from 'styled-components'
+import { Header, PostItem, Slider, Footer } from '../components'
+import RightArrow from '../static/svg/RightArrow'
+import Strapi from 'strapi-sdk-javascript/build/main'
+import MainIcon from '../static/svg/mainIcon.svg'
+import Link from 'next/link'
+import ProjectItem from '../components/ProjectItem'
+import Right from '../static/svg/Right'
+>>>>>>> 8ea07c6f6ea4b8866332f930e86c2d4291076a4b
 
 const strapiApi = new Strapi("http://192.168.0.106:1337");
 
@@ -51,19 +63,12 @@ class HomePage extends Component {
           <News>
             <NewsCenter>
               <NewsHeader>
-                <h1>Latest News</h1>
-                {/* <span>
-                  We Are Very Active Guys So We Need News, Read Them And Give us
-                  Your Money
-                </span> */}
-                {/* <NewsHeaderRight>
-                  <Icon>
-                    <RightArrow width={15} height={15} fill={'#27cba4'} />
-                  </Icon>              {projects && projects.map(item => <ProjectItem data={item} />)}
-              {projects && projects.map(item => <ProjectItem data={item} />)}
-              {projects && projects.map(item => <ProjectItem data={item} />)}
-
-                </NewsHeaderRight> */}
+                <NewsTitleLeft>
+                  <h1>In The News</h1>
+                </NewsTitleLeft>
+                <NewsTitleRight>
+                  <Right width={15} height={15} />
+                </NewsTitleRight>
               </NewsHeader>
               <NewsItems>
                 {news.map((item, index) => (
@@ -165,23 +170,58 @@ const News = styled.div`
 
 const NewsHeader = styled.div`
   width: 100%;
-  margin-bottom: 15px;
-  color: #543243;
+  height: 50px;
+  display: flex;
+  margin-bottom: 55px;
   font-weight: 800;
   font-size: 18px;
   padding-left: 10px;
-  display: flex;
-  /* align-items: center; */
-  flex-direction: column;
+  color: #fff;
+  background: #ff7e6d;
+  transition: 0.2s;
+  box-shadow: 0 10px 12px -9px #777;
+  cursor: pointer;
   h1 {
-    color: #543243;
     font-size: 18px;
   }
   span {
     margin-top: 10px;
     /* color:#ff7e6d */
   }
+<<<<<<< HEAD
 `;
+=======
+  &:hover {
+    background: #543243;
+  }
+`
+
+const NewsTitleLeft = styled.div`
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const NewsTitleRight = styled.div`
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #543243;
+  transition: 0.1s;
+  svg {
+    fill: #fff;
+  }
+  ${NewsHeader}:hover & {
+    background: #27cba4;
+    transform: scale(1.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.16);
+  }
+`
+>>>>>>> 8ea07c6f6ea4b8866332f930e86c2d4291076a4b
 
 const ProjectsHeader = styled.div`
   width: 100%;
@@ -223,7 +263,7 @@ const NewsItems = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 35px;
   @media (min-width: 30em) {
     grid-template-columns: 1fr 1fr;
   }

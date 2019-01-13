@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blogpage.js"],{
 
 /***/ "./components/Footer/Footer.js":
 /*!*************************************!*\
@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Footer\\Footer.js";
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Footer/Footer.js";
 
 
 
@@ -88,7 +88,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Header\\Header.js";
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Header/Header.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -288,26 +288,10 @@ var SubMenuItem = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.
 
 /***/ }),
 
-/***/ "./components/Header/index.js":
-/*!************************************!*\
-  !*** ./components/Header/index.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./components/Header/Header.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Header__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
-
-/***/ "./components/PostItem/PostItem.js":
-/*!*****************************************!*\
-  !*** ./components/PostItem/PostItem.js ***!
-  \*****************************************/
+/***/ "./components/Responsive/Assets/AboutSvg.js":
+/*!**************************************************!*\
+  !*** ./components/Responsive/Assets/AboutSvg.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -315,449 +299,314 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
-/* harmony import */ var _static_svg_Dash__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../static/svg/Dash */ "./static/svg/Dash.js");
-/* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/RightArrow */ "./static/svg/RightArrow.js");
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\PostItem\\PostItem.js";
-
-
-
-
-
-
-var BackUrl = 'http://localhost:1337';
-
-var PostItem = function PostItem(_ref) {
-  var data = _ref.data;
-  var id = data.id,
-      Title = data.Title,
-      category = data.category,
-      date = data.date,
-      mainImage = data.mainImage,
-      content = data.content;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: {
-      pathname: '/blogpage',
-      query: {
-        id: id
-      }
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, mainImage && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Top, {
-    image: "".concat(BackUrl).concat(mainImage.url),
-    className: "top",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bottom, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BottomTop, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostTitle, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, Title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, content)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Footer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContinueReading, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Text, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, " Continue Reading"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    width: 15,
-    height: 15,
-    fill: '#27cba4',
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  })))))));
-};
-
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Container",
-  componentId: "t83s2k-0"
-})(["display:flex;flex-direction:column;position:relative;cursor:pointer;top:0;transition:all 0.3s ease-in;box-shadow:9px 10px 9px -10px #777;border-radius:4px;overflow:hidden;&:hover{top:-2px;box-shadow:0 25px 25px rgba(0,0,0,0.16);transform:translate(0,-8px);}"]);
-var Top = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Top",
-  componentId: "t83s2k-1"
-})(["width:100%;padding-bottom:60%;background-image:url(", ");background-size:cover;background-repeat:no-repeat;background-position:center center;"], function (props) {
-  return props.image;
-});
-var Date = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Date",
-  componentId: "t83s2k-2"
-})(["width:100%;height:20px;display:flex;align-items:center;margin-top:30px;"]);
-var Time = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Time",
-  componentId: "t83s2k-3"
-})(["color:#543243;font-weight:800;"]);
-var Dashes = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Dashes",
-  componentId: "t83s2k-4"
-})(["display:flex;align-items:center;justify-content:space-between;overflow:hidden;"]);
-var Bottom = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Bottom",
-  componentId: "t83s2k-5"
-})(["width:100%;display:flex;flex:1;flex-direction:column;justify-content:space-between;padding:20px;box-sizing:border-box;background:#ffffff;min-height:350px;"]);
-var BottomTop = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__BottomTop",
-  componentId: "t83s2k-6"
-})([""]);
-var PostTitle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__PostTitle",
-  componentId: "t83s2k-7"
-})(["width:100%;color:#ff7e6d;font-weight:bold;font-size:20px;"]);
-var Content = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Content",
-  componentId: "t83s2k-8"
-})(["color:#7f6371;font-size:14px;font-weight:bold;margin-top:10px;max-height:15ch;overflow:hidden;text-align:justify;"]);
-var Footer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Footer",
-  componentId: "t83s2k-9"
-})(["width:100%;margin-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:14px;"]);
-var Category = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Category",
-  componentId: "t83s2k-10"
-})(["color:#543243;cursor:pointer;transition:0.2s;&:hover{color:#27cba4;}"]);
-var ContinueReading = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__ContinueReading",
-  componentId: "t83s2k-11"
-})(["color:#543243;cursor:pointer;transition:0.3s;display:flex;&:hover{color:#27cba4;}", ":hover &{color:#27cba4;}"], Container);
-var Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
-  displayName: "PostItem__Text",
-  componentId: "t83s2k-12"
-})(["margin-right:5px;"]);
-var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "PostItem__Icon",
-  componentId: "t83s2k-13"
-})(["display:flex;align-items:center;transition:0.3s;", ":hover &{transform:translateX(5px);}", ":hover &{transform:translateX(5px);}"], ContinueReading, Container);
-/* harmony default export */ __webpack_exports__["default"] = (PostItem);
-
-/***/ }),
-
-/***/ "./components/PostItem/index.js":
-/*!**************************************!*\
-  !*** ./components/PostItem/index.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _PostItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PostItem */ "./components/PostItem/PostItem.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _PostItem__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
-
-/***/ "./components/ProjectItem/ProjectItem.js":
-/*!***********************************************!*\
-  !*** ./components/ProjectItem/ProjectItem.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
-/* harmony import */ var _static_svg_Dash__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../static/svg/Dash */ "./static/svg/Dash.js");
-/* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/RightArrow */ "./static/svg/RightArrow.js");
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\ProjectItem\\ProjectItem.js";
-
-
-
-
-
-
-/* const BackUrl = "http://localhost:1337"; */
-
-var ProjectItem = function ProjectItem() {
-  /*   const { id, Title, category, date, mainImage, content } = data; */
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
-    src: "https://source.unsplash.com/random",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SpanCategory, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "News")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "Designing the First All-in-One, Wearable Breast Pump"))));
-};
-
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ProjectItem__Container",
-  componentId: "sc-14mpx99-0"
-})(["display:flex;overflow:hidden;width:280px;height:360px;margin:20px;box-sizing:border-box;flex-direction:column;background:white;border-bottom:8px solid black;text-align:justify;transition:0.4s ease-out;box-shadow:0px 7px 10px rgba(0,0,0,0.5);a{background-image:linear-gradient(to bottom,transparent 90%,#000 25%);background-size:0% 100%;background-repeat:no-repeat;text-decoration:none;text-decoration:none;color:#000;position:relative;text-align:center;font-size:1.5rem;transition:background-size 0.4s ease;&:hover,&:focus{background-size:100% 100%;cursor:pointer;}}"]);
-var Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ProjectItem__Text",
-  componentId: "sc-14mpx99-1"
-})(["width:100%;height:50%;justify-content:center;padding:1rem;box-sizing:border-box;background-color:tan;"]);
-var Span = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ProjectItem__Span",
-  componentId: "sc-14mpx99-2"
-})(["padding:1rem;"]);
-var SpanCategory = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ProjectItem__SpanCategory",
-  componentId: "sc-14mpx99-3"
-})(["padding-left:1rem;a{font-size:1rem;color:#ff988a;}"]);
-var Img = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
-  displayName: "ProjectItem__Img",
-  componentId: "sc-14mpx99-4"
-})(["width:100%;height:50%;object-fit:cover;border-bottom:0.5rem solid #ff988a;align-self:flex-start;"]);
-/* harmony default export */ __webpack_exports__["default"] = (ProjectItem);
-
-/***/ }),
-
-/***/ "./components/ProjectItem/index.js":
-/*!*****************************************!*\
-  !*** ./components/ProjectItem/index.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ProjectItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProjectItem */ "./components/ProjectItem/ProjectItem.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _ProjectItem__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
-
-/***/ "./components/Slider/Slider.js":
-/*!*************************************!*\
-  !*** ./components/Slider/Slider.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
-/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
-/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _static_svg_Right__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/Right */ "./static/svg/Right.js");
-/* harmony import */ var _static_svg_Left__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../static/svg/Left */ "./static/svg/Left.js");
-/* harmony import */ var _ProjectItem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ProjectItem */ "./components/ProjectItem/index.js");
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Slider\\Slider.js";
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/AboutSvg.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
 
-
-
-
-
-
-
-var Img = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
-  displayName: "Slider__Img",
-  componentId: "m8xi2w-0"
-})(["display:block;cursor:pointer;z-index:1;height:30px;position:absolute;margin-top:20px;", ";"], function (p) {
-  return p.right && "right: ".concat(p.right, "px");
-});
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "Slider__Container",
-  componentId: "m8xi2w-1"
-})(["min-height:600px;.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent;}.slick-list{margin:auto;margin-top:64.2px;display:flex;overflow:hidden;padding:0;}.slick-list:focus{outline:none;}.slick-list.dragging{cursor:pointer;cursor:hand;}.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}.slick-track{position:relative;top:0;left:0;display:flex;margin-left:auto;margin-right:auto;max-height:950px !important;}.slick-track:before,.slick-track:after{display:table;content:\"\";}.slick-track:after{clear:both;}.slick-loading .slick-track{visibility:hidden;}.slick-slide{display:none;float:left;height:100%;min-height:1px;}[dir=\"rtl\"] .slick-slide{float:right;}.slick-slide img{display:block;}.slick-slide.slick-loading img{display:none;}.slick-slide.dragging img{pointer-events:none;}.slick-initialized .slick-slide{display:block;}.slick-loading .slick-slide{visibility:hidden;}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent;}.slick-arrow.slick-hidden{display:none;}.slick-prev,.slick-next{font-size:0;line-height:0;position:absolute;top:0%;width:20px;height:20px;padding:0;cursor:pointer;color:transparent;border:none;outline:none;background:transparent;}.slick-next{left:100%;}.slick-prev{position:absolute;left:97% !important;}.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{color:transparent;outline:none;background:transparent;}.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before{opacity:1;}.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before{opacity:0.25;}.slick-prev:before,.slick-next:before{font-family:\"slick\";font-size:20px;line-height:1;opacity:0.75;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.slick-prev{left:-25px;}[dir=\"rtl\"] .slick-prev{right:-25px;left:auto;}.slick-prev:before{content:\"\u2190\";}[dir=\"rtl\"] .slick-prev:before{content:\"\u2192\";}.slick-next{right:-25px;}[dir=\"rtl\"] .slick-next{right:auto;left:-25px;}.slick-next:before{content:\"\u2192\";}[dir=\"rtl\"] .slick-next:before{content:\"\u2190\";}.slick-dotted.slick-slider{margin-bottom:30px;}.slick-dots{position:absolute;bottom:-25px;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center;}.slick-dots li{position:relative;display:inline-block;width:20px;height:20px;margin:0 5px;padding:0;cursor:pointer;}.slick-dots li button{font-size:0;line-height:0;display:block;width:20px;height:20px;padding:5px;cursor:pointer;color:transparent;border:0;outline:none;background:transparent;}.slick-dots li button:hover,.slick-dots li button:focus{outline:none;}.slick-dots li button:hover:before,.slick-dots li button:focus:before{opacity:1;}.slick-dots li button:before{font-family:\"slick\";font-size:6px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:\"\u2022\";text-align:center;opacity:0.25;color:black;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.slick-dots li.slick-active button:before{opacity:0.75;color:black;}"]);
-var Override = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "Slider__Override",
-  componentId: "m8xi2w-2"
-})([".slick-slider{display:flex;justify-content:space-between;align-items:flex-start;margin:auto;max-width:1200px;@media screen and (max-width:1154px){width:1000px;}@media screen and (max-width:1050px){width:700px;}@media screen and (max-width:751px){width:400px;}@media screen and (max-width:500px){width:350px;}}.slick-slide{display:flex !important;@media screen and (max-width:1154px){justify-content:center;}}.slick-initialized .slick-slide{max-width:1200px !important;}.slick-current ~ .slick-slide{justify-content:center;}.slick-current ~ .slick-slide ~ .slick-slide{justify-content:flex-end;}.slick-current{justify-content:flex-start !important;}"]);
-
-var SliderComponent = function SliderComponent(_ref) {
-  var children = _ref.children,
-      settings = _ref.settings;
-  var innerSettings = {
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    rows: 1,
-    centerMode: true,
-    slidesPerRow: 1,
-    centerPadding: "100px",
-    nextArrow: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_Right__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 349
-      },
-      __self: this
-    }),
-    prevArrow: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_Left__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 350
-      },
-      __self: this
-    })
-  };
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+var SvgAbout = function SvgAbout(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    viewBox: "0 0 482.9 482.9"
+  }, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 354
+      lineNumber: 4
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Override, {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M239.7 260.2h3.2c29.3-.5 53-10.8 70.5-30.5 38.5-43.4 32.1-117.8 31.4-124.9-2.5-53.3-27.7-78.8-48.5-90.7C280.8 5.2 262.7.4 242.5 0H240.8c-11.1 0-32.9 1.8-53.8 13.7-21 11.9-46.6 37.4-49.1 91.1-.7 7.1-7.1 81.5 31.4 124.9 17.4 19.7 41.1 30 70.4 30.5zm-75.1-152.9c0-.3.1-.6.1-.8 3.3-71.7 54.2-79.4 76-79.4H241.9c27 .6 72.9 11.6 76 79.4 0 .3 0 .6.1.8.1.7 7.1 68.7-24.7 104.5-12.6 14.2-29.4 21.2-51.5 21.4h-1c-22-.2-38.9-7.2-51.4-21.4-31.7-35.6-24.9-103.9-24.8-104.5z",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 355
+      lineNumber: 5
     },
     __self: this
-  }, innerSettings && children && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_1___default.a, _extends({}, innerSettings, {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M446.8 383.6v-.3c0-.8-.1-1.6-.1-2.5-.6-19.8-1.9-66.1-45.3-80.9-.3-.1-.7-.2-1-.3-45.1-11.5-82.6-37.5-83-37.8-6.1-4.3-14.5-2.8-18.8 3.3-4.3 6.1-2.8 14.5 3.3 18.8 1.7 1.2 41.5 28.9 91.3 41.7 23.3 8.3 25.9 33.2 26.6 56 0 .9 0 1.7.1 2.5.1 9-.5 22.9-2.1 30.9-16.2 9.2-79.7 41-176.3 41-96.2 0-160.1-31.9-176.4-41.1-1.6-8-2.3-21.9-2.1-30.9 0-.8.1-1.6.1-2.5.7-22.8 3.3-47.7 26.6-56 49.8-12.8 89.6-40.6 91.3-41.7 6.1-4.3 7.6-12.7 3.3-18.8-4.3-6.1-12.7-7.6-18.8-3.3-.4.3-37.7 26.3-83 37.8-.4.1-.7.2-1 .3-43.4 14.9-44.7 61.2-45.3 80.9 0 .9 0 1.7-.1 2.5v.3c-.1 5.2-.2 31.9 5.1 45.3 1 2.6 2.8 4.8 5.2 6.3 3 2 74.9 47.8 195.2 47.8s192.2-45.9 195.2-47.8c2.3-1.5 4.2-3.7 5.2-6.3 5-13.3 4.9-40 4.8-45.2z",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 357
+      lineNumber: 6
     },
     __self: this
-  }), children)));
+  }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (SliderComponent);
+/* harmony default export */ __webpack_exports__["default"] = (SvgAbout);
 
 /***/ }),
 
-/***/ "./components/Slider/index.js":
-/*!************************************!*\
-  !*** ./components/Slider/index.js ***!
-  \************************************/
+/***/ "./components/Responsive/Assets/BlogSvg.js":
+/*!*************************************************!*\
+  !*** ./components/Responsive/Assets/BlogSvg.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Slider */ "./components/Slider/Slider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Slider__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/BlogSvg.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
+
+var SvgBlog = function SvgBlog(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    height: "511pt",
+    viewBox: "0 0 511 512",
+    width: "511pt"
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M444.465 4.395c-5.856-5.86-15.356-5.86-21.211 0L307.648 120H45.5c-24.812 0-45 20.188-45 45v209.996c0 24.816 20.188 45 45 45h16v77a15 15 0 0 0 25.723 10.492l85.586-87.492H347.5c24.813 0 45-20.184 45-45V204.852L508.105 89.246c5.856-5.86 5.856-15.355 0-21.215zM306.578 248.344l-42.426-42.426L391.434 78.641l42.425 42.425zm-58.406-15.98l31.96 31.96-54.78 22.82zM362.5 374.995c0 8.274-6.73 15-15 15h-181a15.006 15.006 0 0 0-10.723 4.512L91.5 460.215v-55.219c0-8.281-6.715-15-15-15h-31c-8.27 0-15-6.726-15-15V165c0-8.273 6.73-15 15-15h232.145l-45.313 45.312a15.329 15.329 0 0 0-3.312 5.012L187.5 300h-81c-8.285 0-15 6.715-15 15 0 8.281 6.715 14.988 15 14.988h91.004c1.93 0 4-.394 5.894-1.207l108.774-45.304c1.812-.707 3.64-1.938 5.015-3.313l45.313-45.312zm92.57-275.144l-42.425-42.426 21.214-21.211 42.426 42.426zm0 0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgBlog);
 
 /***/ }),
 
-/***/ "./components/index.js":
-/*!*****************************!*\
-  !*** ./components/index.js ***!
-  \*****************************/
-/*! exports provided: Header, PostItem, Slider, Footer */
+/***/ "./components/Responsive/Assets/ContactSvg.js":
+/*!****************************************************!*\
+  !*** ./components/Responsive/Assets/ContactSvg.js ***!
+  \****************************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./components/Header/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return _Header__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/ContactSvg.js";
 
-/* harmony import */ var _PostItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PostItem */ "./components/PostItem/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PostItem", function() { return _PostItem__WEBPACK_IMPORTED_MODULE_1__["default"]; });
-
-/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Slider */ "./components/Slider/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Slider", function() { return _Slider__WEBPACK_IMPORTED_MODULE_2__["default"]; });
-
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./components/Footer/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _Footer__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
 
+var SvgContact = function SvgContact(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    viewBox: "0 0 44 44"
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M43 6H1a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h42a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-1 27.581L29.612 21.194l-1.414 1.414L41.59 36H2.41l13.392-13.392-1.414-1.414L2 33.581V8h40v25.581z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M39.979 8L22 25.979 4.021 8H2v.807L21.293 28.1a.999.999 0 0 0 1.414 0L42 8.807V8h-2.021z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgContact);
+
+/***/ }),
+
+/***/ "./components/Responsive/Assets/HomeSvg.js":
+/*!*************************************************!*\
+  !*** ./components/Responsive/Assets/HomeSvg.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/HomeSvg.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
+
+var SvgHome = function SvgHome(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    viewBox: "0 0 1000 1000"
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M979.8 527.7L525.4 73.3c-3.6-3.6-7.8-6.3-12.3-8-12.7-5.2-27.8-2.7-38 7.6L20.2 527.7c-13.7 13.7-13.7 35.8 0 49.5s35.8 13.7 49.5 0L500 146.8l430.3 430.3c13.7 13.7 35.8 13.7 49.5 0 13.6-13.6 13.6-35.8 0-49.4z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M782.7 542.2c-19.3 0-35 15.7-35 35v290.2H252V577.2c0-19.3-15.7-35-35-35s-35 15.7-35 35v325.2c0 18.7 14.7 34 33.2 34.9h567.5c.7 0 1.4 0 2.1-.1 1.7-.1 3.4-.3 5-.6 5.4-1.1 10.4-3.5 14.6-6.8 1.1-.9 2.1-1.8 3.1-2.7.1-.1.2-.2.3-.4 1.1-1.1 2-2.2 3-3.4 1.7-2.2 3.1-4.7 4.2-7.3.1-.2.2-.4.2-.6.1-.4.3-.7.4-1.1.3-.8.5-1.6.8-2.4.2-.6.3-1.2.5-1.8.1-.3.2-.7.2-1.1.4-2.1.6-4.3.6-6.6V577.2c0-19.3-15.7-35-35-35z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgHome);
+
+/***/ }),
+
+/***/ "./components/Responsive/Footer.js":
+/*!*****************************************!*\
+  !*** ./components/Responsive/Footer.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Assets_HomeSvg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Assets/HomeSvg */ "./components/Responsive/Assets/HomeSvg.js");
+/* harmony import */ var _Assets_BlogSvg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Assets/BlogSvg */ "./components/Responsive/Assets/BlogSvg.js");
+/* harmony import */ var _Assets_AboutSvg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Assets/AboutSvg */ "./components/Responsive/Assets/AboutSvg.js");
+/* harmony import */ var _Assets_ContactSvg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Assets/ContactSvg */ "./components/Responsive/Assets/ContactSvg.js");
+var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Footer.js";
+
+
+
+
+
+
+
+
+var Responsive = function Responsive() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContainerText, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_HomeSvg__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    width: 40,
+    height: 40,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_AboutSvg__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    width: 40,
+    height: 40,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "about")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_BlogSvg__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    width: 40,
+    height: 40,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SvgItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Assets_ContactSvg__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    width: 40,
+    height: 40,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "contact"))));
+};
+
+var ContainerText = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Footer__ContainerText",
+  componentId: "sc-1u71pxo-0"
+})(["display:flex;justify-content:space-around;"]);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Footer__Container",
+  componentId: "sc-1u71pxo-1"
+})(["width:100%;height:auto;align-items:bottom;justify-content:space-between;padding:3rem 8rem 3rem 6rem;box-sizing:border-box;background-color:white;"]);
+var SvgItem = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Footer__SvgItem",
+  componentId: "sc-1u71pxo-2"
+})(["text-align:center;"]);
+/* harmony default export */ __webpack_exports__["default"] = (Responsive);
 
 /***/ }),
 
@@ -3262,68 +3111,6 @@ module.exports = {
   extend: extend,
   trim: trim
 };
-
-
-/***/ }),
-
-/***/ "./node_modules/classnames/index.js":
-/*!******************************************!*\
-  !*** ./node_modules/classnames/index.js ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames () {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg) && arg.length) {
-				var inner = classNames.apply(null, arg);
-				if (inner) {
-					classes.push(inner);
-				}
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if (typeof module !== 'undefined' && module.exports) {
-		classNames.default = classNames;
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-			return classNames;
-		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-}());
 
 
 /***/ }),
@@ -6982,359 +6769,6 @@ module.exports = defineProperties;
 
 /***/ }),
 
-/***/ "./node_modules/enquire.js/src/MediaQuery.js":
-/*!***************************************************!*\
-  !*** ./node_modules/enquire.js/src/MediaQuery.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var QueryHandler = __webpack_require__(/*! ./QueryHandler */ "./node_modules/enquire.js/src/QueryHandler.js");
-var each = __webpack_require__(/*! ./Util */ "./node_modules/enquire.js/src/Util.js").each;
-
-/**
- * Represents a single media query, manages it's state and registered handlers for this query
- *
- * @constructor
- * @param {string} query the media query string
- * @param {boolean} [isUnconditional=false] whether the media query should run regardless of whether the conditions are met. Primarily for helping older browsers deal with mobile-first design
- */
-function MediaQuery(query, isUnconditional) {
-    this.query = query;
-    this.isUnconditional = isUnconditional;
-    this.handlers = [];
-    this.mql = window.matchMedia(query);
-
-    var self = this;
-    this.listener = function(mql) {
-        // Chrome passes an MediaQueryListEvent object, while other browsers pass MediaQueryList directly
-        self.mql = mql.currentTarget || mql;
-        self.assess();
-    };
-    this.mql.addListener(this.listener);
-}
-
-MediaQuery.prototype = {
-
-    constuctor : MediaQuery,
-
-    /**
-     * add a handler for this query, triggering if already active
-     *
-     * @param {object} handler
-     * @param {function} handler.match callback for when query is activated
-     * @param {function} [handler.unmatch] callback for when query is deactivated
-     * @param {function} [handler.setup] callback for immediate execution when a query handler is registered
-     * @param {boolean} [handler.deferSetup=false] should the setup callback be deferred until the first time the handler is matched?
-     */
-    addHandler : function(handler) {
-        var qh = new QueryHandler(handler);
-        this.handlers.push(qh);
-
-        this.matches() && qh.on();
-    },
-
-    /**
-     * removes the given handler from the collection, and calls it's destroy methods
-     *
-     * @param {object || function} handler the handler to remove
-     */
-    removeHandler : function(handler) {
-        var handlers = this.handlers;
-        each(handlers, function(h, i) {
-            if(h.equals(handler)) {
-                h.destroy();
-                return !handlers.splice(i,1); //remove from array and exit each early
-            }
-        });
-    },
-
-    /**
-     * Determine whether the media query should be considered a match
-     *
-     * @return {Boolean} true if media query can be considered a match, false otherwise
-     */
-    matches : function() {
-        return this.mql.matches || this.isUnconditional;
-    },
-
-    /**
-     * Clears all handlers and unbinds events
-     */
-    clear : function() {
-        each(this.handlers, function(handler) {
-            handler.destroy();
-        });
-        this.mql.removeListener(this.listener);
-        this.handlers.length = 0; //clear array
-    },
-
-    /*
-        * Assesses the query, turning on all handlers if it matches, turning them off if it doesn't match
-        */
-    assess : function() {
-        var action = this.matches() ? 'on' : 'off';
-
-        each(this.handlers, function(handler) {
-            handler[action]();
-        });
-    }
-};
-
-module.exports = MediaQuery;
-
-
-/***/ }),
-
-/***/ "./node_modules/enquire.js/src/MediaQueryDispatch.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/enquire.js/src/MediaQueryDispatch.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var MediaQuery = __webpack_require__(/*! ./MediaQuery */ "./node_modules/enquire.js/src/MediaQuery.js");
-var Util = __webpack_require__(/*! ./Util */ "./node_modules/enquire.js/src/Util.js");
-var each = Util.each;
-var isFunction = Util.isFunction;
-var isArray = Util.isArray;
-
-/**
- * Allows for registration of query handlers.
- * Manages the query handler's state and is responsible for wiring up browser events
- *
- * @constructor
- */
-function MediaQueryDispatch () {
-    if(!window.matchMedia) {
-        throw new Error('matchMedia not present, legacy browsers require a polyfill');
-    }
-
-    this.queries = {};
-    this.browserIsIncapable = !window.matchMedia('only all').matches;
-}
-
-MediaQueryDispatch.prototype = {
-
-    constructor : MediaQueryDispatch,
-
-    /**
-     * Registers a handler for the given media query
-     *
-     * @param {string} q the media query
-     * @param {object || Array || Function} options either a single query handler object, a function, or an array of query handlers
-     * @param {function} options.match fired when query matched
-     * @param {function} [options.unmatch] fired when a query is no longer matched
-     * @param {function} [options.setup] fired when handler first triggered
-     * @param {boolean} [options.deferSetup=false] whether setup should be run immediately or deferred until query is first matched
-     * @param {boolean} [shouldDegrade=false] whether this particular media query should always run on incapable browsers
-     */
-    register : function(q, options, shouldDegrade) {
-        var queries         = this.queries,
-            isUnconditional = shouldDegrade && this.browserIsIncapable;
-
-        if(!queries[q]) {
-            queries[q] = new MediaQuery(q, isUnconditional);
-        }
-
-        //normalise to object in an array
-        if(isFunction(options)) {
-            options = { match : options };
-        }
-        if(!isArray(options)) {
-            options = [options];
-        }
-        each(options, function(handler) {
-            if (isFunction(handler)) {
-                handler = { match : handler };
-            }
-            queries[q].addHandler(handler);
-        });
-
-        return this;
-    },
-
-    /**
-     * unregisters a query and all it's handlers, or a specific handler for a query
-     *
-     * @param {string} q the media query to target
-     * @param {object || function} [handler] specific handler to unregister
-     */
-    unregister : function(q, handler) {
-        var query = this.queries[q];
-
-        if(query) {
-            if(handler) {
-                query.removeHandler(handler);
-            }
-            else {
-                query.clear();
-                delete this.queries[q];
-            }
-        }
-
-        return this;
-    }
-};
-
-module.exports = MediaQueryDispatch;
-
-
-/***/ }),
-
-/***/ "./node_modules/enquire.js/src/QueryHandler.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/enquire.js/src/QueryHandler.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
- * Delegate to handle a media query being matched and unmatched.
- *
- * @param {object} options
- * @param {function} options.match callback for when the media query is matched
- * @param {function} [options.unmatch] callback for when the media query is unmatched
- * @param {function} [options.setup] one-time callback triggered the first time a query is matched
- * @param {boolean} [options.deferSetup=false] should the setup callback be run immediately, rather than first time query is matched?
- * @constructor
- */
-function QueryHandler(options) {
-    this.options = options;
-    !options.deferSetup && this.setup();
-}
-
-QueryHandler.prototype = {
-
-    constructor : QueryHandler,
-
-    /**
-     * coordinates setup of the handler
-     *
-     * @function
-     */
-    setup : function() {
-        if(this.options.setup) {
-            this.options.setup();
-        }
-        this.initialised = true;
-    },
-
-    /**
-     * coordinates setup and triggering of the handler
-     *
-     * @function
-     */
-    on : function() {
-        !this.initialised && this.setup();
-        this.options.match && this.options.match();
-    },
-
-    /**
-     * coordinates the unmatch event for the handler
-     *
-     * @function
-     */
-    off : function() {
-        this.options.unmatch && this.options.unmatch();
-    },
-
-    /**
-     * called when a handler is to be destroyed.
-     * delegates to the destroy or unmatch callbacks, depending on availability.
-     *
-     * @function
-     */
-    destroy : function() {
-        this.options.destroy ? this.options.destroy() : this.off();
-    },
-
-    /**
-     * determines equality by reference.
-     * if object is supplied compare options, if function, compare match callback
-     *
-     * @function
-     * @param {object || function} [target] the target for comparison
-     */
-    equals : function(target) {
-        return this.options === target || this.options.match === target;
-    }
-
-};
-
-module.exports = QueryHandler;
-
-
-/***/ }),
-
-/***/ "./node_modules/enquire.js/src/Util.js":
-/*!*********************************************!*\
-  !*** ./node_modules/enquire.js/src/Util.js ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
- * Helper function for iterating over a collection
- *
- * @param collection
- * @param fn
- */
-function each(collection, fn) {
-    var i      = 0,
-        length = collection.length,
-        cont;
-
-    for(i; i < length; i++) {
-        cont = fn(collection[i], i);
-        if(cont === false) {
-            break; //allow early exit
-        }
-    }
-}
-
-/**
- * Helper function for determining whether target object is an array
- *
- * @param target the object under test
- * @return {Boolean} true if array, false otherwise
- */
-function isArray(target) {
-    return Object.prototype.toString.apply(target) === '[object Array]';
-}
-
-/**
- * Helper function for determining whether target object is a function
- *
- * @param target the object under test
- * @return {Boolean} true if function, false otherwise
- */
-function isFunction(target) {
-    return typeof target === 'function';
-}
-
-module.exports = {
-    isFunction : isFunction,
-    isArray : isArray,
-    each : each
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/enquire.js/src/index.js":
-/*!**********************************************!*\
-  !*** ./node_modules/enquire.js/src/index.js ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var MediaQueryDispatch = __webpack_require__(/*! ./MediaQueryDispatch */ "./node_modules/enquire.js/src/MediaQueryDispatch.js");
-module.exports = new MediaQueryDispatch();
-
-
-/***/ }),
-
 /***/ "./node_modules/function-bind/implementation.js":
 /*!******************************************************!*\
   !*** ./node_modules/function-bind/implementation.js ***!
@@ -7776,456 +7210,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	return init(function () {});
 }));
 
-
-/***/ }),
-
-/***/ "./node_modules/json2mq/index.js":
-/*!***************************************!*\
-  !*** ./node_modules/json2mq/index.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var camel2hyphen = __webpack_require__(/*! string-convert/camel2hyphen */ "./node_modules/string-convert/camel2hyphen.js");
-
-var isDimension = function (feature) {
-  var re = /[height|width]$/;
-  return re.test(feature);
-};
-
-var obj2mq = function (obj) {
-  var mq = '';
-  var features = Object.keys(obj);
-  features.forEach(function (feature, index) {
-    var value = obj[feature];
-    feature = camel2hyphen(feature);
-    // Add px to dimension features
-    if (isDimension(feature) && typeof value === 'number') {
-      value = value + 'px';
-    }
-    if (value === true) {
-      mq += feature;
-    } else if (value === false) {
-      mq += 'not ' + feature;
-    } else {
-      mq += '(' + feature + ': ' + value + ')';
-    }
-    if (index < features.length-1) {
-      mq += ' and '
-    }
-  });
-  return mq;
-};
-
-var json2mq = function (query) {
-  var mq = '';
-  if (typeof query === 'string') {
-    return query;
-  }
-  // Handling array of media queries
-  if (query instanceof Array) {
-    query.forEach(function (q, index) {
-      mq += obj2mq(q);
-      if (index < query.length-1) {
-        mq += ', '
-      }
-    });
-    return mq;
-  }
-  // Handling single media query
-  return obj2mq(query);
-};
-
-module.exports = json2mq;
-
-/***/ }),
-
-/***/ "./node_modules/lodash.debounce/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/lodash.debounce/index.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {/**
- * lodash (Custom Build) <https://lodash.com/>
- * Build: `lodash modularize exports="npm" -o ./`
- * Copyright jQuery Foundation and other contributors <https://jquery.org/>
- * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
- * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- */
-
-/** Used as the `TypeError` message for "Functions" methods. */
-var FUNC_ERROR_TEXT = 'Expected a function';
-
-/** Used as references for various `Number` constants. */
-var NAN = 0 / 0;
-
-/** `Object#toString` result references. */
-var symbolTag = '[object Symbol]';
-
-/** Used to match leading and trailing whitespace. */
-var reTrim = /^\s+|\s+$/g;
-
-/** Used to detect bad signed hexadecimal string values. */
-var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
-
-/** Used to detect binary string values. */
-var reIsBinary = /^0b[01]+$/i;
-
-/** Used to detect octal string values. */
-var reIsOctal = /^0o[0-7]+$/i;
-
-/** Built-in method references without a dependency on `root`. */
-var freeParseInt = parseInt;
-
-/** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var objectToString = objectProto.toString;
-
-/* Built-in method references for those with the same name as other `lodash` methods. */
-var nativeMax = Math.max,
-    nativeMin = Math.min;
-
-/**
- * Gets the timestamp of the number of milliseconds that have elapsed since
- * the Unix epoch (1 January 1970 00:00:00 UTC).
- *
- * @static
- * @memberOf _
- * @since 2.4.0
- * @category Date
- * @returns {number} Returns the timestamp.
- * @example
- *
- * _.defer(function(stamp) {
- *   console.log(_.now() - stamp);
- * }, _.now());
- * // => Logs the number of milliseconds it took for the deferred invocation.
- */
-var now = function() {
-  return root.Date.now();
-};
-
-/**
- * Creates a debounced function that delays invoking `func` until after `wait`
- * milliseconds have elapsed since the last time the debounced function was
- * invoked. The debounced function comes with a `cancel` method to cancel
- * delayed `func` invocations and a `flush` method to immediately invoke them.
- * Provide `options` to indicate whether `func` should be invoked on the
- * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
- * with the last arguments provided to the debounced function. Subsequent
- * calls to the debounced function return the result of the last `func`
- * invocation.
- *
- * **Note:** If `leading` and `trailing` options are `true`, `func` is
- * invoked on the trailing edge of the timeout only if the debounced function
- * is invoked more than once during the `wait` timeout.
- *
- * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
- * until to the next tick, similar to `setTimeout` with a timeout of `0`.
- *
- * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
- * for details over the differences between `_.debounce` and `_.throttle`.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Function
- * @param {Function} func The function to debounce.
- * @param {number} [wait=0] The number of milliseconds to delay.
- * @param {Object} [options={}] The options object.
- * @param {boolean} [options.leading=false]
- *  Specify invoking on the leading edge of the timeout.
- * @param {number} [options.maxWait]
- *  The maximum time `func` is allowed to be delayed before it's invoked.
- * @param {boolean} [options.trailing=true]
- *  Specify invoking on the trailing edge of the timeout.
- * @returns {Function} Returns the new debounced function.
- * @example
- *
- * // Avoid costly calculations while the window size is in flux.
- * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
- *
- * // Invoke `sendMail` when clicked, debouncing subsequent calls.
- * jQuery(element).on('click', _.debounce(sendMail, 300, {
- *   'leading': true,
- *   'trailing': false
- * }));
- *
- * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
- * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
- * var source = new EventSource('/stream');
- * jQuery(source).on('message', debounced);
- *
- * // Cancel the trailing debounced invocation.
- * jQuery(window).on('popstate', debounced.cancel);
- */
-function debounce(func, wait, options) {
-  var lastArgs,
-      lastThis,
-      maxWait,
-      result,
-      timerId,
-      lastCallTime,
-      lastInvokeTime = 0,
-      leading = false,
-      maxing = false,
-      trailing = true;
-
-  if (typeof func != 'function') {
-    throw new TypeError(FUNC_ERROR_TEXT);
-  }
-  wait = toNumber(wait) || 0;
-  if (isObject(options)) {
-    leading = !!options.leading;
-    maxing = 'maxWait' in options;
-    maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
-    trailing = 'trailing' in options ? !!options.trailing : trailing;
-  }
-
-  function invokeFunc(time) {
-    var args = lastArgs,
-        thisArg = lastThis;
-
-    lastArgs = lastThis = undefined;
-    lastInvokeTime = time;
-    result = func.apply(thisArg, args);
-    return result;
-  }
-
-  function leadingEdge(time) {
-    // Reset any `maxWait` timer.
-    lastInvokeTime = time;
-    // Start the timer for the trailing edge.
-    timerId = setTimeout(timerExpired, wait);
-    // Invoke the leading edge.
-    return leading ? invokeFunc(time) : result;
-  }
-
-  function remainingWait(time) {
-    var timeSinceLastCall = time - lastCallTime,
-        timeSinceLastInvoke = time - lastInvokeTime,
-        result = wait - timeSinceLastCall;
-
-    return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;
-  }
-
-  function shouldInvoke(time) {
-    var timeSinceLastCall = time - lastCallTime,
-        timeSinceLastInvoke = time - lastInvokeTime;
-
-    // Either this is the first call, activity has stopped and we're at the
-    // trailing edge, the system time has gone backwards and we're treating
-    // it as the trailing edge, or we've hit the `maxWait` limit.
-    return (lastCallTime === undefined || (timeSinceLastCall >= wait) ||
-      (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
-  }
-
-  function timerExpired() {
-    var time = now();
-    if (shouldInvoke(time)) {
-      return trailingEdge(time);
-    }
-    // Restart the timer.
-    timerId = setTimeout(timerExpired, remainingWait(time));
-  }
-
-  function trailingEdge(time) {
-    timerId = undefined;
-
-    // Only invoke if we have `lastArgs` which means `func` has been
-    // debounced at least once.
-    if (trailing && lastArgs) {
-      return invokeFunc(time);
-    }
-    lastArgs = lastThis = undefined;
-    return result;
-  }
-
-  function cancel() {
-    if (timerId !== undefined) {
-      clearTimeout(timerId);
-    }
-    lastInvokeTime = 0;
-    lastArgs = lastCallTime = lastThis = timerId = undefined;
-  }
-
-  function flush() {
-    return timerId === undefined ? result : trailingEdge(now());
-  }
-
-  function debounced() {
-    var time = now(),
-        isInvoking = shouldInvoke(time);
-
-    lastArgs = arguments;
-    lastThis = this;
-    lastCallTime = time;
-
-    if (isInvoking) {
-      if (timerId === undefined) {
-        return leadingEdge(lastCallTime);
-      }
-      if (maxing) {
-        // Handle invocations in a tight loop.
-        timerId = setTimeout(timerExpired, wait);
-        return invokeFunc(lastCallTime);
-      }
-    }
-    if (timerId === undefined) {
-      timerId = setTimeout(timerExpired, wait);
-    }
-    return result;
-  }
-  debounced.cancel = cancel;
-  debounced.flush = flush;
-  return debounced;
-}
-
-/**
- * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
- * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an object, else `false`.
- * @example
- *
- * _.isObject({});
- * // => true
- *
- * _.isObject([1, 2, 3]);
- * // => true
- *
- * _.isObject(_.noop);
- * // => true
- *
- * _.isObject(null);
- * // => false
- */
-function isObject(value) {
-  var type = typeof value;
-  return !!value && (type == 'object' || type == 'function');
-}
-
-/**
- * Checks if `value` is object-like. A value is object-like if it's not `null`
- * and has a `typeof` result of "object".
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
- * @example
- *
- * _.isObjectLike({});
- * // => true
- *
- * _.isObjectLike([1, 2, 3]);
- * // => true
- *
- * _.isObjectLike(_.noop);
- * // => false
- *
- * _.isObjectLike(null);
- * // => false
- */
-function isObjectLike(value) {
-  return !!value && typeof value == 'object';
-}
-
-/**
- * Checks if `value` is classified as a `Symbol` primitive or object.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
- * @example
- *
- * _.isSymbol(Symbol.iterator);
- * // => true
- *
- * _.isSymbol('abc');
- * // => false
- */
-function isSymbol(value) {
-  return typeof value == 'symbol' ||
-    (isObjectLike(value) && objectToString.call(value) == symbolTag);
-}
-
-/**
- * Converts `value` to a number.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to process.
- * @returns {number} Returns the number.
- * @example
- *
- * _.toNumber(3.2);
- * // => 3.2
- *
- * _.toNumber(Number.MIN_VALUE);
- * // => 5e-324
- *
- * _.toNumber(Infinity);
- * // => Infinity
- *
- * _.toNumber('3.2');
- * // => 3.2
- */
-function toNumber(value) {
-  if (typeof value == 'number') {
-    return value;
-  }
-  if (isSymbol(value)) {
-    return NAN;
-  }
-  if (isObject(value)) {
-    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
-    value = isObject(other) ? (other + '') : other;
-  }
-  if (typeof value != 'string') {
-    return value === 0 ? value : +value;
-  }
-  value = value.replace(reTrim, '');
-  var isBinary = reIsBinary.test(value);
-  return (isBinary || reIsOctal.test(value))
-    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
-    : (reIsBadHex.test(value) ? NAN : +value);
-}
-
-module.exports = debounce;
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -13104,2389 +12088,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/arrows.js":
-/*!************************************************!*\
-  !*** ./node_modules/react-slick/lib/arrows.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.NextArrow = exports.PrevArrow = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _classnames = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PrevArrow = exports.PrevArrow = function (_React$PureComponent) {
-  _inherits(PrevArrow, _React$PureComponent);
-
-  function PrevArrow() {
-    _classCallCheck(this, PrevArrow);
-
-    return _possibleConstructorReturn(this, _React$PureComponent.apply(this, arguments));
-  }
-
-  PrevArrow.prototype.clickHandler = function clickHandler(options, e) {
-    if (e) {
-      e.preventDefault();
-    }
-    this.props.clickHandler(options, e);
-  };
-
-  PrevArrow.prototype.render = function render() {
-    var prevClasses = { "slick-arrow": true, "slick-prev": true };
-    var prevHandler = this.clickHandler.bind(this, { message: "previous" });
-
-    if (!this.props.infinite && (this.props.currentSlide === 0 || this.props.slideCount <= this.props.slidesToShow)) {
-      prevClasses["slick-disabled"] = true;
-      prevHandler = null;
-    }
-
-    var prevArrowProps = {
-      key: "0",
-      "data-role": "none",
-      className: (0, _classnames2.default)(prevClasses),
-      style: { display: "block" },
-      onClick: prevHandler
-    };
-    var customProps = {
-      currentSlide: this.props.currentSlide,
-      slideCount: this.props.slideCount
-    };
-    var prevArrow = void 0;
-
-    if (this.props.prevArrow) {
-      prevArrow = _react2.default.cloneElement(this.props.prevArrow, _extends({}, prevArrowProps, customProps));
-    } else {
-      prevArrow = _react2.default.createElement(
-        "button",
-        _extends({ key: "0", type: "button" }, prevArrowProps),
-        " ",
-        "Previous"
-      );
-    }
-
-    return prevArrow;
-  };
-
-  return PrevArrow;
-}(_react2.default.PureComponent);
-
-var NextArrow = exports.NextArrow = function (_React$PureComponent2) {
-  _inherits(NextArrow, _React$PureComponent2);
-
-  function NextArrow() {
-    _classCallCheck(this, NextArrow);
-
-    return _possibleConstructorReturn(this, _React$PureComponent2.apply(this, arguments));
-  }
-
-  NextArrow.prototype.clickHandler = function clickHandler(options, e) {
-    if (e) {
-      e.preventDefault();
-    }
-    this.props.clickHandler(options, e);
-  };
-
-  NextArrow.prototype.render = function render() {
-    var nextClasses = { "slick-arrow": true, "slick-next": true };
-    var nextHandler = this.clickHandler.bind(this, { message: "next" });
-
-    if (!(0, _innerSliderUtils.canGoNext)(this.props)) {
-      nextClasses["slick-disabled"] = true;
-      nextHandler = null;
-    }
-
-    var nextArrowProps = {
-      key: "1",
-      "data-role": "none",
-      className: (0, _classnames2.default)(nextClasses),
-      style: { display: "block" },
-      onClick: nextHandler
-    };
-    var customProps = {
-      currentSlide: this.props.currentSlide,
-      slideCount: this.props.slideCount
-    };
-    var nextArrow = void 0;
-
-    if (this.props.nextArrow) {
-      nextArrow = _react2.default.cloneElement(this.props.nextArrow, _extends({}, nextArrowProps, customProps));
-    } else {
-      nextArrow = _react2.default.createElement(
-        "button",
-        _extends({ key: "1", type: "button" }, nextArrowProps),
-        " ",
-        "Next"
-      );
-    }
-
-    return nextArrow;
-  };
-
-  return NextArrow;
-}(_react2.default.PureComponent);
-
-/***/ }),
-
-/***/ "./node_modules/react-slick/lib/default-props.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/react-slick/lib/default-props.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var defaultProps = {
-  accessibility: true,
-  adaptiveHeight: false,
-  afterChange: null,
-  appendDots: function appendDots(dots) {
-    return _react2.default.createElement(
-      "ul",
-      { style: { display: "block" } },
-      dots
-    );
-  },
-  arrows: true,
-  autoplay: false,
-  autoplaySpeed: 3000,
-  beforeChange: null,
-  centerMode: false,
-  centerPadding: "50px",
-  className: "",
-  cssEase: "ease",
-  customPaging: function customPaging(i) {
-    return _react2.default.createElement(
-      "button",
-      null,
-      i + 1
-    );
-  },
-  dots: false,
-  dotsClass: "slick-dots",
-  draggable: true,
-  easing: "linear",
-  edgeFriction: 0.35,
-  fade: false,
-  focusOnSelect: false,
-  infinite: true,
-  initialSlide: 0,
-  lazyLoad: null,
-  nextArrow: null,
-  onEdge: null,
-  onInit: null,
-  onLazyLoadError: null,
-  onReInit: null,
-  pauseOnDotsHover: false,
-  pauseOnFocus: false,
-  pauseOnHover: true,
-  prevArrow: null,
-  responsive: null,
-  rows: 1,
-  rtl: false,
-  slide: "div",
-  slidesPerRow: 1,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  speed: 500,
-  swipe: true,
-  swipeEvent: null,
-  swipeToSlide: false,
-  touchMove: true,
-  touchThreshold: 5,
-  useCSS: true,
-  useTransform: true,
-  variableWidth: false,
-  vertical: false,
-  waitForAnimate: true
-};
-
-exports.default = defaultProps;
-
-/***/ }),
-
-/***/ "./node_modules/react-slick/lib/dots.js":
-/*!**********************************************!*\
-  !*** ./node_modules/react-slick/lib/dots.js ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.Dots = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _classnames = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var getDotCount = function getDotCount(spec) {
-  var dots;
-
-  if (spec.infinite) {
-    dots = Math.ceil(spec.slideCount / spec.slidesToScroll);
-  } else {
-    dots = Math.ceil((spec.slideCount - spec.slidesToShow) / spec.slidesToScroll) + 1;
-  }
-
-  return dots;
-};
-
-var Dots = exports.Dots = function (_React$PureComponent) {
-  _inherits(Dots, _React$PureComponent);
-
-  function Dots() {
-    _classCallCheck(this, Dots);
-
-    return _possibleConstructorReturn(this, _React$PureComponent.apply(this, arguments));
-  }
-
-  Dots.prototype.clickHandler = function clickHandler(options, e) {
-    // In Autoplay the focus stays on clicked button even after transition
-    // to next slide. That only goes away by click somewhere outside
-    e.preventDefault();
-    this.props.clickHandler(options);
-  };
-
-  Dots.prototype.render = function render() {
-    var _this2 = this;
-
-    var dotCount = getDotCount({
-      slideCount: this.props.slideCount,
-      slidesToScroll: this.props.slidesToScroll,
-      slidesToShow: this.props.slidesToShow,
-      infinite: this.props.infinite
-    });
-
-    // Apply join & split to Array to pre-fill it for IE8
-    //
-    // Credit: http://stackoverflow.com/a/13735425/1849458
-    var _props = this.props,
-        onMouseEnter = _props.onMouseEnter,
-        onMouseOver = _props.onMouseOver,
-        onMouseLeave = _props.onMouseLeave;
-
-    var mouseEvents = { onMouseEnter: onMouseEnter, onMouseOver: onMouseOver, onMouseLeave: onMouseLeave };
-    var dots = Array.apply(null, Array(dotCount + 1).join("0").split("")).map(function (x, i) {
-      var leftBound = i * _this2.props.slidesToScroll;
-      var rightBound = i * _this2.props.slidesToScroll + (_this2.props.slidesToScroll - 1);
-      var className = (0, _classnames2.default)({
-        "slick-active": _this2.props.currentSlide >= leftBound && _this2.props.currentSlide <= rightBound
-      });
-
-      var dotOptions = {
-        message: "dots",
-        index: i,
-        slidesToScroll: _this2.props.slidesToScroll,
-        currentSlide: _this2.props.currentSlide
-      };
-
-      var onClick = _this2.clickHandler.bind(_this2, dotOptions);
-      return _react2.default.createElement(
-        "li",
-        { key: i, className: className },
-        _react2.default.cloneElement(_this2.props.customPaging(i), { onClick: onClick })
-      );
-    });
-
-    return _react2.default.cloneElement(this.props.appendDots(dots), _extends({
-      className: this.props.dotsClass
-    }, mouseEvents));
-  };
-
-  return Dots;
-}(_react2.default.PureComponent);
-
-/***/ }),
-
-/***/ "./node_modules/react-slick/lib/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/react-slick/lib/index.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-
-var _slider = __webpack_require__(/*! ./slider */ "./node_modules/react-slick/lib/slider.js");
-
-var _slider2 = _interopRequireDefault(_slider);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _slider2.default;
-
-/***/ }),
-
-/***/ "./node_modules/react-slick/lib/initial-state.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/react-slick/lib/initial-state.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-var initialState = {
-  animating: false,
-  autoplaying: null,
-  currentDirection: 0,
-  currentLeft: null,
-  currentSlide: 0,
-  direction: 1,
-  dragging: false,
-  edgeDragged: false,
-  initialized: false,
-  lazyLoadedList: [],
-  listHeight: null,
-  listWidth: null,
-  scrolling: false,
-  slideCount: null,
-  slideHeight: null,
-  slideWidth: null,
-  swipeLeft: null,
-  swiped: false, // used by swipeEvent. differentites between touch and swipe.
-  swiping: false,
-  touchObject: { startX: 0, startY: 0, curX: 0, curY: 0 },
-  trackStyle: {},
-  trackWidth: 0
-};
-
-exports.default = initialState;
-
-/***/ }),
-
-/***/ "./node_modules/react-slick/lib/inner-slider.js":
-/*!******************************************************!*\
-  !*** ./node_modules/react-slick/lib/inner-slider.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.InnerSlider = undefined;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _initialState = __webpack_require__(/*! ./initial-state */ "./node_modules/react-slick/lib/initial-state.js");
-
-var _initialState2 = _interopRequireDefault(_initialState);
-
-var _lodash = __webpack_require__(/*! lodash.debounce */ "./node_modules/lodash.debounce/index.js");
-
-var _lodash2 = _interopRequireDefault(_lodash);
-
-var _classnames = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
-
-var _track = __webpack_require__(/*! ./track */ "./node_modules/react-slick/lib/track.js");
-
-var _dots = __webpack_require__(/*! ./dots */ "./node_modules/react-slick/lib/dots.js");
-
-var _arrows = __webpack_require__(/*! ./arrows */ "./node_modules/react-slick/lib/arrows.js");
-
-var _resizeObserverPolyfill = __webpack_require__(/*! resize-observer-polyfill */ "./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js");
-
-var _resizeObserverPolyfill2 = _interopRequireDefault(_resizeObserverPolyfill);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var InnerSlider = exports.InnerSlider = function (_React$Component) {
-  _inherits(InnerSlider, _React$Component);
-
-  function InnerSlider(props) {
-    _classCallCheck(this, InnerSlider);
-
-    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
-
-    _this.listRefHandler = function (ref) {
-      return _this.list = ref;
-    };
-
-    _this.trackRefHandler = function (ref) {
-      return _this.track = ref;
-    };
-
-    _this.adaptHeight = function () {
-      if (_this.props.adaptiveHeight && _this.list) {
-        var elem = _this.list.querySelector("[data-index=\"" + _this.state.currentSlide + "\"]");
-        _this.list.style.height = (0, _innerSliderUtils.getHeight)(elem) + "px";
-      }
-    };
-
-    _this.componentWillMount = function () {
-      _this.ssrInit();
-      _this.props.onInit && _this.props.onInit();
-      if (_this.props.lazyLoad) {
-        var slidesToLoad = (0, _innerSliderUtils.getOnDemandLazySlides)(_extends({}, _this.props, _this.state));
-        if (slidesToLoad.length > 0) {
-          _this.setState(function (prevState) {
-            return {
-              lazyLoadedList: prevState.lazyLoadedList.concat(slidesToLoad)
-            };
-          });
-          if (_this.props.onLazyLoad) {
-            _this.props.onLazyLoad(slidesToLoad);
-          }
-        }
-      }
-    };
-
-    _this.componentDidMount = function () {
-      var spec = _extends({ listRef: _this.list, trackRef: _this.track }, _this.props);
-      _this.updateState(spec, true, function () {
-        _this.adaptHeight();
-        _this.props.autoplay && _this.autoPlay("update");
-      });
-      if (_this.props.lazyLoad === "progressive") {
-        _this.lazyLoadTimer = setInterval(_this.progressiveLazyLoad, 1000);
-      }
-      _this.ro = new _resizeObserverPolyfill2.default(function () {
-        if (_this.state.animating) {
-          _this.onWindowResized(false); // don't set trackStyle hence don't break animation
-          _this.callbackTimers.push(setTimeout(function () {
-            return _this.onWindowResized();
-          }, _this.props.speed));
-        } else {
-          _this.onWindowResized();
-        }
-      });
-      _this.ro.observe(_this.list);
-      Array.prototype.forEach.call(document.querySelectorAll(".slick-slide"), function (slide) {
-        slide.onfocus = _this.props.pauseOnFocus ? _this.onSlideFocus : null;
-        slide.onblur = _this.props.pauseOnFocus ? _this.onSlideBlur : null;
-      });
-      // To support server-side rendering
-      if (!window) {
-        return;
-      }
-      if (window.addEventListener) {
-        window.addEventListener("resize", _this.onWindowResized);
-      } else {
-        window.attachEvent("onresize", _this.onWindowResized);
-      }
-    };
-
-    _this.componentWillUnmount = function () {
-      if (_this.animationEndCallback) {
-        clearTimeout(_this.animationEndCallback);
-      }
-      if (_this.lazyLoadTimer) {
-        clearInterval(_this.lazyLoadTimer);
-      }
-      if (_this.callbackTimers.length) {
-        _this.callbackTimers.forEach(function (timer) {
-          return clearTimeout(timer);
-        });
-        _this.callbackTimers = [];
-      }
-      if (window.addEventListener) {
-        window.removeEventListener("resize", _this.onWindowResized);
-      } else {
-        window.detachEvent("onresize", _this.onWindowResized);
-      }
-      if (_this.autoplayTimer) {
-        clearInterval(_this.autoplayTimer);
-      }
-    };
-
-    _this.componentWillReceiveProps = function (nextProps) {
-      var spec = _extends({
-        listRef: _this.list,
-        trackRef: _this.track
-      }, nextProps, _this.state);
-      var setTrackStyle = false;
-      for (var _iterator = Object.keys(_this.props), _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-        var _ref;
-
-        if (_isArray) {
-          if (_i >= _iterator.length) break;
-          _ref = _iterator[_i++];
-        } else {
-          _i = _iterator.next();
-          if (_i.done) break;
-          _ref = _i.value;
-        }
-
-        var key = _ref;
-
-        if (!nextProps.hasOwnProperty(key)) {
-          setTrackStyle = true;
-          break;
-        }
-        if (_typeof(nextProps[key]) === "object" || typeof nextProps[key] === "function") {
-          continue;
-        }
-        if (nextProps[key] !== _this.props[key]) {
-          setTrackStyle = true;
-          break;
-        }
-      }
-      _this.updateState(spec, setTrackStyle, function () {
-        if (_this.state.currentSlide >= _react2.default.Children.count(nextProps.children)) {
-          _this.changeSlide({
-            message: "index",
-            index: _react2.default.Children.count(nextProps.children) - nextProps.slidesToShow,
-            currentSlide: _this.state.currentSlide
-          });
-        }
-        if (nextProps.autoplay) {
-          _this.autoPlay("update");
-        } else {
-          _this.pause("paused");
-        }
-      });
-    };
-
-    _this.componentDidUpdate = function () {
-      _this.checkImagesLoad();
-      _this.props.onReInit && _this.props.onReInit();
-      if (_this.props.lazyLoad) {
-        var slidesToLoad = (0, _innerSliderUtils.getOnDemandLazySlides)(_extends({}, _this.props, _this.state));
-        if (slidesToLoad.length > 0) {
-          _this.setState(function (prevState) {
-            return {
-              lazyLoadedList: prevState.lazyLoadedList.concat(slidesToLoad)
-            };
-          });
-          if (_this.props.onLazyLoad) {
-            _this.props.onLazyLoad(slidesToLoad);
-          }
-        }
-      }
-      // if (this.props.onLazyLoad) {
-      //   this.props.onLazyLoad([leftMostSlide])
-      // }
-      _this.adaptHeight();
-    };
-
-    _this.onWindowResized = function (setTrackStyle) {
-      if (_this.debouncedResize) _this.debouncedResize.cancel();
-      _this.debouncedResize = (0, _lodash2.default)(function () {
-        return _this.resizeWindow(setTrackStyle);
-      }, 50);
-      _this.debouncedResize();
-    };
-
-    _this.resizeWindow = function () {
-      var setTrackStyle = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
-
-      if (!_reactDom2.default.findDOMNode(_this.track)) return;
-      var spec = _extends({
-        listRef: _this.list,
-        trackRef: _this.track
-      }, _this.props, _this.state);
-      _this.updateState(spec, setTrackStyle, function () {
-        if (_this.props.autoplay) _this.autoPlay("update");else _this.pause("paused");
-      });
-      // animating state should be cleared while resizing, otherwise autoplay stops working
-      _this.setState({
-        animating: false
-      });
-      clearTimeout(_this.animationEndCallback);
-      delete _this.animationEndCallback;
-    };
-
-    _this.updateState = function (spec, setTrackStyle, callback) {
-      var updatedState = (0, _innerSliderUtils.initializedState)(spec);
-      spec = _extends({}, spec, updatedState, { slideIndex: updatedState.currentSlide });
-      var targetLeft = (0, _innerSliderUtils.getTrackLeft)(spec);
-      spec = _extends({}, spec, { left: targetLeft });
-      var trackStyle = (0, _innerSliderUtils.getTrackCSS)(spec);
-      if (setTrackStyle || _react2.default.Children.count(_this.props.children) !== _react2.default.Children.count(spec.children)) {
-        updatedState["trackStyle"] = trackStyle;
-      }
-      _this.setState(updatedState, callback);
-    };
-
-    _this.ssrInit = function () {
-      if (_this.props.variableWidth) {
-        var _trackWidth = 0,
-            _trackLeft = 0;
-        var childrenWidths = [];
-        var preClones = (0, _innerSliderUtils.getPreClones)(_extends({}, _this.props, _this.state, {
-          slideCount: _this.props.children.length
-        }));
-        var postClones = (0, _innerSliderUtils.getPostClones)(_extends({}, _this.props, _this.state, {
-          slideCount: _this.props.children.length
-        }));
-        _this.props.children.forEach(function (child) {
-          childrenWidths.push(child.props.style.width);
-          _trackWidth += child.props.style.width;
-        });
-        for (var i = 0; i < preClones; i++) {
-          _trackLeft += childrenWidths[childrenWidths.length - 1 - i];
-          _trackWidth += childrenWidths[childrenWidths.length - 1 - i];
-        }
-        for (var _i2 = 0; _i2 < postClones; _i2++) {
-          _trackWidth += childrenWidths[_i2];
-        }
-        for (var _i3 = 0; _i3 < _this.state.currentSlide; _i3++) {
-          _trackLeft += childrenWidths[_i3];
-        }
-        var _trackStyle = {
-          width: _trackWidth + "px",
-          left: -_trackLeft + "px"
-        };
-        if (_this.props.centerMode) {
-          var currentWidth = childrenWidths[_this.state.currentSlide] + "px";
-          _trackStyle.left = "calc(" + _trackStyle.left + " + (100% - " + currentWidth + ") / 2 ) ";
-        }
-        _this.setState({
-          trackStyle: _trackStyle
-        });
-        return;
-      }
-      var childrenCount = _react2.default.Children.count(_this.props.children);
-      var spec = _extends({}, _this.props, _this.state, { slideCount: childrenCount });
-      var slideCount = (0, _innerSliderUtils.getPreClones)(spec) + (0, _innerSliderUtils.getPostClones)(spec) + childrenCount;
-      var trackWidth = 100 / _this.props.slidesToShow * slideCount;
-      var slideWidth = 100 / slideCount;
-      var trackLeft = -slideWidth * ((0, _innerSliderUtils.getPreClones)(spec) + _this.state.currentSlide) * trackWidth / 100;
-      if (_this.props.centerMode) {
-        trackLeft += (100 - slideWidth * trackWidth / 100) / 2;
-      }
-      var trackStyle = {
-        width: trackWidth + "%",
-        left: trackLeft + "%"
-      };
-      _this.setState({
-        slideWidth: slideWidth + "%",
-        trackStyle: trackStyle
-      });
-    };
-
-    _this.checkImagesLoad = function () {
-      var images = document.querySelectorAll(".slick-slide img");
-      var imagesCount = images.length,
-          loadedCount = 0;
-      Array.prototype.forEach.call(images, function (image) {
-        var handler = function handler() {
-          return ++loadedCount && loadedCount >= imagesCount && _this.onWindowResized();
-        };
-        if (!image.onclick) {
-          image.onclick = function () {
-            return image.parentNode.focus();
-          };
-        } else {
-          var prevClickHandler = image.onclick;
-          image.onclick = function () {
-            prevClickHandler();
-            image.parentNode.focus();
-          };
-        }
-        if (!image.onload) {
-          if (_this.props.lazyLoad) {
-            image.onload = function () {
-              _this.adaptHeight();
-              _this.callbackTimers.push(setTimeout(_this.onWindowResized, _this.props.speed));
-            };
-          } else {
-            image.onload = handler;
-            image.onerror = function () {
-              handler();
-              _this.props.onLazyLoadError && _this.props.onLazyLoadError();
-            };
-          }
-        }
-      });
-    };
-
-    _this.progressiveLazyLoad = function () {
-      var slidesToLoad = [];
-      var spec = _extends({}, _this.props, _this.state);
-      for (var index = _this.state.currentSlide; index < _this.state.slideCount + (0, _innerSliderUtils.getPostClones)(spec); index++) {
-        if (_this.state.lazyLoadedList.indexOf(index) < 0) {
-          slidesToLoad.push(index);
-          break;
-        }
-      }
-      for (var _index = _this.state.currentSlide - 1; _index >= -(0, _innerSliderUtils.getPreClones)(spec); _index--) {
-        if (_this.state.lazyLoadedList.indexOf(_index) < 0) {
-          slidesToLoad.push(_index);
-          break;
-        }
-      }
-      if (slidesToLoad.length > 0) {
-        _this.setState(function (state) {
-          return {
-            lazyLoadedList: state.lazyLoadedList.concat(slidesToLoad)
-          };
-        });
-        if (_this.props.onLazyLoad) {
-          _this.props.onLazyLoad(slidesToLoad);
-        }
-      } else {
-        if (_this.lazyLoadTimer) {
-          clearInterval(_this.lazyLoadTimer);
-          delete _this.lazyLoadTimer;
-        }
-      }
-    };
-
-    _this.slideHandler = function (index) {
-      var dontAnimate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-      var _this$props = _this.props,
-          asNavFor = _this$props.asNavFor,
-          beforeChange = _this$props.beforeChange,
-          onLazyLoad = _this$props.onLazyLoad,
-          speed = _this$props.speed,
-          afterChange = _this$props.afterChange;
-      // capture currentslide before state is updated
-
-      var currentSlide = _this.state.currentSlide;
-
-      var _slideHandler = (0, _innerSliderUtils.slideHandler)(_extends({
-        index: index
-      }, _this.props, _this.state, {
-        trackRef: _this.track,
-        useCSS: _this.props.useCSS && !dontAnimate
-      })),
-          state = _slideHandler.state,
-          nextState = _slideHandler.nextState;
-
-      if (!state) return;
-      beforeChange && beforeChange(currentSlide, state.currentSlide);
-      var slidesToLoad = state.lazyLoadedList.filter(function (value) {
-        return _this.state.lazyLoadedList.indexOf(value) < 0;
-      });
-      onLazyLoad && slidesToLoad.length > 0 && onLazyLoad(slidesToLoad);
-      _this.setState(state, function () {
-        asNavFor && asNavFor.innerSlider.state.currentSlide !== currentSlide && asNavFor.innerSlider.slideHandler(index);
-        if (!nextState) return;
-        _this.animationEndCallback = setTimeout(function () {
-          var animating = nextState.animating,
-              firstBatch = _objectWithoutProperties(nextState, ["animating"]);
-
-          _this.setState(firstBatch, function () {
-            _this.callbackTimers.push(setTimeout(function () {
-              return _this.setState({ animating: animating });
-            }, 10));
-            afterChange && afterChange(state.currentSlide);
-            delete _this.animationEndCallback;
-          });
-        }, speed);
-      });
-    };
-
-    _this.changeSlide = function (options) {
-      var dontAnimate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-      var spec = _extends({}, _this.props, _this.state);
-      var targetSlide = (0, _innerSliderUtils.changeSlide)(spec, options);
-      if (targetSlide !== 0 && !targetSlide) return;
-      if (dontAnimate === true) {
-        _this.slideHandler(targetSlide, dontAnimate);
-      } else {
-        _this.slideHandler(targetSlide);
-      }
-    };
-
-    _this.clickHandler = function (e) {
-      if (_this.clickable === false) {
-        e.stopPropagation();
-        e.preventDefault();
-      }
-      _this.clickable = true;
-    };
-
-    _this.keyHandler = function (e) {
-      var dir = (0, _innerSliderUtils.keyHandler)(e, _this.props.accessibility, _this.props.rtl);
-      dir !== "" && _this.changeSlide({ message: dir });
-    };
-
-    _this.selectHandler = function (options) {
-      _this.changeSlide(options);
-    };
-
-    _this.disableBodyScroll = function () {
-      var preventDefault = function preventDefault(e) {
-        e = e || window.event;
-        if (e.preventDefault) e.preventDefault();
-        e.returnValue = false;
-      };
-      window.ontouchmove = preventDefault;
-    };
-
-    _this.enableBodyScroll = function () {
-      window.ontouchmove = null;
-    };
-
-    _this.swipeStart = function (e) {
-      if (_this.props.verticalSwiping) {
-        _this.disableBodyScroll();
-      }
-      var state = (0, _innerSliderUtils.swipeStart)(e, _this.props.swipe, _this.props.draggable);
-      state !== "" && _this.setState(state);
-    };
-
-    _this.swipeMove = function (e) {
-      var state = (0, _innerSliderUtils.swipeMove)(e, _extends({}, _this.props, _this.state, {
-        trackRef: _this.track,
-        listRef: _this.list,
-        slideIndex: _this.state.currentSlide
-      }));
-      if (!state) return;
-      if (state["swiping"]) {
-        _this.clickable = false;
-      }
-      _this.setState(state);
-    };
-
-    _this.swipeEnd = function (e) {
-      var state = (0, _innerSliderUtils.swipeEnd)(e, _extends({}, _this.props, _this.state, {
-        trackRef: _this.track,
-        listRef: _this.list,
-        slideIndex: _this.state.currentSlide
-      }));
-      if (!state) return;
-      var triggerSlideHandler = state["triggerSlideHandler"];
-      delete state["triggerSlideHandler"];
-      _this.setState(state);
-      if (triggerSlideHandler === undefined) return;
-      _this.slideHandler(triggerSlideHandler);
-      if (_this.props.verticalSwiping) {
-        _this.enableBodyScroll();
-      }
-    };
-
-    _this.slickPrev = function () {
-      // this and fellow methods are wrapped in setTimeout
-      // to make sure initialize setState has happened before
-      // any of such methods are called
-      _this.callbackTimers.push(setTimeout(function () {
-        return _this.changeSlide({ message: "previous" });
-      }, 0));
-    };
-
-    _this.slickNext = function () {
-      _this.callbackTimers.push(setTimeout(function () {
-        return _this.changeSlide({ message: "next" });
-      }, 0));
-    };
-
-    _this.slickGoTo = function (slide) {
-      var dontAnimate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-      slide = Number(slide);
-      if (isNaN(slide)) return "";
-      _this.callbackTimers.push(setTimeout(function () {
-        return _this.changeSlide({
-          message: "index",
-          index: slide,
-          currentSlide: _this.state.currentSlide
-        }, dontAnimate);
-      }, 0));
-    };
-
-    _this.play = function () {
-      var nextIndex;
-      if (_this.props.rtl) {
-        nextIndex = _this.state.currentSlide - _this.props.slidesToScroll;
-      } else {
-        if ((0, _innerSliderUtils.canGoNext)(_extends({}, _this.props, _this.state))) {
-          nextIndex = _this.state.currentSlide + _this.props.slidesToScroll;
-        } else {
-          return false;
-        }
-      }
-
-      _this.slideHandler(nextIndex);
-    };
-
-    _this.autoPlay = function (playType) {
-      if (_this.autoplayTimer) {
-        clearInterval(_this.autoplayTimer);
-      }
-      var autoplaying = _this.state.autoplaying;
-      if (playType === "update") {
-        if (autoplaying === "hovered" || autoplaying === "focused" || autoplaying === "paused") {
-          return;
-        }
-      } else if (playType === "leave") {
-        if (autoplaying === "paused" || autoplaying === "focused") {
-          return;
-        }
-      } else if (playType === "blur") {
-        if (autoplaying === "paused" || autoplaying === "hovered") {
-          return;
-        }
-      }
-      _this.autoplayTimer = setInterval(_this.play, _this.props.autoplaySpeed + 50);
-      _this.setState({ autoplaying: "playing" });
-    };
-
-    _this.pause = function (pauseType) {
-      if (_this.autoplayTimer) {
-        clearInterval(_this.autoplayTimer);
-        _this.autoplayTimer = null;
-      }
-      var autoplaying = _this.state.autoplaying;
-      if (pauseType === "paused") {
-        _this.setState({ autoplaying: "paused" });
-      } else if (pauseType === "focused") {
-        if (autoplaying === "hovered" || autoplaying === "playing") {
-          _this.setState({ autoplaying: "focused" });
-        }
-      } else {
-        // pauseType  is 'hovered'
-        if (autoplaying === "playing") {
-          _this.setState({ autoplaying: "hovered" });
-        }
-      }
-    };
-
-    _this.onDotsOver = function () {
-      return _this.props.autoplay && _this.pause("hovered");
-    };
-
-    _this.onDotsLeave = function () {
-      return _this.props.autoplay && _this.state.autoplaying === "hovered" && _this.autoPlay("leave");
-    };
-
-    _this.onTrackOver = function () {
-      return _this.props.autoplay && _this.pause("hovered");
-    };
-
-    _this.onTrackLeave = function () {
-      return _this.props.autoplay && _this.state.autoplaying === "hovered" && _this.autoPlay("leave");
-    };
-
-    _this.onSlideFocus = function () {
-      return _this.props.autoplay && _this.pause("focused");
-    };
-
-    _this.onSlideBlur = function () {
-      return _this.props.autoplay && _this.state.autoplaying === "focused" && _this.autoPlay("blur");
-    };
-
-    _this.render = function () {
-      var className = (0, _classnames2.default)("slick-slider", _this.props.className, {
-        "slick-vertical": _this.props.vertical,
-        "slick-initialized": true
-      });
-      var spec = _extends({}, _this.props, _this.state);
-      var trackProps = (0, _innerSliderUtils.extractObject)(spec, ["fade", "cssEase", "speed", "infinite", "centerMode", "focusOnSelect", "currentSlide", "lazyLoad", "lazyLoadedList", "rtl", "slideWidth", "slideHeight", "listHeight", "vertical", "slidesToShow", "slidesToScroll", "slideCount", "trackStyle", "variableWidth", "unslick", "centerPadding"]);
-      var pauseOnHover = _this.props.pauseOnHover;
-
-      trackProps = _extends({}, trackProps, {
-        onMouseEnter: pauseOnHover ? _this.onTrackOver : null,
-        onMouseLeave: pauseOnHover ? _this.onTrackLeave : null,
-        onMouseOver: pauseOnHover ? _this.onTrackOver : null,
-        focusOnSelect: _this.props.focusOnSelect ? _this.selectHandler : null
-      });
-
-      var dots;
-      if (_this.props.dots === true && _this.state.slideCount >= _this.props.slidesToShow) {
-        var dotProps = (0, _innerSliderUtils.extractObject)(spec, ["dotsClass", "slideCount", "slidesToShow", "currentSlide", "slidesToScroll", "clickHandler", "children", "customPaging", "infinite", "appendDots"]);
-        var pauseOnDotsHover = _this.props.pauseOnDotsHover;
-
-        dotProps = _extends({}, dotProps, {
-          clickHandler: _this.changeSlide,
-          onMouseEnter: pauseOnDotsHover ? _this.onDotsLeave : null,
-          onMouseOver: pauseOnDotsHover ? _this.onDotsOver : null,
-          onMouseLeave: pauseOnDotsHover ? _this.onDotsLeave : null
-        });
-        dots = _react2.default.createElement(_dots.Dots, dotProps);
-      }
-
-      var prevArrow, nextArrow;
-      var arrowProps = (0, _innerSliderUtils.extractObject)(spec, ["infinite", "centerMode", "currentSlide", "slideCount", "slidesToShow", "prevArrow", "nextArrow"]);
-      arrowProps.clickHandler = _this.changeSlide;
-
-      if (_this.props.arrows) {
-        prevArrow = _react2.default.createElement(_arrows.PrevArrow, arrowProps);
-        nextArrow = _react2.default.createElement(_arrows.NextArrow, arrowProps);
-      }
-
-      var verticalHeightStyle = null;
-
-      if (_this.props.vertical) {
-        verticalHeightStyle = {
-          height: _this.state.listHeight
-        };
-      }
-
-      var centerPaddingStyle = null;
-
-      if (_this.props.vertical === false) {
-        if (_this.props.centerMode === true) {
-          centerPaddingStyle = {
-            padding: "0px " + _this.props.centerPadding
-          };
-        }
-      } else {
-        if (_this.props.centerMode === true) {
-          centerPaddingStyle = {
-            padding: _this.props.centerPadding + " 0px"
-          };
-        }
-      }
-
-      var listStyle = _extends({}, verticalHeightStyle, centerPaddingStyle);
-      var touchMove = _this.props.touchMove;
-      var listProps = {
-        className: "slick-list",
-        style: listStyle,
-        onClick: _this.clickHandler,
-        onMouseDown: touchMove ? _this.swipeStart : null,
-        onMouseMove: _this.state.dragging && touchMove ? _this.swipeMove : null,
-        onMouseUp: touchMove ? _this.swipeEnd : null,
-        onMouseLeave: _this.state.dragging && touchMove ? _this.swipeEnd : null,
-        onTouchStart: touchMove ? _this.swipeStart : null,
-        onTouchMove: _this.state.dragging && touchMove ? _this.swipeMove : null,
-        onTouchEnd: touchMove ? _this.swipeEnd : null,
-        onTouchCancel: _this.state.dragging && touchMove ? _this.swipeEnd : null,
-        onKeyDown: _this.props.accessibility ? _this.keyHandler : null
-      };
-
-      var innerSliderProps = {
-        className: className,
-        dir: "ltr"
-      };
-
-      if (_this.props.unslick) {
-        listProps = { className: "slick-list" };
-        innerSliderProps = { className: className };
-      }
-      return _react2.default.createElement(
-        "div",
-        innerSliderProps,
-        !_this.props.unslick ? prevArrow : "",
-        _react2.default.createElement(
-          "div",
-          _extends({ ref: _this.listRefHandler }, listProps),
-          _react2.default.createElement(
-            _track.Track,
-            _extends({ ref: _this.trackRefHandler }, trackProps),
-            _this.props.children
-          )
-        ),
-        !_this.props.unslick ? nextArrow : "",
-        !_this.props.unslick ? dots : ""
-      );
-    };
-
-    _this.list = null;
-    _this.track = null;
-    _this.state = _extends({}, _initialState2.default, {
-      currentSlide: _this.props.initialSlide,
-      slideCount: _react2.default.Children.count(_this.props.children)
-    });
-    _this.callbackTimers = [];
-    _this.clickable = true;
-    _this.debouncedResize = null;
-    return _this;
-  }
-
-  return InnerSlider;
-}(_react2.default.Component);
-
-/***/ }),
-
-/***/ "./node_modules/react-slick/lib/slider.js":
-/*!************************************************!*\
-  !*** ./node_modules/react-slick/lib/slider.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _innerSlider = __webpack_require__(/*! ./inner-slider */ "./node_modules/react-slick/lib/inner-slider.js");
-
-var _json2mq = __webpack_require__(/*! json2mq */ "./node_modules/json2mq/index.js");
-
-var _json2mq2 = _interopRequireDefault(_json2mq);
-
-var _defaultProps = __webpack_require__(/*! ./default-props */ "./node_modules/react-slick/lib/default-props.js");
-
-var _defaultProps2 = _interopRequireDefault(_defaultProps);
-
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var enquire = (0, _innerSliderUtils.canUseDOM)() && __webpack_require__(/*! enquire.js */ "./node_modules/enquire.js/src/index.js");
-
-var Slider = function (_React$Component) {
-  _inherits(Slider, _React$Component);
-
-  function Slider(props) {
-    _classCallCheck(this, Slider);
-
-    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
-
-    _this.innerSliderRefHandler = function (ref) {
-      return _this.innerSlider = ref;
-    };
-
-    _this.slickPrev = function () {
-      return _this.innerSlider.slickPrev();
-    };
-
-    _this.slickNext = function () {
-      return _this.innerSlider.slickNext();
-    };
-
-    _this.slickGoTo = function (slide) {
-      var dontAnimate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-      return _this.innerSlider.slickGoTo(slide, dontAnimate);
-    };
-
-    _this.slickPause = function () {
-      return _this.innerSlider.pause("paused");
-    };
-
-    _this.slickPlay = function () {
-      return _this.innerSlider.autoPlay("play");
-    };
-
-    _this.state = {
-      breakpoint: null
-    };
-    _this._responsiveMediaHandlers = [];
-    return _this;
-  }
-
-  Slider.prototype.media = function media(query, handler) {
-    // javascript handler for  css media query
-    enquire.register(query, handler);
-    this._responsiveMediaHandlers.push({ query: query, handler: handler });
-  };
-
-  // handles responsive breakpoints
-
-
-  Slider.prototype.componentWillMount = function componentWillMount() {
-    var _this2 = this;
-
-    // performance monitoring
-    //if (process.env.NODE_ENV !== 'production') {
-    //const { whyDidYouUpdate } = require('why-did-you-update')
-    //whyDidYouUpdate(React)
-    //}
-    if (this.props.responsive) {
-      var breakpoints = this.props.responsive.map(function (breakpt) {
-        return breakpt.breakpoint;
-      });
-      // sort them in increasing order of their numerical value
-      breakpoints.sort(function (x, y) {
-        return x - y;
-      });
-
-      breakpoints.forEach(function (breakpoint, index) {
-        // media query for each breakpoint
-        var bQuery = void 0;
-        if (index === 0) {
-          bQuery = (0, _json2mq2.default)({ minWidth: 0, maxWidth: breakpoint });
-        } else {
-          bQuery = (0, _json2mq2.default)({
-            minWidth: breakpoints[index - 1] + 1,
-            maxWidth: breakpoint
-          });
-        }
-        // when not using server side rendering
-        (0, _innerSliderUtils.canUseDOM)() && _this2.media(bQuery, function () {
-          _this2.setState({ breakpoint: breakpoint });
-        });
-      });
-
-      // Register media query for full screen. Need to support resize from small to large
-      // convert javascript object to media query string
-      var query = (0, _json2mq2.default)({ minWidth: breakpoints.slice(-1)[0] });
-
-      (0, _innerSliderUtils.canUseDOM)() && this.media(query, function () {
-        _this2.setState({ breakpoint: null });
-      });
-    }
-  };
-
-  Slider.prototype.componentWillUnmount = function componentWillUnmount() {
-    this._responsiveMediaHandlers.forEach(function (obj) {
-      enquire.unregister(obj.query, obj.handler);
-    });
-  };
-
-  Slider.prototype.render = function render() {
-    var _this3 = this;
-
-    var settings;
-    var newProps;
-    if (this.state.breakpoint) {
-      newProps = this.props.responsive.filter(function (resp) {
-        return resp.breakpoint === _this3.state.breakpoint;
-      });
-      settings = newProps[0].settings === "unslick" ? "unslick" : _extends({}, _defaultProps2.default, this.props, newProps[0].settings);
-    } else {
-      settings = _extends({}, _defaultProps2.default, this.props);
-    }
-
-    // force scrolling by one if centerMode is on
-    if (settings.centerMode) {
-      if (settings.slidesToScroll > 1 && "development" !== "production") {
-        console.warn("slidesToScroll should be equal to 1 in centerMode, you are using " + settings.slidesToScroll);
-      }
-      settings.slidesToScroll = 1;
-    }
-    // force showing one slide and scrolling by one if the fade mode is on
-    if (settings.fade) {
-      if (settings.slidesToShow > 1 && "development" !== "production") {
-        console.warn("slidesToShow should be equal to 1 when fade is true, you're using " + settings.slidesToShow);
-      }
-      if (settings.slidesToScroll > 1 && "development" !== "production") {
-        console.warn("slidesToScroll should be equal to 1 when fade is true, you're using " + settings.slidesToScroll);
-      }
-      settings.slidesToShow = 1;
-      settings.slidesToScroll = 1;
-    }
-
-    // makes sure that children is an array, even when there is only 1 child
-    var children = _react2.default.Children.toArray(this.props.children);
-
-    // Children may contain false or null, so we should filter them
-    // children may also contain string filled with spaces (in certain cases where we use jsx strings)
-    children = children.filter(function (child) {
-      if (typeof child === "string") {
-        return !!child.trim();
-      }
-      return !!child;
-    });
-
-    // rows and slidesPerRow logic is handled here
-    if (settings.variableWidth && (settings.rows > 1 || settings.slidesPerRow > 1)) {
-      console.warn("variableWidth is not supported in case of rows > 1 or slidesPerRow > 1");
-      settings.variableWidth = false;
-    }
-    var newChildren = [];
-    var currentWidth = null;
-    for (var i = 0; i < children.length; i += settings.rows * settings.slidesPerRow) {
-      var newSlide = [];
-      for (var j = i; j < i + settings.rows * settings.slidesPerRow; j += settings.slidesPerRow) {
-        var row = [];
-        for (var k = j; k < j + settings.slidesPerRow; k += 1) {
-          if (settings.variableWidth && children[k].props.style) {
-            currentWidth = children[k].props.style.width;
-          }
-          if (k >= children.length) break;
-          row.push(_react2.default.cloneElement(children[k], {
-            key: 100 * i + 10 * j + k,
-            tabIndex: -1,
-            style: {
-              width: 100 / settings.slidesPerRow + "%",
-              display: "inline-block"
-            }
-          }));
-        }
-        newSlide.push(_react2.default.createElement(
-          "div",
-          { key: 10 * i + j },
-          row
-        ));
-      }
-      if (settings.variableWidth) {
-        newChildren.push(_react2.default.createElement(
-          "div",
-          { key: i, style: { width: currentWidth } },
-          newSlide
-        ));
-      } else {
-        newChildren.push(_react2.default.createElement(
-          "div",
-          { key: i },
-          newSlide
-        ));
-      }
-    }
-
-    if (settings === "unslick") {
-      var className = "regular slider " + (this.props.className || "");
-      return _react2.default.createElement(
-        "div",
-        { className: className },
-        newChildren
-      );
-    } else if (newChildren.length <= settings.slidesToShow) {
-      settings.unslick = true;
-    }
-    return _react2.default.createElement(
-      _innerSlider.InnerSlider,
-      _extends({ ref: this.innerSliderRefHandler }, settings),
-      newChildren
-    );
-  };
-
-  return Slider;
-}(_react2.default.Component);
-
-exports.default = Slider;
-
-/***/ }),
-
-/***/ "./node_modules/react-slick/lib/track.js":
-/*!***********************************************!*\
-  !*** ./node_modules/react-slick/lib/track.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.Track = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _classnames = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// given specifications/props for a slide, fetch all the classes that need to be applied to the slide
-var getSlideClasses = function getSlideClasses(spec) {
-  var slickActive, slickCenter, slickCloned;
-  var centerOffset, index;
-
-  if (spec.rtl) {
-    index = spec.slideCount - 1 - spec.index;
-  } else {
-    index = spec.index;
-  }
-  slickCloned = index < 0 || index >= spec.slideCount;
-  if (spec.centerMode) {
-    centerOffset = Math.floor(spec.slidesToShow / 2);
-    slickCenter = (index - spec.currentSlide) % spec.slideCount === 0;
-    if (index > spec.currentSlide - centerOffset - 1 && index <= spec.currentSlide + centerOffset) {
-      slickActive = true;
-    }
-  } else {
-    slickActive = spec.currentSlide <= index && index < spec.currentSlide + spec.slidesToShow;
-  }
-  var slickCurrent = index === spec.currentSlide;
-  return {
-    "slick-slide": true,
-    "slick-active": slickActive,
-    "slick-center": slickCenter,
-    "slick-cloned": slickCloned,
-    "slick-current": slickCurrent // dubious in case of RTL
-  };
-};
-
-var getSlideStyle = function getSlideStyle(spec) {
-  var style = {};
-
-  if (spec.variableWidth === undefined || spec.variableWidth === false) {
-    style.width = spec.slideWidth;
-  }
-
-  if (spec.fade) {
-    style.position = "relative";
-    if (spec.vertical) {
-      style.top = -spec.index * parseInt(spec.slideHeight);
-    } else {
-      style.left = -spec.index * parseInt(spec.slideWidth);
-    }
-    style.opacity = spec.currentSlide === spec.index ? 1 : 0;
-    style.transition = "opacity " + spec.speed + "ms " + spec.cssEase + ", " + "visibility " + spec.speed + "ms " + spec.cssEase;
-    style.WebkitTransition = "opacity " + spec.speed + "ms " + spec.cssEase + ", " + "visibility " + spec.speed + "ms " + spec.cssEase;
-  }
-
-  return style;
-};
-
-var getKey = function getKey(child, fallbackKey) {
-  return child.key || fallbackKey;
-};
-
-var renderSlides = function renderSlides(spec) {
-  var key;
-  var slides = [];
-  var preCloneSlides = [];
-  var postCloneSlides = [];
-  var childrenCount = _react2.default.Children.count(spec.children);
-  var startIndex = (0, _innerSliderUtils.lazyStartIndex)(spec);
-  var endIndex = (0, _innerSliderUtils.lazyEndIndex)(spec);
-
-  _react2.default.Children.forEach(spec.children, function (elem, index) {
-    var child = void 0;
-    var childOnClickOptions = {
-      message: "children",
-      index: index,
-      slidesToScroll: spec.slidesToScroll,
-      currentSlide: spec.currentSlide
-    };
-
-    // in case of lazyLoad, whether or not we want to fetch the slide
-    if (!spec.lazyLoad || spec.lazyLoad && spec.lazyLoadedList.indexOf(index) >= 0) {
-      child = elem;
-    } else {
-      child = _react2.default.createElement("div", null);
-    }
-    var childStyle = getSlideStyle(_extends({}, spec, { index: index }));
-    var slideClass = child.props.className || "";
-    var slideClasses = getSlideClasses(_extends({}, spec, { index: index }));
-    // push a cloned element of the desired slide
-    slides.push(_react2.default.cloneElement(child, {
-      key: "original" + getKey(child, index),
-      "data-index": index,
-      className: (0, _classnames2.default)(slideClasses, slideClass),
-      tabIndex: "-1",
-      "aria-hidden": !slideClasses["slick-active"],
-      style: _extends({ outline: "none" }, child.props.style || {}, childStyle),
-      onClick: function onClick(e) {
-        child.props && child.props.onClick && child.props.onClick(e);
-        if (spec.focusOnSelect) {
-          spec.focusOnSelect(childOnClickOptions);
-        }
-      }
-    }));
-
-    // if slide needs to be precloned or postcloned
-    if (spec.infinite && spec.fade === false) {
-      var preCloneNo = childrenCount - index;
-      if (preCloneNo <= (0, _innerSliderUtils.getPreClones)(spec) && childrenCount !== spec.slidesToShow) {
-        key = -preCloneNo;
-        if (key >= startIndex) {
-          child = elem;
-        }
-        slideClasses = getSlideClasses(_extends({}, spec, { index: key }));
-        preCloneSlides.push(_react2.default.cloneElement(child, {
-          key: "precloned" + getKey(child, key),
-          "data-index": key,
-          tabIndex: "-1",
-          className: (0, _classnames2.default)(slideClasses, slideClass),
-          "aria-hidden": !slideClasses["slick-active"],
-          style: _extends({}, child.props.style || {}, childStyle),
-          onClick: function onClick(e) {
-            child.props && child.props.onClick && child.props.onClick(e);
-            if (spec.focusOnSelect) {
-              spec.focusOnSelect(childOnClickOptions);
-            }
-          }
-        }));
-      }
-
-      if (childrenCount !== spec.slidesToShow) {
-        key = childrenCount + index;
-        if (key < endIndex) {
-          child = elem;
-        }
-        slideClasses = getSlideClasses(_extends({}, spec, { index: key }));
-        postCloneSlides.push(_react2.default.cloneElement(child, {
-          key: "postcloned" + getKey(child, key),
-          "data-index": key,
-          tabIndex: "-1",
-          className: (0, _classnames2.default)(slideClasses, slideClass),
-          "aria-hidden": !slideClasses["slick-active"],
-          style: _extends({}, child.props.style || {}, childStyle),
-          onClick: function onClick(e) {
-            child.props && child.props.onClick && child.props.onClick(e);
-            if (spec.focusOnSelect) {
-              spec.focusOnSelect(childOnClickOptions);
-            }
-          }
-        }));
-      }
-    }
-  });
-
-  if (spec.rtl) {
-    return preCloneSlides.concat(slides, postCloneSlides).reverse();
-  } else {
-    return preCloneSlides.concat(slides, postCloneSlides);
-  }
-};
-
-var Track = exports.Track = function (_React$PureComponent) {
-  _inherits(Track, _React$PureComponent);
-
-  function Track() {
-    _classCallCheck(this, Track);
-
-    return _possibleConstructorReturn(this, _React$PureComponent.apply(this, arguments));
-  }
-
-  Track.prototype.render = function render() {
-    var slides = renderSlides(this.props);
-    var _props = this.props,
-        onMouseEnter = _props.onMouseEnter,
-        onMouseOver = _props.onMouseOver,
-        onMouseLeave = _props.onMouseLeave;
-
-    var mouseEvents = { onMouseEnter: onMouseEnter, onMouseOver: onMouseOver, onMouseLeave: onMouseLeave };
-    return _react2.default.createElement(
-      "div",
-      _extends({
-        className: "slick-track",
-        style: this.props.trackStyle
-      }, mouseEvents),
-      slides
-    );
-  };
-
-  return Track;
-}(_react2.default.PureComponent);
-
-/***/ }),
-
-/***/ "./node_modules/react-slick/lib/utils/innerSliderUtils.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/react-slick/lib/utils/innerSliderUtils.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.canUseDOM = exports.slidesOnLeft = exports.slidesOnRight = exports.siblingDirection = exports.getTotalSlides = exports.getPostClones = exports.getPreClones = exports.getTrackLeft = exports.getTrackAnimateCSS = exports.getTrackCSS = exports.checkSpecKeys = exports.getSlideCount = exports.checkNavigable = exports.getNavigableIndexes = exports.swipeEnd = exports.swipeMove = exports.swipeStart = exports.keyHandler = exports.changeSlide = exports.slideHandler = exports.initializedState = exports.extractObject = exports.canGoNext = exports.getSwipeDirection = exports.getHeight = exports.getWidth = exports.lazySlidesOnRight = exports.lazySlidesOnLeft = exports.lazyEndIndex = exports.lazyStartIndex = exports.getRequiredLazySlides = exports.getOnDemandLazySlides = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var getOnDemandLazySlides = exports.getOnDemandLazySlides = function getOnDemandLazySlides(spec) {
-  var onDemandSlides = [];
-  var startIndex = lazyStartIndex(spec);
-  var endIndex = lazyEndIndex(spec);
-  for (var slideIndex = startIndex; slideIndex < endIndex; slideIndex++) {
-    if (spec.lazyLoadedList.indexOf(slideIndex) < 0) {
-      onDemandSlides.push(slideIndex);
-    }
-  }
-  return onDemandSlides;
-};
-
-// return list of slides that need to be present
-var getRequiredLazySlides = exports.getRequiredLazySlides = function getRequiredLazySlides(spec) {
-  var requiredSlides = [];
-  var startIndex = lazyStartIndex(spec);
-  var endIndex = lazyEndIndex(spec);
-  for (var slideIndex = startIndex; slideIndex < endIndex; slideIndex++) {
-    requiredSlides.push(slideIndex);
-  }
-  return requiredSlides;
-};
-
-// startIndex that needs to be present
-var lazyStartIndex = exports.lazyStartIndex = function lazyStartIndex(spec) {
-  return spec.currentSlide - lazySlidesOnLeft(spec);
-};
-var lazyEndIndex = exports.lazyEndIndex = function lazyEndIndex(spec) {
-  return spec.currentSlide + lazySlidesOnRight(spec);
-};
-var lazySlidesOnLeft = exports.lazySlidesOnLeft = function lazySlidesOnLeft(spec) {
-  return spec.centerMode ? Math.floor(spec.slidesToShow / 2) + (parseInt(spec.centerPadding) > 0 ? 1 : 0) : 0;
-};
-var lazySlidesOnRight = exports.lazySlidesOnRight = function lazySlidesOnRight(spec) {
-  return spec.centerMode ? Math.floor((spec.slidesToShow - 1) / 2) + 1 + (parseInt(spec.centerPadding) > 0 ? 1 : 0) : spec.slidesToShow;
-};
-
-// get width of an element
-var getWidth = exports.getWidth = function getWidth(elem) {
-  return elem && elem.offsetWidth || 0;
-};
-var getHeight = exports.getHeight = function getHeight(elem) {
-  return elem && elem.offsetHeight || 0;
-};
-var getSwipeDirection = exports.getSwipeDirection = function getSwipeDirection(touchObject) {
-  var verticalSwiping = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var xDist, yDist, r, swipeAngle;
-  xDist = touchObject.startX - touchObject.curX;
-  yDist = touchObject.startY - touchObject.curY;
-  r = Math.atan2(yDist, xDist);
-  swipeAngle = Math.round(r * 180 / Math.PI);
-  if (swipeAngle < 0) {
-    swipeAngle = 360 - Math.abs(swipeAngle);
-  }
-  if (swipeAngle <= 45 && swipeAngle >= 0 || swipeAngle <= 360 && swipeAngle >= 315) {
-    return "left";
-  }
-  if (swipeAngle >= 135 && swipeAngle <= 225) {
-    return "right";
-  }
-  if (verticalSwiping === true) {
-    if (swipeAngle >= 35 && swipeAngle <= 135) {
-      return "up";
-    } else {
-      return "down";
-    }
-  }
-
-  return "vertical";
-};
-
-// whether or not we can go next
-var canGoNext = exports.canGoNext = function canGoNext(spec) {
-  var canGo = true;
-  if (!spec.infinite) {
-    if (spec.centerMode && spec.currentSlide >= spec.slideCount - 1) {
-      canGo = false;
-    } else if (spec.slideCount <= spec.slidesToShow || spec.currentSlide >= spec.slideCount - spec.slidesToShow) {
-      canGo = false;
-    }
-  }
-  return canGo;
-};
-
-// given an object and a list of keys, return new object with given keys
-var extractObject = exports.extractObject = function extractObject(spec, keys) {
-  var newObject = {};
-  keys.forEach(function (key) {
-    return newObject[key] = spec[key];
-  });
-  return newObject;
-};
-
-// get initialized state
-var initializedState = exports.initializedState = function initializedState(spec) {
-  // spec also contains listRef, trackRef
-  var slideCount = _react2.default.Children.count(spec.children);
-  var listWidth = Math.ceil(getWidth(_reactDom2.default.findDOMNode(spec.listRef)));
-  var trackWidth = Math.ceil(getWidth(_reactDom2.default.findDOMNode(spec.trackRef)));
-  var slideWidth = void 0;
-  if (!spec.vertical) {
-    var centerPaddingAdj = spec.centerMode && parseInt(spec.centerPadding) * 2;
-    if (typeof spec.centerPadding === "string" && spec.centerPadding.slice(-1) === "%") {
-      centerPaddingAdj *= listWidth / 100;
-    }
-    slideWidth = Math.ceil((listWidth - centerPaddingAdj) / spec.slidesToShow);
-  } else {
-    slideWidth = listWidth;
-  }
-  var slideHeight = _reactDom2.default.findDOMNode(spec.listRef) && getHeight(_reactDom2.default.findDOMNode(spec.listRef).querySelector('[data-index="0"]'));
-  var listHeight = slideHeight * spec.slidesToShow;
-  var currentSlide = spec.currentSlide === undefined ? spec.initialSlide : spec.currentSlide;
-  if (spec.rtl && spec.currentSlide === undefined) {
-    currentSlide = slideCount - 1 - spec.initialSlide;
-  }
-  var lazyLoadedList = spec.lazyLoadedList || [];
-  var slidesToLoad = getOnDemandLazySlides({ currentSlide: currentSlide, lazyLoadedList: lazyLoadedList }, spec);
-  lazyLoadedList.concat(slidesToLoad);
-
-  var state = {
-    slideCount: slideCount,
-    slideWidth: slideWidth,
-    listWidth: listWidth,
-    trackWidth: trackWidth,
-    currentSlide: currentSlide,
-    slideHeight: slideHeight,
-    listHeight: listHeight,
-    lazyLoadedList: lazyLoadedList
-  };
-
-  if (spec.autoplaying === null && spec.autoplay) {
-    state["autoplaying"] = "playing";
-  }
-
-  return state;
-};
-
-var slideHandler = exports.slideHandler = function slideHandler(spec) {
-  var waitForAnimate = spec.waitForAnimate,
-      animating = spec.animating,
-      fade = spec.fade,
-      infinite = spec.infinite,
-      index = spec.index,
-      slideCount = spec.slideCount,
-      lazyLoadedList = spec.lazyLoadedList,
-      lazyLoad = spec.lazyLoad,
-      currentSlide = spec.currentSlide,
-      centerMode = spec.centerMode,
-      slidesToScroll = spec.slidesToScroll,
-      slidesToShow = spec.slidesToShow,
-      useCSS = spec.useCSS;
-
-  if (waitForAnimate && animating) return {};
-  var animationSlide = index,
-      finalSlide = void 0,
-      animationLeft = void 0,
-      finalLeft = void 0;
-  var state = {},
-      nextState = {};
-  if (fade) {
-    if (!infinite && (index < 0 || index >= slideCount)) return {};
-    if (index < 0) {
-      animationSlide = index + slideCount;
-    } else if (index >= slideCount) {
-      animationSlide = index - slideCount;
-    }
-    if (lazyLoad && lazyLoadedList.indexOf(animationSlide) < 0) {
-      lazyLoadedList.push(animationSlide);
-    }
-    state = {
-      animating: true,
-      currentSlide: animationSlide,
-      lazyLoadedList: lazyLoadedList
-    };
-    nextState = { animating: false };
-  } else {
-    finalSlide = animationSlide;
-    if (animationSlide < 0) {
-      finalSlide = animationSlide + slideCount;
-      if (!infinite) finalSlide = 0;else if (slideCount % slidesToScroll !== 0) finalSlide = slideCount - slideCount % slidesToScroll;
-    } else if (!canGoNext(spec) && animationSlide > currentSlide) {
-      animationSlide = finalSlide = currentSlide;
-    } else if (centerMode && animationSlide >= slideCount) {
-      animationSlide = infinite ? slideCount : slideCount - 1;
-      finalSlide = infinite ? 0 : slideCount - 1;
-    } else if (animationSlide >= slideCount) {
-      finalSlide = animationSlide - slideCount;
-      if (!infinite) finalSlide = slideCount - slidesToShow;else if (slideCount % slidesToScroll !== 0) finalSlide = 0;
-    }
-    animationLeft = getTrackLeft(_extends({}, spec, { slideIndex: animationSlide }));
-    finalLeft = getTrackLeft(_extends({}, spec, { slideIndex: finalSlide }));
-    if (!infinite) {
-      if (animationLeft === finalLeft) animationSlide = finalSlide;
-      animationLeft = finalLeft;
-    }
-    lazyLoad && lazyLoadedList.concat(getOnDemandLazySlides(_extends({}, spec, { currentSlide: animationSlide })));
-    if (!useCSS) {
-      state = {
-        currentSlide: finalSlide,
-        trackStyle: getTrackCSS(_extends({}, spec, { left: finalLeft })),
-        lazyLoadedList: lazyLoadedList
-      };
-    } else {
-      state = {
-        animating: true,
-        currentSlide: finalSlide,
-        trackStyle: getTrackAnimateCSS(_extends({}, spec, { left: animationLeft })),
-        lazyLoadedList: lazyLoadedList
-      };
-      nextState = {
-        animating: false,
-        currentSlide: finalSlide,
-        trackStyle: getTrackCSS(_extends({}, spec, { left: finalLeft })),
-        swipeLeft: null
-      };
-    }
-  }
-  return { state: state, nextState: nextState };
-};
-
-var changeSlide = exports.changeSlide = function changeSlide(spec, options) {
-  var indexOffset, previousInt, slideOffset, unevenOffset, targetSlide;
-  var slidesToScroll = spec.slidesToScroll,
-      slidesToShow = spec.slidesToShow,
-      slideCount = spec.slideCount,
-      currentSlide = spec.currentSlide,
-      lazyLoad = spec.lazyLoad,
-      infinite = spec.infinite;
-
-  unevenOffset = slideCount % slidesToScroll !== 0;
-  indexOffset = unevenOffset ? 0 : (slideCount - currentSlide) % slidesToScroll;
-
-  if (options.message === "previous") {
-    slideOffset = indexOffset === 0 ? slidesToScroll : slidesToShow - indexOffset;
-    targetSlide = currentSlide - slideOffset;
-    if (lazyLoad && !infinite) {
-      previousInt = currentSlide - slideOffset;
-      targetSlide = previousInt === -1 ? slideCount - 1 : previousInt;
-    }
-  } else if (options.message === "next") {
-    slideOffset = indexOffset === 0 ? slidesToScroll : indexOffset;
-    targetSlide = currentSlide + slideOffset;
-    if (lazyLoad && !infinite) {
-      targetSlide = (currentSlide + slidesToScroll) % slideCount + indexOffset;
-    }
-  } else if (options.message === "dots") {
-    // Click on dots
-    targetSlide = options.index * options.slidesToScroll;
-    if (targetSlide === options.currentSlide) {
-      return null;
-    }
-  } else if (options.message === "children") {
-    // Click on the slides
-    targetSlide = options.index;
-    if (targetSlide === options.currentSlide) {
-      return null;
-    }
-    if (infinite) {
-      var direction = siblingDirection(_extends({}, spec, { targetSlide: targetSlide }));
-      if (targetSlide > options.currentSlide && direction === "left") {
-        targetSlide = targetSlide - slideCount;
-      } else if (targetSlide < options.currentSlide && direction === "right") {
-        targetSlide = targetSlide + slideCount;
-      }
-    }
-  } else if (options.message === "index") {
-    targetSlide = Number(options.index);
-    if (targetSlide === options.currentSlide) {
-      return null;
-    }
-  }
-  return targetSlide;
-};
-var keyHandler = exports.keyHandler = function keyHandler(e, accessibility, rtl) {
-  if (e.target.tagName.match("TEXTAREA|INPUT|SELECT") || !accessibility) return "";
-  if (e.keyCode === 37) return rtl ? "next" : "previous";
-  if (e.keyCode === 39) return rtl ? "previous" : "next";
-  return "";
-};
-
-var swipeStart = exports.swipeStart = function swipeStart(e, swipe, draggable) {
-  e.target.tagName === "IMG" && e.preventDefault();
-  if (!swipe || !draggable && e.type.indexOf("mouse") !== -1) return "";
-  return {
-    dragging: true,
-    touchObject: {
-      startX: e.touches ? e.touches[0].pageX : e.clientX,
-      startY: e.touches ? e.touches[0].pageY : e.clientY,
-      curX: e.touches ? e.touches[0].pageX : e.clientX,
-      curY: e.touches ? e.touches[0].pageY : e.clientY
-    }
-  };
-};
-var swipeMove = exports.swipeMove = function swipeMove(e, spec) {
-  // spec also contains, trackRef and slideIndex
-  var scrolling = spec.scrolling,
-      animating = spec.animating,
-      vertical = spec.vertical,
-      swipeToSlide = spec.swipeToSlide,
-      verticalSwiping = spec.verticalSwiping,
-      rtl = spec.rtl,
-      currentSlide = spec.currentSlide,
-      edgeFriction = spec.edgeFriction,
-      edgeDragged = spec.edgeDragged,
-      onEdge = spec.onEdge,
-      swiped = spec.swiped,
-      swiping = spec.swiping,
-      slideCount = spec.slideCount,
-      slidesToScroll = spec.slidesToScroll,
-      infinite = spec.infinite,
-      touchObject = spec.touchObject,
-      swipeEvent = spec.swipeEvent,
-      listHeight = spec.listHeight,
-      listWidth = spec.listWidth;
-
-  if (scrolling) return;
-  if (animating) return e.preventDefault();
-  if (vertical && swipeToSlide && verticalSwiping) e.preventDefault();
-  var swipeLeft = void 0,
-      state = {};
-  var curLeft = getTrackLeft(spec);
-  touchObject.curX = e.touches ? e.touches[0].pageX : e.clientX;
-  touchObject.curY = e.touches ? e.touches[0].pageY : e.clientY;
-  touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curX - touchObject.startX, 2)));
-  var verticalSwipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curY - touchObject.startY, 2)));
-  if (!verticalSwiping && !swiping && verticalSwipeLength > 10) {
-    return { scrolling: true };
-  }
-  if (verticalSwiping) touchObject.swipeLength = verticalSwipeLength;
-  var positionOffset = (!rtl ? 1 : -1) * (touchObject.curX > touchObject.startX ? 1 : -1);
-  if (verticalSwiping) positionOffset = touchObject.curY > touchObject.startY ? 1 : -1;
-
-  var dotCount = Math.ceil(slideCount / slidesToScroll);
-  var swipeDirection = getSwipeDirection(spec.touchObject, verticalSwiping);
-  var touchSwipeLength = touchObject.swipeLength;
-  if (!infinite) {
-    if (currentSlide === 0 && swipeDirection === "right" || currentSlide + 1 >= dotCount && swipeDirection === "left" || !canGoNext(spec) && swipeDirection === "left") {
-      touchSwipeLength = touchObject.swipeLength * edgeFriction;
-      if (edgeDragged === false && onEdge) {
-        onEdge(swipeDirection);
-        state["edgeDragged"] = true;
-      }
-    }
-  }
-  if (!swiped && swipeEvent) {
-    swipeEvent(swipeDirection);
-    state["swiped"] = true;
-  }
-  if (!vertical) {
-    if (!rtl) {
-      swipeLeft = curLeft + touchSwipeLength * positionOffset;
-    } else {
-      swipeLeft = curLeft - touchSwipeLength * positionOffset;
-    }
-  } else {
-    swipeLeft = curLeft + touchSwipeLength * (listHeight / listWidth) * positionOffset;
-  }
-  if (verticalSwiping) {
-    swipeLeft = curLeft + touchSwipeLength * positionOffset;
-  }
-  state = _extends({}, state, {
-    touchObject: touchObject,
-    swipeLeft: swipeLeft,
-    trackStyle: getTrackCSS(_extends({}, spec, { left: swipeLeft }))
-  });
-  if (Math.abs(touchObject.curX - touchObject.startX) < Math.abs(touchObject.curY - touchObject.startY) * 0.8) {
-    return state;
-  }
-  if (touchObject.swipeLength > 10) {
-    state["swiping"] = true;
-    e.preventDefault();
-  }
-  return state;
-};
-var swipeEnd = exports.swipeEnd = function swipeEnd(e, spec) {
-  var dragging = spec.dragging,
-      swipe = spec.swipe,
-      touchObject = spec.touchObject,
-      listWidth = spec.listWidth,
-      touchThreshold = spec.touchThreshold,
-      verticalSwiping = spec.verticalSwiping,
-      listHeight = spec.listHeight,
-      currentSlide = spec.currentSlide,
-      swipeToSlide = spec.swipeToSlide,
-      scrolling = spec.scrolling,
-      onSwipe = spec.onSwipe;
-
-  if (!dragging) {
-    if (swipe) e.preventDefault();
-    return {};
-  }
-  var minSwipe = verticalSwiping ? listHeight / touchThreshold : listWidth / touchThreshold;
-  var swipeDirection = getSwipeDirection(touchObject, verticalSwiping);
-  // reset the state of touch related state variables.
-  var state = {
-    dragging: false,
-    edgeDragged: false,
-    scrolling: false,
-    swiping: false,
-    swiped: false,
-    swipeLeft: null,
-    touchObject: {}
-  };
-  if (scrolling) {
-    return state;
-  }
-  if (!touchObject.swipeLength) {
-    return state;
-  }
-  if (touchObject.swipeLength > minSwipe) {
-    e.preventDefault();
-    if (onSwipe) {
-      onSwipe(swipeDirection);
-    }
-    var slideCount = void 0,
-        newSlide = void 0;
-    switch (swipeDirection) {
-      case "left":
-      case "up":
-        newSlide = currentSlide + getSlideCount(spec);
-        slideCount = swipeToSlide ? checkNavigable(spec, newSlide) : newSlide;
-        state["currentDirection"] = 0;
-        break;
-      case "right":
-      case "down":
-        newSlide = currentSlide - getSlideCount(spec);
-        slideCount = swipeToSlide ? checkNavigable(spec, newSlide) : newSlide;
-        state["currentDirection"] = 1;
-        break;
-      default:
-        slideCount = currentSlide;
-    }
-    state["triggerSlideHandler"] = slideCount;
-  } else {
-    // Adjust the track back to it's original position.
-    var currentLeft = getTrackLeft(spec);
-    state["trackStyle"] = getTrackAnimateCSS(_extends({}, spec, { left: currentLeft }));
-  }
-  return state;
-};
-var getNavigableIndexes = exports.getNavigableIndexes = function getNavigableIndexes(spec) {
-  var max = spec.infinite ? spec.slideCount * 2 : spec.slideCount;
-  var breakpoint = spec.infinite ? spec.slidesToShow * -1 : 0;
-  var counter = spec.infinite ? spec.slidesToShow * -1 : 0;
-  var indexes = [];
-  while (breakpoint < max) {
-    indexes.push(breakpoint);
-    breakpoint = counter + spec.slidesToScroll;
-    counter += Math.min(spec.slidesToScroll, spec.slidesToShow);
-  }
-  return indexes;
-};
-var checkNavigable = exports.checkNavigable = function checkNavigable(spec, index) {
-  var navigables = getNavigableIndexes(spec);
-  var prevNavigable = 0;
-  if (index > navigables[navigables.length - 1]) {
-    index = navigables[navigables.length - 1];
-  } else {
-    for (var n in navigables) {
-      if (index < navigables[n]) {
-        index = prevNavigable;
-        break;
-      }
-      prevNavigable = navigables[n];
-    }
-  }
-  return index;
-};
-var getSlideCount = exports.getSlideCount = function getSlideCount(spec) {
-  var centerOffset = spec.centerMode ? spec.slideWidth * Math.floor(spec.slidesToShow / 2) : 0;
-  if (spec.swipeToSlide) {
-    var swipedSlide = void 0;
-    var slickList = _reactDom2.default.findDOMNode(spec.listRef);
-    var slides = slickList.querySelectorAll(".slick-slide");
-    Array.from(slides).every(function (slide) {
-      if (!spec.vertical) {
-        if (slide.offsetLeft - centerOffset + getWidth(slide) / 2 > spec.swipeLeft * -1) {
-          swipedSlide = slide;
-          return false;
-        }
-      } else {
-        if (slide.offsetTop + getHeight(slide) / 2 > spec.swipeLeft * -1) {
-          swipedSlide = slide;
-          return false;
-        }
-      }
-
-      return true;
-    });
-
-    if (!swipedSlide) {
-      return 0;
-    }
-    var currentIndex = spec.rtl === true ? spec.slideCount - spec.currentSlide : spec.currentSlide;
-    var slidesTraversed = Math.abs(swipedSlide.dataset.index - currentIndex) || 1;
-    return slidesTraversed;
-  } else {
-    return spec.slidesToScroll;
-  }
-};
-
-var checkSpecKeys = exports.checkSpecKeys = function checkSpecKeys(spec, keysArray) {
-  return keysArray.reduce(function (value, key) {
-    return value && spec.hasOwnProperty(key);
-  }, true) ? null : console.error("Keys Missing:", spec);
-};
-
-var getTrackCSS = exports.getTrackCSS = function getTrackCSS(spec) {
-  checkSpecKeys(spec, ["left", "variableWidth", "slideCount", "slidesToShow", "slideWidth"]);
-  var trackWidth = void 0,
-      trackHeight = void 0;
-  var trackChildren = spec.slideCount + 2 * spec.slidesToShow;
-  if (!spec.vertical) {
-    trackWidth = getTotalSlides(spec) * spec.slideWidth;
-  } else {
-    trackHeight = trackChildren * spec.slideHeight;
-  }
-  var style = {
-    opacity: 1,
-    transition: "",
-    WebkitTransition: ""
-  };
-  if (spec.useTransform) {
-    var WebkitTransform = !spec.vertical ? "translate3d(" + spec.left + "px, 0px, 0px)" : "translate3d(0px, " + spec.left + "px, 0px)";
-    var transform = !spec.vertical ? "translate3d(" + spec.left + "px, 0px, 0px)" : "translate3d(0px, " + spec.left + "px, 0px)";
-    var msTransform = !spec.vertical ? "translateX(" + spec.left + "px)" : "translateY(" + spec.left + "px)";
-    style = _extends({}, style, {
-      WebkitTransform: WebkitTransform,
-      transform: transform,
-      msTransform: msTransform
-    });
-  } else {
-    if (spec.vertical) {
-      style["top"] = spec.left;
-    } else {
-      style["left"] = spec.left;
-    }
-  }
-  if (spec.fade) style = { opacity: 1 };
-  if (trackWidth) style.width = trackWidth;
-  if (trackHeight) style.height = trackHeight;
-
-  // Fallback for IE8
-  if (window && !window.addEventListener && window.attachEvent) {
-    if (!spec.vertical) {
-      style.marginLeft = spec.left + "px";
-    } else {
-      style.marginTop = spec.left + "px";
-    }
-  }
-
-  return style;
-};
-var getTrackAnimateCSS = exports.getTrackAnimateCSS = function getTrackAnimateCSS(spec) {
-  checkSpecKeys(spec, ["left", "variableWidth", "slideCount", "slidesToShow", "slideWidth", "speed", "cssEase"]);
-  var style = getTrackCSS(spec);
-  // useCSS is true by default so it can be undefined
-  if (spec.useTransform) {
-    style.WebkitTransition = "-webkit-transform " + spec.speed + "ms " + spec.cssEase;
-    style.transition = "transform " + spec.speed + "ms " + spec.cssEase;
-  } else {
-    if (spec.vertical) {
-      style.transition = "top " + spec.speed + "ms " + spec.cssEase;
-    } else {
-      style.transition = "left " + spec.speed + "ms " + spec.cssEase;
-    }
-  }
-  return style;
-};
-var getTrackLeft = exports.getTrackLeft = function getTrackLeft(spec) {
-  if (spec.unslick) {
-    return 0;
-  }
-
-  checkSpecKeys(spec, ["slideIndex", "trackRef", "infinite", "centerMode", "slideCount", "slidesToShow", "slidesToScroll", "slideWidth", "listWidth", "variableWidth", "slideHeight"]);
-
-  var slideIndex = spec.slideIndex,
-      trackRef = spec.trackRef,
-      infinite = spec.infinite,
-      centerMode = spec.centerMode,
-      slideCount = spec.slideCount,
-      slidesToShow = spec.slidesToShow,
-      slidesToScroll = spec.slidesToScroll,
-      slideWidth = spec.slideWidth,
-      listWidth = spec.listWidth,
-      variableWidth = spec.variableWidth,
-      slideHeight = spec.slideHeight,
-      fade = spec.fade,
-      vertical = spec.vertical;
-
-
-  var slideOffset = 0;
-  var targetLeft;
-  var targetSlide;
-  var verticalOffset = 0;
-
-  if (fade || spec.slideCount === 1) {
-    return 0;
-  }
-
-  var slidesToOffset = 0;
-  if (infinite) {
-    slidesToOffset = -getPreClones(spec); // bring active slide to the beginning of visual area
-    // if next scroll doesn't have enough children, just reach till the end of original slides instead of shifting slidesToScroll children
-    if (slideCount % slidesToScroll !== 0 && slideIndex + slidesToScroll > slideCount) {
-      slidesToOffset = -(slideIndex > slideCount ? slidesToShow - (slideIndex - slideCount) : slideCount % slidesToScroll);
-    }
-    // shift current slide to center of the frame
-    if (centerMode) {
-      slidesToOffset += parseInt(slidesToShow / 2);
-    }
-  } else {
-    if (slideCount % slidesToScroll !== 0 && slideIndex + slidesToScroll > slideCount) {
-      slidesToOffset = slidesToShow - slideCount % slidesToScroll;
-    }
-    if (centerMode) {
-      slidesToOffset = parseInt(slidesToShow / 2);
-    }
-  }
-  slideOffset = slidesToOffset * slideWidth;
-  verticalOffset = slidesToOffset * slideHeight;
-
-  if (!vertical) {
-    targetLeft = slideIndex * slideWidth * -1 + slideOffset;
-  } else {
-    targetLeft = slideIndex * slideHeight * -1 + verticalOffset;
-  }
-
-  if (variableWidth === true) {
-    var targetSlideIndex;
-    var trackElem = _reactDom2.default.findDOMNode(trackRef);
-    targetSlideIndex = slideIndex + getPreClones(spec);
-    targetSlide = trackElem && trackElem.childNodes[targetSlideIndex];
-    targetLeft = targetSlide ? targetSlide.offsetLeft * -1 : 0;
-    if (centerMode === true) {
-      targetSlideIndex = infinite ? slideIndex + getPreClones(spec) : slideIndex;
-      targetSlide = trackElem && trackElem.children[targetSlideIndex];
-      targetLeft = 0;
-      for (var slide = 0; slide < targetSlideIndex; slide++) {
-        targetLeft -= trackElem && trackElem.children[slide] && trackElem.children[slide].offsetWidth;
-      }
-      targetLeft -= parseInt(spec.centerPadding);
-      targetLeft += targetSlide && (listWidth - targetSlide.offsetWidth) / 2;
-    }
-  }
-
-  return targetLeft;
-};
-
-var getPreClones = exports.getPreClones = function getPreClones(spec) {
-  if (spec.unslick || !spec.infinite) {
-    return 0;
-  }
-  if (spec.variableWidth) {
-    return spec.slideCount;
-  }
-  return spec.slidesToShow + (spec.centerMode ? 1 : 0);
-};
-
-var getPostClones = exports.getPostClones = function getPostClones(spec) {
-  if (spec.unslick || !spec.infinite) {
-    return 0;
-  }
-  return spec.slideCount;
-};
-
-var getTotalSlides = exports.getTotalSlides = function getTotalSlides(spec) {
-  return spec.slideCount === 1 ? 1 : getPreClones(spec) + spec.slideCount + getPostClones(spec);
-};
-var siblingDirection = exports.siblingDirection = function siblingDirection(spec) {
-  if (spec.targetSlide > spec.currentSlide) {
-    if (spec.targetSlide > spec.currentSlide + slidesOnRight(spec)) {
-      return "left";
-    }
-    return "right";
-  } else {
-    if (spec.targetSlide < spec.currentSlide - slidesOnLeft(spec)) {
-      return "right";
-    }
-    return "left";
-  }
-};
-
-var slidesOnRight = exports.slidesOnRight = function slidesOnRight(_ref) {
-  var slidesToShow = _ref.slidesToShow,
-      centerMode = _ref.centerMode,
-      rtl = _ref.rtl,
-      centerPadding = _ref.centerPadding;
-
-  // returns no of slides on the right of active slide
-  if (centerMode) {
-    var right = (slidesToShow - 1) / 2 + 1;
-    if (parseInt(centerPadding) > 0) right += 1;
-    if (rtl && slidesToShow % 2 === 0) right += 1;
-    return right;
-  }
-  if (rtl) {
-    return 0;
-  }
-  return slidesToShow - 1;
-};
-
-var slidesOnLeft = exports.slidesOnLeft = function slidesOnLeft(_ref2) {
-  var slidesToShow = _ref2.slidesToShow,
-      centerMode = _ref2.centerMode,
-      rtl = _ref2.rtl,
-      centerPadding = _ref2.centerPadding;
-
-  // returns no of slides on the left of active slide
-  if (centerMode) {
-    var left = (slidesToShow - 1) / 2 + 1;
-    if (parseInt(centerPadding) > 0) left += 1;
-    if (!rtl && slidesToShow % 2 === 0) left += 1;
-    return left;
-  }
-  if (rtl) {
-    return slidesToShow - 1;
-  }
-  return 0;
-};
-
-var canUseDOM = exports.canUseDOM = function canUseDOM() {
-  return !!(typeof window !== "undefined" && window.document && window.document.createElement);
-};
-
-/***/ }),
-
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
   !*** delegated ./node_modules/react/index.js from dll-reference dll_4fa5fe59a0158b551b2e ***!
@@ -16278,948 +12879,6 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ "./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global) {/**
- * A collection of shims that provide minimal functionality of the ES6 collections.
- *
- * These implementations are not meant to be used outside of the ResizeObserver
- * modules as they cover only a limited range of use cases.
- */
-/* eslint-disable require-jsdoc, valid-jsdoc */
-var MapShim = (function () {
-    if (typeof Map !== 'undefined') {
-        return Map;
-    }
-    /**
-     * Returns index in provided array that matches the specified key.
-     *
-     * @param {Array<Array>} arr
-     * @param {*} key
-     * @returns {number}
-     */
-    function getIndex(arr, key) {
-        var result = -1;
-        arr.some(function (entry, index) {
-            if (entry[0] === key) {
-                result = index;
-                return true;
-            }
-            return false;
-        });
-        return result;
-    }
-    return /** @class */ (function () {
-        function class_1() {
-            this.__entries__ = [];
-        }
-        Object.defineProperty(class_1.prototype, "size", {
-            /**
-             * @returns {boolean}
-             */
-            get: function () {
-                return this.__entries__.length;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        /**
-         * @param {*} key
-         * @returns {*}
-         */
-        class_1.prototype.get = function (key) {
-            var index = getIndex(this.__entries__, key);
-            var entry = this.__entries__[index];
-            return entry && entry[1];
-        };
-        /**
-         * @param {*} key
-         * @param {*} value
-         * @returns {void}
-         */
-        class_1.prototype.set = function (key, value) {
-            var index = getIndex(this.__entries__, key);
-            if (~index) {
-                this.__entries__[index][1] = value;
-            }
-            else {
-                this.__entries__.push([key, value]);
-            }
-        };
-        /**
-         * @param {*} key
-         * @returns {void}
-         */
-        class_1.prototype.delete = function (key) {
-            var entries = this.__entries__;
-            var index = getIndex(entries, key);
-            if (~index) {
-                entries.splice(index, 1);
-            }
-        };
-        /**
-         * @param {*} key
-         * @returns {void}
-         */
-        class_1.prototype.has = function (key) {
-            return !!~getIndex(this.__entries__, key);
-        };
-        /**
-         * @returns {void}
-         */
-        class_1.prototype.clear = function () {
-            this.__entries__.splice(0);
-        };
-        /**
-         * @param {Function} callback
-         * @param {*} [ctx=null]
-         * @returns {void}
-         */
-        class_1.prototype.forEach = function (callback, ctx) {
-            if (ctx === void 0) { ctx = null; }
-            for (var _i = 0, _a = this.__entries__; _i < _a.length; _i++) {
-                var entry = _a[_i];
-                callback.call(ctx, entry[1], entry[0]);
-            }
-        };
-        return class_1;
-    }());
-})();
-
-/**
- * Detects whether window and document objects are available in current environment.
- */
-var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined' && window.document === document;
-
-// Returns global object of a current environment.
-var global$1 = (function () {
-    if (typeof global !== 'undefined' && global.Math === Math) {
-        return global;
-    }
-    if (typeof self !== 'undefined' && self.Math === Math) {
-        return self;
-    }
-    if (typeof window !== 'undefined' && window.Math === Math) {
-        return window;
-    }
-    // eslint-disable-next-line no-new-func
-    return Function('return this')();
-})();
-
-/**
- * A shim for the requestAnimationFrame which falls back to the setTimeout if
- * first one is not supported.
- *
- * @returns {number} Requests' identifier.
- */
-var requestAnimationFrame$1 = (function () {
-    if (typeof requestAnimationFrame === 'function') {
-        // It's required to use a bounded function because IE sometimes throws
-        // an "Invalid calling object" error if rAF is invoked without the global
-        // object on the left hand side.
-        return requestAnimationFrame.bind(global$1);
-    }
-    return function (callback) { return setTimeout(function () { return callback(Date.now()); }, 1000 / 60); };
-})();
-
-// Defines minimum timeout before adding a trailing call.
-var trailingTimeout = 2;
-/**
- * Creates a wrapper function which ensures that provided callback will be
- * invoked only once during the specified delay period.
- *
- * @param {Function} callback - Function to be invoked after the delay period.
- * @param {number} delay - Delay after which to invoke callback.
- * @returns {Function}
- */
-function throttle (callback, delay) {
-    var leadingCall = false, trailingCall = false, lastCallTime = 0;
-    /**
-     * Invokes the original callback function and schedules new invocation if
-     * the "proxy" was called during current request.
-     *
-     * @returns {void}
-     */
-    function resolvePending() {
-        if (leadingCall) {
-            leadingCall = false;
-            callback();
-        }
-        if (trailingCall) {
-            proxy();
-        }
-    }
-    /**
-     * Callback invoked after the specified delay. It will further postpone
-     * invocation of the original function delegating it to the
-     * requestAnimationFrame.
-     *
-     * @returns {void}
-     */
-    function timeoutCallback() {
-        requestAnimationFrame$1(resolvePending);
-    }
-    /**
-     * Schedules invocation of the original function.
-     *
-     * @returns {void}
-     */
-    function proxy() {
-        var timeStamp = Date.now();
-        if (leadingCall) {
-            // Reject immediately following calls.
-            if (timeStamp - lastCallTime < trailingTimeout) {
-                return;
-            }
-            // Schedule new call to be in invoked when the pending one is resolved.
-            // This is important for "transitions" which never actually start
-            // immediately so there is a chance that we might miss one if change
-            // happens amids the pending invocation.
-            trailingCall = true;
-        }
-        else {
-            leadingCall = true;
-            trailingCall = false;
-            setTimeout(timeoutCallback, delay);
-        }
-        lastCallTime = timeStamp;
-    }
-    return proxy;
-}
-
-// Minimum delay before invoking the update of observers.
-var REFRESH_DELAY = 20;
-// A list of substrings of CSS properties used to find transition events that
-// might affect dimensions of observed elements.
-var transitionKeys = ['top', 'right', 'bottom', 'left', 'width', 'height', 'size', 'weight'];
-// Check if MutationObserver is available.
-var mutationObserverSupported = typeof MutationObserver !== 'undefined';
-/**
- * Singleton controller class which handles updates of ResizeObserver instances.
- */
-var ResizeObserverController = /** @class */ (function () {
-    /**
-     * Creates a new instance of ResizeObserverController.
-     *
-     * @private
-     */
-    function ResizeObserverController() {
-        /**
-         * Indicates whether DOM listeners have been added.
-         *
-         * @private {boolean}
-         */
-        this.connected_ = false;
-        /**
-         * Tells that controller has subscribed for Mutation Events.
-         *
-         * @private {boolean}
-         */
-        this.mutationEventsAdded_ = false;
-        /**
-         * Keeps reference to the instance of MutationObserver.
-         *
-         * @private {MutationObserver}
-         */
-        this.mutationsObserver_ = null;
-        /**
-         * A list of connected observers.
-         *
-         * @private {Array<ResizeObserverSPI>}
-         */
-        this.observers_ = [];
-        this.onTransitionEnd_ = this.onTransitionEnd_.bind(this);
-        this.refresh = throttle(this.refresh.bind(this), REFRESH_DELAY);
-    }
-    /**
-     * Adds observer to observers list.
-     *
-     * @param {ResizeObserverSPI} observer - Observer to be added.
-     * @returns {void}
-     */
-    ResizeObserverController.prototype.addObserver = function (observer) {
-        if (!~this.observers_.indexOf(observer)) {
-            this.observers_.push(observer);
-        }
-        // Add listeners if they haven't been added yet.
-        if (!this.connected_) {
-            this.connect_();
-        }
-    };
-    /**
-     * Removes observer from observers list.
-     *
-     * @param {ResizeObserverSPI} observer - Observer to be removed.
-     * @returns {void}
-     */
-    ResizeObserverController.prototype.removeObserver = function (observer) {
-        var observers = this.observers_;
-        var index = observers.indexOf(observer);
-        // Remove observer if it's present in registry.
-        if (~index) {
-            observers.splice(index, 1);
-        }
-        // Remove listeners if controller has no connected observers.
-        if (!observers.length && this.connected_) {
-            this.disconnect_();
-        }
-    };
-    /**
-     * Invokes the update of observers. It will continue running updates insofar
-     * it detects changes.
-     *
-     * @returns {void}
-     */
-    ResizeObserverController.prototype.refresh = function () {
-        var changesDetected = this.updateObservers_();
-        // Continue running updates if changes have been detected as there might
-        // be future ones caused by CSS transitions.
-        if (changesDetected) {
-            this.refresh();
-        }
-    };
-    /**
-     * Updates every observer from observers list and notifies them of queued
-     * entries.
-     *
-     * @private
-     * @returns {boolean} Returns "true" if any observer has detected changes in
-     *      dimensions of it's elements.
-     */
-    ResizeObserverController.prototype.updateObservers_ = function () {
-        // Collect observers that have active observations.
-        var activeObservers = this.observers_.filter(function (observer) {
-            return observer.gatherActive(), observer.hasActive();
-        });
-        // Deliver notifications in a separate cycle in order to avoid any
-        // collisions between observers, e.g. when multiple instances of
-        // ResizeObserver are tracking the same element and the callback of one
-        // of them changes content dimensions of the observed target. Sometimes
-        // this may result in notifications being blocked for the rest of observers.
-        activeObservers.forEach(function (observer) { return observer.broadcastActive(); });
-        return activeObservers.length > 0;
-    };
-    /**
-     * Initializes DOM listeners.
-     *
-     * @private
-     * @returns {void}
-     */
-    ResizeObserverController.prototype.connect_ = function () {
-        // Do nothing if running in a non-browser environment or if listeners
-        // have been already added.
-        if (!isBrowser || this.connected_) {
-            return;
-        }
-        // Subscription to the "Transitionend" event is used as a workaround for
-        // delayed transitions. This way it's possible to capture at least the
-        // final state of an element.
-        document.addEventListener('transitionend', this.onTransitionEnd_);
-        window.addEventListener('resize', this.refresh);
-        if (mutationObserverSupported) {
-            this.mutationsObserver_ = new MutationObserver(this.refresh);
-            this.mutationsObserver_.observe(document, {
-                attributes: true,
-                childList: true,
-                characterData: true,
-                subtree: true
-            });
-        }
-        else {
-            document.addEventListener('DOMSubtreeModified', this.refresh);
-            this.mutationEventsAdded_ = true;
-        }
-        this.connected_ = true;
-    };
-    /**
-     * Removes DOM listeners.
-     *
-     * @private
-     * @returns {void}
-     */
-    ResizeObserverController.prototype.disconnect_ = function () {
-        // Do nothing if running in a non-browser environment or if listeners
-        // have been already removed.
-        if (!isBrowser || !this.connected_) {
-            return;
-        }
-        document.removeEventListener('transitionend', this.onTransitionEnd_);
-        window.removeEventListener('resize', this.refresh);
-        if (this.mutationsObserver_) {
-            this.mutationsObserver_.disconnect();
-        }
-        if (this.mutationEventsAdded_) {
-            document.removeEventListener('DOMSubtreeModified', this.refresh);
-        }
-        this.mutationsObserver_ = null;
-        this.mutationEventsAdded_ = false;
-        this.connected_ = false;
-    };
-    /**
-     * "Transitionend" event handler.
-     *
-     * @private
-     * @param {TransitionEvent} event
-     * @returns {void}
-     */
-    ResizeObserverController.prototype.onTransitionEnd_ = function (_a) {
-        var _b = _a.propertyName, propertyName = _b === void 0 ? '' : _b;
-        // Detect whether transition may affect dimensions of an element.
-        var isReflowProperty = transitionKeys.some(function (key) {
-            return !!~propertyName.indexOf(key);
-        });
-        if (isReflowProperty) {
-            this.refresh();
-        }
-    };
-    /**
-     * Returns instance of the ResizeObserverController.
-     *
-     * @returns {ResizeObserverController}
-     */
-    ResizeObserverController.getInstance = function () {
-        if (!this.instance_) {
-            this.instance_ = new ResizeObserverController();
-        }
-        return this.instance_;
-    };
-    /**
-     * Holds reference to the controller's instance.
-     *
-     * @private {ResizeObserverController}
-     */
-    ResizeObserverController.instance_ = null;
-    return ResizeObserverController;
-}());
-
-/**
- * Defines non-writable/enumerable properties of the provided target object.
- *
- * @param {Object} target - Object for which to define properties.
- * @param {Object} props - Properties to be defined.
- * @returns {Object} Target object.
- */
-var defineConfigurable = (function (target, props) {
-    for (var _i = 0, _a = Object.keys(props); _i < _a.length; _i++) {
-        var key = _a[_i];
-        Object.defineProperty(target, key, {
-            value: props[key],
-            enumerable: false,
-            writable: false,
-            configurable: true
-        });
-    }
-    return target;
-});
-
-/**
- * Returns the global object associated with provided element.
- *
- * @param {Object} target
- * @returns {Object}
- */
-var getWindowOf = (function (target) {
-    // Assume that the element is an instance of Node, which means that it
-    // has the "ownerDocument" property from which we can retrieve a
-    // corresponding global object.
-    var ownerGlobal = target && target.ownerDocument && target.ownerDocument.defaultView;
-    // Return the local global object if it's not possible extract one from
-    // provided element.
-    return ownerGlobal || global$1;
-});
-
-// Placeholder of an empty content rectangle.
-var emptyRect = createRectInit(0, 0, 0, 0);
-/**
- * Converts provided string to a number.
- *
- * @param {number|string} value
- * @returns {number}
- */
-function toFloat(value) {
-    return parseFloat(value) || 0;
-}
-/**
- * Extracts borders size from provided styles.
- *
- * @param {CSSStyleDeclaration} styles
- * @param {...string} positions - Borders positions (top, right, ...)
- * @returns {number}
- */
-function getBordersSize(styles) {
-    var positions = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        positions[_i - 1] = arguments[_i];
-    }
-    return positions.reduce(function (size, position) {
-        var value = styles['border-' + position + '-width'];
-        return size + toFloat(value);
-    }, 0);
-}
-/**
- * Extracts paddings sizes from provided styles.
- *
- * @param {CSSStyleDeclaration} styles
- * @returns {Object} Paddings box.
- */
-function getPaddings(styles) {
-    var positions = ['top', 'right', 'bottom', 'left'];
-    var paddings = {};
-    for (var _i = 0, positions_1 = positions; _i < positions_1.length; _i++) {
-        var position = positions_1[_i];
-        var value = styles['padding-' + position];
-        paddings[position] = toFloat(value);
-    }
-    return paddings;
-}
-/**
- * Calculates content rectangle of provided SVG element.
- *
- * @param {SVGGraphicsElement} target - Element content rectangle of which needs
- *      to be calculated.
- * @returns {DOMRectInit}
- */
-function getSVGContentRect(target) {
-    var bbox = target.getBBox();
-    return createRectInit(0, 0, bbox.width, bbox.height);
-}
-/**
- * Calculates content rectangle of provided HTMLElement.
- *
- * @param {HTMLElement} target - Element for which to calculate the content rectangle.
- * @returns {DOMRectInit}
- */
-function getHTMLElementContentRect(target) {
-    // Client width & height properties can't be
-    // used exclusively as they provide rounded values.
-    var clientWidth = target.clientWidth, clientHeight = target.clientHeight;
-    // By this condition we can catch all non-replaced inline, hidden and
-    // detached elements. Though elements with width & height properties less
-    // than 0.5 will be discarded as well.
-    //
-    // Without it we would need to implement separate methods for each of
-    // those cases and it's not possible to perform a precise and performance
-    // effective test for hidden elements. E.g. even jQuery's ':visible' filter
-    // gives wrong results for elements with width & height less than 0.5.
-    if (!clientWidth && !clientHeight) {
-        return emptyRect;
-    }
-    var styles = getWindowOf(target).getComputedStyle(target);
-    var paddings = getPaddings(styles);
-    var horizPad = paddings.left + paddings.right;
-    var vertPad = paddings.top + paddings.bottom;
-    // Computed styles of width & height are being used because they are the
-    // only dimensions available to JS that contain non-rounded values. It could
-    // be possible to utilize the getBoundingClientRect if only it's data wasn't
-    // affected by CSS transformations let alone paddings, borders and scroll bars.
-    var width = toFloat(styles.width), height = toFloat(styles.height);
-    // Width & height include paddings and borders when the 'border-box' box
-    // model is applied (except for IE).
-    if (styles.boxSizing === 'border-box') {
-        // Following conditions are required to handle Internet Explorer which
-        // doesn't include paddings and borders to computed CSS dimensions.
-        //
-        // We can say that if CSS dimensions + paddings are equal to the "client"
-        // properties then it's either IE, and thus we don't need to subtract
-        // anything, or an element merely doesn't have paddings/borders styles.
-        if (Math.round(width + horizPad) !== clientWidth) {
-            width -= getBordersSize(styles, 'left', 'right') + horizPad;
-        }
-        if (Math.round(height + vertPad) !== clientHeight) {
-            height -= getBordersSize(styles, 'top', 'bottom') + vertPad;
-        }
-    }
-    // Following steps can't be applied to the document's root element as its
-    // client[Width/Height] properties represent viewport area of the window.
-    // Besides, it's as well not necessary as the <html> itself neither has
-    // rendered scroll bars nor it can be clipped.
-    if (!isDocumentElement(target)) {
-        // In some browsers (only in Firefox, actually) CSS width & height
-        // include scroll bars size which can be removed at this step as scroll
-        // bars are the only difference between rounded dimensions + paddings
-        // and "client" properties, though that is not always true in Chrome.
-        var vertScrollbar = Math.round(width + horizPad) - clientWidth;
-        var horizScrollbar = Math.round(height + vertPad) - clientHeight;
-        // Chrome has a rather weird rounding of "client" properties.
-        // E.g. for an element with content width of 314.2px it sometimes gives
-        // the client width of 315px and for the width of 314.7px it may give
-        // 314px. And it doesn't happen all the time. So just ignore this delta
-        // as a non-relevant.
-        if (Math.abs(vertScrollbar) !== 1) {
-            width -= vertScrollbar;
-        }
-        if (Math.abs(horizScrollbar) !== 1) {
-            height -= horizScrollbar;
-        }
-    }
-    return createRectInit(paddings.left, paddings.top, width, height);
-}
-/**
- * Checks whether provided element is an instance of the SVGGraphicsElement.
- *
- * @param {Element} target - Element to be checked.
- * @returns {boolean}
- */
-var isSVGGraphicsElement = (function () {
-    // Some browsers, namely IE and Edge, don't have the SVGGraphicsElement
-    // interface.
-    if (typeof SVGGraphicsElement !== 'undefined') {
-        return function (target) { return target instanceof getWindowOf(target).SVGGraphicsElement; };
-    }
-    // If it's so, then check that element is at least an instance of the
-    // SVGElement and that it has the "getBBox" method.
-    // eslint-disable-next-line no-extra-parens
-    return function (target) { return (target instanceof getWindowOf(target).SVGElement &&
-        typeof target.getBBox === 'function'); };
-})();
-/**
- * Checks whether provided element is a document element (<html>).
- *
- * @param {Element} target - Element to be checked.
- * @returns {boolean}
- */
-function isDocumentElement(target) {
-    return target === getWindowOf(target).document.documentElement;
-}
-/**
- * Calculates an appropriate content rectangle for provided html or svg element.
- *
- * @param {Element} target - Element content rectangle of which needs to be calculated.
- * @returns {DOMRectInit}
- */
-function getContentRect(target) {
-    if (!isBrowser) {
-        return emptyRect;
-    }
-    if (isSVGGraphicsElement(target)) {
-        return getSVGContentRect(target);
-    }
-    return getHTMLElementContentRect(target);
-}
-/**
- * Creates rectangle with an interface of the DOMRectReadOnly.
- * Spec: https://drafts.fxtf.org/geometry/#domrectreadonly
- *
- * @param {DOMRectInit} rectInit - Object with rectangle's x/y coordinates and dimensions.
- * @returns {DOMRectReadOnly}
- */
-function createReadOnlyRect(_a) {
-    var x = _a.x, y = _a.y, width = _a.width, height = _a.height;
-    // If DOMRectReadOnly is available use it as a prototype for the rectangle.
-    var Constr = typeof DOMRectReadOnly !== 'undefined' ? DOMRectReadOnly : Object;
-    var rect = Object.create(Constr.prototype);
-    // Rectangle's properties are not writable and non-enumerable.
-    defineConfigurable(rect, {
-        x: x, y: y, width: width, height: height,
-        top: y,
-        right: x + width,
-        bottom: height + y,
-        left: x
-    });
-    return rect;
-}
-/**
- * Creates DOMRectInit object based on the provided dimensions and the x/y coordinates.
- * Spec: https://drafts.fxtf.org/geometry/#dictdef-domrectinit
- *
- * @param {number} x - X coordinate.
- * @param {number} y - Y coordinate.
- * @param {number} width - Rectangle's width.
- * @param {number} height - Rectangle's height.
- * @returns {DOMRectInit}
- */
-function createRectInit(x, y, width, height) {
-    return { x: x, y: y, width: width, height: height };
-}
-
-/**
- * Class that is responsible for computations of the content rectangle of
- * provided DOM element and for keeping track of it's changes.
- */
-var ResizeObservation = /** @class */ (function () {
-    /**
-     * Creates an instance of ResizeObservation.
-     *
-     * @param {Element} target - Element to be observed.
-     */
-    function ResizeObservation(target) {
-        /**
-         * Broadcasted width of content rectangle.
-         *
-         * @type {number}
-         */
-        this.broadcastWidth = 0;
-        /**
-         * Broadcasted height of content rectangle.
-         *
-         * @type {number}
-         */
-        this.broadcastHeight = 0;
-        /**
-         * Reference to the last observed content rectangle.
-         *
-         * @private {DOMRectInit}
-         */
-        this.contentRect_ = createRectInit(0, 0, 0, 0);
-        this.target = target;
-    }
-    /**
-     * Updates content rectangle and tells whether it's width or height properties
-     * have changed since the last broadcast.
-     *
-     * @returns {boolean}
-     */
-    ResizeObservation.prototype.isActive = function () {
-        var rect = getContentRect(this.target);
-        this.contentRect_ = rect;
-        return (rect.width !== this.broadcastWidth ||
-            rect.height !== this.broadcastHeight);
-    };
-    /**
-     * Updates 'broadcastWidth' and 'broadcastHeight' properties with a data
-     * from the corresponding properties of the last observed content rectangle.
-     *
-     * @returns {DOMRectInit} Last observed content rectangle.
-     */
-    ResizeObservation.prototype.broadcastRect = function () {
-        var rect = this.contentRect_;
-        this.broadcastWidth = rect.width;
-        this.broadcastHeight = rect.height;
-        return rect;
-    };
-    return ResizeObservation;
-}());
-
-var ResizeObserverEntry = /** @class */ (function () {
-    /**
-     * Creates an instance of ResizeObserverEntry.
-     *
-     * @param {Element} target - Element that is being observed.
-     * @param {DOMRectInit} rectInit - Data of the element's content rectangle.
-     */
-    function ResizeObserverEntry(target, rectInit) {
-        var contentRect = createReadOnlyRect(rectInit);
-        // According to the specification following properties are not writable
-        // and are also not enumerable in the native implementation.
-        //
-        // Property accessors are not being used as they'd require to define a
-        // private WeakMap storage which may cause memory leaks in browsers that
-        // don't support this type of collections.
-        defineConfigurable(this, { target: target, contentRect: contentRect });
-    }
-    return ResizeObserverEntry;
-}());
-
-var ResizeObserverSPI = /** @class */ (function () {
-    /**
-     * Creates a new instance of ResizeObserver.
-     *
-     * @param {ResizeObserverCallback} callback - Callback function that is invoked
-     *      when one of the observed elements changes it's content dimensions.
-     * @param {ResizeObserverController} controller - Controller instance which
-     *      is responsible for the updates of observer.
-     * @param {ResizeObserver} callbackCtx - Reference to the public
-     *      ResizeObserver instance which will be passed to callback function.
-     */
-    function ResizeObserverSPI(callback, controller, callbackCtx) {
-        /**
-         * Collection of resize observations that have detected changes in dimensions
-         * of elements.
-         *
-         * @private {Array<ResizeObservation>}
-         */
-        this.activeObservations_ = [];
-        /**
-         * Registry of the ResizeObservation instances.
-         *
-         * @private {Map<Element, ResizeObservation>}
-         */
-        this.observations_ = new MapShim();
-        if (typeof callback !== 'function') {
-            throw new TypeError('The callback provided as parameter 1 is not a function.');
-        }
-        this.callback_ = callback;
-        this.controller_ = controller;
-        this.callbackCtx_ = callbackCtx;
-    }
-    /**
-     * Starts observing provided element.
-     *
-     * @param {Element} target - Element to be observed.
-     * @returns {void}
-     */
-    ResizeObserverSPI.prototype.observe = function (target) {
-        if (!arguments.length) {
-            throw new TypeError('1 argument required, but only 0 present.');
-        }
-        // Do nothing if current environment doesn't have the Element interface.
-        if (typeof Element === 'undefined' || !(Element instanceof Object)) {
-            return;
-        }
-        if (!(target instanceof getWindowOf(target).Element)) {
-            throw new TypeError('parameter 1 is not of type "Element".');
-        }
-        var observations = this.observations_;
-        // Do nothing if element is already being observed.
-        if (observations.has(target)) {
-            return;
-        }
-        observations.set(target, new ResizeObservation(target));
-        this.controller_.addObserver(this);
-        // Force the update of observations.
-        this.controller_.refresh();
-    };
-    /**
-     * Stops observing provided element.
-     *
-     * @param {Element} target - Element to stop observing.
-     * @returns {void}
-     */
-    ResizeObserverSPI.prototype.unobserve = function (target) {
-        if (!arguments.length) {
-            throw new TypeError('1 argument required, but only 0 present.');
-        }
-        // Do nothing if current environment doesn't have the Element interface.
-        if (typeof Element === 'undefined' || !(Element instanceof Object)) {
-            return;
-        }
-        if (!(target instanceof getWindowOf(target).Element)) {
-            throw new TypeError('parameter 1 is not of type "Element".');
-        }
-        var observations = this.observations_;
-        // Do nothing if element is not being observed.
-        if (!observations.has(target)) {
-            return;
-        }
-        observations.delete(target);
-        if (!observations.size) {
-            this.controller_.removeObserver(this);
-        }
-    };
-    /**
-     * Stops observing all elements.
-     *
-     * @returns {void}
-     */
-    ResizeObserverSPI.prototype.disconnect = function () {
-        this.clearActive();
-        this.observations_.clear();
-        this.controller_.removeObserver(this);
-    };
-    /**
-     * Collects observation instances the associated element of which has changed
-     * it's content rectangle.
-     *
-     * @returns {void}
-     */
-    ResizeObserverSPI.prototype.gatherActive = function () {
-        var _this = this;
-        this.clearActive();
-        this.observations_.forEach(function (observation) {
-            if (observation.isActive()) {
-                _this.activeObservations_.push(observation);
-            }
-        });
-    };
-    /**
-     * Invokes initial callback function with a list of ResizeObserverEntry
-     * instances collected from active resize observations.
-     *
-     * @returns {void}
-     */
-    ResizeObserverSPI.prototype.broadcastActive = function () {
-        // Do nothing if observer doesn't have active observations.
-        if (!this.hasActive()) {
-            return;
-        }
-        var ctx = this.callbackCtx_;
-        // Create ResizeObserverEntry instance for every active observation.
-        var entries = this.activeObservations_.map(function (observation) {
-            return new ResizeObserverEntry(observation.target, observation.broadcastRect());
-        });
-        this.callback_.call(ctx, entries, ctx);
-        this.clearActive();
-    };
-    /**
-     * Clears the collection of active observations.
-     *
-     * @returns {void}
-     */
-    ResizeObserverSPI.prototype.clearActive = function () {
-        this.activeObservations_.splice(0);
-    };
-    /**
-     * Tells whether observer has active observations.
-     *
-     * @returns {boolean}
-     */
-    ResizeObserverSPI.prototype.hasActive = function () {
-        return this.activeObservations_.length > 0;
-    };
-    return ResizeObserverSPI;
-}());
-
-// Registry of internal observers. If WeakMap is not available use current shim
-// for the Map collection as it has all required methods and because WeakMap
-// can't be fully polyfilled anyway.
-var observers = typeof WeakMap !== 'undefined' ? new WeakMap() : new MapShim();
-/**
- * ResizeObserver API. Encapsulates the ResizeObserver SPI implementation
- * exposing only those methods and properties that are defined in the spec.
- */
-var ResizeObserver = /** @class */ (function () {
-    /**
-     * Creates a new instance of ResizeObserver.
-     *
-     * @param {ResizeObserverCallback} callback - Callback that is invoked when
-     *      dimensions of the observed elements change.
-     */
-    function ResizeObserver(callback) {
-        if (!(this instanceof ResizeObserver)) {
-            throw new TypeError('Cannot call a class as a function.');
-        }
-        if (!arguments.length) {
-            throw new TypeError('1 argument required, but only 0 present.');
-        }
-        var controller = ResizeObserverController.getInstance();
-        var observer = new ResizeObserverSPI(callback, controller, this);
-        observers.set(this, observer);
-    }
-    return ResizeObserver;
-}());
-// Expose public methods of ResizeObserver.
-[
-    'observe',
-    'unobserve',
-    'disconnect'
-].forEach(function (method) {
-    ResizeObserver.prototype[method] = function () {
-        var _a;
-        return (_a = observers.get(this))[method].apply(_a, arguments);
-    };
-});
-
-var index = (function () {
-    // Export existing implementation if available.
-    if (typeof global$1.ResizeObserver !== 'undefined') {
-        return global$1.ResizeObserver;
-    }
-    return ResizeObserver;
-})();
-
-/* harmony default export */ __webpack_exports__["default"] = (index);
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
-
-/***/ }),
-
 /***/ "./node_modules/strapi-sdk-javascript/build/main/index.js":
 /*!****************************************************************!*\
   !*** ./node_modules/strapi-sdk-javascript/build/main/index.js ***!
@@ -17551,25 +13210,6 @@ class Strapi {
 }
 exports.default = Strapi;
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2RrLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL2xpYi9zZGsudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQUEsa0RBQWdGO0FBQ2hGLG1EQUFxQztBQUNyQyx1Q0FBeUI7QUE2QnpCLE1BQXFCLE1BQU07SUFJekI7Ozs7T0FJRztJQUNILFlBQ0UsT0FBZSxFQUNmLFdBQXlCLEVBQ3pCLGFBQWtDO1FBRWxDLElBQUksQ0FBQyxLQUFLLEdBQUcsZUFBSyxDQUFDLE1BQU0saUJBQ3ZCLE9BQU8sRUFDUCxnQkFBZ0IsRUFBRSxFQUFFLENBQUMsU0FBUyxJQUMzQixhQUFhLEVBQ2hCLENBQUM7UUFDSCxJQUFJLENBQUMsV0FBVyxtQkFDZCxNQUFNLEVBQUU7Z0JBQ04sR0FBRyxFQUFFLEtBQUs7Z0JBQ1YsT0FBTyxFQUFFO29CQUNQLElBQUksRUFBRSxHQUFHO2lCQUNWO2FBQ0YsRUFDRCxZQUFZLEVBQUU7Z0JBQ1osR0FBRyxFQUFFLEtBQUs7YUFDWCxJQUNFLFdBQVcsQ0FDZixDQUFDO1FBRUYsSUFBSSxJQUFJLENBQUMsU0FBUyxFQUFFLEVBQUU7WUFDcEIsSUFBSSxhQUFhLENBQUM7WUFDbEIsSUFBSSxJQUFJLENBQUMsV0FBVyxDQUFDLE1BQU0sRUFBRTtnQkFDM0IsYUFBYSxHQUFHLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLFdBQVcsQ0FBQyxNQUFNLENBQUMsR0FBRyxDQUFDLENBQUM7YUFDMUQ7aUJBQU0sSUFBSSxJQUFJLENBQUMsV0FBVyxDQUFDLFlBQVksRUFBRTtnQkFDeEMsYUFBYSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQ3BELElBQUksQ0FBQyxXQUFXLENBQUMsWUFBWSxDQUFDLEdBQUcsQ0FDeEIsQ0FBQyxDQUFDO2FBQ2Q7WUFDRCxJQUFJLGFBQWEsRUFBRTtnQkFDakIsSUFBSSxDQUFDLFFBQVEsQ0FBQyxhQUFhLEVBQUUsSUFBSSxDQUFDLENBQUM7YUFDcEM7U0FDRjtJQUNILENBQUM7SUFFRDs7Ozs7T0FLRztJQUNJLEtBQUssQ0FBQyxPQUFPLENBQ2xCLE1BQWMsRUFDZCxHQUFXLEVBQ1gsYUFBa0M7UUFFbEMsSUFBSTtZQUNGLE1BQU0sUUFBUSxHQUFrQixNQUFNLElBQUksQ0FBQyxLQUFLLENBQUMsT0FBTyxpQkFDdEQsTUFBTTtnQkFDTixHQUFHLElBQ0EsYUFBYSxFQUNoQixDQUFDO1lBQ0gsT0FBTyxRQUFRLENBQUMsSUFBSSxDQUFDO1NBQ3RCO1FBQUMsT0FBTyxLQUFLLEVBQUU7WUFDZCxJQUFJLEtBQUssQ0FBQyxRQUFRLEVBQUU7Z0JBQ2xCLE1BQU0sSUFBSSxLQUFLLENBQUMsS0FBSyxDQUFDLFFBQVEsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUM7YUFDOUM7aUJBQU07Z0JBQ0wsTUFBTSxLQUFLLENBQUM7YUFDYjtTQUNGO0lBQ0gsQ0FBQztJQUVEOzs7Ozs7T0FNRztJQUNJLEtBQUssQ0FBQyxRQUFRLENBQ25CLFFBQWdCLEVBQ2hCLEtBQWEsRUFDYixRQUFnQjtRQUVoQixJQUFJLENBQUMsVUFBVSxFQUFFLENBQUM7UUFDbEIsTUFBTSxjQUFjLEdBQW1CLE1BQU0sSUFBSSxDQUFDLE9BQU8sQ0FDdkQsTUFBTSxFQUNOLHNCQUFzQixFQUN0QjtZQUNFLElBQUksRUFBRTtnQkFDSixLQUFLO2dCQUNMLFFBQVE7Z0JBQ1IsUUFBUTthQUNUO1NBQ0YsQ0FDRixDQUFDO1FBQ0YsSUFBSSxDQUFDLFFBQVEsQ0FBQyxjQUFjLENBQUMsR0FBRyxDQUFDLENBQUM7UUFDbEMsT0FBTyxjQUFjLENBQUM7SUFDeEIsQ0FBQztJQUVEOzs7OztPQUtHO0lBQ0ksS0FBSyxDQUFDLEtBQUssQ0FDaEIsVUFBa0IsRUFDbEIsUUFBZ0I7UUFFaEIsSUFBSSxDQUFDLFVBQVUsRUFBRSxDQUFDO1FBQ2xCLE1BQU0sY0FBYyxHQUFtQixNQUFNLElBQUksQ0FBQyxPQUFPLENBQ3ZELE1BQU0sRUFDTixhQUFhLEVBQ2I7WUFDRSxJQUFJLEVBQUU7Z0JBQ0osVUFBVTtnQkFDVixRQUFRO2FBQ1Q7U0FDRixDQUNGLENBQUM7UUFDRixJQUFJLENBQUMsUUFBUSxDQUFDLGNBQWMsQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUNsQyxPQUFPLGNBQWMsQ0FBQztJQUN4QixDQUFDO0lBRUQ7Ozs7OztPQU1HO0lBQ0ksS0FBSyxDQUFDLGNBQWMsQ0FBQyxLQUFhLEVBQUUsR0FBVztRQUNwRCxJQUFJLENBQUMsVUFBVSxFQUFFLENBQUM7UUFDbEIsTUFBTSxJQUFJLENBQUMsT0FBTyxDQUFDLE1BQU0sRUFBRSx1QkFBdUIsRUFBRTtZQUNsRCxJQUFJLEVBQUU7Z0JBQ0osS0FBSztnQkFDTCxHQUFHO2FBQ0o7U0FDRixDQUFDLENBQUM7SUFDTCxDQUFDO0lBRUQ7Ozs7O09BS0c7SUFDSSxLQUFLLENBQUMsYUFBYSxDQUN4QixJQUFZLEVBQ1osUUFBZ0IsRUFDaEIsb0JBQTRCO1FBRTVCLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUNsQixNQUFNLElBQUksQ0FBQyxPQUFPLENBQUMsTUFBTSxFQUFFLHNCQUFzQixFQUFFO1lBQ2pELElBQUksRUFBRTtnQkFDSixJQUFJO2dCQUNKLFFBQVE7Z0JBQ1Isb0JBQW9CO2FBQ3JCO1NBQ0YsQ0FBQyxDQUFDO0lBQ0wsQ0FBQztJQUVEOzs7T0FHRztJQUNJLDRCQUE0QixDQUFDLFFBQWtCO1FBQ3BELE9BQU8sR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsQ0FBQyxPQUFPLFlBQVksUUFBUSxFQUFFLENBQUM7SUFDOUQsQ0FBQztJQUVEOzs7O09BSUc7SUFDSSxLQUFLLENBQUMsb0JBQW9CLENBQy9CLFFBQWtCLEVBQ2xCLE1BQXNCO1FBRXRCLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUNsQix5QkFBeUI7UUFDekIsSUFBSSxJQUFJLENBQUMsU0FBUyxFQUFFLEVBQUU7WUFDcEIsTUFBTSxHQUFHLEVBQUUsQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxNQUFNLEVBQUUsRUFBRSxpQkFBaUIsRUFBRSxJQUFJLEVBQUUsQ0FBQyxDQUFDO1NBQ3hFO1FBQ0QsTUFBTSxjQUFjLEdBQW1CLE1BQU0sSUFBSSxDQUFDLE9BQU8sQ0FDdkQsS0FBSyxFQUNMLFNBQVMsUUFBUSxXQUFXLEVBQzVCO1lBQ0UsTUFBTTtTQUNQLENBQ0YsQ0FBQztRQUNGLElBQUksQ0FBQyxRQUFRLENBQUMsY0FBYyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQ2xDLE9BQU8sY0FBYyxDQUFDO0lBQ3hCLENBQUM7SUFFRDs7OztPQUlHO0lBQ0ksVUFBVSxDQUNmLHFCQUE2QixFQUM3QixNQUFxQztRQUVyQyxPQUFPLElBQUksQ0FBQyxPQUFPLENBQUMsS0FBSyxFQUFFLElBQUkscUJBQXFCLEVBQUUsRUFBRTtZQUN0RCxNQUFNO1NBQ1AsQ0FBQyxDQUFDO0lBQ0wsQ0FBQztJQUVEOzs7O09BSUc7SUFDSSxhQUFhLENBQ2xCLFdBQW1CLEVBQ25CLE1BQXFDO1FBRXJDLE9BQU8sSUFBSSxDQUFDLE9BQU8sQ0FBQyxLQUFLLEVBQUUsSUFBSSxXQUFXLFFBQVEsRUFBRTtZQUNsRCxNQUFNO1NBQ1AsQ0FBQyxDQUFDO0lBQ0wsQ0FBQztJQUVEOzs7O09BSUc7SUFDSSxRQUFRLENBQUMscUJBQTZCLEVBQUUsRUFBVTtRQUN2RCxPQUFPLElBQUksQ0FBQyxPQUFPLENBQUMsS0FBSyxFQUFFLElBQUkscUJBQXFCLElBQUksRUFBRSxFQUFFLENBQUMsQ0FBQztJQUNoRSxDQUFDO0lBRUQ7Ozs7T0FJRztJQUNJLFdBQVcsQ0FDaEIscUJBQTZCLEVBQzdCLElBQWdDO1FBRWhDLE9BQU8sSUFBSSxDQUFDLE9BQU8sQ0FBQyxNQUFNLEVBQUUsSUFBSSxxQkFBcUIsRUFBRSxFQUFFO1lBQ3ZELElBQUk7U0FDTCxDQUFDLENBQUM7SUFDTCxDQUFDO0lBRUQ7Ozs7O09BS0c7SUFDSSxXQUFXLENBQ2hCLHFCQUE2QixFQUM3QixFQUFVLEVBQ1YsSUFBZ0M7UUFFaEMsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLEtBQUssRUFBRSxJQUFJLHFCQUFxQixJQUFJLEVBQUUsRUFBRSxFQUFFO1lBQzVELElBQUk7U0FDTCxDQUFDLENBQUM7SUFDTCxDQUFDO0lBRUQ7Ozs7T0FJRztJQUNJLFdBQVcsQ0FDaEIscUJBQTZCLEVBQzdCLEVBQVU7UUFFVixPQUFPLElBQUksQ0FBQyxPQUFPLENBQUMsUUFBUSxFQUFFLElBQUkscUJBQXFCLElBQUksRUFBRSxFQUFFLENBQUMsQ0FBQztJQUNuRSxDQUFDO0lBRUQ7OztPQUdHO0lBQ0ksV0FBVyxDQUFDLEtBQWE7UUFDOUIsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLEtBQUssRUFBRSxrQkFBa0Isa0JBQWtCLENBQUMsS0FBSyxDQUFDLEVBQUUsQ0FBQyxDQUFDO0lBQzVFLENBQUM7SUFFRDs7OztPQUlHO0lBQ0ksUUFBUSxDQUFDLE1BQXFDO1FBQ25ELE9BQU8sSUFBSSxDQUFDLE9BQU8sQ0FBQyxLQUFLLEVBQUUsZUFBZSxFQUFFO1lBQzFDLE1BQU07U0FDUCxDQUFDLENBQUM7SUFDTCxDQUFDO0lBRUQ7OztPQUdHO0lBQ0ksT0FBTyxDQUFDLEVBQVU7UUFDdkIsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLEtBQUssRUFBRSxpQkFBaUIsRUFBRSxFQUFFLENBQUMsQ0FBQztJQUNwRCxDQUFDO0lBRUQ7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztPQXdCRztJQUNJLE1BQU0sQ0FDWCxJQUFjLEVBQ2QsYUFBa0M7UUFFbEMsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLE1BQU0sRUFBRSxTQUFTLGtCQUNuQyxJQUFJLElBQ0QsYUFBYSxFQUNoQixDQUFDO0lBQ0wsQ0FBQztJQUVEOzs7T0FHRztJQUNJLFFBQVEsQ0FBQyxLQUFhLEVBQUUsZ0JBQTBCO1FBQ3ZELElBQUksQ0FBQyxLQUFLLENBQUMsUUFBUSxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsYUFBYSxHQUFHLFNBQVMsR0FBRyxLQUFLLENBQUM7UUFDckUsSUFBSSxJQUFJLENBQUMsU0FBUyxFQUFFLElBQUksQ0FBQyxnQkFBZ0IsRUFBRTtZQUN6QyxJQUFJLElBQUksQ0FBQyxXQUFXLENBQUMsWUFBWSxFQUFFO2dCQUNqQyxNQUFNLENBQUMsWUFBWSxDQUFDLE9BQU8sQ0FDekIsSUFBSSxDQUFDLFdBQVcsQ0FBQyxZQUFZLENBQUMsR0FBRyxFQUNqQyxJQUFJLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUN0QixDQUFDO2FBQ0g7WUFDRCxJQUFJLElBQUksQ0FBQyxXQUFXLENBQUMsTUFBTSxFQUFFO2dCQUMzQixPQUFPLENBQUMsR0FBRyxDQUNULElBQUksQ0FBQyxXQUFXLENBQUMsTUFBTSxDQUFDLEdBQUcsRUFDM0IsS0FBSyxFQUNMLElBQUksQ0FBQyxXQUFXLENBQUMsTUFBTSxDQUFDLE9BQU8sQ0FDaEMsQ0FBQzthQUNIO1NBQ0Y7SUFDSCxDQUFDO0lBRUQ7O09BRUc7SUFDSSxVQUFVO1FBQ2YsT0FBTyxJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLGFBQWEsQ0FBQztRQUN4RCxJQUFJLElBQUksQ0FBQyxTQUFTLEVBQUUsRUFBRTtZQUNwQixJQUFJLElBQUksQ0FBQyxXQUFXLENBQUMsWUFBWSxFQUFFO2dCQUNqQyxNQUFNLENBQUMsWUFBWSxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsV0FBVyxDQUFDLFlBQVksQ0FBQyxHQUFHLENBQUMsQ0FBQzthQUNuRTtZQUNELElBQUksSUFBSSxDQUFDLFdBQVcsQ0FBQyxNQUFNLEVBQUU7Z0JBQzNCLE9BQU8sQ0FBQyxNQUFNLENBQ1osSUFBSSxDQUFDLFdBQVcsQ0FBQyxNQUFNLENBQUMsR0FBRyxFQUMzQixJQUFJLENBQUMsV0FBVyxDQUFDLE1BQU0sQ0FBQyxPQUFPLENBQ2hDLENBQUM7YUFDSDtTQUNGO0lBQ0gsQ0FBQztJQUVEOztPQUVHO0lBQ0ssU0FBUztRQUNmLE9BQU8sT0FBTyxNQUFNLEtBQUssV0FBVyxDQUFDO0lBQ3ZDLENBQUM7Q0FDRjtBQWxZRCx5QkFrWUMifQ==
-
-/***/ }),
-
-/***/ "./node_modules/string-convert/camel2hyphen.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/string-convert/camel2hyphen.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var camel2hyphen = function (str) {
-  return str
-          .replace(/[A-Z]/g, function (match) {
-            return '-' + match.toLowerCase();
-          })
-          .toLowerCase();
-};
-
-module.exports = camel2hyphen;
 
 /***/ }),
 
@@ -21056,10 +16696,137 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/Assets/Category.js":
+/*!**********************************!*\
+  !*** ./pages/Assets/Category.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/pages/Assets/Category.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+var SvgCategory = function SvgCategory(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    viewBox: "0 0 1000 1000"
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M523.8 974.7L871 624.9s31.4-26.8 31.4-65.3V344.4l-42.3 24.3v116s2.3 40-47.1 85.9c-45.3 44.6-345.5 347-345.5 347l56.3 57.1zm98-643.5S690.9 29.7 828.3 25.4c135.8-4.2 164.9 100 161.4 165.5-4.1 78-80.7 136.6-129.6 145.7 0-39.3.2-55.2.2-55.2s80-21.6 80.3-92.3c.2-54.7-29.9-125.7-112.3-116.6-97.3 10.7-166.6 286-166.6 286l-14.5 14.6-25.4-41.9zM765.2 175h38.1v298.7c.9 25.4-29 56.5-29 56.5L332.4 971 10 643.2S403 249.7 446.5 206c30.8-31 50.7-31 50.7-31h230.5L675 309.2l5.6 26c2.2 10.2 1.4 27.6 1.4 27.6-5.4 22.4-25.4 39-49.3 39-28 0-51.9-24.1-51.9-52.2 0-14.4 15.9-44.1 40.2-49.1l14.9-49.1c-65.2 13.4-99.8 55.3-99.8 99.4 0 54.1 43.6 98 97.4 98 53.8 0 97.4-43.9 97.4-98-1.2-19.2-3-22.9-9.4-42.7-5.3-17.5 26.2-93.1 26.2-93.1l17.5-40z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgCategory);
+    (function (Component, route) {
+      if(!Component) return
+      if (false) {}
+      module.hot.accept()
+      Component.__route = route
+
+      if (module.hot.status() === 'idle') return
+
+      var components = next.router.components
+      for (var r in components) {
+        if (!components.hasOwnProperty(r)) continue
+
+        if (components[r].Component.__route === route) {
+          next.router.update(r, Component)
+        }
+      }
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/Assets/Category")
+  
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./pages/Assets/Svg.js":
+/*!*****************************!*\
+  !*** ./pages/Assets/Svg.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/pages/Assets/Svg.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+var SvgCalendar = function SvgCalendar(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    height: 640,
+    viewBox: "0 0 480 480",
+    width: 640
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M399.832 54.398c-.062-.277-.23-.496-.312-.757a7.369 7.369 0 0 0-.536-1.297 7.668 7.668 0 0 0-.894-1.336 8.164 8.164 0 0 0-.914-.961 7.263 7.263 0 0 0-1.313-.879 8 8 0 0 0-1.246-.61 7.986 7.986 0 0 0-1.601-.328A8.133 8.133 0 0 0 392 48h-40.336C349.602 20.152 336.68 0 320 0s-29.602 20.152-31.664 48h-16.672C269.602 20.152 256.68 0 240 0s-29.602 20.152-31.664 48h-16.672C189.602 20.152 176.68 0 160 0s-29.602 20.152-31.664 48h-16.672C109.602 20.152 96.68 0 80 0S50.398 20.152 48.336 48H8a8 8 0 0 0-8 8v416a8 8 0 0 0 8 8h384a8 8 0 0 0 8-8v-24h72a8 8 0 0 0 7.832-9.602zM320 16c5.777 0 13.84 12.258 15.617 32h-31.203c1.746-19.742 9.809-32 15.586-32zm-80 0c5.777 0 13.84 12.258 15.617 32h-31.203c1.746-19.742 9.809-32 15.586-32zm-80 0c5.777 0 13.84 12.258 15.617 32h-31.203c1.746-19.742 9.809-32 15.586-32zm-80 0c5.777 0 13.84 12.258 15.617 32H64.414C66.16 28.258 74.223 16 80 16zM16 64h32.336C50.398 91.848 63.32 112 80 112a8 8 0 0 0 0-16c-5.777 0-13.84-12.258-15.617-32h63.953c2.09 27.848 14.984 48 31.664 48a8 8 0 0 0 0-16c-5.777 0-13.84-12.258-15.617-32h63.953c2.09 27.848 14.984 48 31.664 48a8 8 0 0 0 0-16c-5.777 0-13.84-12.258-15.617-32h63.953c2.09 27.848 14.984 48 31.664 48a8 8 0 0 0 0-16c-5.777 0-13.84-12.258-15.617-32H384v80H16zm368 400H16V160h368zm16-32V133.602L462.168 432zm0 0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M176 288h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M256 288h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M96 288H64a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32H72v-16h16zm0 0M176 368h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M256 368h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M96 368H64a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32H72v-16h16zm0 0M176 208h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M256 208h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M336 288h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M336 368h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M336 208h-32a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32h-16v-16h16zm0 0M96 208H64a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm-8 32H72v-16h16zm0 0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SvgCalendar);
+    (function (Component, route) {
+      if(!Component) return
+      if (false) {}
+      module.hot.accept()
+      Component.__route = route
+
+      if (module.hot.status() === 'idle') return
+
+      var components = next.router.components
+      for (var r in components) {
+        if (!components.hasOwnProperty(r)) continue
+
+        if (components[r].Component.__route === route) {
+          next.router.update(r, Component)
+        }
+      }
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/Assets/Svg")
+  
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./pages/blogpage.js":
+/*!***************************!*\
+  !*** ./pages/blogpage.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -21070,17 +16837,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components */ "./components/index.js");
-/* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/svg/RightArrow */ "./static/svg/RightArrow.js");
-/* harmony import */ var strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! strapi-sdk-javascript/build/main */ "./node_modules/strapi-sdk-javascript/build/main/index.js");
-/* harmony import */ var strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/svg/mainIcon.svg */ "./static/svg/mainIcon.svg");
-/* harmony import */ var _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_ProjectItem__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/ProjectItem */ "./components/ProjectItem/index.js");
+/* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header/Header */ "./components/Header/Header.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer/index.js");
+/* harmony import */ var _Assets_Svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Assets/Svg */ "./pages/Assets/Svg.js");
+/* harmony import */ var _Assets_Category__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Assets/Category */ "./pages/Assets/Category.js");
+/* harmony import */ var _components_Responsive_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Responsive/Footer */ "./components/Responsive/Footer.js");
+/* harmony import */ var strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! strapi-sdk-javascript/build/main */ "./node_modules/strapi-sdk-javascript/build/main/index.js");
+/* harmony import */ var strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9__);
 
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\pages\\index.js";
+var _jsxFileName = "/home/reziko/projects/mif/client/pages/blogpage.js";
 
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n  body{\n    font-family:Averta\n  }\n  @font-face {\n    font-family: Averta;\n    src: url('../static/fonts/Averta.otf');\n  }\n"]);
@@ -21124,66 +16891,54 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default.a("http://192.168.0.106:1337");
 
-var HomePage =
+var BackUrl = 'http://localhost:1337';
+var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9___default.a(BackUrl);
+
+var Blog =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(HomePage, _Component);
+  _inherits(Blog, _Component);
 
-  function HomePage(props) {
+  function Blog(props) {
     var _this;
 
-    _classCallCheck(this, HomePage);
+    _classCallCheck(this, Blog);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(HomePage).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Blog).call(this, props));
     _this.state = {
-      posts: [],
-      news: []
+      post: {}
     };
     return _this;
   }
 
-  _createClass(HomePage, [{
+  _createClass(Blog, [{
     key: "componentDidMount",
     value: function () {
       var _componentDidMount = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var news, projects;
+        var id, post;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.prev = 0;
+                id = this.props.url.query.id;
                 _context.next = 3;
-                return strapiApi.getEntries("News?_limit=9");
+                return strapiApi.getEntries("News/".concat(id));
 
               case 3:
-                news = _context.sent;
-                _context.next = 6;
-                return strapiApi.getEntries("Projects");
-
-              case 6:
-                projects = _context.sent;
+                post = _context.sent;
                 this.setState({
-                  news: news,
-                  projects: projects
+                  post: post
                 });
-                _context.next = 13;
-                break;
 
-              case 10:
-                _context.prev = 10;
-                _context.t0 = _context["catch"](0);
-                alert(_context.t0);
-
-              case 13:
+              case 5:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, this, [[0, 10]]);
+        }, _callee, this);
       }));
 
       return function componentDidMount() {
@@ -21193,267 +16948,263 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$state = this.state,
-          news = _this$state.news,
-          projects = _this$state.projects;
+      var _this$state$post = this.state.post,
+          Title = _this$state$post.Title,
+          category = _this$state$post.category,
+          content = _this$state$post.content,
+          createdAt = _this$state$post.createdAt,
+          date = _this$state$post.date,
+          ending = _this$state$post.ending,
+          mainImage = _this$state$post.mainImage,
+          media1 = _this$state$post.media1,
+          media2 = _this$state$post.media2,
+          media3 = _this$state$post.media3,
+          paragraph1 = _this$state$post.paragraph1,
+          paragraph2 = _this$state$post.paragraph2,
+          paragraph3 = _this$state$post.paragraph3;
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 46
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Header"], {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 47
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainContainer, {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionHeader, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 48
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainer, {
+      }, mainImage && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainImage, {
+        image: "".concat(BackUrl, "/").concat(mainImage.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 50
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainerLeft, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, "Media Inovation Foundation"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      }, "This is a such a great slogan that, when kyle mynouge saw it she become waffle, This is a such a great slogan that, when kyle mynouge saw it she become waffle,This is a such a great slogan that, when kyle mynouge saw it she become waffle, This is a such a great slogan that, when kyle mynouge saw it she become waffle")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainerRight, {
-        img: _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(News, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsCenter, {
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Section, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 52
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsHeader, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContentDate, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 53
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ul, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 54
         },
         __self: this
-      }, "Latest News")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsItems, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Assets_Svg__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        width: 20,
+        height: 20,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, date, "dasdasdasd")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Assets_Category__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        width: 20,
+        height: 20,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        },
+        __self: this
+      }, "Design")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContent, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BlogTitle, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        },
+        __self: this
+      }, "Title"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 68
         },
         __self: this
-      }, news.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["PostItem"], {
-          data: item,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 70
-          },
-          __self: this
-        });
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ViewAllNews, {
+      }, paragraph1), media1 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 70
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ViewAllNewsContent, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
+        src: "".concat(BackUrl, "/").concat(media1.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 71
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        href: {
-          pathname: "/news"
-        },
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 74
         },
         __self: this
-      }, "All News"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Icon, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 75
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        width: 20,
-        height: 20,
-        fill: "#27cba4",
+      }, paragraph2), media2 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 76
         },
         __self: this
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsSlider, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
+        src: "".concat(BackUrl, "/").concat(media2.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 77
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsHeader, {
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Paragraph, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 80
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsBG, {
+      }, paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident..", ' ', paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident.. ", paragraph3, " Elit dolor culpa officia sunt labore deserunt culpa Lorem enim dolore labore do Laboris fugiat mollit pariatur ea ex proident..", ' '), media3 && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Media, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 97
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Span, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MediaImage, {
+        src: "".concat(BackUrl, "/").concat(media3.url),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 98
         },
         __self: this
-      }, "Projects")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Slider"], {
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ending, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 101
         },
         __self: this
-      }, projects && projects.map(function (item) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          data: item,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 89
-          },
-          __self: this
-        });
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Footer"], {
+      }, ending)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 105
         },
         __self: this
-      })));
+      }));
     }
   }]);
 
-  return HomePage;
+  return Blog;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (HomePage);
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__Container",
-  componentId: "sc-1wbo52z-0"
-})(["width:100%;height:100%;"]);
-var MainContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__MainContainer",
-  componentId: "sc-1wbo52z-1"
-})(["width:100%;height:100vh;background:#fff5f3;"]);
-var HeadContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__HeadContainer",
-  componentId: "sc-1wbo52z-2"
-})(["width:100%;height:100%;margin:auto;padding:0 120px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;font-size:16px;"]);
-var HeadContainerLeft = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__HeadContainerLeft",
-  componentId: "sc-1wbo52z-3"
-})(["flex:1;height:100%;display:flex;justify-content:center;font-size:26px;color:#ff7e6d;font-weight:bold;flex-direction:column;text-align:left;h1{width:400px;line-height:55px;letter-spacing:7px;}span{margin-top:20px;font-size:16px;color:#444053;font-weight:bold;line-height:25px;letter-spacing:2px;}"]);
-var HeadContainerRight = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__HeadContainerRight",
-  componentId: "sc-1wbo52z-4"
-})(["flex:1;height:100%;background-image:url(", ");background-size:contain;background-position:center center;background-repeat:no-repeat;"], function (props) {
-  return props.img;
+  displayName: "blogpage__Container",
+  componentId: "sc-1mknfz0-0"
+})(["width:100%;height:auto;"]);
+var SectionHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__SectionHeader",
+  componentId: "sc-1mknfz0-1"
+})(["width:100%;height:90vh;padding-top:6rem;box-sizing:border-box;background-color:#eafaf6;display:flex;align-items:center;justify-content:center;"]);
+var MainImage = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__MainImage",
+  componentId: "sc-1mknfz0-2"
+})(["width:300px;height:300px;background-image:url(", ");background-size:cover;background-position:center center;border-radius:100%;box-shadow:0 5px 15px rgba(0,0,0,0.47),0 10px 23px rgba(0,0,0,0.2);"], function (props) {
+  return props.image;
 });
-var News = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__News",
-  componentId: "sc-1wbo52z-5"
-})(["width:100%;background:#ffffff;padding:80px 0 120px 0;background:#f7fbfb;"]);
-var NewsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__NewsHeader",
-  componentId: "sc-1wbo52z-6"
-})(["width:100%;margin-bottom:15px;color:#543243;font-weight:800;font-size:18px;padding-left:10px;display:flex;flex-direction:column;h1{color:#543243;font-size:18px;}span{margin-top:10px;}"]);
-var ProjectsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__ProjectsHeader",
-  componentId: "sc-1wbo52z-7"
-})(["width:100%;display:flex;align-items:center;color:#301d28;font-weight:bold;position:relative;color:#ff7e6d;font-size:2em;"]);
-var ProjectsBG = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__ProjectsBG",
-  componentId: "sc-1wbo52z-8"
-})(["width:80px;height:80%;position:absolute;top:10px;background:rgba(255,255,255,0.6);z-index:-1;"]);
-var Span = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__Span",
-  componentId: "sc-1wbo52z-9"
-})(["color:#543243;font-size:18px;"]);
-var NewsHeaderRight = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__NewsHeaderRight",
-  componentId: "sc-1wbo52z-10"
-})(["display:flex;align-items:center;cursor:pointer;&:hover{color:#27cba4;}"]);
-var NewsItems = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__NewsItems",
-  componentId: "sc-1wbo52z-11"
-})(["width:100%;margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;grid-gap:20px;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(3,1fr);}"]);
-var ViewAllNews = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__ViewAllNews",
-  componentId: "sc-1wbo52z-12"
-})(["display:flex;justify-content:center;align-items:center;"]);
-var ViewAllNewsContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__ViewAllNewsContent",
-  componentId: "sc-1wbo52z-13"
-})(["display:flex;a{text-decoration:none;font-size:26px;font-weight:800;color:#543243;transition:0.2s;&:hover{color:#27cba4;}}"]);
-var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__Icon",
-  componentId: "sc-1wbo52z-14"
-})(["display:flex;align-items:center;transition:0.3s;margin-left:5px;", ":hover &{transform:translateX(5px);}"], ViewAllNewsContent);
-var ProjectsSlider = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__ProjectsSlider",
-  componentId: "sc-1wbo52z-15"
-})(["width:1224px;margin:auto;background:#fff;display:flex;flex-direction:column;padding:80px 0 0 0;"]);
-var NewsCenter = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__NewsCenter",
-  componentId: "sc-1wbo52z-16"
-})(["width:1224px;height:100%;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;"]);
+var Section = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__Section",
+  componentId: "sc-1mknfz0-3"
+})(["width:70%;max-width:1825px;margin:auto;background-color:#fff;text-align:justify;font-size:1.2rem;padding:1rem 0 6rem 0;display:flex;line-height:2rem;align-items:center;justify-content:center;box-sizing:border-box;position:relative;"]);
+var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__Wrapper",
+  componentId: "sc-1mknfz0-4"
+})(["width:100%;display:flex;padding:1.5rem 6rem 6rem 6rem;position:relative;justify-content:center;"]);
+var SectionContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__SectionContent",
+  componentId: "sc-1mknfz0-5"
+})([""]);
+var BlogTitle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__BlogTitle",
+  componentId: "sc-1mknfz0-6"
+})(["color:#ff7e6d;width:1rem;font-size:48px;font-weight:800;text-align:center;width:100%;"]);
+var Paragraph = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__Paragraph",
+  componentId: "sc-1mknfz0-7"
+})(["margin-top:24px;font-size:21px;letter-spacing:-1px;"]);
+var Media = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__Media",
+  componentId: "sc-1mknfz0-8"
+})(["width:100%;height:auto;margin-top:25px;"]);
+var MediaImage = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
+  displayName: "blogpage__MediaImage",
+  componentId: "sc-1mknfz0-9"
+})(["width:100%;object-fit:cover;"]);
+var Ending = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__Ending",
+  componentId: "sc-1mknfz0-10"
+})(["margin-top:24px;font-size:21px;letter-spacing:-1px;color:#62535c;"]);
+var SectionContentDate = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "blogpage__SectionContentDate",
+  componentId: "sc-1mknfz0-11"
+})(["padding-top:1rem;color:#c0b3b9;position:absolute;top:4rem;left:-5rem;"]);
+var Ul = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul.withConfig({
+  displayName: "blogpage__Ul",
+  componentId: "sc-1mknfz0-12"
+})(["list-style:none;font-size:0.9rem;display:flex;flex-wrap:wrap;width:210px;padding:0;"]);
+var Li = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li.withConfig({
+  displayName: "blogpage__Li",
+  componentId: "sc-1mknfz0-13"
+})(["flex:1 1 100%;display:flex;align-items:center;margin:0.4rem;position:relative;& > *{margin:0.2rem;}"]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject());
-var Space = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__Space",
-  componentId: "sc-1wbo52z-17"
-})(["margin:0 5px;"]);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -21470,199 +17221,21 @@ var Space = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withCo
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/blogpage")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ "./static/svg/Dash.js":
-/*!****************************!*\
-  !*** ./static/svg/Dash.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Dash.js";
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-
-var Dash = function Dash(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
-    width: 120,
-    height: 2
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M100 1H1",
-    fill: "none",
-    stroke: "#f2f2f0",
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    strokeWidth: 2,
-    strokeDasharray: "12 6 4 8 8 12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Dash);
-
-/***/ }),
-
-/***/ "./static/svg/Left.js":
-/*!****************************!*\
-  !*** ./static/svg/Left.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Left.js";
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-
-var SvgComponent = function SvgComponent(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
-    viewBox: "0 0 492 492"
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M464.344 207.418l.768.168H135.888l103.496-103.724c5.068-5.064 7.848-11.924 7.848-19.124 0-7.2-2.78-14.012-7.848-19.088L223.28 49.538c-5.064-5.064-11.812-7.864-19.008-7.864-7.2 0-13.952 2.78-19.016 7.844L7.844 226.914C2.76 231.998-.02 238.77 0 245.974c-.02 7.244 2.76 14.02 7.844 19.096l177.412 177.412c5.064 5.06 11.812 7.844 19.016 7.844 7.196 0 13.944-2.788 19.008-7.844l16.104-16.112c5.068-5.056 7.848-11.808 7.848-19.008 0-7.196-2.78-13.592-7.848-18.652L134.72 284.406h329.992c14.828 0 27.288-12.78 27.288-27.6v-22.788c0-14.82-12.828-26.6-27.656-26.6z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (SvgComponent);
-
-/***/ }),
-
-/***/ "./static/svg/Right.js":
-/*!*****************************!*\
-  !*** ./static/svg/Right.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Right.js";
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-
-var SvgComponent = function SvgComponent(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
-    viewBox: "0 0 492.004 492.004"
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (SvgComponent);
-
-/***/ }),
-
-/***/ "./static/svg/RightArrow.js":
-/*!**********************************!*\
-  !*** ./static/svg/RightArrow.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\RightArrow.js";
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-
-var RightArrow = function RightArrow(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
-    viewBox: "0 0 492.004 492.004"
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (RightArrow);
-
-/***/ }),
-
-/***/ "./static/svg/mainIcon.svg":
+/***/ 10:
 /*!*********************************!*\
-  !*** ./static/svg/mainIcon.svg ***!
+  !*** multi ./pages/blogpage.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyBpZD0iYjFmZjliYjItN2Y0Zi00NDE4LTkwN2MtOThkMDk5NTY3NDdkIiBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMDYwIiBoZWlnaHQ9IjY2NC4wNyIgdmlld0JveD0iMCAwIDEwNjAgNjY0LjA3Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImZhZDEwNGI5LWRiMzUtNDJmYy1iYzAwLTJiOGEyMzIwNzM2NiIgeDE9IjU0My41NCIgeTE9IjcxMy44OSIgeDI9IjU0My41NCIgeTI9IjQxMy40OCIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMSwgMCwgMCwgMSwgMTAyMi4xOCwgMCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9ImdyYXkiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iMC41NCIgc3RvcC1jb2xvcj0iZ3JheSIgc3RvcC1vcGFjaXR5PSIwLjEyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSJncmF5IiBzdG9wLW9wYWNpdHk9IjAuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJmMmY5ZGVkYi0wZjQzLTQzNWYtOTU0My03MzVmM2RiMDAwOWEiIHgxPSI1MjcuNTMiIHkxPSI2NTMuMyIgeDI9IjYxNSIgeTI9IjY1My4zIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0xLCAwLCAwLCAxLCAxMjI0LjI3LCAwKSIgeGxpbms6aHJlZj0iI2ZhZDEwNGI5LWRiMzUtNDJmYy1iYzAwLTJiOGEyMzIwNzM2NiIvPjwvZGVmcz48dGl0bGU+Y2lyY2xlczwvdGl0bGU+PGVsbGlwc2UgY3g9IjgxMS41IiBjeT0iNTY4LjA3IiByeD0iMTE5LjUiIHJ5PSIyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDQ0MDUzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz48cGF0aCBkPSJNNDMwLjU0LDQ5NS4xMWEyNy4zNywyNy4zNywwLDAsMCwxLjE5LDIuNjFsMCwuMTFzNS42NiwyMC45MSw4LjMxLDI1LjNjLjc3LDEuMjcsMS42NCwyLjY1LDIuNSw0YTguODksOC44OSwwLDAsMCwwLDNjLjgsNC42NiwxLjc3LDExLjA3LDEuMzMsMTIuNDhzLjUzLDQuOTItMSw2LjE0LTMuMSwzLjM0LDEuNTksNi4xNWMwLDAsLjg4LDIuMzcuMDksMi45LS4wOS4wNiwwLC4xOS4yMi4zNi0xLjI5LDMuODItMy4xOCwxMC0yLDEwLjQ0LjY1LjI1LDIuNDEtLjY3LDQuMzQtMS45MS4wNS4yNS4wOS41Mi4xNC43OWEzOC4xNSwzOC4xNSwwLDAsMCwxLjQyLDYuMDdjLjg2LDEuOTEsMS43Miw1LjEzLDEuMjYsNi4xOXMxLjI2LDMuNDIuODYsNC4zNSwxLjMzLDMuOTUsMS4zMywzLjk1LDEuNzIsNS44NiwxLjY1LDcuODQsMS44NiwxNC43NSwxLjg2LDE0Ljc1LTIsNi41OS0xLDguNSwxLjY1LDguNSwwLDEwLjk0LTMuNzIsNy44My0zLjA1LDkuMjgtLjkzLDE5LjM3LDMuMTEsMjYuNzVhODIuMjYsODIuMjYsMCwwLDEsMS4xMyw4LjNjMCwyLDMuMTgsNy4zMSwzLjE4LDcuMzFzLTEuOTIsOCwyLjc5LDkuMzVhNC40Myw0LjQzLDAsMCwwLDEsLjE5LDQuNDksNC40OSwwLDAsMS0uMzQsMi41OCwxMC4yLDEwLjIsMCwwLDAtMS42OCwzLjcyaDBhMSwxLDAsMCwwLC4wOS43NWMuNTMuNTksMiw4LjUsMiw4LjVzMi4xMiw4Ljg5LDEzLjc5LDYuNzJjMCwwLDcuODktLjQ2LDcuMjMtMy4yM2ExOC4xNiwxOC4xNiwwLDAsMC0uODYtMi42OCwxNy4zMywxNy4zMywwLDAsMS0uNzQtMS43M2MtLjEzLS42Ni0xLjc5LTIuNTEtMS45Mi0zLjc2cy0xLjE5LTMuNjktMS00LjQ4LTEuNzktNi40NS0xLjkzLTcuNzFhMTMuMDcsMTMuMDcsMCwwLDAtLjc1LTIuNTZsLjQyLS4yczEuMDYtNS45My4xNC04LjEtNC41OC01LTQuNTgtNSwuNTMtMTQuNTYtLjEzLTE2LjU0LjMzLTkuNDguMzMtOS40OCwyLjI1LTEwLjYxLDIuMTItMTNhMTEsMTEsMCwwLDEsLjY2LTQuMzVzMS40LTE1LjYxLDIuMzItMTcuNTksMi0yMS4zNCwyLTIxLjM0bC42MiwxLjc4YTY4LjM3LDY4LjM3LDAsMCwwLDMuMSw3LjgzYy41MS44LDIsMy4zNiwzLjI4LDUuNWwxLjg5LDMuMnMuODYsMy4xLjI2LDUsNi4xNywxMi4xOCw2LjE3LDEyLjE4YTYuMDksNi4wOSwwLDAsMC0uNjYsMi43N2MuMTksMS0yLjA2LDQuMTUtMi4wNiw0LjE1cy0uODYsMi44My0uMzMsMy44Mi0uODYsNi44NS0uODYsNi44NS0yLjI2LDEyLjkxLTIuNzksMTQuNDMuMjcsMTEuOTIuMjcsMTEuOTItNC4xNiwxMC42NS0yLjIzLDE0LjE5Yy4wOCwxLjMxLjA5LDMuMzEtLjQyLDQuMTItLjY5LDEuMDgtLjQ5LDUuMDctLjQyLDYuMTcsMCwuMTksMCwuMjksMCwuMjlzLTIuMjYsMywuNTksNC4yMiwxMi41NCwyLjEsMTIuNTQsMi4xLDkuMjEsMi42NCwxMy42NSwzLjM2LDEzLjczLjQ2LDE0LjM5LTIuMjRhNy4yMSw3LjIxLDAsMCwwLC4yNC0yLjU4LDMuMjEsMy4yMSwwLDAsMC0xLjgzLTIuNTZBNzUuMjQsNzUuMjQsMCwwLDAsNTE3LDY5NS41cy00LjM4LTEtNC43OC0yLjktNi42My03LjE4LTYuNjMtNy4xOC0uMDctLjM3LS4yLS44N2wuMiwwLS4zLS4zYy0uMzEtMS0uODEtMi4zMi0xLjQyLTIuMDdoMGExLjUsMS41LDAsMCwxLC42OC0yLjA2YzIuMzktMS4zMSwzLjg1LTUuNDYsMy4xOC05Ljk0cy0uNzktMy42OS42LTYuMjZhMTIuMywxMi4zLDAsMCwwLDEtNi4xOUw1MTMsNjQ0LjA1YTIwLjcsMjAuNywwLDAsMCwxLjA2LTUuMiw5LjcyLDkuNzIsMCwwLDEsMS4wNi00czEuNjYtOS40OSwzLjEyLTExLjY2LTEtOS44Mi0xLTkuODItMi4yNS0xMS44NS0yLjEyLTE3LjI2LTUuODQtMjQuMTctNS44NC0yNC4xN2E2LjI4LDYuMjgsMCwwLDEtLjkyLTQuMDljLjEyLTEuMTItLjU4LTIuOTQtMS4zNy00LjU3bC0uMjUtLjUxYTQuNDMsNC40MywwLDAsMSwxLjA5LTFjMS42NC0xLDIuNDEtMy42MywyLjQyLTUuNDhMNDg3LjY0LDUwM2MwLS4xNiwxMC40Ny0yMS41NSwxMC40NC0yMS43MS0uNjItMy41MS02LjU0LTEyLjgyLTYuNTQtMTIuODJsMCwwYS43NS43NSwwLDAsMC0uMjUtLjI5Yy0xLjMzLS42MS01LjgzLTMuMTYtNS44My0zLjE2LTMuNTMtNC4zNi02Ljg0LTUuMjYtOS01LjIzYTYuMTIsNi4xMiwwLDAsMC0yLC4zMSw0LjQxLDQuNDEsMCwwLDAtLjY3LjI3bC0uMS44N2ExNy44NCwxNy44NCwwLDAsMSwuNDctNmMuMDUtLjE3LjEtLjM1LjE0LS41Mi4zMywwLC42NiwwLDEsMGExNi4xMiwxNi4xMiwwLDAsMCwxNi4xNy0xNi4wNywxNi4zMiwxNi4zMiwwLDAsMC0uNjItNC40NWwtLjA4LS4yMy41LS4yMmMyLS43NCw0LjUxLjUyLDYuMTMtLjgyYTQuNjUsNC42NSwwLDAsMCwxLjIyLTIuMTEsMTIuNjcsMTIuNjcsMCwwLDAsLjg5LTMuMzVjMC0uMiwwLS40LDAtLjZhMS4wOSwxLjA5LDAsMCwwLDAtLjE4LDEuNywxLjcsMCwwLDAsMC0uMjJjMC0uMDksMC0uMTgsMC0uMjdzMCwwLDAsMGEzLjg5LDMuODksMCwwLDAtLjg2LTJjLTEuMDYtMS4yNC0yLjgzLTEuNTQtNC4xNy0yLjQ1YTEwLjA5LDEwLjA5LDAsMCwxLTIuNjctMy4xMywxMS42NCwxMS42NCwwLDAsMC0yLjU5LTMuMTksMy44MSwzLjgxLDAsMCwwLTMuODktLjYxLDQuMzksNC4zOSwwLDAsMS0xLjI4LjYsMi42NywyLjY3LDAsMCwxLTEuNDEtLjM4Yy00LjYtMi4xNS0xMC0xLjc3LTE1LTEuMTNhMTkuNTEsMTkuNTEsMCwwLDAtNS45MSwxLjQyLDcsNywwLDAsMC00LDQuMzNjLS40MSwxLjU1LS4xLDMuMjMtLjU5LDQuNzYtLjM0LDEtMSwxLjkyLTEuNDIsMi45M2E2LDYsMCwwLDAtLjM4LDEuNjV2MHMwLC4xMSwwLC4xNmMtLjE3LDIuMjcuNzIsNC42NiwxLjE1LDcsLjU5LDMuMTkuMjksNi42NiwxLjY2LDkuNjhhNS43OSw1Ljc5LDAsMCwwLC41MiwxLjA2Yy0uNDgsMS0xLDIuMDYtMS41LDMuMDUtLjc0LS4yMS0zLS43MS0zLjA4LDEuMjdhMTAuNzgsMTAuNzgsMCwwLDEtMS4xLDQuNjQsMy4yOSwzLjI5LDAsMCwxLS4zMy4yMy42NC42NCwwLDAsMC0uMzcuNjVsMCwwLS4yNi4yYS42NC42NCwwLDAsMC0uMzIuMTFjLS4xNC0uMjQtLjYtLjI2LTIuMDYsMS40OGEyOC4xLDI4LjEsMCwwLDEtNi42Myw1LjFzLTkuODIsNi44NS0xMC4zNSwxMFM0MjguODYsNDkwLjU0LDQzMC41NCw0OTUuMTFabTQzLjEyLTMzLjQyczAtLjA3LDAtLjExbC4xMi4wNlptMjYuNjgsMjI0YTIuMTQsMi4xNCwwLDAsMS0uODQuMTdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9InVybCgjZmFkMTA0YjktZGIzNS00MmZjLWJjMDAtMmI4YTIzMjA3MzY2KSIvPjxwYXRoIGQ9Ik00NzcuNzMsNzEzLjU1Yy0xMS41MywyLjE2LTEzLjYzLTYuNjgtMTMuNjMtNi42OHMtMS40NC03Ljg2LTItOC40NWExLDEsMCwwLDEtLjA5LS43NWgwYTEwLjI0LDEwLjI0LDAsMCwxLDEuNjYtMy43Yy43Mi0uODUuMTMtNC4zOS4xMy00LjM5bDEzLjM2LTMuNGEyMC4wNSwyMC4wNSwwLDAsMSwxLjMxLDMuOTNjLjE0LDEuMjQsMi4xLDYuODgsMS45LDcuNjZzLjg2LDMuMjEsMSw0LjQ2LDEuNzcsMy4wOCwxLjksMy43M2ExNCwxNCwwLDAsMCwuNzIsMS43MywxNi44MywxNi44MywwLDAsMSwuODUsMi42NkM0ODUuNTIsNzEzLjA5LDQ3Ny43Myw3MTMuNTUsNDc3LjczLDcxMy41NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iIzQ0NDA1MyIvPjxwYXRoIGQ9Ik00NzcuNzMsNzEzLjU1Yy0xMS41MywyLjE2LTEzLjYzLTYuNjgtMTMuNjMtNi42OHMtMS40NC03Ljg2LTItOC40NWExLDEsMCwwLDEtLjA5LS43NWwyLjc3LDhzMi4zLDQuNzksMTAuODEsNC4wNmM0Ljg1LS40LDcuMjMtMS4zLDguMzktMmExNi44MywxNi44MywwLDAsMSwuODUsMi42NkM0ODUuNTIsNzEzLjA5LDQ3Ny43Myw3MTMuNTUsNDc3LjczLDcxMy41NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ2OC43NSw3MDEuMXMyLjg5LjA3LDMuMDgtMi4yOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTUxOC44Nyw2MjMuNjdjLTEuNDQsMi4xNi0zLjA4LDExLjU5LTMuMDgsMTEuNTlhOS45Miw5LjkyLDAsMCwwLTEsNCwyMC4yNiwyMC4yNiwwLDAsMS0xLDUuMThMNTEwLDY1OGExMi4yNywxMi4yNywwLDAsMS0xLDYuMTVjLTEuMzcsMi41Ni0xLjI0LDEuNzctLjU5LDYuMjNzLS43OCw4LjU4LTMuMTQsOS44OSwxLjA1LDQuMzksMS4wNSw0LjM5LTE1LjA3LDQuMDYtMTguMjIsMS41NywxLjY0LTE0LjgsMS42NC0xNC44LS43OC0xMC4zNS0uMjYtMTEuODYsMi43NS0xNC4zNSwyLjc1LTE0LjM1LDEuMzgtNS44My44NS02LjgxLjMzLTMuOC4zMy0zLjgsMi4yMy0zLjE1LDItNC4xM2E2LjE2LDYuMTYsMCwwLDEsLjY2LTIuNzVzLTYuNjgtMTAuMjItNi4xLTEyLjEyLS4yNi01LS4yNi01LS44NC0xLjQ1LTEuODYtMy4xOGMtMS4yNC0yLjEzLTIuNzQtNC42Ny0zLjI1LTUuNDdhNjkuODMsNjkuODMsMCwwLDEtMy4wNS03Ljc4bC0uNjItMS43OHMtMSwxOS4yNi0yLDIxLjIyLTIuMjksMTcuNS0yLjI5LDE3LjVhMTAuODgsMTAuODgsMCwwLDAtLjY2LDQuMzJjLjEzLDIuNDItMi4xLDEzLTIuMSwxM3MtMSw3LjQ3LS4zMiw5LjQ0LjEzLDE2LjQ0LjEzLDE2LjQ0LDMuNiwyLjgyLDQuNTIsNS0uMTMsOC4wNi0uMTMsOC4wNi0xMC40OCw1LjI0LTE1LjE0LDMuODYtMi43NS05LjMtMi43NS05LjMtMy4xNC01LjI0LTMuMTQtNy4yN2E4Mi4xOSw4Mi4xOSwwLDAsMC0xLjEyLTguMjZjLTQtNy4zNC0yLjQyLTI1LjE1LTMuMDctMjYuNnMxLjM3LTYuODEsMy05LjIzLDEtOSwwLTEwLjg4LDEtOC40NSwxLTguNDUtMS45LTEyLjcxLTEuODMtMTQuNjctMS42NC03LjgtMS42NC03LjgtMS43LTMtMS4zMS0zLjkzLTEuMzEtMy4yOC0uODUtNC4zMi0uNC00LjI2LTEuMjUtNi4xNmEzOS40OSwzOS40OSwwLDAsMS0xLjQtNmMtLjQtMi4yNi0uNjktNC4yNS0uNjktNC4yNWwxMC44MS04LjcxLDI3LTcuMDhMNDk1Ljk0LDU0NWw5Ljg5LDE1LjU5czEsMS42MywxLjkzLDMuNTFjLjc4LDEuNjIsMS40NywzLjQzLDEuMzUsNC41NWE2LjI3LDYuMjcsMCwwLDAsLjkyLDQuMDZzNS44OSwxOC42Nyw1Ljc2LDI0LDIuMSwxNy4xNywyLjEsMTcuMTdTNTIwLjMxLDYyMS41MSw1MTguODcsNjIzLjY3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSIjM2YzZDU2Ii8+PHBhdGggZD0iTTQ1OC4yMSw2MzMuNDNzMTEuNTMtNC45MSwxNC45My0xLjQ0UzQ1OC4yMSw2MzMuNDMsNDU4LjIxLDYzMy40M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ2NC42OSw2MzUuMzlTNDUzLDY0Miw0NTcsNjQzLjA2LDQ2NC42OSw2MzUuMzksNDY0LjY5LDYzNS4zOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ5OS41NCw2MjkuN3MtNSwuMzItMy4wOCwxLjMxUzQ5OS41NCw2MjkuNyw0OTkuNTQsNjI5LjdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik01MDUuNzcsNjMxLjJjLS4wNy4zMy0xNC40OCw1LTExLjY2LDcuMDhTNTA1Ljc3LDYzMS4yLDUwNS43Nyw2MzEuMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ1OS45MSw2NzEuMjljMi4xNi0uMzIsMTQuMjItNS44OSw5LjUtMS44OUE5LjQsOS40LDAsMCwxLDQ1OS45MSw2NzEuMjlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik00NjUuODcsNjc1LjY4czEuMDUsNC4wNyw1LjA1LDMuNTRTNDY1Ljg3LDY3NS42OCw0NjUuODcsNjc1LjY4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBvcGFjaXR5PSIwLjEiLz48cGF0aCBkPSJNNDYyLjUzLDY4My45NGMuNzItLjIsOS4zLTQuMTMsOS41LTIuMjlzLTguMTksNS04Ljg0LDQuMDZBMy41MiwzLjUyLDAsMCwxLDQ2Mi41Myw2ODMuOTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik00OTAuMzEsNjc5LjIyYzEtLjA2LDEwLjg3LTMuMjEsMTIuODQtLjM5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBvcGFjaXR5PSIwLjEiLz48cGF0aCBkPSJNNDk5LjIyLDY4MS4wNnMxLjctMS41MSwzLjQtLjcyUzQ5OS4yMiw2ODEuMDYsNDk5LjIyLDY4MS4wNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ3Ny40Nyw2OTcuM2EyLjkyLDIuOTIsMCwwLDAsMi4yMiwyLjNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik01MjcuNDUsNzAzLjQ2Yy0uNjUsMi42OS05LjgzLDIuOTUtMTQuMjEsMi4yM3MtMTMuNS0zLjM0LTEzLjUtMy4zNC05LjU2LS45Mi0xMi4zOC0yLjEtLjU5LTQuMTktLjU5LTQuMTksMC0uMSwwLS4yOGMtLjA3LTEuMS0uMjYtNS4wNy40MS02LjE0Ljc5LTEuMjUuMzMtNS4zMS4zMy01LjMxczEzLjU2LDIuNjIsMTMuODIsMS4zOCwyLjM2LTMsMy4zNC0zLjQxLDEuNzEsMy4yOCwxLjcxLDMuMjgsNi4xNiw1LjI0LDYuNTUsNy4xNCw0LjcxLDIuODgsNC43MSwyLjg4YTczLjI2LDczLjI2LDAsMCwxLDguMjYsMi43NSwzLjE4LDMuMTgsMCwwLDEsMS44MSwyLjU0QTcuMTQsNy4xNCwwLDAsMSw1MjcuNDUsNzAzLjQ2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSIjNDQ0MDUzIi8+PHBhdGggZD0iTTUyNy40NSw3MDMuNDZjLS42NSwyLjY5LTkuODMsMi45NS0xNC4yMSwyLjIzcy0xMy41LTMuMzQtMTMuNS0zLjM0LTkuNTYtLjkyLTEyLjM4LTIuMS0uNTktNC4xOS0uNTktNC4xOSwwLS4xLDAtLjI4bDEzLjcxLDNzNi43NSwyLjg4LDExLjA3LDIuODhjMy43OCwwLDEyLjIzLDEuNTUsMTYuMTYtLjhBNy4xNCw3LjE0LDAsMCwxLDUyNy40NSw3MDMuNDZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik01MDguOTEsNjkzLjExcy0uNjUsNC4zMi0zLjI3LDUuNzdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik01NTAuOSw1MzMuODdDNTQ3LDUzNS4zNSw1MzgsNTM1LjUxLDUzNCw1MzUuNTFjLTEuMjIsMC0yLDAtMiwwbC0yLjU3LTUuMjQsMi41Ny00LjM3czIuMzYtLjY1LDUuNS0xLjIyYzQuNjMtLjgzLDExLTEuNDgsMTQsLjM5QzU1Ni41NCw1MjguMiw1NTYsNTMyLDU1MC45LDUzMy44N1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iI2ExNjE2YSIvPjxwYXRoIGQ9Ik00OTEuMzMsNDcxLjE2bDEuMTQtMS4zMXM1Ljg1LDkuMjYsNi40NiwxMi43NSwxLjQsNy41MSwxLjQsNy41MSwxLjQ4LDQuNTQsMi40NSw2LjU1YTIyLjE1LDIyLjE1LDAsMCwxLDEuOTIsNC44MWMuMDguODctLjM1LDIuNzksMS40OCw0czIuMjcsNC41NCwyLjI3LDQuNTQsNi42NCw2LjQ2LDEwLjE0LDYuNjQsMTMuNTMsMS45MiwxMy4xOSwzLjY2LDQuMTksMi44LDYsMy4yNFM1MjYsNTI5LjI0LDUzNCw1MzZjMCwwLTUuMDcsMS01LjU5LDIuMjdzLTUuODUtLjctNS44NS0uNy0xLjE0LTIuNzEtNS4wNy0yLjg4LTUuOTQtMS45Mi01Ljk0LTIuMTgtMy45My0yLjQ1LTYuMTEtMy4wNi01LjA3LS44Ny01LjE2LTEuNDktMTMuMS01Ni43Ny0xMy4xLTU2Ljc3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSIjZmY3ZTZkIi8+PHBhdGggZD0iTTQ5MS4zMyw0NzEuMzhsMS4xNC0xLjMxczUuODUsOS4yNiw2LjQ2LDEyLjc2LDEuNCw3LjUxLDEuNCw3LjUxLDEuNDgsNC41NCwyLjQ1LDYuNTVhMjIuMzIsMjIuMzIsMCwwLDEsMS45Miw0LjhjLjA4Ljg4LS4zNSwyLjgsMS40OCw0czIuMjcsNC41NCwyLjI3LDQuNTQsNi42NCw2LjQ3LDEwLjE0LDYuNjQsMTMuNTMsMS45MiwxMy4xOSwzLjY3LDQuMTksMi44LDYsMy4yM1M1MjYsNTI5LjQ3LDUzNCw1MzYuMmMwLDAtNS4wNywxLTUuNTksMi4yN3MtNS44NS0uNy01Ljg1LS43LTEuMTQtMi43MS01LjA3LTIuODgtNS45NC0xLjkyLTUuOTQtMi4xOS0zLjkzLTIuNDQtNi4xMS0zLjA1LTUuMDctLjg4LTUuMTYtMS40OS0xMy4xLTU2Ljc4LTEzLjEtNTYuNzhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMDUiLz48cGF0aCBkPSJNNjI1LDcwOC43OGM2NiwwLDExOS41LDEwLjc1LDExOS41LDI0cy01My41LDI0LTExOS41LDI0LTExOS41LTEwLjc0LTExOS41LTI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzQ0NDA1MyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+PHJlY3QgeD0iNTcyLjgyIiB5PSIyMTEuODgiIHdpZHRoPSIxNy4wOSIgaGVpZ2h0PSIxMjcuMDciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNS43MSAtMjExLjYyKSByb3RhdGUoOS42MykiIGZpbGw9IiM0NDQwNTMiLz48cG9seWdvbiBwb2ludHM9IjU1MC4zNCA1OTguNzUgNTU0LjA4IDYyNS40NSA1NTcuMjggNTk3LjY5IDU1MC4zNCA1OTguNzUiIGZpbGw9IiNkMGQyZDUiLz48cG9seWdvbiBwb2ludHM9IjQzMC4yIDU4My44IDQzMC4yIDYwMC4zNiA0MzMuOTQgNjE0Ljc3IDQzNi42MSA2MTQuNzcgNDM5LjgyIDU5OS4yOSA0NDEuNDIgNTgwLjYgNDMwLjIgNTgzLjgiIGZpbGw9IiMzZjNkNTYiLz48cGF0aCBkPSJNNDkyLjU5LDYzNy40Mmw4LDEuNnMtOS4wNywyNS4wOS0yLjY3LDMwLjQzSDQ4Ny43OVM0ODQuMDUsNjUwLjIzLDQ5Mi41OSw2MzcuNDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiNkMGQyZDUiLz48cGF0aCBkPSJNNDkyLjU5LDYzNy40Mmw4LDEuNnMtOS4wNywyNS4wOS0yLjY3LDMwLjQzSDQ4Ny43OVM0ODQuMDUsNjUwLjIzLDQ5Mi41OSw2MzcuNDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik01NDYuMTIsMzM1Ljc1LDUyMC40OSw0OTguMDZzLTM3LjksMTczLTIzLjQ5LDIwNy4xN2gxOC4xNmw1NC40Ni0zMzIuMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iI2QwZDJkNSIvPjxwYXRoIGQ9Ik02MTEuMTIsMzE1LjU5bDE5LjY1LDE2My4xNHMxNC4zMSwyMDcuODMtMS4zNiwyNDEuNDRINjEzLjkzTDU4Ni4yNywzNTIuMDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiNkMGQyZDUiLz48cGF0aCBkPSJNNTQzLjczLDI3Ni40NWEyMSwyMSwwLDAsMSwyMC43MS0xNWMxNS44MS40LDQwLjI1LDMuMjgsNTMsMTYuMzQsMTkuNzYsMjAuMjktMTMuMzUsODguNjMtMTMuMzUsODguNjNzLTMxLDU3LjEzLTU5LjI2LTE1LjQ4QzU0NC43OSwzNTEsNTMzLjA3LDMxMi4xMiw1NDMuNzMsMjc2LjQ1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSIjNDQ0MDUzIi8+PHBhdGggZD0iTTU0My43MywyNzYuNDVhMjEsMjEsMCwwLDEsMjAuNzEtMTVjMTUuODEuNCw0MC4yNSwzLjI4LDUzLDE2LjM0LDE5Ljc2LDIwLjI5LTEzLjM1LDg4LjYzLTEzLjM1LDg4LjYzcy0zMSw1Ny4xMy01OS4yNi0xNS40OEM1NDQuNzksMzUxLDUzMy4wNywzMTIuMTIsNTQzLjczLDI3Ni40NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTU1NC42LDI5MC4zM2ExNSwxNSwwLDAsMSwxNC43NS0xMC42NmMxMS4yNS4yOSwyOC42NSwyLjM0LDM3LjcsMTEuNjQsMTQuMDcsMTQuNDQtOS41LDYzLjEtOS41LDYzLjFzLTIyLDQwLjY3LTQyLjItMTFDNTU1LjM1LDM0My4zOCw1NDcsMzE1LjczLDU1NC42LDI5MC4zM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iIzQ0NDA1MyIvPjxwYXRoIGQ9Ik02MDkuMzMsNzA2LjEyYy4xNywyLjU4LjU3LDUuMjksMi4yLDcuMzEsMi43LDMuMzQsNy42MSwzLjYsMTEuODEsNC42NWE1Miw1MiwwLDAsMSw5LjM0LDMuNjhsOS4wOSw0LjNhMjMuNjksMjMuNjksMCwwLDAtNi44MiwxLjQyYy0xLjE3LjQzLTIuNDUsMS4xNC0yLjYyLDIuMzZhMi41MiwyLjUyLDAsMCwwLDEuNTEsMi40Miw3LjEyLDcuMTIsMCwwLDAsMywuNTMsMTAwLjgzLDEwMC44MywwLDAsMCwxNi4yLS44NWwuNjQtLjA5cTQuMTQsMi4wNSw4LjI0LDQuMTljMS4xNC42LDIuNTEsMCwzLjQ3LS44NGExOC40LDE4LjQsMCwwLDAsMy4wOC0zLjUyYy4xNi4yOC4zMi41NS40NS44Mi44OCwxLjY5LDEuNzEsMy45LjQ1LDUuMzQtMSwxLjEyLTIuODksMS4zMS0zLjQ2LDIuNjdhMi40MSwyLjQxLDAsMCwwLC45MywyLjcxLDYuMTYsNi4xNiwwLDAsMCwyLjkxLDEsMjUuODMsMjUuODMsMCwwLDAsNy40NS0uMDYsNiw2LDAsMCwwLDMuNi0xLjUzLDYuNiw2LjYsMCwwLDAsMS4yOC00bDEuNzEtMTkuNDNhNS44Myw1LjgzLDAsMCwwLS4yLTIuNzZjLS42OC0xLjY1LTIuNjUtMi4zNC00LjQzLTIuNjNsLS4xOSwwYzEuNDgsMCwzLS4wNyw0LjYtLjA3YTExLDExLDAsMCwwLDQuMTItLjUyYzIuNTQtMSwzLjkxLTMuNjcsNS02LjEzLDItNC4zMiw0LjMtOSw0LTEzLjhsLS43OC0uMzVjLS4wNy01LjExLTIuMjEtOS44OC0zLTE0Ljg3YTguMjgsOC4yOCwwLDAsMCwxLjMzLTQuNSwxNi42NCwxNi42NCwwLDAsMC0xLjEzLTUuMTJjLTMuMTctOS40Mi02LjM0LTE4Ljg3LTEwLjU4LTI3Ljg3YTk2LjQxLDk2LjQxLDAsMCwwLTEwLTE3cS0xLjUzLTItMy4xOC00Yy0uOC0uOTItMi41OS0yLjIyLTIuOTItMy4zOXMuMzctMi4zMSwwLTMuNTFhNS45NCw1Ljk0LDAsMCwwLS4zNi0uOTFjMi4zNC0zLjEsMS42OC03LjU4Ljg2LTExLjQ0bC0xLTQuODFhMTMsMTMsMCwwLDAtMS4yNC0zLjgxQTExLjEzLDExLjEzLDAsMCwwLDY2Mi4zLDU4OWMtNC45Mi00LjQ0LTExLTcuMzktMTYuNTMtMTEuMDctNS44NS0zLjg5LTExLjA4LTguNjItMTYuMzItMTMuMjktMS42LTEuNDItMy42MS0yLjk1LTUuNjgtMi4zNXMtMi45MywyLjg0LTMsNC44OGExMC4wNiwxMC4wNiwwLDAsMCwzLjI1LDcuNTRjMy42MiwzLjMxLDkuMDksMy41OCwxMy40LDUuOTJhMzEuMzUsMzEuMzUsMCwwLDEsNC4yMSwyLjkzbDEyLjUyLDkuODNhNC4zNSw0LjM1LDAsMCwxLDEuOTUsMi41NCw0LjA5LDQuMDksMCwwLDEtLjMsMS44OGMtLjQ3LDEuNDQtMS4yNywzLjI1LTEuODYsNS4wOGwtMS0uNzJhMzkuMiwzOS4yLDAsMCwwLTYuNjMtNCwzMi45MSwzMi45MSwwLDAsMC05LjcxLTIuMzNjLTcuMzktLjgzLTE0LC4zMS0xOC41Miw2LjQ4YTEzLjcsMTMuNywwLDAsMS0zLjUxLDMuNjEsMTMsMTMsMCwwLDAtMi44NSwxLjgxYy0yLjMyLDIuNTctMSw2LjgzLDEuMTgsOWExNCwxNCwwLDAsMCw2LjU4LDMuNDMsMTMuNTIsMTMuNTIsMCwwLDAsMTYuNDIsNy4zNiwyMC4xLDIwLjEsMCwwLDEsLjA5LDMuODhBNC40Nyw0LjQ3LDAsMCwwLDYzNy40LDYzNWE1Ljg4LDUuODgsMCwwLDAsMS43Mi44LDI2LjM5LDI2LjM5LDAsMCwxLDYuMjMsMy4yNSwzMiwzMiwwLDAsMC01LjUyLDguMjUsMTMuNDIsMTMuNDIsMCwwLDAsMSwxMi40OGwuMDYuMDhhNC4xNCw0LjE0LDAsMCwxLS45MSwxLjY4LDMsMywwLDAsMS00LjEzLS40MiwxNS43MiwxNS43MiwwLDAsMS0yLjE2LTMuMzMsMTMuOTQsMTMuOTQsMCwwLDAtOS02LjM2LDcuMjMsNy4yMywwLDAsMC00LjE1LjE3LDMuNjYsMy42NiwwLDAsMC0yLjQxLDMuMTJjMCwxLjUxLDEuMSwyLjc2LDIuMTgsMy44M2E2My41OSw2My41OSwwLDAsMCwxMSw5LjEsMzUuNDEsMzUuNDEsMCwwLDAsMy4zNywxLjg0cS0zLS42My01LjkyLTEuMjNhMjYuNzcsMjYuNzcsMCwwLDAtOC4zNS0uNzMsOS4zMiw5LjMyLDAsMCwwLTcsNC4wOCw5LDksMCwwLDAtLjY1LDYuOCwyMi44NiwyMi44NiwwLDAsMCwzLjA3LDYuMyw0NC44NSw0NC44NSwwLDAsMCw3LjY3LDkuNmMtMi41Ljc1LTUsMS41Ny03LjQ0LDIuNDdzLTUsMi02LjEyLDQuMjRBOS43Miw5LjcyLDAsMCwwLDYwOS4zMyw3MDYuMTJabTM2LjgxLTM0LC4wOSwwYTMuMTMsMy4xMywwLDAsMCwxLjMxLTEuMTEsMTguMTQsMTguMTQsMCwwLDAsMy4xNi02Ljg0LDcuNzEsNy43MSwwLDAsMCwxLjctLjQzLDMuOCwzLjgsMCwwLDAtMS4xOCwyLjc2bDUuNjQsMi43NmEyLjEsMi4xLDAsMCwxLDEsLjc5LDIsMiwwLDAsMSwuMTEsMS4xOGMtLjE2LDEuMjktLjQxLDIuNTgtLjU3LDMuODYtMS42OS0uNS0zLjM1LS45LTQuODQtMS4zQzY1MC40NCw2NzMuMjEsNjQ4LjI5LDY3Mi42Nyw2NDYuMTQsNjcyLjEzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSJ1cmwoI2YyZjlkZWRiLTBmNDMtNDM1Zi05NTQzLTczNWYzZGIwMDA5YSkiLz48cGF0aCBkPSJNNjQ3LjE5LDYxOWExMC44MSwxMC44MSwwLDAsMCw4LjQtMS4zNSw1LjE1LDUuMTUsMCwwLDEsMS42My0uNzZBMy4zMiwzLjMyLDAsMCwxLDY2MCw2MThjMi40LDIuMzksMi42OCw2LjMzLDEuNDQsOS40OHMtMy43Myw1LjYzLTYuMzQsNy43OGE1Ny41NSw1Ny41NSwwLDAsMS02LjY3LDQuNzQsMTIuMzYsMTIuMzYsMCwwLDAtNi44NC02LjY1Yy0yLjc0LTEuMDYtNC43NC0zLjktNi4zMS02LjM4LTEuMTctMS44NC0yLjIxLTEuNzYtMS4xNi0zLjY2YTI3LjY4LDI3LjY4LDAsMCwxLDQuMTYtNSwxNi4yNSwxNi4yNSwwLDAsMCwyLjI0LTNjLjctMS4yNi41NC0yLjA4LDEuNjItMS4wOC43MS42NiwxLDIuMDksMS44MiwyLjg2QTgsOCwwLDAsMCw2NDcuMTksNjE5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSIjZmFiZGJkIi8+PHBhdGggZD0iTTY1NS43OCw1OTkuNWE0LjIzLDQuMjMsMCwwLDAsLjI5LTEuODUsNC4zNCw0LjM0LDAsMCwwLTEuOTEtMi41MWwtMTIuMjMtOS43YTMwLDMwLDAsMCwwLTQuMS0yLjg5Yy00LjIyLTIuMzEtOS41NS0yLjU4LTEzLjA5LTUuODRhMTAuMDUsMTAuMDUsMCwwLDEtMy4xOC03LjQ1YzAtMiwxLTQuMjYsMi44OS00LjgyczQsLjkyLDUuNTYsMi4zM2M1LjExLDQuNiwxMC4yMSw5LjI3LDE1LjkyLDEzLjExLDUuNCwzLjY0LDExLjM1LDYuNTQsMTYuMTYsMTAuOTNhMTAuODgsMTAuODgsMCwwLDEsMi4yMywyLjYxLDEzLjQsMTMuNCwwLDAsMSwxLjIxLDMuNzdsMSw0Ljc0Yy44NCw0LDEuNTIsOC42NS0xLjE3LDExLjcyYTQuMjcsNC4yNywwLDAsMS0zLjI2LDEuNjEsNi40Miw2LjQyLDAsMCwxLTIuNTEtLjg2Yy0yLTEtNS42Mi0yLTYuMjMtNC41QzY1Mi41OCw2MDYuNzcsNjU0LjgzLDYwMi40LDY1NS43OCw1OTkuNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iI2ZhYmRiZCIvPjxwYXRoIGQ9Ik02MzYuMjcsNjYyYTE2LDE2LDAsMCwxLTIuMTEtMy4yOCwxMy42MSwxMy42MSwwLDAsMC04Ljc4LTYuMjgsNy4wNiw3LjA2LDAsMCwwLTQsLjE2LDMuNjEsMy42MSwwLDAsMC0yLjM1LDMuMDljMCwxLjQ4LDEuMDcsMi43MiwyLjEyLDMuNzdhNjIsNjIsMCwwLDAsMTAuNzYsOUEyOC4zOCwyOC4zOCwwLDAsMCw2NDUsNjczYTMuMywzLjMsMCwwLDAsMS40LS4xMywzLjEzLDMuMTMsMCwwLDAsMS4yOC0xLjA5YzIuNDgtMy4xOCwzLjM0LTcuMzEsNC0xMS4yOC0uMjQsMS40My04LjI5LTEuOTEtOS4yLTEuNDgtMS4zNC42My0xLjIxLDIuNTEtMi4xOCwzLjQxQTIuODksMi44OSwwLDAsMSw2MzYuMjcsNjYyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSIjZmFiZGJkIi8+PHBhdGggZD0iTTY5NC45Miw2OTMuNDJhMi42NSwyLjY1LDAsMCwxLS4yOCwxLjQ1Yy0uNTUuODYtMS43OS44Ny0yLjguNzJhNTEuMTgsNTEuMTgsMCwwLDEtNi44OS0xLjY2TDY2NC40Miw2ODhhMS44NywxLjg3LDAsMCwxLS44OC0uNDMsMS44MiwxLjgyLDAsMCwxLS40MS0uOSwyNC4xNSwyNC4xNSwwLDAsMS0uNDUtOSwyLjQsMi40LDAsMCwxLC40MS0xLjIxLDIuNDIsMi40MiwwLDAsMSwxLjctLjY0LDg3LDg3LDAsMCwxLDkuNjgtLjQ0LDQ4Ljg1LDQ4Ljg1LDAsMCwwLDYuMjktLjE0YzIuNy0uMzIsNS44MS0xLjg3LDguNTItMS42MywyLjM1LjIsMi4yNSwyLDIuNDksNEM2OTIuNDQsNjgyLjkyLDY5NC44Nyw2ODgsNjk0LjkyLDY5My40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iI2ZhYmRiZCIvPjxwYXRoIGQ9Ik02MjkuMzcsNjY5LjA1YTI1LjYxLDI1LjYxLDAsMCwwLTguMTYtLjczLDkuMDgsOS4wOCwwLDAsMC02LjgzLDQsOC44OSw4Ljg5LDAsMCwwLS42NCw2LjcyLDIzLjI1LDIzLjI1LDAsMCwwLDMsNi4yMSw0MC44Myw0MC44MywwLDAsMCw4Ljc3LDEwLjU2YzEuNzUsMS4zOSwzLjY4LDIuNTQsNS4zNiw0LDMuNTgsMy4xMyw1LjgsNy41LDcuOTMsMTEuNzUsMiw0LDQsOC4wOCw0Ljg2LDEyLjQ4YTEuMjUsMS4yNSwwLDAsMCwuNDMuODksMS4xOSwxLjE5LDAsMCwwLC44OS4wNmw5Ljg1LTEuODJhMS41NCwxLjU0LDAsMCwwLDEuMzgtMi4zNCw2OC45Miw2OC45MiwwLDAsMC0xMS43NS0yNS40MSwyMi41NSwyMi41NSwwLDAsMCwxOS44Miw1Ljc0LDcuNzQsNy43NCwwLDAsMCwzLjc2LTEuNjNjMi4yLTIsMi4xLTUuNDEsMS42MS04LjMyYTYxLjA3LDYxLjA3LDAsMCwwLTEuODItNy42N2MtMS44NS02LTkuODMtNy42Mi0xNS4yNC05LjA4UTY0MS4wNyw2NzEuNDEsNjI5LjM3LDY2OS4wNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iIzNmM2Q1NiIvPjxwYXRoIGQ9Ik02MzYuNjYsNjkwLjMxYTEwLjgzLDEwLjgzLDAsMCwxLDMuNzQsMi40OGMtMS43Ny0yLTYuODMtMy05LjMxLTMuOTMtMy4wNy0xLjE0LTYuNDItMi4zMS05LTQuMzRBMTA3Ljg4LDEwNy44OCwwLDAsMSw2MzYuNjYsNjkwLjMxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBvcGFjaXR5PSIwLjEiLz48cGF0aCBkPSJNNjY4LjU2LDczMi40NmMuODUsMS42OCwxLjY2LDMuODUuNDQsNS4yOC0uOTQsMS4xLTIuODIsMS4yOS0zLjM4LDIuNjNhMi4zOSwyLjM5LDAsMCwwLC45MSwyLjY4LDUuODgsNS44OCwwLDAsMCwyLjg0LDEsMjUuMzcsMjUuMzcsMCwwLDAsNy4yOC0uMDYsNS44NCw1Ljg0LDAsMCwwLDMuNTEtMS41MSw2LjU4LDYuNTgsMCwwLDAsMS4yNS00bDEuNjctMTkuMThhNiw2LDAsMCwwLS4xOS0yLjczYy0uNjctMS42My0yLjU5LTIuMy00LjMzLTIuNTlhMjMuMjQsMjMuMjQsMCwwLDAtNS44OS0uMjRBNi4yMiw2LjIyLDAsMCwwLDY2OSw3MTVhNy4wOSw3LjA5LDAsMCwwLTEuNzMsNGMtLjQ1LDIuMjgtMS43MSw1LjQ0LTEuNDQsNy43NUM2NjYsNzI4LjY2LDY2Ny43Miw3MzAuNzgsNjY4LjU2LDczMi40NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iI2ZmN2U2ZCIvPjxwYXRoIGQ9Ik02NDYuNDgsNzI2LjI2YTIzLjM1LDIzLjM1LDAsMCwwLTExLjExLDEuMjVjLTEuMTQuNDItMi4zOSwxLjEzLTIuNTYsMi4zM2EyLjQ5LDIuNDksMCwwLDAsMS40OCwyLjM5LDcsNywwLDAsMCwyLjk0LjUzLDk5LjY0LDk5LjY0LDAsMCwwLDE1LjgyLS44NCw4LjUxLDguNTEsMCwwLDAsMy44NS0xLjIxLDMsMywwLDAsMCwxLjIxLTMuNTZjLS42My0xLjMyLTIuMzUtMS43My0zLjE4LTIuOTItLjYtLjg2LS43NS0yLjEzLTEuNjktMi41OGEyLjg5LDIuODksMCwwLDAtMi4xNS4xNmMtMSwuMzUtMy40LjctNC4wOSwxLjUzQTExLjQ5LDExLjQ5LDAsMCwwLDY0Ni40OCw3MjYuMjZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiNmZjdlNmQiLz48Y2lyY2xlIGN4PSI1NjIuMzIiIGN5PSI0OTguMTQiIHI9IjEzLjEzIiBmaWxsPSIjZmFiZGJkIi8+PHBhdGggZD0iTTY2My40Niw2MTAuNThjLTIuMTEtMS41NS00Ljc3LTIuMDgtNy4zNC0yLjU2YTMuODQsMy44NCwwLDAsMC0yLjY0LjEzLDMuOSwzLjksMCwwLDAtMS4yNywxLjU2LDE0LjUyLDE0LjUyLDAsMCwwLTEuNzQsNC4xNSw0LjgyLDQuODIsMCwwLDAsMSw0LjIzYy43OC44LDEuOSwxLjIsMi43LDJhNSw1LDAsMCwxLDEuMTgsNC4zMiwxMi45MywxMi45MywwLDAsMS0xLjc1LDQuMjcsNzIuMzMsNzIuMzMsMCwwLDEtNi41OCw5LjY4Yy0yLjU1LDMuMTctNS40MSw2LjIyLTYuOTEsMTBhMTMuMzgsMTMuMzgsMCwwLDAsMSwxMi4zMmMyLjQzLDMuNTQsNy4yNyw1LjQ0LDExLjI4LDMuOTFhMy43MiwzLjcyLDAsMCwwLTEuMTQsMi43Mmw1LjUsMi43M2EyLjA4LDIuMDgsMCwwLDEsMSwuNzgsMiwyLDAsMCwxLC4xLDEuMTYsMzYuNDcsMzYuNDcsMCwwLDAtLjY3LDYuNzNjLjE1LDIuMjUsMS4xOCw0LjYyLDMuMjIsNS42LDEuODcuOSw0LjA5LjQyLDYuMTMsMEE3Ni41Myw3Ni41MywwLDAsMSw2ODEsNjgyLjc5YzIuNDIsMCw0LjkyLjA2LDcuMTUtLjg4YTguNSw4LjUsMCwwLDAsNS4wNy03LjY5LDE2LjQsMTYuNCwwLDAsMC0xLjExLTUuMDZjLTMuMDktOS4zLTYuMTktMTguNjItMTAuMzMtMjcuNTFhOTYuNjUsOTYuNjUsMCwwLDAtOS44MS0xNi44Yy0xLTEuMzMtMi0yLjY0LTMuMTEtMy45MS0uNzgtLjkxLTIuNTMtMi4xOS0yLjg1LTMuMzVzLjM2LTIuMjgsMC0zLjQ2QTcsNywwLDAsMCw2NjMuNDYsNjEwLjU4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSIjZmY3ZTZkIi8+PHBhdGggZD0iTTY5NS42OCw2OTMuNjljLTUuNzYtMi42Ni0xMS41Mi01LjMyLTE3LjUxLTcuMzktNC40MS0xLjUyLTkuMzMtMi43MS0xMy42Ni0xLTEuMy41Mi0yLjQ4LDEuMjctMy43MywxLjg4LTQuMTksMi05LDIuMzQtMTMuNjMsMi44NUExMjgsMTI4LDAsMCwwLDYxNyw2OTcuMmMtMi4zMy44Ni00Ljg0LDItNiw0LjE4YTkuNTcsOS41NywwLDAsMC0uNjQsNWMuMTcsMi41NS41Niw1LjIzLDIuMTUsNy4yMiwyLjY0LDMuMyw3LjQzLDMuNTUsMTEuNTMsNC41OWE1MC41Myw1MC41MywwLDAsMSw5LjEzLDMuNjRjOS41OCw0LjU3LDE5LjE3LDkuMTQsMjguNTcsMTQuMDksMS4xLjU5LDIuNDQsMCwzLjM4LS44M2EyMC43OSwyMC43OSwwLDAsMCw1LjktOS43Miw0MS45NCw0MS45NCwwLDAsMCwxLjUtMTEuMzhjMy42OCwwLDYuNjctLjE2LDEwLjM1LS4xNmExMC43LDEwLjcsMCwwLDAsNC0uNTFjMi40Ny0xLDMuODEtMy42Myw0LjkyLTYuMDVDNjkzLjc3LDcwMyw2OTYsNjk4LjM3LDY5NS42OCw2OTMuNjlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiMzZjNkNTYiLz48cGF0aCBkPSJNNjI4LjgsNzA3LjM2YzIuNTktMS4yNiw1LjU5LTEuMjksOC40OC0xLjI3YTI4LjA2LDI4LjA2LDAsMCwxLDUuMjYuNCw0MS41Myw0MS41MywwLDAsMSw3LjY5LDIuODksNDguODIsNDguODIsMCwwLDAsMTkuMzgsMy44IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik02MTMuODYsNjE4LjIyYTE0LjMyLDE0LjMyLDAsMCwwLDcuMDgsMy41NWMyLjYuNiw1LjI4LjgzLDcuOSwxLjQxLDMuMjIuNzEsNi43NCwyLjQxLDcuNDcsNS42M2ExOC43LDE4LjcsMCwwLDEsLjEsMy44OSw0LjQxLDQuNDEsMCwwLDAsMS4zNSwzLjUxLDYsNiwwLDAsMCwxLjY4Ljc5LDI4LDI4LDAsMCwxLDE4LDI1Ljg0LDEyLjczLDEyLjczLDAsMCwwLDYuMTgtOS4xMmMwLDMuNDgsMyw3LDEuMywxMC4xMWExNiwxNiwwLDAsMCwzLjg1LTIzLjI1Yy0xLjMyLTEuNjgtMy0zLjA4LTQuMzgtNC42OWEyMS43NCwyMS43NCwwLDAsMS01LjE4LTE2LjZjLjI5LTIuNTMsMS01LjA5LjQ3LTcuNTgtLjc3LTMuNDUtMy44LTUuODUtNi42OC03LjlhMzguMzksMzguMzksMCwwLDAtNi40OC0zLjk0LDMxLjg2LDMxLjg2LDAsMCwwLTkuNDktMi4zMWMtNy4yMS0uODEtMTMuNjIuMzEtMTguMDksNi40YTEzLjE3LDEzLjE3LDAsMCwxLTMuNDIsMy41NiwxMi44OSwxMi44OSwwLDAsMC0yLjc5LDEuNzlDNjEwLjQ0LDYxMS44NSw2MTEuNzQsNjE2LjA1LDYxMy44Niw2MTguMjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiMzZjNkNTYiLz48cGF0aCBkPSJNNDc5LDQ3MS44MWMtLjQxLS4xNy0yOC45MS0xMS45NC0yNS0xNC4yOCwyLjMzLTEuMzksNS4yLTcuMjcsNy4xNi0xMS44OCwxLjM3LTMuMjEsMi4zLTUuODEsMi4zLTUuODFzMjIuODgtNC4wNiwxNC42OSwxMGEyNi4wOSwyNi4wOSwwLDAsMC0yLjg5LDYuOTFDNDcyLjksNDY2LjI1LDQ3OC43Nyw0NzEuNjMsNDc5LDQ3MS44MVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iI2ExNjE2YSIvPjxwYXRoIGQ9Ik00NzguMTIsNDQ5LjhhMjYuMDksMjYuMDksMCwwLDAtMi44OSw2LjkxLDE2LDE2LDAsMCwxLTEzLjUtOS41LDE0LDE0LDAsMCwxLS42LTEuNTZjMS4zNy0zLjIxLDIuMy01LjgxLDIuMy01LjgxUzQ4Ni4zMSw0MzUuNzgsNDc4LjEyLDQ0OS44WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBvcGFjaXR5PSIwLjEiLz48cGF0aCBkPSJNNDkyLjM0LDQ0MC4yNGExNiwxNiwwLDAsMS0zMC42MSw2LjQ1LDE1Ljc5LDE1Ljc5LDAsMCwxLTEuMzYtNi40NSwxNiwxNiwwLDAsMSwzMS4zNS00LjQzQTE2LjE4LDE2LjE4LDAsMCwxLDQ5Mi4zNCw0NDAuMjRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiNhMTYxNmEiLz48cGF0aCBkPSJNNTA3Ljc2LDU2NC4wOWE5LjczLDkuNzMsMCwwLDAtMi4zMiw0LjQycy03Ljg2LDUuMzctNy4zNCwyUzQ5NCw1NTMuMzEsNDk0LDU1My4zMWwuNTIsMTguNzRzLTI1LjE1LTEuMTgtMjctM1M0NTUsNTYzLjY2LDQ1NSw1NjMuNjZzLTMuMjksMi42NC02LjMyLDQuNjRjLS40LTIuMjYtLjY5LTQuMjUtLjY5LTQuMjVsMTAuODEtOC43MSwyNy03LjA4TDQ5NS45NCw1NDVsOS44OSwxNS41OVM1MDYuODUsNTYyLjIxLDUwNy43Niw1NjQuMDlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik01MDguNTgsNTYyLjYxYy0yLjA5LDEuMzEtMi44OCw0Ljg1LTIuODgsNC44NXMtNy44Niw1LjM3LTcuMzQsMi00LjA2LTE3LjE2LTQuMDYtMTcuMTZsLjUzLDE4Ljc0cy0yNS4xNi0xLjE4LTI3LTMtMTIuNTgtNS4zNy0xMi41OC01LjM3LTkuMyw3LjQ3LTExLDYuODEsMy0xMy4zNiwzLTEzLjM2bDQuODQtNzQuNDJzLTEuMzEtMjIuMTQuNjYtMjIuOTNhMi42LDIuNiwwLDAsMCwuODItLjUyYzEuMy0xLjE2LDEuNjktMy41MiwxLjgtNS41MS4xMy0yLjM1LDMuMjctMS4xOCwzLjI3LTEuMThsLTEuODMsMi4zNiwxNi4yNCw5Ljg3LjE0LjA5YTE5LjQ5LDE5LjQ5LDAsMCwxLDItLjg5YzEuNDQtLjU1LDMuMzUtMS4wNyw0LjYtLjU1YTQuNTEsNC41MSwwLDAsMSwxLjcyLDEuNTUsMTkuMTcsMTkuMTcsMCwwLDEsMi4yMSw0LjQ4bDUuOSw5Ljk1czMsMTMuMjQsMywxMy43Ni45MiwxMi41OCwyLDEzLjg5LDIuMSw3Ljg2LDEuNzEsOS44My42NSw5LjMuNjUsOS4zYzQuMzMsMy41NCw2LjU1LDE1LjU5LDYuNTUsMTUuNTlzNi44MiwxMy41LDcuMzQsMTUuMDdTNTEwLjY4LDU2MS4zLDUwOC41OCw1NjIuNjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiM0NDQwNTMiLz48cGF0aCBkPSJNNDczLjA3LDQ2NC4yNmMtMS42LDIuMzYtNi4yLDUuNjctNi4yLDUuNjdsLTEzLjI4LTExLjIxYzEuMy0xLjE2LDEuNjktMy41MywxLjgtNS41MS4xMy0yLjM2LDMuMjctMS4xOCwzLjI3LTEuMThsLS4zOC40OWEyLjEyLDIuMTIsMCwwLDAsLjU3LDMuMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ3My4wNyw0NjMuNzNjLTEuNiwyLjM2LTYuMiw1LjY4LTYuMiw1LjY4bC0xMy4yOC0xMS4yMmMxLjMtMS4xNiwxLjY5LTMuNTIsMS44LTUuNTEuMTMtMi4zNSwzLjI3LTEuMTgsMy4yNy0xLjE4bC0uMzguNDlhMi4xMiwyLjEyLDAsMCwwLC41NywzLjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiM0NDQwNTMiLz48cGF0aCBkPSJNNDc5LjIxLDQ2NS41Yy0xLjcyLDIuMDUtNC4xNSw0LjM4LTQsMy4yMXMtMS40NS0zLjc0LTIuNDQtNC44OWE3LjMsNy4zLDAsMCwxLDQuNzYuMTNBNC41MSw0LjUxLDAsMCwxLDQ3OS4yMSw0NjUuNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ3OS40Nyw0NjQuNzFjLTEuNzIsMi4wNi00LjE1LDQuMzgtNCwzLjIycy0xLjI5LTMuMDYtMi4yOS00LjIxYzEuNDQtLjU1LDMuMzUtMS4wNyw0LjYtLjU1QTQuNCw0LjQsMCwwLDEsNDc5LjQ3LDQ2NC43MVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iIzQ0NDA1MyIvPjxwYXRoIGQ9Ik00NTMuNiw0NTguODRzLjE3LTEuNTctMi4xLDEuMTRBMjcuNjksMjcuNjksMCwwLDEsNDQ1LDQ2NXMtOS42OSw2LjgyLTEwLjIyLDEwLTMuNjcsMTYuNzctMiwyMS4zMSwxNC4zMywyNi4zLDE0LjMzLDI2LjMtMy4zMiwzLjkzLTIuNTQsOC41NiwxLjc1LDExLDEuMzEsMTIuNC41Myw0Ljg5LTEsNi4xMS0zLjA1LDMuMzIsMS41OCw2LjEyYzAsMCwuODcsMi4zNi4wOCwyLjg4czExLjYyLDUuOTQsMTYuNTEsMy4wNiwxMy43Mi0yNS45NCwxMy44OS0zMS4xLTIuNzEtMjIuMTgtNC4yOC0yNi4yLTYuMjktMTkuNjYtOC4zLTIzLjE1UzQ1My42LDQ1OC44NCw0NTMuNiw0NTguODRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik00NTMuMDcsNDU4Ljg0cy4xOC0xLjU3LTIuMDksMS4xNGEyNy42OSwyNy42OSwwLDAsMS02LjU1LDUuMDZzLTkuNyw2LjgyLTEwLjIyLDEwLTMuNjcsMTYuNzctMiwyMS4zMSwxNC4zMiwyNi4zLDE0LjMyLDI2LjMtMy4zMiwzLjkzLTIuNTMsOC41NiwxLjc1LDExLDEuMzEsMTIuNC41Miw0Ljg5LTEsNi4xMS0zLjA2LDMuMzIsMS41Nyw2LjEyYzAsMCwuODgsMi4zNi4wOSwyLjg4czExLjYyLDUuOTQsMTYuNTEsMy4wNiwxMy43MS0yNS45NCwxMy44OS0zMS4xLTIuNzEtMjIuMTgtNC4yOC0yNi4yLTYuMjktMTkuNjYtOC4zLTIzLjE1UzQ1My4wNyw0NTguODQsNDUzLjA3LDQ1OC44NFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iI2ZmN2U2ZCIvPjxwYXRoIGQ9Ik00NDkuNTgsNDczLjY5czcuNTEsOC4zLDcuMjUsMTMuOEM0NTYuODMsNDg3LjQ5LDQ1Ni45Miw0NzguNTgsNDQ5LjU4LDQ3My42OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ3NC45Myw0NjEuODFzNC44Ny0zLDExLDQuNjNjMCwwLDQuNDUsMi41Myw1Ljc2LDMuMTVzMi44LDE2Ljg1LDIuOCwxNi44NSwyLjg4LDcsMi4wOSwxMSwyLjI4LDE3LjgyLDIuMjgsMTcuODIsNS4wNiwyNC44MSw0Ljg5LDI1LjUtNS4xNi03Ljc3LTUuMDctMTItNC4xOS0xNy4zLTQuOC0xOC4wOC00LjgxLTIzLjI0LTQuODEtMjMuMjQtMy40LTkuNTItNS41OS0xMi42Ni00Ljg5LTkuMDktNi0xMC4xNGExMS41NSwxMS41NSwwLDAsMC0yLjctMS43NFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ3NC44Nyw0NjEuODFzNS40Ni0zLDExLjU3LDQuNjNjMCwwLDQuNDYsMi41Myw1Ljc3LDMuMTVTNDk1LDQ4Ni40NCw0OTUsNDg2LjQ0czIuODgsNywyLjEsMTEsMi4yNywxNy44MiwyLjI3LDE3LjgyLDUuMDcsMjQuODEsNC44OSwyNS41LTUuMTUtNy43Ny01LjA3LTEyLTQuMTktMTcuMy00LjgtMTguMDgtNC44LTIzLjI0LTQuOC0yMy4yNFM0ODYuMTgsNDc4LDQ4NCw0NzQuODNzLTQuOS05LjA5LTYtMTAuMTRhMTAuOTMsMTAuOTMsMCwwLDAtMy4yMy0xLjc0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwIC0xMTguMjIpIiBmaWxsPSIjZmY3ZTZkIi8+PHBhdGggZD0iTTQ5OC44NSw1MTYuNHMxMC4zOS02LjgxLDE1LjQxLTMuNDUsMTMuMjQsOC4xMyw1LjE2LDExLjU4LTE5LjI2LDIuNzktMTkuMjYsMi43OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iI2ExNjE2YSIvPjxwYXRoIGQ9Ik00OTEuNjIsNTgyLjEzYy0xLjU1LDMuMzMtMi44MywyMC0zLjcsMjUuMzItMS4yNC0yLjEzLTIuNzQtNC42Ny0zLjI1LTUuNDdhNjkuODMsNjkuODMsMCwwLDEtMy4wNS03Ljc4YzEtMi40LDMuNzEtOS4yOCwzLjcxLTExLjgsMC0zLjA4LDUtNi45NSw1LTYuOTVBNS43OCw1Ljc4LDAsMCwxLDQ5MS42Miw1ODIuMTNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik00OTEuNzIsNDM1LjgxYTQuNzQsNC43NCwwLDAsMS0uNzguMzJjLTEuMjMuMzMtMi40My0uNS0zLjUyLTEuMTZzLTIuNi0xLjE1LTMuNTUtLjI5Yy0xLjIzLDEuMTItLjM0LDMuNTEtMS42MSw0LjU5LS44LjY5LTIuMDcuNDUtMywxcy0xLjE2LDEuOC0xLjM5LDIuODYtLjY3LDIuMjgtMS43MiwyLjU5LTItLjM3LTMtLjM0Yy0uMjEsMC0uNDYsMC0uNi0uMTJhLjY0LjY0LDAsMCwxLS4xLS40NywxMC4yNCwxMC4yNCwwLDAsMC0uMzQtMy43OSwzLjYzLDMuNjMsMCwwLDAtMi42Ni0yLjVjLTEuODQtLjI4LTMuMzksMS4zMy00LjQ3LDIuODVhNDYuNCw0Ni40LDAsMCwwLTMuMDksNWMtLjA1LjA5LS4xLjIxLS4xNi4zNWExNS43OSwxNS43OSwwLDAsMS0xLjM2LTYuNDUsMTYsMTYsMCwwLDEsMzEuMzUtNC40M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTQ2NSw0NDEuMWMxLjA4LTEuNTIsMi42My0zLjEzLDQuNDctMi44NWEzLjY0LDMuNjQsMCwwLDEsMi42NiwyLjQ5LDEwLjA3LDEwLjA3LDAsMCwxLC4zMywzLjc5LjcuNywwLDAsMCwuMTEuNDhjLjE0LjE2LjM5LjEzLjYuMTIsMSwwLDIuMDUuNjMsMywuMzRzMS41LTEuNTMsMS43Mi0yLjU5LjQ3LTIuMjgsMS4zOS0yLjg2LDIuMTctLjMzLDMtMWMxLjI3LTEuMDguMzgtMy40OCwxLjYxLTQuNTkuOTUtLjg2LDIuNDYtLjM3LDMuNTUuMjlzMi4yOSwxLjQ5LDMuNTIsMS4xNmExMC4zOSwxMC4zOSwwLDAsMCwxLjE5LS41MWMxLjk1LS43NCw0LjQ3LjUyLDYuMDYtLjgxYTQuNzEsNC43MSwwLDAsMCwxLjIxLTIuMSwxMi45LDEyLjksMCwwLDAsLjg4LTMuMzMsNC40OCw0LjQ4LDAsMCwwLS44OC0zLjI2Yy0xLTEuMjItMi44LTEuNTMtNC4xMy0yLjQzYTEwLjE0LDEwLjE0LDAsMCwxLTIuNjMtMy4xMSwxMS40OSwxMS40OSwwLDAsMC0yLjU2LTMuMTgsMy43NiwzLjc2LDAsMCwwLTMuODUtLjYsNCw0LDAsMCwxLTEuMjYuNTksMi41MiwyLjUyLDAsMCwxLTEuMzktLjM4Yy00LjU0LTIuMTQtOS44My0xLjc2LTE0LjgxLTEuMTJhMTkuMDYsMTkuMDYsMCwwLDAtNS44NCwxLjQxLDcsNywwLDAsMC0zLjk0LDQuMzFjLS40LDEuNTQtLjA5LDMuMjEtLjU4LDQuNzMtLjMzLDEtMSwxLjkxLTEuNCwyLjkyLTEuMDYsMi43Ni4yMSw1LjguNzUsOC43MS41OSwzLjE4LjI5LDYuNjIsMS42NCw5LjYzLjI3LjU5LjU2LDEuNjIsMS4yMywxLjIzLjQ5LS4yOSwxLTIsMS4yNS0yLjQ5QTQ4LjE0LDQ4LjE0LDAsMCwxLDQ2NSw0NDEuMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgZmlsbD0iIzNmM2Q1NiIvPjxwYXRoIGQ9Ik00MzYuMjIsNDkyLjMsNDMzLjg2LDQ5OXM1LjU5LDIwLjc5LDguMjEsMjUuMTYsNi40NiwxMCw2LjQ2LDEwYTI0LDI0LDAsMCwwLDE0LDEuNzRjNy41MS0xLjQ4LDI5LjQzLTUuNDEsMjkuNDMtNS40MWEyLjkyLDIuOTIsMCwwLDAsMi44LTEuMDVjMS0xLjQsNS45NC0yLjEsNS45NC0yLjFzNS43Ni04LjM4LTEuMzEtMTEuODhjMCwwLS44NywxLjkzLTQuNjMuNjFzLTQuODksMS4wNS00Ljg5LDEuMDUtNi4xMiwxLjIzLTkuNTIuNzktMTEuODgtLjYxLTEyLjc2LTEuMzFhMS4xMSwxLjExLDAsMCwwLTEuNTcuMDksOS41Myw5LjUzLDAsMCwxLTIuNzktMS41OGMtLjctLjc4LTEuNjYuODgtMS42Ni44OHMtMS4yMy0uNy0uODgtMS41Ny0xLjEzLTQuMi0xLjEzLTQuMmE4LjQ2LDguNDYsMCwwLDEtLjI2LTMuOTNjLjQzLTEuNzUtMi4xOS04LTIuMTktOGExMS4zNCwxMS4zNCwwLDAsMSwuMzUtMy4xNWMuNDQtMS41Ny0zLjMyLTQuNzItMy4zMi00Ljcycy0zLjY3LTE3LjgxLTExLjQ0LTEyUzQzNi4yMiw0OTIuMyw0MzYuMjIsNDkyLjNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik00MzUuNjksNDkyLjMsNDMzLjMzLDQ5OXM1LjU5LDIwLjc5LDguMjEsMjUuMTYsNi40NywxMCw2LjQ3LDEwYTIzLjk0LDIzLjk0LDAsMCwwLDE0LDEuNzRjNy41Mi0xLjQ4LDI5LjQ0LTUuNDEsMjkuNDQtNS40MWEyLjkyLDIuOTIsMCwwLDAsMi44LTEuMDVjMS0xLjQsNS45NC0yLjEsNS45NC0yLjFzNS43Ni04LjM4LTEuMzEtMTEuODhjMCwwLS44OCwxLjkzLTQuNjMuNjFzLTQuOSwxLjA1LTQuOSwxLjA1LTYuMTEsMS4yMy05LjUyLjc5LTExLjg4LS42MS0xMi43NS0xLjMxYTEuMTEsMS4xMSwwLDAsMC0xLjU3LjA5LDkuNTQsOS41NCwwLDAsMS0yLjgtMS41OGMtLjctLjc4LTEuNjYuODgtMS42Ni44OHMtMS4yMi0uNy0uODctMS41Ny0xLjE0LTQuMi0xLjE0LTQuMmE4LjYxLDguNjEsMCwwLDEtLjI2LTMuOTNjLjQ0LTEuNzUtMi4xOC04LTIuMTgtOGExMC45MSwxMC45MSwwLDAsMSwuMzUtMy4xNWMuNDMtMS41Ny0zLjMyLTQuNzItMy4zMi00Ljcycy0zLjY3LTE3LjgxLTExLjQ0LTEyUzQzNS42OSw0OTIuMyw0MzUuNjksNDkyLjNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiNmZjdlNmQiLz48cGF0aCBkPSJNNDU3LjI3LDUxMi41NnMtOC41NiwxLjc1LTUuNjgsMy4yM1M0NTcuMjcsNTEyLjU2LDQ1Ny4yNyw1MTIuNTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxnIG9wYWNpdHk9IjAuMSI+PHBhdGggZD0iTTQ3Mi4xMSw0MzkuMjZhMy42LDMuNiwwLDAsMC0yLjY2LTIuNDljLTEuODQtLjI4LTMuMzksMS4zMy00LjQ3LDIuODRhNDguMjgsNDguMjgsMCwwLDAtMy4xLDVjLS4yOC41Mi0uNzYsMi4yLTEuMjUsMi40OS0uNjcuMzktMS0uNjUtMS4yMy0xLjI0LTEuMzUtMy0xLTYuNDUtMS42NC05LjYzYTU1LjcxLDU1LjcxLDAsMCwxLTEuMTMtNS42MWMtLjIsMi4yOC43LDQuNjgsMS4xMyw3LC41OSwzLjE4LjI5LDYuNjIsMS42NCw5LjYzLjI3LjU5LjU2LDEuNjIsMS4yMywxLjIzLjQ5LS4yOSwxLTIsMS4yNS0yLjQ4YTQ3LjI0LDQ3LjI0LDAsMCwxLDMuMS01YzEuMDgtMS41MiwyLjYzLTMuMTMsNC40Ny0yLjg0YTMuNiwzLjYsMCwwLDEsMi42NiwyLjQ5LDYuODQsNi44NCwwLDAsMSwuMzUsMkE5LDksMCwwLDAsNDcyLjExLDQzOS4yNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIvPjxwYXRoIGQ9Ik00OTkuNCw0MzFhNC42Miw0LjYyLDAsMCwxLTEuMjEsMi4wOWMtMS41OSwxLjMzLTQuMTEuMDgtNi4wNi44Mi0uNC4xNS0uNzcuMzktMS4xOS41MS0xLjIzLjMyLTIuNDMtLjUtMy41Mi0xLjE2cy0yLjYtMS4xNi0zLjU1LS4zYy0xLjIzLDEuMTItLjM0LDMuNTEtMS42MSw0LjU5LS44LjY5LTIuMDcuNDUtMywxcy0xLjE2LDEuNzktMS4zOSwyLjg1LS42NywyLjI4LTEuNzIsMi41OS0yLS4zNy0zLS4zM2MtLjIxLDAtLjQ2LDAtLjYtLjEyYS4yOC4yOCwwLDAsMS0uMDctLjEzYzAsLjM1LDAsLjcsMCwxLjA1YS42OS42OSwwLDAsMCwuMTEuNDdjLjE0LjE2LjM5LjEzLjYuMTMsMSwwLDIuMDUuNjIsMywuMzNzMS41LTEuNTIsMS43Mi0yLjU5LjQ3LTIuMjcsMS4zOS0yLjg1LDIuMTctLjMzLDMtMWMxLjI3LTEuMDguMzgtMy40NywxLjYxLTQuNTkuOTUtLjg2LDIuNDYtLjM3LDMuNTUuMjlzMi4yOSwxLjQ5LDMuNTIsMS4xNmExMi40NSwxMi40NSwwLDAsMCwxLjE5LS41YzEuOTUtLjc0LDQuNDcuNTEsNi4wNi0uODJhNC42Nyw0LjY3LDAsMCwwLDEuMjEtMi4wOSwxMy4wOCwxMy4wOCwwLDAsMCwuODgtMy4zNCw1LjA5LDUuMDksMCwwLDAsMC0xLjE3QTE0LjgxLDE0LjgxLDAsMCwxLDQ5OS40LDQzMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIvPjwvZz48ZWxsaXBzZSBjeD0iMjU1IiBjeT0iNTY1LjU3IiByeD0iNDAuOTIiIHJ5PSI3Ljg3IiBmaWxsPSIjZmY3ZTZkIi8+PGVsbGlwc2UgY3g9IjI1NC4zMiIgY3k9IjU2Mi4yMyIgcng9IjQuNzYiIHJ5PSI2LjI0IiBmaWxsPSIjM2YzZDU2Ii8+PGVsbGlwc2UgY3g9IjI1NC4zMiIgY3k9IjU1NC42MSIgcng9IjQuNzYiIHJ5PSI2LjI0IiBmaWxsPSIjM2YzZDU2Ii8+PGVsbGlwc2UgY3g9IjI1NC4zMiIgY3k9IjU0Ni45OSIgcng9IjQuNzYiIHJ5PSI2LjI0IiBmaWxsPSIjM2YzZDU2Ii8+PGVsbGlwc2UgY3g9IjI1NC4zMiIgY3k9IjUzOS4zNiIgcng9IjQuNzYiIHJ5PSI2LjI0IiBmaWxsPSIjM2YzZDU2Ii8+PGVsbGlwc2UgY3g9IjI1NC4zMiIgY3k9IjUzMS43NCIgcng9IjQuNzYiIHJ5PSI2LjI0IiBmaWxsPSIjM2YzZDU2Ii8+PGVsbGlwc2UgY3g9IjI1NC4zMiIgY3k9IjUyNC4xMiIgcng9IjQuNzYiIHJ5PSI2LjI0IiBmaWxsPSIjM2YzZDU2Ii8+PGVsbGlwc2UgY3g9IjI1NC4zMiIgY3k9IjUxNi41IiByeD0iNC43NiIgcnk9IjYuMjQiIGZpbGw9IiMzZjNkNTYiLz48cGF0aCBkPSJNMzQyLjE1LDU4Mi41NmEyMi4yNywyMi4yNywwLDAsMCwxLjc3LTIuNjJsLTEyLjUxLTIuMDUsMTMuNTMuMWEyMi44NywyMi44NywwLDAsMCwuNDQtMTguMDhsLTE4LjE2LDkuNDJMMzQ0LDU1N2EyMi44MiwyMi44MiwwLDEsMC0zNy42OSwyNS41NCwyMi41MiwyMi41MiwwLDAsMC0yLjYsNC4xNmwxNi4yNCw4LjQ0LTE3LjMyLTUuODJhMjIuNzgsMjIuNzgsMCwwLDAsMy42OCwyMS40MywyMi44MiwyMi44MiwwLDEsMCwzNS44NywwLDIyLjgyLDIyLjgyLDAsMCwwLDAtMjguMjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiNmZjdlNmQiLz48cGF0aCBkPSJNMzAxLjM5LDU5Ni42NmEyMi43MSwyMi43MSwwLDAsMCw0Ljg5LDE0LjExLDIyLjgyLDIyLjgyLDAsMSwwLDM1Ljg3LDBDMzQ1LjIxLDYwNi44OSwzMDEuMzksNTk0LjEsMzAxLjM5LDU5Ni42NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCAtMTE4LjIyKSIgb3BhY2l0eT0iMC4xIi8+PGVsbGlwc2UgY3g9Ijk0MCIgY3k9IjYzOC41NyIgcng9IjQwLjkyIiByeT0iNy44NyIgZmlsbD0iI2ZmN2U2ZCIvPjxlbGxpcHNlIGN4PSI5MzkuMzIiIGN5PSI2MzUuMjMiIHJ4PSI0Ljc2IiByeT0iNi4yNCIgZmlsbD0iIzNmM2Q1NiIvPjxlbGxpcHNlIGN4PSI5MzkuMzIiIGN5PSI2MjcuNjEiIHJ4PSI0Ljc2IiByeT0iNi4yNCIgZmlsbD0iIzNmM2Q1NiIvPjxlbGxpcHNlIGN4PSI5MzkuMzIiIGN5PSI2MTkuOTkiIHJ4PSI0Ljc2IiByeT0iNi4yNCIgZmlsbD0iIzNmM2Q1NiIvPjxlbGxpcHNlIGN4PSI5MzkuMzIiIGN5PSI2MTIuMzYiIHJ4PSI0Ljc2IiByeT0iNi4yNCIgZmlsbD0iIzNmM2Q1NiIvPjxlbGxpcHNlIGN4PSI5MzkuMzIiIGN5PSI2MDQuNzQiIHJ4PSI0Ljc2IiByeT0iNi4yNCIgZmlsbD0iIzNmM2Q1NiIvPjxlbGxpcHNlIGN4PSI5MzkuMzIiIGN5PSI1OTcuMTIiIHJ4PSI0Ljc2IiByeT0iNi4yNCIgZmlsbD0iIzNmM2Q1NiIvPjxlbGxpcHNlIGN4PSI5MzkuMzIiIGN5PSI1ODkuNSIgcng9IjQuNzYiIHJ5PSI2LjI0IiBmaWxsPSIjM2YzZDU2Ii8+PHBhdGggZD0iTTEwMjcuMTUsNjU1LjU2YTIyLjI3LDIyLjI3LDAsMCwwLDEuNzctMi42MmwtMTIuNTEtMi4wNSwxMy41My4xYTIyLjg3LDIyLjg3LDAsMCwwLC40NC0xOC4wOGwtMTguMTYsOS40MkwxMDI5LDYzMGEyMi44MiwyMi44MiwwLDEsMC0zNy42OSwyNS41NCwyMi41MiwyMi41MiwwLDAsMC0yLjYsNC4xNmwxNi4yNCw4LjQ0LTE3LjMyLTUuODJhMjIuNzgsMjIuNzgsMCwwLDAsMy42OCwyMS40MywyMi44MiwyMi44MiwwLDEsMCwzNS44NywwLDIyLjgyLDIyLjgyLDAsMCwwLDAtMjguMjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIGZpbGw9IiNmZjdlNmQiLz48cGF0aCBkPSJNOTg2LjM5LDY2OS42NmEyMi43MSwyMi43MSwwLDAsMCw0Ljg5LDE0LjExLDIyLjgyLDIyLjgyLDAsMSwwLDM1Ljg3LDBDMTAzMC4yMSw2NzkuODksOTg2LjM5LDY2Ny4xLDk4Ni4zOSw2NjkuNjZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTExOC4yMikiIG9wYWNpdHk9IjAuMSIvPjxjaXJjbGUgY3g9IjQwNC40MyIgY3k9IjkzLjY5IiByPSIxNS4yNyIgZmlsbD0iI2ZmN2U2ZCIgb3BhY2l0eT0iMC4xIi8+PGNpcmNsZSBjeD0iNDU5LjA2IiBjeT0iMjUuNiIgcj0iMjUuNiIgZmlsbD0iI2ZmN2U2ZCIgb3BhY2l0eT0iMC4xIi8+PGNpcmNsZSBjeD0iNDI1LjE4IiBjeT0iMTQ5LjgyIiByPSIyNS42IiBmaWxsPSIjZmY3ZTZkIiBvcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSI5NjMuOTMiIGN5PSIyNzcuNjkiIHI9IjE1LjI3IiBmaWxsPSIjZmY3ZTZkIiBvcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSI5MDkuMjkiIGN5PSIyMDkuNiIgcj0iMjUuNiIgZmlsbD0iI2ZmN2U2ZCIgb3BhY2l0eT0iMC4xIi8+PGNpcmNsZSBjeD0iOTQzLjE4IiBjeT0iMzMzLjgyIiByPSIyNS42IiBmaWxsPSIjZmY3ZTZkIiBvcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSIxMDAuNzciIGN5PSIzMDUuMzUiIHI9IjguNjUiIGZpbGw9IiNmZjdlNmQiIG9wYWNpdHk9IjAuMSIvPjxjaXJjbGUgY3g9IjEzNy44NSIgY3k9IjI3Mi42MSIgcj0iMTQuNSIgZmlsbD0iI2ZmN2U2ZCIgb3BhY2l0eT0iMC4xIi8+PGNpcmNsZSBjeD0iNjguNDUiIGN5PSIyOTUuMSIgcj0iMTQuNSIgZmlsbD0iI2ZmN2U2ZCIgb3BhY2l0eT0iMC4xIi8+PGNpcmNsZSBjeD0iNzQxLjc3IiBjeT0iMjUzLjM1IiByPSI4LjY1IiBmaWxsPSIjZmY3ZTZkIiBvcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSI3NzguODUiIGN5PSIyMjAuNjEiIHI9IjE0LjUiIGZpbGw9IiNmZjdlNmQiIG9wYWNpdHk9IjAuMSIvPjxjaXJjbGUgY3g9IjcwOS40NSIgY3k9IjI0My4xIiByPSIxNC41IiBmaWxsPSIjZmY3ZTZkIiBvcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSIyMTYuNTgiIGN5PSIxNDIuMzIiIHI9IjM2LjI1IiBmaWxsPSIjZmY3ZTZkIiBvcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSI0MjMuNTgiIGN5PSIyNjIuMzIiIHI9IjIwLjkyIiBmaWxsPSIjZmY3ZTZkIiBvcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSI2MzAuNTgiIGN5PSIzOTguMzIiIHI9IjIwLjkyIiBmaWxsPSIjZmY3ZTZkIiBvcGFjaXR5PSIwLjEiLz48ZWxsaXBzZSBjeD0iMjU1IiBjeT0iNTY4LjU3IiByeD0iMTE5LjUiIHJ5PSIyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDQ0MDUzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz48ZWxsaXBzZSBjeD0iOTQwIiBjeT0iNjM5LjU3IiByeD0iMTE5LjUiIHJ5PSIyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDQ0MDUzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz48ZWxsaXBzZSBjeD0iMTIwIiBjeT0iNjM5LjU3IiByeD0iMTE5LjUiIHJ5PSIyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDQ0MDUzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz48L3N2Zz4="
-
-/***/ }),
-
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/', function() {
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+__NEXT_REGISTER_PAGE('/blogpage', function() {
+module.exports = __webpack_require__(/*! ./pages/blogpage.js */"./pages/blogpage.js");
 
 return { page: module.exports.default }});
 
@@ -21679,5 +17252,5 @@ module.exports = dll_4fa5fe59a0158b551b2e;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
-//# sourceMappingURL=index.js.map
+},[[10,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=blogpage.js.map
