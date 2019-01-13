@@ -9,7 +9,7 @@ import Responsive from "../components/Responsive/Footer";
 import Strapi from "strapi-sdk-javascript/build/main";
 
 const BackUrl = "http://localhost:1337";
-const strapiApi = new Strapi("http://192.168.0.105:1337");
+const strapiApi = new Strapi(BackUrl);
 
 class Blog extends Component {
   constructor(props) {
@@ -114,15 +114,7 @@ const Container = styled.div`
   width: 100%;
   height: auto;
 `;
-const Date = styled.li`
-  width: 8rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  & * {
-    margin: 0.5rem;
-  }
-`;
+
 const SectionHeader = styled.div`
   width: 100%;
   height: 90vh;
@@ -210,7 +202,6 @@ const SectionContentDate = styled.div`
   position: absolute;
   top: 4.5rem;
   left: -5rem;
-  display: flex;
 `;
 
 const Ul = styled.ul`

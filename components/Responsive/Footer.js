@@ -37,7 +37,7 @@ const ContainerText = styled.div`
 
 const Container = styled.div`
   width: 100%;
-
+  display: block;
   height: auto;
   align-items: bottom;
   justify-content: space-between;
@@ -45,7 +45,12 @@ const Container = styled.div`
   padding: 3rem 8rem 3rem 6rem;
   box-sizing: border-box;
   background-color: white;
+
+  @media all and (max-width: 768px) {
+    display: none;
+  }
 `;
+
 const SvgItem = styled.div`
   text-align: center;
 `;

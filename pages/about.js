@@ -32,7 +32,10 @@ export default () => {
               elsewhere dribbble, twitter, behance and linkedin.
             </SectionContentText>
           </SectionContent>{" "}
-          <Footer /> <Responsive />
+          <Footer />
+          <ResponsiveWrapper>
+            <Responsive />
+          </ResponsiveWrapper>
         </Section>
       </Container>
     </React.Fragment>
@@ -42,6 +45,10 @@ export default () => {
 const Container = styled.div`
   width: 100%;
   height: 100vh;
+`;
+
+const ResponsiveWrapper = styled.div`
+   
 `;
 
 const Section = styled.div`

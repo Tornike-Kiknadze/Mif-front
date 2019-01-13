@@ -36,11 +36,11 @@ class Header extends Component {
             <Logo>mif</Logo>
           </StyledLink>
           <Menu>
-            <StyledLink href="work">
-              <MenuItem>work</MenuItem>
+            <StyledLink href="news">
+              <MenuItem>news</MenuItem>
             </StyledLink>
-            <StyledLink href="services">
-              <MenuItem>services</MenuItem>
+            <StyledLink href="projects">
+              <MenuItem>projects</MenuItem>
             </StyledLink>
             <StyledLink href="about">
               <MenuItem>about</MenuItem>
@@ -84,7 +84,7 @@ const Logo = styled.div`
   color: #ff7e6d;
   font-size: 24px;
   font-weight: 800;
-  cursor:pointer;
+  cursor: pointer;
 `
 
 const Menu = styled.ul`
