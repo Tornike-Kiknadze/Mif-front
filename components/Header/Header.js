@@ -14,7 +14,7 @@ class Header extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', e => {
-      if (window.scrollY < this.state.lastScroll) {
+      if (window.scrollY <= this.state.lastScroll) {
         this.setState({
           isScroollingUp: true
         })
@@ -36,16 +36,16 @@ class Header extends Component {
             <Logo>mif</Logo>
           </StyledLink>
           <Menu>
-            <StyledLink href="news">
+            <StyledLink href="/news">
               <MenuItem>news</MenuItem>
             </StyledLink>
-            <StyledLink href="projects">
+            <StyledLink href="/projects">
               <MenuItem>projects</MenuItem>
             </StyledLink>
-            <StyledLink href="about">
+            <StyledLink href="/about">
               <MenuItem>about</MenuItem>
             </StyledLink>
-            <StyledLink href="contact">
+            <StyledLink href="/contact">
               <MenuItem>contact</MenuItem>
             </StyledLink>
           </Menu>
@@ -68,7 +68,7 @@ const HeaderContainer = styled.div`
   position: fixed;
   top: ${props => (props.isUp ? `0` : `-100px`)};
   transition: 0.4s;
-  z-index: 200;
+  z-index: 9999;
 `
 
 const HeaderContainerCenter = styled.div`
@@ -91,16 +91,20 @@ const Menu = styled.ul`
   display: flex;
 `
 
-const MenuItem = styled.li`
-  list-style: none;
+const MenuItem = styled.a`
   color: #ff7e6d;
   margin-left: 15px;
   font-size: 18px;
   font-weight: 800;
   cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
 `
 
 const StyledLink = styled(Link)`
+  display: block;
   cursor: pointer;
   text-decoration: none;
 `

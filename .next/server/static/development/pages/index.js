@@ -232,7 +232,7 @@ function (_Component) {
       var _this2 = this;
 
       window.addEventListener('scroll', function (e) {
-        if (window.scrollY < _this2.state.lastScroll) {
+        if (window.scrollY <= _this2.state.lastScroll) {
           _this2.setState({
             isScroollingUp: true
           });
@@ -283,7 +283,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: "news",
+        href: "/news",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
@@ -296,7 +296,7 @@ function (_Component) {
         },
         __self: this
       }, "news")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: "projects",
+        href: "/projects",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42
@@ -309,7 +309,7 @@ function (_Component) {
         },
         __self: this
       }, "projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: "about",
+        href: "/about",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45
@@ -322,7 +322,7 @@ function (_Component) {
         },
         __self: this
       }, "about")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: "contact",
+        href: "/contact",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 48
@@ -344,7 +344,7 @@ function (_Component) {
 var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Header__HeaderContainer",
   componentId: "sc-1hc63ty-0"
-})(["width:100%;height:50px;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;position:fixed;top:", ";transition:0.4s;z-index:200;"], function (props) {
+})(["width:100%;height:50px;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;position:fixed;top:", ";transition:0.4s;z-index:9999;"], function (props) {
   return props.isUp ? "0" : "-100px";
 });
 var HeaderContainerCenter = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
@@ -359,14 +359,14 @@ var Menu = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.ul.withConfi
   displayName: "Header__Menu",
   componentId: "sc-1hc63ty-3"
 })(["display:flex;"]);
-var MenuItem = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.li.withConfig({
+var MenuItem = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.a.withConfig({
   displayName: "Header__MenuItem",
   componentId: "sc-1hc63ty-4"
-})(["list-style:none;color:#ff7e6d;margin-left:15px;font-size:18px;font-weight:800;cursor:pointer;"]);
+})(["color:#ff7e6d;margin-left:15px;font-size:18px;font-weight:800;cursor:pointer;&:hover{transform:scale(1.1);transition:0.1s;}"]);
 var StyledLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default()(next_link__WEBPACK_IMPORTED_MODULE_1___default.a).withConfig({
   displayName: "Header__StyledLink",
   componentId: "sc-1hc63ty-5"
-})(["cursor:pointer;text-decoration:none;"]);
+})(["display:block;cursor:pointer;text-decoration:none;"]);
 var LanguageSwitcher = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Header__LanguageSwitcher",
   componentId: "sc-1hc63ty-6"
@@ -623,84 +623,95 @@ var _jsxFileName = "/home/reziko/projects/mif/client/components/ProjectItem/Proj
 
 
 
-var BackUrl = 'http://localhost:1337';
+/* const BackUrl = "http://localhost:1337"; */
 
-var ProjectItem = function ProjectItem(_ref) {
-  var data = _ref.data;
-  var id = data.id,
-      Title = data.Title,
-      category = data.category,
-      date = data.date,
-      mainImage = data.mainImage,
-      content = data.content;
+var ProjectItem = function ProjectItem() {
+  /*   const { id, Title, category, date, mainImage, content } = data; */
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
-    src: "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&fit=crop&w=667&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "google.com",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
+    src: "https://source.unsplash.com/random",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
-  }, "Mountain"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
-  }, "Lorem Ipsum is simply dummy text from the printing and typeseting industry"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: {
-      pathname: '/projectpage',
-      query: {
-        id: id
-      }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SpanCategory, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
     },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InfoButton, {
+  }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
-  }, "Read More"))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "Designing the First All-in-One, Wearable Breast Pump"))));
 };
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "ProjectItem__Container",
   componentId: "sc-14mpx99-0"
-})(["margin:20px;display:block;width:280px;height:360px;border-radius:15px;padding:1.5rem;box-sizing:border-box;background:white;position:relative;display:flex;align-items:flex-end;transition:0.4s ease-out;box-shadow:0px 7px 10px rgba(0,0,0,0.5);&:before{content:'';position:absolute;top:0;left:0;display:block;width:100%;height:100%;border-radius:15px;background:rgba(0,0,0,0.6);z-index:2;transition:0.5s;opacity:0;}&:hover{-webkit-transform:translateY(20px);transform:translateY(20px);}&:hover:before{opacity:1;}h1{margin:0px;}p{letter-spacing:1px;font-size:15px;margin-top:8px;}"]);
-var InfoButton = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.button.withConfig({
-  displayName: "ProjectItem__InfoButton",
+})(["display:flex;overflow:hidden;flex:1 0 280px;max-width:369px;height:360px;margin:20px;box-sizing:border-box;flex-direction:column;background:white;border-bottom:8px solid #dedede;text-align:justify;transition:0.4s ease-out;a{background-image:linear-gradient(to bottom,transparent 90%,#000 25%);background-size:0% 100%;background-repeat:no-repeat;text-decoration:none;text-decoration:none;color:#464242;position:relative;text-align:center;font-size:1.5rem;transition:background-size 0.4s ease;&:hover,&:focus{background-size:100% 100%;cursor:pointer;}}"]);
+var Text = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "ProjectItem__Text",
   componentId: "sc-14mpx99-1"
-})(["margin-top:10px;padding:0.6rem;outline:none;border:none;border-radius:3px;background:white;color:black;font-weight:bold;cursor:pointer;transition:0.4s ease;&:hover{background:#27cba4;color:white;}"]);
-var Info = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "ProjectItem__Info",
+})(["width:100%;height:50%;justify-content:center;padding:1rem;box-sizing:border-box;background-color:tan;"]);
+var Span = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "ProjectItem__Span",
   componentId: "sc-14mpx99-2"
-})(["position:relative;z-index:3;color:white;opacity:0;-webkit-transform:translateY(30px);transform:translateY(30px);transition:0.5s;", ":hover &{opacity:1;transform:translateY(0px);}"], Container);
+})(["padding:1rem;"]);
+var SpanCategory = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "ProjectItem__SpanCategory",
+  componentId: "sc-14mpx99-3"
+})(["padding-left:1rem;a{font-size:1rem;color:#ff988a;}"]);
+var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "ProjectItem__ImgContainer",
+  componentId: "sc-14mpx99-4"
+})(["width:100%;height:50%;object-fit:cover;overflow:hidden;border-bottom:0.5rem solid #ff988a;align-self:flex-start;"]);
 var Img = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.img.withConfig({
   displayName: "ProjectItem__Img",
-  componentId: "sc-14mpx99-3"
-})(["width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;border-radius:15px;"]);
+  componentId: "sc-14mpx99-5"
+})(["width:100%;height:100%;object-fit:cover;transition:transform 200ms ease;cursor:pointer;&:hover{transform:scale(1.1);}"]);
 /* harmony default export */ __webpack_exports__["default"] = (ProjectItem);
 
 /***/ }),
@@ -841,7 +852,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!*****************************!*\
   !*** ./components/index.js ***!
   \*****************************/
-/*! exports provided: Header, PostItem, Slider, Footer */
+/*! exports provided: Header, PostItem, Slider, Footer, ProjectItem */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -857,6 +868,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./components/Footer/index.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _Footer__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+/* harmony import */ var _ProjectItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ProjectItem */ "./components/ProjectItem/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ProjectItem", function() { return _ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
 
 
 
@@ -932,15 +947,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components */ "./components/index.js");
-/* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/svg/RightArrow */ "./static/svg/RightArrow.js");
+/* harmony import */ var _sections__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./sections */ "./pages/sections/index.js");
 /* harmony import */ var strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! strapi-sdk-javascript/build/main */ "strapi-sdk-javascript/build/main");
 /* harmony import */ var strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/svg/mainIcon.svg */ "./static/svg/mainIcon.svg");
 /* harmony import */ var _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "next/link");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_ProjectItem__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/ProjectItem */ "./components/ProjectItem/index.js");
-/* harmony import */ var _static_svg_Right__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/svg/Right */ "./static/svg/Right.js");
 
 var _jsxFileName = "/home/reziko/projects/mif/client/pages/index.js";
 
@@ -977,8 +990,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
 
 
 
@@ -1062,196 +1073,75 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 35
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Header"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainContainer, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainer, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainerLeft, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 40
         },
         __self: this
       }, "Media Inovation Foundation"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 41
         },
         __self: this
       }, "This is a such a great slogan that, when kyle mynouge saw it she become waffle, This is a such a great slogan that, when kyle mynouge saw it she become waffle,This is a such a great slogan that, when kyle mynouge saw it she become waffle, This is a such a great slogan that, when kyle mynouge saw it she become waffle")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainerRight, {
         img: _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 49
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(News, {
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_sections__WEBPACK_IMPORTED_MODULE_4__["Projects"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_sections__WEBPACK_IMPORTED_MODULE_4__["News"], {
+        news: news,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 52
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsCenter, {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Footer"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 53
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsHeader, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsTitleLeft, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
-      }, "In The News")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsTitleRight, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_svg_Right__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        width: 15,
-        height: 15,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsItems, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62
-        },
-        __self: this
-      }, news.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["PostItem"], {
-          data: item,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 64
-          },
-          __self: this
-        });
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ViewAllNews, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ViewAllNewsContent, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        href: {
-          pathname: '/news'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: this
-      }, "All News"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Icon, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 69
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        width: 20,
-        height: 20,
-        fill: '#27cba4',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 70
-        },
-        __self: this
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsSlider, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 77
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsHeader, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsBG, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Span, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 80
-        },
-        __self: this
-      }, "Projects")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Slider"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 82
-        },
-        __self: this
-      }, projects && projects.map(function (item) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          data: item,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 83
-          },
-          __self: this
-        });
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Footer"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 86
         },
         __self: this
       })));
@@ -1284,67 +1174,435 @@ var HeadContainerRight = styled_components__WEBPACK_IMPORTED_MODULE_2___default.
 })(["flex:1;height:100%;background-image:url(", ");background-size:contain;background-position:center center;background-repeat:no-repeat;"], function (props) {
   return props.img;
 });
-var News = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__News",
-  componentId: "sc-1wbo52z-5"
-})(["width:100%;background:#ffffff;padding:80px 0 120px 0;background:#f7fbfb;"]);
-var NewsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__NewsHeader",
-  componentId: "sc-1wbo52z-6"
-})(["width:100%;height:50px;display:flex;margin-bottom:55px;font-weight:800;font-size:18px;padding-left:10px;color:#fff;background:#ff7e6d;transition:0.2s;box-shadow:0 10px 12px -9px #777;cursor:pointer;h1{font-size:18px;}span{margin-top:10px;}&:hover{background:#543243;}"]);
-var NewsTitleLeft = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__NewsTitleLeft",
-  componentId: "sc-1wbo52z-7"
-})(["flex:1;height:100%;display:flex;align-items:center;justify-content:center;"]);
-var NewsTitleRight = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__NewsTitleRight",
-  componentId: "sc-1wbo52z-8"
-})(["width:50px;height:100%;display:flex;align-items:center;justify-content:center;background:#543243;transition:0.1s;svg{fill:#fff;}", ":hover &{background:#27cba4;transform:scale(1.1);box-shadow:0 25px 25px rgba(0,0,0,0.16);}"], NewsHeader);
-var ProjectsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__ProjectsHeader",
-  componentId: "sc-1wbo52z-9"
-})(["width:100%;display:flex;align-items:center;color:#301d28;font-weight:bold;position:relative;color:#ff7e6d;font-size:2em;"]);
-var ProjectsBG = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__ProjectsBG",
-  componentId: "sc-1wbo52z-10"
-})(["width:80px;height:80%;position:absolute;top:10px;background:rgba(255,255,255,0.6);z-index:-1;"]);
-var Span = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__Span",
-  componentId: "sc-1wbo52z-11"
-})(["color:#543243;font-size:18px;"]);
-var NewsHeaderRight = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__NewsHeaderRight",
-  componentId: "sc-1wbo52z-12"
-})(["display:flex;align-items:center;cursor:pointer;&:hover{color:#27cba4;}"]);
-var NewsItems = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__NewsItems",
-  componentId: "sc-1wbo52z-13"
-})(["width:100%;margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;grid-gap:35px;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(3,1fr);}"]);
-var ViewAllNews = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__ViewAllNews",
-  componentId: "sc-1wbo52z-14"
-})(["display:flex;justify-content:center;align-items:center;"]);
-var ViewAllNewsContent = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__ViewAllNewsContent",
-  componentId: "sc-1wbo52z-15"
-})(["display:flex;a{text-decoration:none;font-size:26px;font-weight:800;color:#543243;transition:0.2s;&:hover{color:#27cba4;}}"]);
-var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__Icon",
-  componentId: "sc-1wbo52z-16"
-})(["display:flex;align-items:center;transition:0.3s;margin-left:5px;", ":hover &{transform:translateX(5px);}"], ViewAllNewsContent);
-var ProjectsSlider = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__ProjectsSlider",
-  componentId: "sc-1wbo52z-17"
-})(["width:1224px;margin:auto;background:#fff;display:flex;flex-direction:column;padding:80px 0 0 0;"]);
-var NewsCenter = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
-  displayName: "pages__NewsCenter",
-  componentId: "sc-1wbo52z-18"
-})(["width:1224px;height:100%;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;"]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject());
 var Space = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "pages__Space",
-  componentId: "sc-1wbo52z-19"
+  componentId: "sc-1wbo52z-5"
 })(["margin:0 5px;"]);
+
+/***/ }),
+
+/***/ "./pages/sections/News/News.js":
+/*!*************************************!*\
+  !*** ./pages/sections/News/News.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "next/link");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _static_svg_RightPlay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../static/svg/RightPlay */ "./static/svg/RightPlay.js");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components */ "./components/index.js");
+/* harmony import */ var _static_svg_Right__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../static/svg/Right */ "./static/svg/Right.js");
+/* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../static/svg/RightArrow */ "./static/svg/RightArrow.js");
+var _jsxFileName = "/home/reziko/projects/mif/client/pages/sections/News/News.js";
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n  body{\n    font-family:Averta\n  }\n  @font-face {\n    font-family: Averta;\n    src: url('../static/fonts/Averta.otf');\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
+  var news = props.news;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(News, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsCenter, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsHeader, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "IN OUR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "NEWS"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsItems, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, news.map(function (item, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["PostItem"], {
+      data: item,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    });
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ViewAllNews, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ViewAllNewsContent, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: {
+      pathname: '/news'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "All News"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    width: 20,
+    height: 20,
+    fill: '#27cba4',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  })))))));
+});
+var News = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News",
+  componentId: "sc-7ygyd1-0"
+})(["width:100%;background:#ffffff;padding:80px 0 120px 0;background:#f7fbfb;"]);
+var NewsHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__NewsHeader",
+  componentId: "sc-7ygyd1-1"
+})(["width:100%;display:flex;margin-bottom:55px;font-weight:800;padding-left:10px;h1{font-size:46px;}span{margin-top:10px;}"]);
+var Span = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__Span",
+  componentId: "sc-7ygyd1-2"
+})(["color:#2d2c32;&:nth-child(2){color:#ff7e6d;}"]);
+var NewsTitleLeft = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__NewsTitleLeft",
+  componentId: "sc-7ygyd1-3"
+})(["flex:1;height:100%;display:flex;align-items:center;justify-content:center;"]);
+var NewsTitleRight = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__NewsTitleRight",
+  componentId: "sc-7ygyd1-4"
+})(["width:50px;height:100%;display:flex;align-items:center;justify-content:center;background:#543243;transition:0.1s;svg{fill:#fff;}", ":hover &{background:#27cba4;transform:scale(1.1);box-shadow:0 25px 25px rgba(0,0,0,0.16);}"], NewsHeader);
+var NewsHeaderRight = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__NewsHeaderRight",
+  componentId: "sc-7ygyd1-5"
+})(["display:flex;align-items:center;cursor:pointer;&:hover{color:#27cba4;}"]);
+var NewsItems = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__NewsItems",
+  componentId: "sc-7ygyd1-6"
+})(["width:100%;margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;grid-gap:35px;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(3,1fr);}"]);
+var ViewAllNews = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__ViewAllNews",
+  componentId: "sc-7ygyd1-7"
+})(["display:flex;justify-content:center;align-items:center;"]);
+var ViewAllNewsContent = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__ViewAllNewsContent",
+  componentId: "sc-7ygyd1-8"
+})(["display:flex;a{text-decoration:none;font-size:26px;font-weight:800;color:#543243;transition:0.2s;&:hover{color:#27cba4;}}"]);
+var Icon = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__Icon",
+  componentId: "sc-7ygyd1-9"
+})(["display:flex;align-items:center;transition:0.3s;margin-left:5px;", ":hover &{transform:translateX(5px);}"], ViewAllNewsContent);
+var NewsCenter = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "News__NewsCenter",
+  componentId: "sc-7ygyd1-10"
+})(["width:1224px;height:100%;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;"]);
+var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+
+/***/ }),
+
+/***/ "./pages/sections/News/index.js":
+/*!**************************************!*\
+  !*** ./pages/sections/News/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _News__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./News */ "./pages/sections/News/News.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _News__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./pages/sections/Projects/Projects.js":
+/*!*********************************************!*\
+  !*** ./pages/sections/Projects/Projects.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "next/link");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _static_svg_RightPlay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../static/svg/RightPlay */ "./static/svg/RightPlay.js");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components */ "./components/index.js");
+var _jsxFileName = "/home/reziko/projects/mif/client/pages/sections/Projects/Projects.js";
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n\n  body{\n    font-family: Averta\n  }\n\n  @font-face {\n    font-family: Averta;\n    src: url('../static/fonts/Averta.otf');\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Projects, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Left, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "HELLO."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WeAre, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "WE ARE"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "MIF"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Right, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Technology moves fast. Luckily so do we. Because technology is what we do. And we\u2019re here to help. We are Dept. One agency uniting creativity, technology and data. Helping reinvent & accelerate your digital reality by creating experiences that people want and businesses need."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "Check out some of our favourite projects below."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectItems, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  })));
+});
+var Projects = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Projects",
+  componentId: "yydpma-0"
+})(["margin:50px 0;"]);
+var Header = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Projects__Header",
+  componentId: "yydpma-1"
+})(["display:flex;width:1228px;margin:auto;"]);
+var Left = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Projects__Left",
+  componentId: "yydpma-2"
+})(["display:flex;flex:1;flex-direction:column;font-size:60px;span{}p{}"]);
+var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h2.withConfig({
+  displayName: "Projects__H2",
+  componentId: "yydpma-3"
+})(["margin-right:10px;color:#2d2c32;font-size:46px;&:nth-child(1){font-size:62px;}"]);
+var Span = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.span.withConfig({
+  displayName: "Projects__Span",
+  componentId: "yydpma-4"
+})(["letter-spacing:1.1px;line-height:1.6;font-size:17px;margin-bottom:20px;"]);
+var WeAre = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Projects__WeAre",
+  componentId: "yydpma-5"
+})(["display:flex;", ":nth-child(2){color:#ff7e6d;}"], H2);
+var InnerSpan = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Projects__InnerSpan",
+  componentId: "yydpma-6"
+})([""]);
+var Right = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Projects__Right",
+  componentId: "yydpma-7"
+})(["flex:2;display:flex;flex-direction:column;"]);
+var ProjectItems = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Projects__ProjectItems",
+  componentId: "yydpma-8"
+})(["display:flex;justify-content:flex-start;flex-wrap:wrap;width:1228px;margin:auto;"]);
+var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+
+/***/ }),
+
+/***/ "./pages/sections/Projects/index.js":
+/*!******************************************!*\
+  !*** ./pages/sections/Projects/index.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Projects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Projects */ "./pages/sections/Projects/Projects.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Projects__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./pages/sections/index.js":
+/*!*********************************!*\
+  !*** ./pages/sections/index.js ***!
+  \*********************************/
+/*! exports provided: Projects, News */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Projects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Projects */ "./pages/sections/Projects/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Projects", function() { return _Projects__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _News__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./News */ "./pages/sections/News/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "News", function() { return _News__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+
+
 
 /***/ }),
 
@@ -1512,6 +1770,46 @@ var RightArrow = function RightArrow(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (RightArrow);
+
+/***/ }),
+
+/***/ "./static/svg/RightPlay.js":
+/*!*********************************!*\
+  !*** ./static/svg/RightPlay.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/RightPlay.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+var RightPlay = function RightPlay(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", _extends({
+    viewBox: "0 0 41.999 41.999"
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M36.068 20.176l-29-20A1 1 0 1 0 5.5.999v40a1 1 0 0 0 1.568.823l29-20a.999.999 0 0 0 0-1.646z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RightPlay);
 
 /***/ }),
 
