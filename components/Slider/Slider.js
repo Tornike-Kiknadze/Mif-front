@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import Slider from 'react-slick'
-import styled from 'styled-components'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
-import Right from '../../static/svg/Right'
-import Left from '../../static/svg/Left'
-import ProjectItem from '../ProjectItem'
+import React, { Component } from "react";
+import Slider from "react-slick";
+import styled from "styled-components";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Right from "../../static/svg/Right";
+import Left from "../../static/svg/Left";
+import ProjectItem from "../ProjectItem";
 
 const Img = styled.img`
   display: block;
@@ -15,7 +15,7 @@ const Img = styled.img`
   position: absolute;
   margin-top: 20px;
   ${p => p.right && `right: ${p.right}px`};
-`
+`;
 
 const Container = styled.div`
   min-height: 600px;
@@ -74,7 +74,7 @@ const Container = styled.div`
   .slick-track:after {
     display: table;
 
-    content: '';
+    content: "";
   }
   .slick-track:after {
     clear: both;
@@ -93,7 +93,7 @@ const Container = styled.div`
     display:flex;f
     flex-direction:column;
   } */
-  [dir='rtl'] .slick-slide {
+  [dir="rtl"] .slick-slide {
     float: right;
   }
   .slick-slide img {
@@ -165,7 +165,7 @@ const Container = styled.div`
 
   .slick-prev:before,
   .slick-next:before {
-    font-family: 'slick';
+    font-family: "slick";
     font-size: 20px;
     line-height: 1;
 
@@ -179,29 +179,29 @@ const Container = styled.div`
   .slick-prev {
     left: -25px;
   }
-  [dir='rtl'] .slick-prev {
+  [dir="rtl"] .slick-prev {
     right: -25px;
     left: auto;
   }
   .slick-prev:before {
-    content: '←';
+    content: "←";
   }
-  [dir='rtl'] .slick-prev:before {
-    content: '→';
+  [dir="rtl"] .slick-prev:before {
+    content: "→";
   }
 
   .slick-next {
     right: -25px;
   }
-  [dir='rtl'] .slick-next {
+  [dir="rtl"] .slick-next {
     right: auto;
     left: -25px;
   }
   .slick-next:before {
-    content: '→';
+    content: "→";
   }
-  [dir='rtl'] .slick-next:before {
-    content: '←';
+  [dir="rtl"] .slick-next:before {
+    content: "←";
   }
 
   /* Dots */
@@ -261,7 +261,7 @@ const Container = styled.div`
     opacity: 1;
   }
   .slick-dots li button:before {
-    font-family: 'slick';
+    font-family: "slick";
     font-size: 6px;
     line-height: 20px;
 
@@ -272,7 +272,7 @@ const Container = styled.div`
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: "•";
     text-align: center;
 
     opacity: 0.25;
@@ -285,7 +285,7 @@ const Container = styled.div`
     opacity: 0.75;
     color: black;
   }
-`
+`;
 
 const Override = styled.div`
   .slick-slider {
@@ -335,7 +335,7 @@ const Override = styled.div`
         width: 100%;
       } */
   }
-`
+`;
 
 const SliderComponent = ({ children, settings }) => {
   const innerSettings = {
@@ -345,10 +345,10 @@ const SliderComponent = ({ children, settings }) => {
     rows: 1,
     centerMode: true,
     slidesPerRow: 1,
-    centerPadding: '100px',
+    centerPadding: "100px",
     nextArrow: <Right />,
     prevArrow: <Left />
-  }
+  };
 
   return (
     <Container>
@@ -358,7 +358,7 @@ const SliderComponent = ({ children, settings }) => {
         )}
       </Override>
     </Container>
-  )
-}
+  );
+};
 
-export default SliderComponent
+export default SliderComponent;

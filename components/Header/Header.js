@@ -8,7 +8,8 @@ class Header extends Component {
     super(props)
     this.state = {
       lastScroll: 0,
-      isScroollingUp: true
+      isScroollingUp: true,
+      isOnTop: true
     }
   }
 
@@ -29,8 +30,9 @@ class Header extends Component {
     })
   }
   render() {
+    const { isOnTop } = this.state
     return (
-      <HeaderContainer isUp={this.state.isScroollingUp}>
+      <HeaderContainer isOnTop={isOnTop} isUp={this.state.isScroollingUp}>
         <HeaderContainerCenter>
           <StyledLink href="/">
             <Logo>mif</Logo>
