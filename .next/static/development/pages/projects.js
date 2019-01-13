@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/projects.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\projects.js"],{
 
 /***/ "./components/Footer/Footer.js":
 /*!*************************************!*\
@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Footer/Footer.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Footer\\Footer.js";
 
 
 
@@ -88,7 +88,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Header/Header.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Header\\Header.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -126,7 +126,8 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Header).call(this, props));
     _this.state = {
       lastScroll: 0,
-      isScroollingUp: true
+      isScroollingUp: true,
+      isOnTop: true
     };
     return _this;
   }
@@ -136,8 +137,18 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      window.addEventListener('scroll', function (e) {
-        if (window.scrollY < _this2.state.lastScroll) {
+      window.addEventListener("scroll", function (e) {
+        if (window.scrollY === 0) {
+          _this2.setState({
+            isOnTop: true
+          });
+        } else {
+          _this2.setState({
+            isOnTop: false
+          });
+        }
+
+        if (window.scrollY <= _this2.state.lastScroll) {
           _this2.setState({
             isScroollingUp: true
           });
@@ -155,88 +166,90 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var isOnTop = this.state.isOnTop;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderContainer, {
+        isOnTop: isOnTop,
         isUp: this.state.isScroollingUp,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderContainerCenter, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 47
         },
         __self: this
       }, "mif")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Menu, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "news",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 51
         },
         __self: this
       }, "news")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "projects",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 54
         },
         __self: this
       }, "projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 57
         },
         __self: this
       }, "about")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "contact",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 60
         },
         __self: this
       }, "contact")))));
@@ -249,8 +262,10 @@ function (_Component) {
 var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Header__HeaderContainer",
   componentId: "sc-1hc63ty-0"
-})(["width:100%;height:50px;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;position:fixed;top:", ";transition:0.4s;z-index:200;"], function (props) {
+})(["width:100%;height:50px;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;position:fixed;top:", ";transition:0.4s;z-index:200;background-color:", ";"], function (props) {
   return props.isUp ? "0" : "-100px";
+}, function (props) {
+  return props.isOnTop ? "transparent" : "rgba(255,255,255,.93)";
 });
 var HeaderContainerCenter = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Header__HeaderContainerCenter",
@@ -321,7 +336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
 /* harmony import */ var _static_svg_Dash__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../static/svg/Dash */ "./static/svg/Dash.js");
 /* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/RightArrow */ "./static/svg/RightArrow.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/PostItem/PostItem.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\PostItem\\PostItem.js";
 
 
 
@@ -519,23 +534,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
 /* harmony import */ var _static_svg_Dash__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../static/svg/Dash */ "./static/svg/Dash.js");
 /* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/RightArrow */ "./static/svg/RightArrow.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/ProjectItem/ProjectItem.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\ProjectItem\\ProjectItem.js";
 
 
 
 
 
 
-var BackUrl = 'http://localhost:1337';
+/* const BackUrl = "http://localhost:1337"; */
 
-var ProjectItem = function ProjectItem(_ref) {
-  var data = _ref.data;
-  var id = data.id,
-      Title = data.Title,
-      category = data.category,
-      date = data.date,
-      mainImage = data.mainImage,
-      content = data.content;
+var ProjectItem = function ProjectItem() {
+  /*   const { id, Title, category, date, mainImage, content } = data; */
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
@@ -543,67 +552,67 @@ var ProjectItem = function ProjectItem(_ref) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
-    src: "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&fit=crop&w=667&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+    src: "https://source.unsplash.com/random",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SpanCategory, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
-  }, "Mountain"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, "Lorem Ipsum is simply dummy text from the printing and typeseting industry"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: {
-      pathname: '/projectpage',
-      query: {
-        id: id
-      }
-    },
+  }, "News")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 19
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InfoButton, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 20
     },
     __self: this
-  }, "Read More"))));
+  }, "Designing the First All-in-One, Wearable Breast Pump"))));
 };
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "ProjectItem__Container",
   componentId: "sc-14mpx99-0"
-})(["margin:20px;display:block;width:280px;height:360px;border-radius:15px;padding:1.5rem;box-sizing:border-box;background:white;position:relative;display:flex;align-items:flex-end;transition:0.4s ease-out;box-shadow:0px 7px 10px rgba(0,0,0,0.5);&:before{content:'';position:absolute;top:0;left:0;display:block;width:100%;height:100%;border-radius:15px;background:rgba(0,0,0,0.6);z-index:2;transition:0.5s;opacity:0;}&:hover{-webkit-transform:translateY(20px);transform:translateY(20px);}&:hover:before{opacity:1;}h1{margin:0px;}p{letter-spacing:1px;font-size:15px;margin-top:8px;}"]);
-var InfoButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button.withConfig({
-  displayName: "ProjectItem__InfoButton",
+})(["display:flex;overflow:hidden;width:280px;height:360px;margin:20px;box-sizing:border-box;flex-direction:column;background:white;border-bottom:8px solid black;text-align:justify;transition:0.4s ease-out;box-shadow:0px 7px 10px rgba(0,0,0,0.5);a{background-image:linear-gradient(to bottom,transparent 90%,#000 25%);background-size:0% 100%;background-repeat:no-repeat;text-decoration:none;text-decoration:none;color:#000;position:relative;text-align:center;font-size:1.5rem;transition:background-size 0.4s ease;&:hover,&:focus{background-size:100% 100%;cursor:pointer;}}"]);
+var Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__Text",
   componentId: "sc-14mpx99-1"
-})(["margin-top:10px;padding:0.6rem;outline:none;border:none;border-radius:3px;background:white;color:black;font-weight:bold;cursor:pointer;transition:0.4s ease;&:hover{background:#27cba4;color:white;}"]);
-var Info = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ProjectItem__Info",
+})(["width:100%;height:50%;justify-content:center;padding:1rem;box-sizing:border-box;background-color:tan;"]);
+var Span = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__Span",
   componentId: "sc-14mpx99-2"
-})(["position:relative;z-index:3;color:white;opacity:0;-webkit-transform:translateY(30px);transform:translateY(30px);transition:0.5s;", ":hover &{opacity:1;transform:translateY(0px);}"], Container);
+})(["padding:1rem;"]);
+var SpanCategory = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__SpanCategory",
+  componentId: "sc-14mpx99-3"
+})(["padding-left:1rem;a{font-size:1rem;color:#ff988a;}"]);
 var Img = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
   displayName: "ProjectItem__Img",
-  componentId: "sc-14mpx99-3"
-})(["width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;border-radius:15px;"]);
+  componentId: "sc-14mpx99-4"
+})(["width:100%;height:50%;object-fit:cover;border-bottom:0.5rem solid #ff988a;align-self:flex-start;"]);
 /* harmony default export */ __webpack_exports__["default"] = (ProjectItem);
 
 /***/ }),
@@ -635,7 +644,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/AboutSvg.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Responsive\\Assets\\AboutSvg.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -682,7 +691,7 @@ var SvgAbout = function SvgAbout(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/BlogSvg.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Responsive\\Assets\\BlogSvg.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -724,7 +733,7 @@ var SvgBlog = function SvgBlog(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/ContactSvg.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Responsive\\Assets\\ContactSvg.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -771,7 +780,7 @@ var SvgContact = function SvgContact(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Assets/HomeSvg.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Responsive\\Assets\\HomeSvg.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -825,7 +834,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Assets_BlogSvg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Assets/BlogSvg */ "./components/Responsive/Assets/BlogSvg.js");
 /* harmony import */ var _Assets_AboutSvg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Assets/AboutSvg */ "./components/Responsive/Assets/AboutSvg.js");
 /* harmony import */ var _Assets_ContactSvg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Assets/ContactSvg */ "./components/Responsive/Assets/ContactSvg.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Responsive/Footer.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Responsive\\Footer.js";
 
 
 
@@ -937,7 +946,7 @@ var ContainerText = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].di
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Footer__Container",
   componentId: "sc-1u71pxo-1"
-})(["width:100%;height:auto;align-items:bottom;justify-content:space-between;padding:3rem 8rem 3rem 6rem;box-sizing:border-box;background-color:white;"]);
+})(["width:100%;display:block;height:auto;align-items:bottom;justify-content:space-between;padding:3rem 8rem 3rem 6rem;box-sizing:border-box;background-color:white;@media all and (max-width:768px){display:none;}"]);
 var SvgItem = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Footer__SvgItem",
   componentId: "sc-1u71pxo-2"
@@ -967,7 +976,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_svg_Right__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/Right */ "./static/svg/Right.js");
 /* harmony import */ var _static_svg_Left__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../static/svg/Left */ "./static/svg/Left.js");
 /* harmony import */ var _ProjectItem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ProjectItem */ "./components/ProjectItem/index.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/Slider/Slider.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\components\\Slider\\Slider.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -988,7 +997,7 @@ var Img = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConf
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Slider__Container",
   componentId: "m8xi2w-1"
-})(["min-height:600px;.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent;}.slick-list{margin:auto;margin-top:64.2px;display:flex;overflow:hidden;padding:0;}.slick-list:focus{outline:none;}.slick-list.dragging{cursor:pointer;cursor:hand;}.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}.slick-track{position:relative;top:0;left:0;display:flex;margin-left:auto;margin-right:auto;max-height:950px !important;}.slick-track:before,.slick-track:after{display:table;content:'';}.slick-track:after{clear:both;}.slick-loading .slick-track{visibility:hidden;}.slick-slide{display:none;float:left;height:100%;min-height:1px;}[dir='rtl'] .slick-slide{float:right;}.slick-slide img{display:block;}.slick-slide.slick-loading img{display:none;}.slick-slide.dragging img{pointer-events:none;}.slick-initialized .slick-slide{display:block;}.slick-loading .slick-slide{visibility:hidden;}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent;}.slick-arrow.slick-hidden{display:none;}.slick-prev,.slick-next{font-size:0;line-height:0;position:absolute;top:0%;width:20px;height:20px;padding:0;cursor:pointer;color:transparent;border:none;outline:none;background:transparent;}.slick-next{left:100%;}.slick-prev{position:absolute;left:97% !important;}.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{color:transparent;outline:none;background:transparent;}.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before{opacity:1;}.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before{opacity:0.25;}.slick-prev:before,.slick-next:before{font-family:'slick';font-size:20px;line-height:1;opacity:0.75;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.slick-prev{left:-25px;}[dir='rtl'] .slick-prev{right:-25px;left:auto;}.slick-prev:before{content:'\u2190';}[dir='rtl'] .slick-prev:before{content:'\u2192';}.slick-next{right:-25px;}[dir='rtl'] .slick-next{right:auto;left:-25px;}.slick-next:before{content:'\u2192';}[dir='rtl'] .slick-next:before{content:'\u2190';}.slick-dotted.slick-slider{margin-bottom:30px;}.slick-dots{position:absolute;bottom:-25px;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center;}.slick-dots li{position:relative;display:inline-block;width:20px;height:20px;margin:0 5px;padding:0;cursor:pointer;}.slick-dots li button{font-size:0;line-height:0;display:block;width:20px;height:20px;padding:5px;cursor:pointer;color:transparent;border:0;outline:none;background:transparent;}.slick-dots li button:hover,.slick-dots li button:focus{outline:none;}.slick-dots li button:hover:before,.slick-dots li button:focus:before{opacity:1;}.slick-dots li button:before{font-family:'slick';font-size:6px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:'\u2022';text-align:center;opacity:0.25;color:black;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.slick-dots li.slick-active button:before{opacity:0.75;color:black;}"]);
+})(["min-height:600px;.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent;}.slick-list{margin:auto;margin-top:64.2px;display:flex;overflow:hidden;padding:0;}.slick-list:focus{outline:none;}.slick-list.dragging{cursor:pointer;cursor:hand;}.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}.slick-track{position:relative;top:0;left:0;display:flex;margin-left:auto;margin-right:auto;max-height:950px !important;}.slick-track:before,.slick-track:after{display:table;content:\"\";}.slick-track:after{clear:both;}.slick-loading .slick-track{visibility:hidden;}.slick-slide{display:none;float:left;height:100%;min-height:1px;}[dir=\"rtl\"] .slick-slide{float:right;}.slick-slide img{display:block;}.slick-slide.slick-loading img{display:none;}.slick-slide.dragging img{pointer-events:none;}.slick-initialized .slick-slide{display:block;}.slick-loading .slick-slide{visibility:hidden;}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent;}.slick-arrow.slick-hidden{display:none;}.slick-prev,.slick-next{font-size:0;line-height:0;position:absolute;top:0%;width:20px;height:20px;padding:0;cursor:pointer;color:transparent;border:none;outline:none;background:transparent;}.slick-next{left:100%;}.slick-prev{position:absolute;left:97% !important;}.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{color:transparent;outline:none;background:transparent;}.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before{opacity:1;}.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before{opacity:0.25;}.slick-prev:before,.slick-next:before{font-family:\"slick\";font-size:20px;line-height:1;opacity:0.75;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.slick-prev{left:-25px;}[dir=\"rtl\"] .slick-prev{right:-25px;left:auto;}.slick-prev:before{content:\"\u2190\";}[dir=\"rtl\"] .slick-prev:before{content:\"\u2192\";}.slick-next{right:-25px;}[dir=\"rtl\"] .slick-next{right:auto;left:-25px;}.slick-next:before{content:\"\u2192\";}[dir=\"rtl\"] .slick-next:before{content:\"\u2190\";}.slick-dotted.slick-slider{margin-bottom:30px;}.slick-dots{position:absolute;bottom:-25px;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center;}.slick-dots li{position:relative;display:inline-block;width:20px;height:20px;margin:0 5px;padding:0;cursor:pointer;}.slick-dots li button{font-size:0;line-height:0;display:block;width:20px;height:20px;padding:5px;cursor:pointer;color:transparent;border:0;outline:none;background:transparent;}.slick-dots li button:hover,.slick-dots li button:focus{outline:none;}.slick-dots li button:hover:before,.slick-dots li button:focus:before{opacity:1;}.slick-dots li button:before{font-family:\"slick\";font-size:6px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:\"\u2022\";text-align:center;opacity:0.25;color:black;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.slick-dots li.slick-active button:before{opacity:0.75;color:black;}"]);
 var Override = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Slider__Override",
   componentId: "m8xi2w-2"
@@ -1004,7 +1013,7 @@ var SliderComponent = function SliderComponent(_ref) {
     rows: 1,
     centerMode: true,
     slidesPerRow: 1,
-    centerPadding: '100px',
+    centerPadding: "100px",
     nextArrow: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_Right__WEBPACK_IMPORTED_MODULE_5__["default"], {
       __source: {
         fileName: _jsxFileName,
@@ -21395,7 +21404,7 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/pages/Assets/Category.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\pages\\Assets\\Category.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -21437,7 +21446,7 @@ var SvgCategory = function SvgCategory(props) {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/Assets/Category")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/Assets\\Category")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
@@ -21454,7 +21463,7 @@ var SvgCategory = function SvgCategory(props) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/pages/Assets/Svg.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\pages\\Assets\\Svg.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -21505,7 +21514,7 @@ var SvgCalendar = function SvgCalendar(props) {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/Assets/Svg")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/Assets\\Svg")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
@@ -21536,7 +21545,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components */ "./components/index.js");
 
-var _jsxFileName = "/home/reziko/projects/mif/client/pages/projects.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\pages\\projects.js";
 
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n  body{\n    font-family:Averta\n  }\n  @font-face {\n    font-family: Averta;\n    src: url('../static/fonts/Averta.otf');\n  }\n"]);
@@ -21775,7 +21784,7 @@ var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createG
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/Dash.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Dash.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -21822,7 +21831,7 @@ var Dash = function Dash(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/Left.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Left.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -21862,7 +21871,7 @@ var SvgComponent = function SvgComponent(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/Right.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\Right.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -21902,7 +21911,7 @@ var SvgComponent = function SvgComponent(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/reziko/projects/mif/client/static/svg/RightArrow.js";
+var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\static\\svg\\RightArrow.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -21931,7 +21940,7 @@ var RightArrow = function RightArrow(props) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
@@ -21956,5 +21965,5 @@ module.exports = dll_4fa5fe59a0158b551b2e;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]));;
+},[[7,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=projects.js.map

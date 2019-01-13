@@ -1,36 +1,47 @@
-import React, { Component } from 'react'
-import Link from 'next/link'
-import styled from 'styled-components'
-import { media } from '../../globals/breakpoints'
+import React, { Component } from "react";
+import Link from "next/link";
+import styled from "styled-components";
+import { media } from "../../globals/breakpoints";
 
 class Header extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       lastScroll: 0,
-      isScroollingUp: true
-    }
+      isScroollingUp: true,
+      isOnTop: true
+    };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', e => {
-      if (window.scrollY < this.state.lastScroll) {
+    window.addEventListener("scroll", e => {
+      if (window.scrollY === 0) {
+        this.setState({
+          isOnTop: true
+        });
+      } else {
+        this.setState({
+          isOnTop: false
+        });
+      }
+      if (window.scrollY <= this.state.lastScroll) {
         this.setState({
           isScroollingUp: true
-        })
+        });
       } else {
         this.setState({
           isScroollingUp: false
-        })
+        });
       }
       this.setState({
         lastScroll: window.scrollY
-      })
-    })
+      });
+    });
   }
   render() {
+    const { isOnTop } = this.state;
     return (
-      <HeaderContainer isUp={this.state.isScroollingUp}>
+      <HeaderContainer isOnTop={isOnTop} isUp={this.state.isScroollingUp}>
         <HeaderContainerCenter>
           <StyledLink href="/">
             <Logo>mif</Logo>
@@ -52,7 +63,7 @@ class Header extends Component {
           {/* <LanguageSwitcher>Language: En</LanguageSwitcher> */}
         </HeaderContainerCenter>
       </HeaderContainer>
-    )
+    );
   }
 }
 
@@ -69,7 +80,9 @@ const HeaderContainer = styled.div`
   top: ${props => (props.isUp ? `0` : `-100px`)};
   transition: 0.4s;
   z-index: 200;
-`
+  background-color: ${props =>
+    props.isOnTop ? `transparent` : "rgba(255,255,255,.93)"};
+`;
 
 const HeaderContainerCenter = styled.div`
   width: 1024px;
@@ -78,18 +91,18 @@ const HeaderContainerCenter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
 const Logo = styled.div`
   color: #ff7e6d;
   font-size: 24px;
   font-weight: 800;
   cursor: pointer;
-`
+`;
 
 const Menu = styled.ul`
   display: flex;
-`
+`;
 
 const MenuItem = styled.li`
   list-style: none;
@@ -98,21 +111,21 @@ const MenuItem = styled.li`
   font-size: 18px;
   font-weight: 800;
   cursor: pointer;
-`
+`;
 
 const StyledLink = styled(Link)`
   cursor: pointer;
   text-decoration: none;
-`
+`;
 
 const LanguageSwitcher = styled.div`
   color: #fff;
   font-size: 20px;
-`
+`;
 
 const SubMenuLink = styled(Link)`
   text-decoration: none;
-`
+`;
 
 const SubMenuItem = styled.div`
   list-style: none;
@@ -124,6 +137,6 @@ const SubMenuItem = styled.div`
   &:hover {
     background-color: #333;
   }
-`
+`;
 
-export default Header
+export default Header;

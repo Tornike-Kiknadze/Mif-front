@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { Header, PostItem, Slider, Footer } from "../components";
@@ -7,17 +6,7 @@ import Strapi from "strapi-sdk-javascript/build/main";
 import MainIcon from "../static/svg/mainIcon.svg";
 import Link from "next/link";
 import ProjectItem from "../components/ProjectItem";
-=======
-import React, { Component } from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
-import { Header, PostItem, Slider, Footer } from '../components'
-import RightArrow from '../static/svg/RightArrow'
-import Strapi from 'strapi-sdk-javascript/build/main'
-import MainIcon from '../static/svg/mainIcon.svg'
-import Link from 'next/link'
-import ProjectItem from '../components/ProjectItem'
-import Right from '../static/svg/Right'
->>>>>>> 8ea07c6f6ea4b8866332f930e86c2d4291076a4b
+import Right from "../static/svg/Right";
 
 const strapiApi = new Strapi("http://192.168.0.106:1337");
 
@@ -188,13 +177,10 @@ const NewsHeader = styled.div`
     margin-top: 10px;
     /* color:#ff7e6d */
   }
-<<<<<<< HEAD
-`;
-=======
   &:hover {
     background: #543243;
   }
-`
+`;
 
 const NewsTitleLeft = styled.div`
   flex: 1;
@@ -202,7 +188,7 @@ const NewsTitleLeft = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const NewsTitleRight = styled.div`
   width: 50px;
@@ -220,8 +206,7 @@ const NewsTitleRight = styled.div`
     transform: scale(1.1);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.16);
   }
-`
->>>>>>> 8ea07c6f6ea4b8866332f930e86c2d4291076a4b
+`;
 
 const ProjectsHeader = styled.div`
   width: 100%;

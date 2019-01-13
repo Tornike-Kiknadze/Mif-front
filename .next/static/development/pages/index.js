@@ -126,7 +126,8 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Header).call(this, props));
     _this.state = {
       lastScroll: 0,
-      isScroollingUp: true
+      isScroollingUp: true,
+      isOnTop: true
     };
     return _this;
   }
@@ -136,8 +137,18 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      window.addEventListener('scroll', function (e) {
-        if (window.scrollY < _this2.state.lastScroll) {
+      window.addEventListener("scroll", function (e) {
+        if (window.scrollY === 0) {
+          _this2.setState({
+            isOnTop: true
+          });
+        } else {
+          _this2.setState({
+            isOnTop: false
+          });
+        }
+
+        if (window.scrollY <= _this2.state.lastScroll) {
           _this2.setState({
             isScroollingUp: true
           });
@@ -155,88 +166,90 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var isOnTop = this.state.isOnTop;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderContainer, {
+        isOnTop: isOnTop,
         isUp: this.state.isScroollingUp,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderContainerCenter, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 47
         },
         __self: this
       }, "mif")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Menu, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "news",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 51
         },
         __self: this
       }, "news")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "projects",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 54
         },
         __self: this
       }, "projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 57
         },
         __self: this
       }, "about")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
         href: "contact",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 60
         },
         __self: this
       }, "contact")))));
@@ -249,8 +262,10 @@ function (_Component) {
 var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Header__HeaderContainer",
   componentId: "sc-1hc63ty-0"
-})(["width:100%;height:50px;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;position:fixed;top:", ";transition:0.4s;z-index:200;"], function (props) {
+})(["width:100%;height:50px;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-sizing:border-box;position:fixed;top:", ";transition:0.4s;z-index:200;background-color:", ";"], function (props) {
   return props.isUp ? "0" : "-100px";
+}, function (props) {
+  return props.isOnTop ? "transparent" : "rgba(255,255,255,.93)";
 });
 var HeaderContainerCenter = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Header__HeaderContainerCenter",
@@ -21079,6 +21094,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_ProjectItem__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/ProjectItem */ "./components/ProjectItem/index.js");
+/* harmony import */ var _static_svg_Right__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/svg/Right */ "./static/svg/Right.js");
 
 var _jsxFileName = "C:\\Users\\User\\Desktop\\React\\MIF CLONE\\Mif-front\\pages\\index.js";
 
@@ -21115,6 +21131,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -21199,86 +21216,106 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Header"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainContainer, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainer, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainerLeft, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 41
         },
         __self: this
       }, "Media Inovation Foundation"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 42
         },
         __self: this
       }, "This is a such a great slogan that, when kyle mynouge saw it she become waffle, This is a such a great slogan that, when kyle mynouge saw it she become waffle,This is a such a great slogan that, when kyle mynouge saw it she become waffle, This is a such a great slogan that, when kyle mynouge saw it she become waffle")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeadContainerRight, {
         img: _static_svg_mainIcon_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 50
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(News, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsCenter, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsHeader, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsTitleLeft, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 56
         },
         __self: this
-      }, "Latest News")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsItems, {
+      }, "In The News")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsTitleRight, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 58
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_svg_Right__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        width: 15,
+        height: 15,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(NewsItems, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
         },
         __self: this
       }, news.map(function (item, index) {
@@ -21286,20 +21323,20 @@ function (_Component) {
           data: item,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 70
+            lineNumber: 64
           },
           __self: this
         });
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ViewAllNews, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ViewAllNewsContent, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -21308,13 +21345,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 68
         },
         __self: this
       }, "All News"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Icon, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -21323,37 +21360,37 @@ function (_Component) {
         fill: "#27cba4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 70
         },
         __self: this
       }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsSlider, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsHeader, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 78
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectsBG, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 79
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Span, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 80
         },
         __self: this
       }, "Projects")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Slider"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 82
         },
         __self: this
       }, projects && projects.map(function (item) {
@@ -21361,14 +21398,14 @@ function (_Component) {
           data: item,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 89
+            lineNumber: 83
           },
           __self: this
         });
       }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Footer"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 86
         },
         __self: this
       })));
@@ -21408,51 +21445,59 @@ var News = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withCon
 var NewsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__NewsHeader",
   componentId: "sc-1wbo52z-6"
-})(["width:100%;margin-bottom:15px;color:#543243;font-weight:800;font-size:18px;padding-left:10px;display:flex;flex-direction:column;h1{color:#543243;font-size:18px;}span{margin-top:10px;}"]);
+})(["width:100%;height:50px;display:flex;margin-bottom:55px;font-weight:800;font-size:18px;padding-left:10px;color:#fff;background:#ff7e6d;transition:0.2s;box-shadow:0 10px 12px -9px #777;cursor:pointer;h1{font-size:18px;}span{margin-top:10px;}&:hover{background:#543243;}"]);
+var NewsTitleLeft = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "pages__NewsTitleLeft",
+  componentId: "sc-1wbo52z-7"
+})(["flex:1;height:100%;display:flex;align-items:center;justify-content:center;"]);
+var NewsTitleRight = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "pages__NewsTitleRight",
+  componentId: "sc-1wbo52z-8"
+})(["width:50px;height:100%;display:flex;align-items:center;justify-content:center;background:#543243;transition:0.1s;svg{fill:#fff;}", ":hover &{background:#27cba4;transform:scale(1.1);box-shadow:0 25px 25px rgba(0,0,0,0.16);}"], NewsHeader);
 var ProjectsHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ProjectsHeader",
-  componentId: "sc-1wbo52z-7"
+  componentId: "sc-1wbo52z-9"
 })(["width:100%;display:flex;align-items:center;color:#301d28;font-weight:bold;position:relative;color:#ff7e6d;font-size:2em;"]);
 var ProjectsBG = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ProjectsBG",
-  componentId: "sc-1wbo52z-8"
+  componentId: "sc-1wbo52z-10"
 })(["width:80px;height:80%;position:absolute;top:10px;background:rgba(255,255,255,0.6);z-index:-1;"]);
 var Span = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__Span",
-  componentId: "sc-1wbo52z-9"
+  componentId: "sc-1wbo52z-11"
 })(["color:#543243;font-size:18px;"]);
 var NewsHeaderRight = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__NewsHeaderRight",
-  componentId: "sc-1wbo52z-10"
+  componentId: "sc-1wbo52z-12"
 })(["display:flex;align-items:center;cursor:pointer;&:hover{color:#27cba4;}"]);
 var NewsItems = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__NewsItems",
-  componentId: "sc-1wbo52z-11"
-})(["width:100%;margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;grid-gap:20px;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(3,1fr);}"]);
+  componentId: "sc-1wbo52z-13"
+})(["width:100%;margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;grid-gap:35px;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(3,1fr);}"]);
 var ViewAllNews = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ViewAllNews",
-  componentId: "sc-1wbo52z-12"
+  componentId: "sc-1wbo52z-14"
 })(["display:flex;justify-content:center;align-items:center;"]);
 var ViewAllNewsContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ViewAllNewsContent",
-  componentId: "sc-1wbo52z-13"
+  componentId: "sc-1wbo52z-15"
 })(["display:flex;a{text-decoration:none;font-size:26px;font-weight:800;color:#543243;transition:0.2s;&:hover{color:#27cba4;}}"]);
 var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__Icon",
-  componentId: "sc-1wbo52z-14"
+  componentId: "sc-1wbo52z-16"
 })(["display:flex;align-items:center;transition:0.3s;margin-left:5px;", ":hover &{transform:translateX(5px);}"], ViewAllNewsContent);
 var ProjectsSlider = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ProjectsSlider",
-  componentId: "sc-1wbo52z-15"
+  componentId: "sc-1wbo52z-17"
 })(["width:1224px;margin:auto;background:#fff;display:flex;flex-direction:column;padding:80px 0 0 0;"]);
 var NewsCenter = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__NewsCenter",
-  componentId: "sc-1wbo52z-16"
+  componentId: "sc-1wbo52z-18"
 })(["width:1224px;height:100%;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;"]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject());
 var Space = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__Space",
-  componentId: "sc-1wbo52z-17"
+  componentId: "sc-1wbo52z-19"
 })(["margin:0 5px;"]);
     (function (Component, route) {
       if(!Component) return
