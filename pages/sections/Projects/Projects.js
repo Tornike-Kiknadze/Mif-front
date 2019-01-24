@@ -1,8 +1,8 @@
-import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
-import { Link } from 'next/link'
-import RightPlay from '../../../static/svg/RightPlay'
-import { ProjectItem } from '../../../components'
+import React from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
+import { Link } from 'next/link';
+import RightPlay from '../../../static/svg/RightPlay';
+import { ProjectItem } from '../../../components';
 
 export default () => {
   return (
@@ -23,6 +23,12 @@ export default () => {
             businesses need.
           </Span>
           <Span>Check out some of our favourite projects below.</Span>
+          <Button>
+            <ButtonContent>
+              <RightPlay width={15} height={15} />
+              <BtnText>ALL PROJECTS </BtnText>
+            </ButtonContent>
+          </Button>
         </Right>
       </Header>
       <ProjectItems>
@@ -36,60 +42,58 @@ export default () => {
         <ProjectItem />
       </ProjectItems>
     </Projects>
-  )
-}
+  );
+};
 
 const Projects = styled.div`
-  margin: 50px 0;
-`
+  padding: 50px 0;
+  background-color:#f5f5f5;
+`;
 
 const Header = styled.div`
   display: flex;
   width: 1228px;
   margin: auto;
-`
+  padding: 20px;
+  box-sizing: border-box;
+`;
 
 const Left = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  font-size: 60px;
-  span {
-  }
-  p {
-  }
-`
+  font-size: 52px !important;
+`;
 
 const H2 = styled.h2`
   margin-right: 10px;
   color: #2d2c32;
-  font-size: 46px;
-  &:nth-child(1) {
-    font-size: 62px;
-  }
-`
+`;
 
 const Span = styled.span`
   letter-spacing: 1.1px;
   line-height: 1.6;
   font-size: 17px;
   margin-bottom: 20px;
-`
+  text-align: justify;
+  color: #62535c;
+`;
 
 const WeAre = styled.div`
   display: flex;
+  font-size: 36px !important;
   ${H2}:nth-child(2) {
     color: #ff7e6d;
   }
-`
+`;
 
-const InnerSpan = styled.div``
+const InnerSpan = styled.div``;
 
 const Right = styled.div`
   flex: 2;
   display: flex;
   flex-direction: column;
-`
+`;
 
 const ProjectItems = styled.div`
   display: flex;
@@ -97,7 +101,32 @@ const ProjectItems = styled.div`
   flex-wrap: wrap;
   width: 1228px;
   margin: auto;
-`
+`;
+
+const Button = styled.div`
+  margin-bottom: 40px;
+`;
+
+const ButtonContent = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const BtnText = styled.span`
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: color 200ms ease;
+  transition: transform 200ms ease;
+  color: #62535c;
+
+  &:hover {
+    color: #ff7e6d;
+    transform: translateX(10px);
+  }
+`;
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -112,4 +141,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: Averta;
     src: url('../static/fonts/Averta.otf');
   }
-`
+  
+  @font-face {
+    font-family: Pacifico;
+    src: url('../static/fonts/Pacifico-Regular.ttf');
+  }
+`;

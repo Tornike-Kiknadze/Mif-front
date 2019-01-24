@@ -1,13 +1,13 @@
-import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
-import Link from 'next/link'
-import RightPlay from '../../../static/svg/RightPlay'
-import { ProjectItem, PostItem } from '../../../components'
-import Right from '../../../static/svg/Right'
-import RightArrow from '../../../static/svg/RightArrow'
+import React from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
+import Link from 'next/link';
+import RightPlay from '../../../static/svg/RightPlay';
+import { ProjectItem, PostItem } from '../../../components';
+import Right from '../../../static/svg/Right';
+import RightArrow from '../../../static/svg/RightArrow';
 
 export default props => {
-  const { news } = props
+  const { news } = props;
   return (
     <News>
       <NewsCenter>
@@ -33,15 +33,15 @@ export default props => {
         </NewsItems>
       </NewsCenter>
     </News>
-  )
-}
+  );
+};
 
 const News = styled.div`
   width: 100%;
   background: #ffffff;
   padding: 80px 0 120px 0;
   background: #f7fbfb;
-`
+`;
 
 const NewsHeader = styled.div`
   width: 100%;
@@ -56,14 +56,16 @@ const NewsHeader = styled.div`
     margin-top: 10px;
     /* color:#ff7e6d */
   }
-`
+`;
 
 const Span = styled.div`
   color: #2d2c32;
+  font-size: 52px !important;
   &:nth-child(2) {
+    font-size: 36px !important;
     color: #ff7e6d;
   }
-`
+`;
 
 const NewsTitleLeft = styled.div`
   flex: 1;
@@ -71,7 +73,7 @@ const NewsTitleLeft = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const NewsTitleRight = styled.div`
   width: 50px;
@@ -89,7 +91,7 @@ const NewsTitleRight = styled.div`
     transform: scale(1.1);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.16);
   }
-`
+`;
 
 const NewsHeaderRight = styled.div`
   display: flex;
@@ -98,7 +100,7 @@ const NewsHeaderRight = styled.div`
   &:hover {
     color: #27cba4;
   }
-`
+`;
 
 const NewsItems = styled.div`
   width: 100%;
@@ -114,13 +116,13 @@ const NewsItems = styled.div`
   @media (min-width: 60em) {
     grid-template-columns: repeat(3, 1fr);
   }
-`
+`;
 
 const ViewAllNews = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const ViewAllNewsContent = styled.div`
   display: flex;
@@ -134,7 +136,7 @@ const ViewAllNewsContent = styled.div`
       color: #27cba4;
     }
   }
-`
+`;
 
 const Icon = styled.div`
   display: flex;
@@ -144,7 +146,7 @@ const Icon = styled.div`
   ${ViewAllNewsContent}:hover & {
     transform: translateX(5px);
   }
-`
+`;
 
 const NewsCenter = styled.div`
   width: 1224px;
@@ -155,7 +157,7 @@ const NewsCenter = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 16px;
-`
+`;
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -168,4 +170,4 @@ const GlobalStyle = createGlobalStyle`
     font-family: Averta;
     src: url('../static/fonts/Averta.otf');
   }
-`
+`;

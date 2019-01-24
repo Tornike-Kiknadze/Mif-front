@@ -104,4 +104,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: Averta;
     src: url('../static/fonts/Averta.otf');
   }
+  
+  @font-face {
+    font-family: Pacifico;
+    src: url('../static/fonts/Pacifico-Regular.ttf');
+  }
 `

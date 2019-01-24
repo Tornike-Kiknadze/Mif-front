@@ -1,9 +1,9 @@
-import React from "react";
-import styled, { createGlobalStyle } from "styled-components";
-import Header from "../components/Header/Header";
-import { Link } from "next/link";
-import Footer from "../components/Footer";
-import Responsive from "../components/Responsive/Footer";
+import React from 'react'
+import styled, { createGlobalStyle } from 'styled-components'
+import Header from '../components/Header/Header'
+import { Link } from 'next/link'
+import Footer from '../components/Footer'
+import Responsive from '../components/Responsive/Footer'
 export default () => {
   return (
     <React.Fragment>
@@ -31,7 +31,7 @@ export default () => {
               to, send a messgae and we’ll see if there’s a good fit. Find me
               elsewhere dribbble, twitter, behance and linkedin.
             </SectionContentText>
-          </SectionContent>{" "}
+          </SectionContent>{' '}
           <Footer />
           <ResponsiveWrapper>
             <Responsive />
@@ -39,24 +39,22 @@ export default () => {
         </Section>
       </Container>
     </React.Fragment>
-  );
-};
+  )
+}
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-`;
+`
 
-const ResponsiveWrapper = styled.div`
-   
-`;
+const ResponsiveWrapper = styled.div``
 
 const Section = styled.div`
   width: 100%;
   height: 100vh;
   padding-top: 6rem;
   box-sizing: border-box;
-`;
+`
 
 const SectionHeader = styled.div`
   width: 100%;
@@ -68,7 +66,7 @@ const SectionHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
+`
 
 const SectionContent = styled.div`
   width: 100%;
@@ -78,7 +76,7 @@ const SectionContent = styled.div`
   padding: 6rem 6rem 6rem 6rem;
   box-sizing: border-box;
   display: flex;
-`;
+`
 
 const SectionContentText = styled.div`
   height: auto;
@@ -86,7 +84,7 @@ const SectionContentText = styled.div`
   line-height: 2rem;
   font-size: 1.1rem;
   text-align: justify;
-`;
+`
 
 const SectionContentMessage = styled.div`
   height: 50%;
@@ -94,18 +92,18 @@ const SectionContentMessage = styled.div`
   flex: 1;
   padding: 2rem 2rem 2rem 0;
   text-align: justify;
-`;
+`
 
 const Form = styled.form`
   display: flex;
   flex-wrap: wrap;
-`;
+`
 
 const InputGroup = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-`;
+`
 
 const Input = styled.input`
   flex: 1;
@@ -125,12 +123,12 @@ const Input = styled.input`
   border-radius: 0.3rem;
   font-size: 1.2rem;
   padding-left: 0.5rem;
-`;
+`
 
 const Label = styled.label`
   margin: 1.2rem 0 0.8rem 0;
   font-weight: 600;
-`;
+`
 
 const Textarea = styled.textarea`
   flex: 1;
@@ -149,7 +147,7 @@ const Textarea = styled.textarea`
   line-height: normal;
   width: 100%;
   border-radius: 0.3rem;
-`;
+`
 
 const Button = styled.button`
   user-select: none;
@@ -186,7 +184,7 @@ const Button = styled.button`
     outline: none;
     background-color: #ffdd74;
   }
-`;
+`
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -199,4 +197,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: Averta;
     src: url('../static/fonts/Averta.otf');
   }
-`;
+  
+  @font-face {
+    font-family: Pacifico;
+    src: url('../static/fonts/Pacifico-Regular.ttf');
+  }
+`
