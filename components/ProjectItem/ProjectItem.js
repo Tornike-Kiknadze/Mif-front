@@ -1,49 +1,72 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import Link from 'next/link'
-import styled from 'styled-components'
-import { media } from '../../globals/breakpoints'
-import Dash from '../../static/svg/Dash'
-import RightArrow from '../../static/svg/RightArrow'
-/* const BackUrl = "http://localhost:1337"; */
+import Link from "next/link";
+import styled from "styled-components";
+import { media } from "../../globals/breakpoints";
+import Dash from "../../static/svg/Dash";
+import RightArrow from "../../static/svg/RightArrow";
+const BackUrl = "http://localhost:1337";
 
-const ProjectItem = () => {
-  /*   const { id, Title, category, date, mainImage, content } = data; */
+const ProjectItem = ({ color, id, data }) => {
+  const { title, subtitle, category, date, mainImage, content } = data;
   return (
     <Container>
-      <ImgContainer>
-        <Link href="google.com">
-          <Img src="https://source.unsplash.com/random" />
-        </Link>
-      </ImgContainer>
-      <h2>
-        <SpanCategory>
-          <Link href="#">Projects</Link>
-        </SpanCategory>
-        <Span>
-          <Link href="#">
-            Designing the First All-in-One, Wearable Breast Pump
+      <Link
+        as={`/blogpage/${data && data._id}`}
+        href={`/blogpage/?id=${data && data._id}`}
+      >
+        <ImgContainer>
+          <ImageWrapper />
+          <Link
+            as={`/blogpage/${data && data._id}`}
+            href={`/blogpage/?id=${data && data._id}`}
+          >
+            <Category color={color}>{category}</Category>
           </Link>
-        </Span>
-      </h2>
+          <Date color={color}>
+            <Day>12</Day>
+            <Month>Sep</Month>
+          </Date>
+          <Img
+            src={`${BackUrl}/${mainImage && mainImage.url && mainImage.url}`}
+          />
+        </ImgContainer>
+      </Link>
+      <TextContainer color={color}>
+        <TextContent>
+          <Link
+            href={`/blogpage/?id=${data && data._id}`}
+            as={`/blogpage/${data && data._id}`}
+          >
+            <Title color={color}>{title && title}</Title>
+          </Link>
+          <Subtitle color={color}>{subtitle && subtitle}</Subtitle>
+          <Link
+            as={`/blogpage/${data && data._id}`}
+            href={`/blogpage/?id=${data && data._id}`}
+          >
+            <Content color={color}>{content && content}</Content>
+          </Link>
+        </TextContent>
+      </TextContainer>
     </Container>
-  )
-}
+  );
+};
 
 const Container = styled.div`
   display: flex;
   overflow: hidden;
-  flex: 1 0 280px;
+  flex: 1 0 380px;
   max-width: 369px;
-  height: 360px;
+  height: 460px;
   margin: 20px;
   box-sizing: border-box;
   flex-direction: column;
   background: white;
-  border-bottom: 8px solid #dedede;
   text-align: justify;
   transition: 0.4s ease-out;
-  /* box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); */
+  border-radius: 6px;
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
 
   a {
     background-image: linear-gradient(to bottom, transparent 90%, #000 25%);
@@ -62,36 +85,66 @@ const Container = styled.div`
       cursor: pointer;
     }
   }
-`
+`;
 
-const Text = styled.div`
-  width: 100%;
-  height: 50%;
+const Date = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: ${props => (props.color ? props.color : "#ff7e6d")};
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 1rem;
-  box-sizing: border-box;
-  background-color: tan;
-`
-const Span = styled.div`
-  padding: 1rem;
-`
-const SpanCategory = styled.div`
-  padding-left: 1rem;
+  flex-direction: column;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  z-index: 9999;
+  color: #fff;
+  font-weight: 800;
+`;
 
-  a {
-    font-size: 1rem;
-    color: #ff988a;
-  }
-`
+const Day = styled.div``;
+
+const Month = styled.div``;
+
+const Category = styled.div`
+  width: 120px;
+  height: 30px;
+  background-color: ${props => (props.color ? props.color : "#ff7e6d")};
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+`;
 
 const ImgContainer = styled.div`
   width: 100%;
-  height: 50%;
+  flex: 2;
   object-fit: cover;
   overflow: hidden;
-  border-bottom: 0.5rem solid #ff988a;
   align-self: flex-start;
-`
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  ${Container}:hover & {
+    flex: 1;
+  }
+`;
+
+const ImageWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  ${Container}:hover & {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+`;
 
 const Img = styled.img`
   width: 100%;
@@ -99,9 +152,51 @@ const Img = styled.img`
   object-fit: cover;
   transition: transform 200ms ease;
   cursor: pointer;
-  &:hover {
-    transform: scale(1.1);
-  }
-`
+`;
 
-export default ProjectItem
+const TextContainer = styled.div`
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  background: #fcfcfc;
+  border-bottom: 5px solid;
+  border-color: ${props => (props.color ? props.color : "#ff7e6d")};
+  color: #62535c;
+  ${Container}:hover & {
+    flex: 1.5;
+    cursor: pointer;
+    background: #fff;
+  }
+  position: relative;
+  overflow: hidden;
+`;
+
+const TextContent = styled.div``;
+
+const Title = styled.span`
+  font-size: 26px;
+  font-weight: 800;
+  &:hover {
+    color: #7a7a7a;
+  }
+`;
+
+const Subtitle = styled.div`
+  font-size: 16px;
+  color: #ff7e6d;
+`;
+
+const Content = styled.div`
+  margin-top: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  max-height: 0;
+  overflow: hidden;
+
+  ${Container}:hover & {
+    max-height: 16ch;
+  }
+`;
+
+export default ProjectItem;

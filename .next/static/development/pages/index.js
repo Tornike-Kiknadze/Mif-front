@@ -755,102 +755,111 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _globals_breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../globals/breakpoints */ "./globals/breakpoints.js");
 /* harmony import */ var _static_svg_Dash__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../static/svg/Dash */ "./static/svg/Dash.js");
 /* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../static/svg/RightArrow */ "./static/svg/RightArrow.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/components/ProjectItem/ProjectItem.js";
 
 
 
 
 
 
-/* const BackUrl = "http://localhost:1337"; */
+var BackUrl = "http://localhost:1337";
 
-var ProjectItem = function ProjectItem() {
-  /*   const { id, Title, category, date, mainImage, content } = data; */
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "google.com",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
-    src: "https://source.unsplash.com/random",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SpanCategory, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, "Designing the First All-in-One, Wearable Breast Pump"))));
+var ProjectItem = function ProjectItem(_ref) {
+  var color = _ref.color,
+      id = _ref.id,
+      data = _ref.data;
+  var title = data.title,
+      subtitle = data.subtitle,
+      category = data.category,
+      date = data.date,
+      mainImage = data.mainImage,
+      content = data.content;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    as: "/blogpage/".concat(data && data._id),
+    href: "/blogpage/?id=".concat(data && data._id)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImageWrapper, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    as: "/blogpage/".concat(data && data._id),
+    href: "/blogpage/?id=".concat(data && data._id)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Category, {
+    color: color
+  }, category)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Date, {
+    color: color
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Day, null, "12"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Month, null, "Sep")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
+    src: "".concat(BackUrl, "/").concat(mainImage && mainImage.url && mainImage.url)
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextContainer, {
+    color: color
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/blogpage/?id=".concat(data && data._id),
+    as: "/blogpage/".concat(data && data._id)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
+    color: color
+  }, title && title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Subtitle, {
+    color: color
+  }, subtitle && subtitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    as: "/blogpage/".concat(data && data._id),
+    href: "/blogpage/?id=".concat(data && data._id)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, {
+    color: color
+  }, content && content)))));
 };
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "ProjectItem__Container",
   componentId: "sc-14mpx99-0"
-})(["display:flex;overflow:hidden;flex:1 0 280px;max-width:369px;height:360px;margin:20px;box-sizing:border-box;flex-direction:column;background:white;border-bottom:8px solid #dedede;text-align:justify;transition:0.4s ease-out;a{background-image:linear-gradient(to bottom,transparent 90%,#000 25%);background-size:0% 100%;background-repeat:no-repeat;text-decoration:none;text-decoration:none;color:#464242;position:relative;text-align:center;font-size:1.5rem;transition:background-size 0.4s ease;&:hover,&:focus{background-size:100% 100%;cursor:pointer;}}"]);
-var Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ProjectItem__Text",
+})(["display:flex;overflow:hidden;flex:1 0 380px;max-width:369px;height:460px;margin:20px;box-sizing:border-box;flex-direction:column;background:white;text-align:justify;transition:0.4s ease-out;border-radius:6px;box-shadow:0px 1px 35px 0px rgba(0,0,0,0.3);a{background-image:linear-gradient(to bottom,transparent 90%,#000 25%);background-size:0% 100%;background-repeat:no-repeat;text-decoration:none;text-decoration:none;color:#464242;position:relative;text-align:center;font-size:1.5rem;transition:background-size 0.4s ease;&:hover,&:focus{background-size:100% 100%;cursor:pointer;}}"]);
+var Date = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__Date",
   componentId: "sc-14mpx99-1"
-})(["width:100%;height:50%;justify-content:center;padding:1rem;box-sizing:border-box;background-color:tan;"]);
-var Span = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ProjectItem__Span",
+})(["width:50px;height:50px;background-color:", ";border-radius:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;position:absolute;right:15px;top:20px;z-index:9999;color:#fff;font-weight:800;"], function (props) {
+  return props.color ? props.color : "#ff7e6d";
+});
+var Day = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__Day",
   componentId: "sc-14mpx99-2"
-})(["padding:1rem;"]);
-var SpanCategory = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "ProjectItem__SpanCategory",
+})([""]);
+var Month = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__Month",
   componentId: "sc-14mpx99-3"
-})(["padding-left:1rem;a{font-size:1rem;color:#ff988a;}"]);
+})([""]);
+var Category = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__Category",
+  componentId: "sc-14mpx99-4"
+})(["width:120px;height:30px;background-color:", ";position:absolute;bottom:0;left:0;font-weight:800;display:flex;align-items:center;justify-content:center;color:#fff;"], function (props) {
+  return props.color ? props.color : "#ff7e6d";
+});
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "ProjectItem__ImgContainer",
-  componentId: "sc-14mpx99-4"
-})(["width:100%;height:50%;object-fit:cover;overflow:hidden;border-bottom:0.5rem solid #ff988a;align-self:flex-start;"]);
+  componentId: "sc-14mpx99-5"
+})(["width:100%;flex:2;object-fit:cover;overflow:hidden;align-self:flex-start;position:relative;transition:0.5s;cursor:pointer;", ":hover &{flex:1;}"], Container);
+var ImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__ImageWrapper",
+  componentId: "sc-14mpx99-6"
+})(["width:100%;height:100%;background-color:rgba(0,0,0,0);position:absolute;", ":hover &{background-color:rgba(0,0,0,0.4);}"], Container);
 var Img = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
   displayName: "ProjectItem__Img",
-  componentId: "sc-14mpx99-5"
-})(["width:100%;height:100%;object-fit:cover;transition:transform 200ms ease;cursor:pointer;&:hover{transform:scale(1.1);}"]);
+  componentId: "sc-14mpx99-7"
+})(["width:100%;height:100%;object-fit:cover;transition:transform 200ms ease;cursor:pointer;"]);
+var TextContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__TextContainer",
+  componentId: "sc-14mpx99-8"
+})(["flex:1;padding:20px;box-sizing:border-box;transition:0.5s;background:#fcfcfc;border-bottom:5px solid;border-color:", ";color:#62535c;", ":hover &{flex:1.5;cursor:pointer;background:#fff;}position:relative;overflow:hidden;"], function (props) {
+  return props.color ? props.color : "#ff7e6d";
+}, Container);
+var TextContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__TextContent",
+  componentId: "sc-14mpx99-9"
+})([""]);
+var Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.withConfig({
+  displayName: "ProjectItem__Title",
+  componentId: "sc-14mpx99-10"
+})(["font-size:26px;font-weight:800;&:hover{color:#7a7a7a;}"]);
+var Subtitle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__Subtitle",
+  componentId: "sc-14mpx99-11"
+})(["font-size:16px;color:#ff7e6d;"]);
+var Content = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ProjectItem__Content",
+  componentId: "sc-14mpx99-12"
+})(["margin-top:20px;overflow:hidden;transition:0.5s;max-height:0;overflow:hidden;", ":hover &{max-height:16ch;}"], Container);
 /* harmony default export */ __webpack_exports__["default"] = (ProjectItem);
 
 /***/ }),
@@ -21337,7 +21346,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
 
-var _jsxFileName = "/home/reziko/projects/mif/client/pages/index.js";
 
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n  body{\n    font-family:Averta\n  }\n  @font-face {\n    font-family: Averta;\n    src: url('../static/fonts/Averta.otf');\n  }\n\n  @font-face {\n    font-family: Pacifico;\n    src: url('../static/fonts/Pacifico-Regular.ttf');\n  }\n"]);
@@ -21381,7 +21389,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default.a('http://192.168.0.106:1337');
+var strapiApi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_5___default.a("http://localhost:1337");
+var BackUrl = "http://localhost:1337";
 
 var HomePage =
 /*#__PURE__*/
@@ -21414,33 +21423,34 @@ function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return strapiApi.getEntries('News?_limit=9');
+                return strapiApi.getEntries("News?_limit=8");
 
               case 3:
                 news = _context.sent;
                 _context.next = 6;
-                return strapiApi.getEntries('Projects');
+                return strapiApi.getEntries("Projects?_limit=8");
 
               case 6:
                 projects = _context.sent;
+                console.log("TCL: HomePage -> componentDidMount -> news", news);
                 this.setState({
                   news: news,
                   projects: projects
                 });
-                _context.next = 13;
+                _context.next = 14;
                 break;
 
-              case 10:
-                _context.prev = 10;
+              case 11:
+                _context.prev = 11;
                 _context.t0 = _context["catch"](0);
                 alert(_context.t0);
 
-              case 13:
+              case 14:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, this, [[0, 10]]);
+        }, _callee, this, [[0, 11]]);
       }));
 
       return function componentDidMount() {
@@ -21453,74 +21463,11 @@ function (_Component) {
       var _this$state = this.state,
           news = _this$state.news,
           projects = _this$state.projects;
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Header"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainContainer, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, "Media Inovation Foundation"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      }, "This is a such a great slogan that, when kyle mynouge saw it she become waffle"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ImgWrapper, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_svg_Hero__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_sections__WEBPACK_IMPORTED_MODULE_4__["Projects"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Header"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainContainer, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Media Inovation Foundation"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "This is a such a great slogan that, when kyle mynouge saw it she become waffle"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ImgWrapper, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_svg_Hero__WEBPACK_IMPORTED_MODULE_7__["default"], null))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_sections__WEBPACK_IMPORTED_MODULE_4__["Projects"], {
+        projects: projects
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_sections__WEBPACK_IMPORTED_MODULE_4__["News"], {
-        news: news,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Footer"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }));
+        news: news
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Footer"], null));
     }
   }]);
 
@@ -21531,15 +21478,15 @@ function (_Component) {
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__Container",
   componentId: "sc-1wbo52z-0"
-})(["width:100%;height:100%;"]);
+})(["width:100%;height:100vh;"]);
 var MainContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__MainContainer",
   componentId: "sc-1wbo52z-1"
-})(["width:100%;height:55vh;background:#fff5f3;display:flex;flex-direction:column;align-items:center;padding:120px 0;overflow:hidden;position:relative;h1{line-height:55px;letter-spacing:7px;color:#ff7e6d;font-size:48px;margin-top:120px;}span{margin-top:20px;font-size:16px;color:#444053;font-weight:bold;line-height:5px;letter-spacing:2px;}"]);
+})(["width:100%;height:60vh;background:#fff5f3;display:flex;flex-direction:column;align-items:center;padding:120px 0;overflow:hidden;position:relative;@media screen and (max-width:998px){width:100%;text-align:center;line-height:69px;justify-content:center;height:80vh;}h1{line-height:55px;letter-spacing:7px;color:#ff7e6d;font-size:65px;margin-top:120px;@media screen and (max-width:998px){margin-top:115px;line-height:132px;color:#ff7e6d;font-size:70px;}}span{margin-top:20px;font-size:16px;color:#444053;font-weight:bold;line-height:35px;letter-spacing:2px;@media screen and (max-width:998px){width:90%;font-size:54px;line-height:80px;opacity:0.9;}@media screen and (max-width:745px){font-size:74px;}}"]);
 var ImgWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ImgWrapper",
   componentId: "sc-1wbo52z-2"
-})(["width:auto;height:auto;position:absolute;left:50%;transform:translate(-50%);bottom:-130px;overflow:hidden;"]);
+})(["width:auto;height:auto;position:absolute;left:50%;transform:translate(-50%);bottom:-130px;overflow:hidden;@media screen and (max-width:998px){svg{display:none;}}"]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject());
 var Space = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__Space",
@@ -21585,8 +21532,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components */ "./components/index.js");
 /* harmony import */ var _static_svg_Right__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../static/svg/Right */ "./static/svg/Right.js");
 /* harmony import */ var _static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../static/svg/RightArrow */ "./static/svg/RightArrow.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/pages/sections/News/News.js";
-
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n  body{\n    font-family:Averta\n  }\n  @font-face {\n    font-family: Averta;\n    src: url('../static/fonts/Averta.otf');\n  }\n"]);
 
@@ -21608,93 +21553,26 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
   var news = props.news;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(News, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsCenter, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsHeader, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, "IN OUR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "NEWS"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsItems, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, news.map(function (item, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["PostItem"], {
-      data: item,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    });
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ViewAllNews, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ViewAllNewsContent, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(News, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsCenter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsHeader, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Left, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, null, "IN OUR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, null, "NEWS"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RightSide, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Spani, null, "Technology moves fast. Luckily so do we. Because technology is what we do. And we\u2019re here to help. We are Dept. One agency uniting creativity, technology and data. Helping reinvent & accelerate your digital reality by creating experiences that people want and businesses need."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Spani, null, "Check out some of our favourite projects below."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_RightPlay__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    width: 15,
+    height: 15
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BtnText, {
     href: {
-      pathname: '/news'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, "All News"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      pathname: "/news"
+    }
+  }, "ALL NEWS "))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsItems, null, news.map(function (item, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+      color: "#66D7D1",
+      data: item
+    });
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ViewAllNews, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ViewAllNewsContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: {
+      pathname: "/news"
+    }
+  }, "All News"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_RightArrow__WEBPACK_IMPORTED_MODULE_6__["default"], {
     width: 20,
     height: 20,
-    fill: '#27cba4',
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
+    fill: "#27cba4"
   })))))));
 });
 var News = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
@@ -21704,11 +21582,11 @@ var News = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCon
 var NewsHeader = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__NewsHeader",
   componentId: "sc-7ygyd1-1"
-})(["width:100%;display:flex;margin-bottom:55px;font-weight:800;padding-left:10px;h1{font-size:46px;}span{margin-top:10px;}"]);
+})(["min-width:1224px;margin:auto;display:flex;margin-bottom:55px;font-weight:800;padding-left:10px;h1{font-size:46px;}@media screen and (max-width:1036px){flex-direction:column;}"]);
 var Span = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__Span",
   componentId: "sc-7ygyd1-2"
-})(["color:#2d2c32;font-size:52px !important;&:nth-child(2){font-size:36px !important;color:#ff7e6d;}"]);
+})(["color:#2d2c32;margin-top:10px;font-size:52px !important;&:nth-child(2){font-size:36px !important;color:#ff7e6d;}"]);
 var NewsTitleLeft = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__NewsTitleLeft",
   componentId: "sc-7ygyd1-3"
@@ -21717,30 +21595,58 @@ var NewsTitleRight = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].d
   displayName: "News__NewsTitleRight",
   componentId: "sc-7ygyd1-4"
 })(["width:50px;height:100%;display:flex;align-items:center;justify-content:center;background:#543243;transition:0.1s;svg{fill:#fff;}", ":hover &{background:#27cba4;transform:scale(1.1);box-shadow:0 25px 25px rgba(0,0,0,0.16);}"], NewsHeader);
+var Left = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "News__Left",
+  componentId: "sc-7ygyd1-5"
+})(["display:flex;flex-direction:column;align-items:flex-start;font-size:52px !important;@media screen and (max-width:1036px){align-items:center;width:100%;margin-bottom:50px;}"]);
+var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.withConfig({
+  displayName: "News__H2",
+  componentId: "sc-7ygyd1-6"
+})(["margin-right:10px;color:#2d2c32;"]);
 var NewsHeaderRight = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__NewsHeaderRight",
-  componentId: "sc-7ygyd1-5"
+  componentId: "sc-7ygyd1-7"
 })(["display:flex;align-items:center;cursor:pointer;&:hover{color:#27cba4;}"]);
+var RightSide = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "News__RightSide",
+  componentId: "sc-7ygyd1-8"
+})(["flex:2;margin-left:40px;display:flex;flex-direction:column;width:300px;@media screen and (max-width:1300px){align-items:center;width:100%;}"]);
 var NewsItems = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__NewsItems",
-  componentId: "sc-7ygyd1-6"
-})(["width:100%;margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;grid-gap:35px;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(3,1fr);}"]);
+  componentId: "sc-7ygyd1-9"
+})(["min-width:1224px;margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;@media (min-width:30em){grid-template-columns:1fr 1fr;}@media (min-width:60em){grid-template-columns:repeat(3,1fr);}"]);
 var ViewAllNews = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__ViewAllNews",
-  componentId: "sc-7ygyd1-7"
+  componentId: "sc-7ygyd1-10"
 })(["display:flex;justify-content:center;align-items:center;"]);
 var ViewAllNewsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__ViewAllNewsContent",
-  componentId: "sc-7ygyd1-8"
+  componentId: "sc-7ygyd1-11"
 })(["display:flex;a{text-decoration:none;font-size:26px;font-weight:800;color:#543243;transition:0.2s;&:hover{color:#27cba4;}}"]);
 var Icon = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__Icon",
-  componentId: "sc-7ygyd1-9"
+  componentId: "sc-7ygyd1-12"
 })(["display:flex;align-items:center;transition:0.3s;margin-left:5px;", ":hover &{transform:translateX(5px);}"], ViewAllNewsContent);
+var Spani = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  displayName: "News__Spani",
+  componentId: "sc-7ygyd1-13"
+})(["letter-spacing:1.1px;line-height:1.6;font-size:17px;margin-bottom:20px;text-align:justify;color:#62535c;@media screen and (max-width:900px){}"]);
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "News__Button",
+  componentId: "sc-7ygyd1-14"
+})(["margin-bottom:40px;"]);
+var ButtonContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "News__ButtonContent",
+  componentId: "sc-7ygyd1-15"
+})(["display:flex;align-items:center;a{text-decoration:none;margin-left:10px;font-weight:bold;font-size:13px;margin-top:5px;cursor:pointer;transition:color 200ms ease;transition:transform 200ms ease;color:#62535c;a{text-decoration:none;}&:hover{color:#ff7e6d;transform:translateX(10px);}}"]);
+var BtnText = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a).withConfig({
+  displayName: "News__BtnText",
+  componentId: "sc-7ygyd1-16"
+})([""]);
 var NewsCenter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "News__NewsCenter",
-  componentId: "sc-7ygyd1-10"
-})(["width:1224px;height:100%;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;"]);
+  componentId: "sc-7ygyd1-17"
+})(["height:100%;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;"]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
     (function (Component, route) {
       if(!Component) return
@@ -21815,10 +21721,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _static_svg_RightPlay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../static/svg/RightPlay */ "./static/svg/RightPlay.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components */ "./components/index.js");
-var _jsxFileName = "/home/reziko/projects/mif/client/pages/sections/Projects/Projects.js";
-
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n\n  body{\n    font-family: Averta\n  }\n\n  @font-face {\n    font-family: Averta;\n    src: url('../static/fonts/Averta.otf');\n  }\n  \n  @font-face {\n    font-family: Pacifico;\n    src: url('../static/fonts/Pacifico-Regular.ttf');\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  * {\n    margin:0\n  }\n\n  body{\n    font-family: Averta\n  }\n\n  @font-face {\n    font-family: Averta;\n    src: url('../statiProjectsc/fonts/Averta.otf');\n  }\n  \n  @font-face {\n    font-family: Pacifico;\n    src: url('../static/fonts/Pacifico-Regular.ttf');\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -21834,197 +21738,63 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Projects, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Left, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "HELLO."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WeAre, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "WE ARE"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "MIF"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Right, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "Technology moves fast. Luckily so do we. Because technology is what we do. And we\u2019re here to help. We are Dept. One agency uniting creativity, technology and data. Helping reinvent & accelerate your digital reality by creating experiences that people want and businesses need."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Span, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, "Check out some of our favourite projects below."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonContent, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_RightPlay__WEBPACK_IMPORTED_MODULE_3__["default"], {
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var projects = _ref.projects;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Projects, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Left, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, null, "HELLO."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WeAre, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, null, "WE ARE"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, null, "MIF"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Right, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Spani, null, "Technology moves fast. Luckily so do we. Because technology is what we do. And we\u2019re here to help. We are Dept. One agency uniting creativity, technology and data. Helping reinvent & accelerate your digital reality by creating experiences that people want and businesses need."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Spani, null, "Check out some of our favourite projects below."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_static_svg_RightPlay__WEBPACK_IMPORTED_MODULE_3__["default"], {
     width: 15,
-    height: 15,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
+    height: 15
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BtnText, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, "ALL PROJECTS "))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectItems, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
+    href: "/projects"
+  }, "ALL PROJECTS "))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectItems, null, projects && projects.map(function (item) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ProjectItem"], {
+      data: item
+    });
   })));
 });
 var Projects = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Projects",
   componentId: "yydpma-0"
-})(["padding:50px 0;background-color:#f5f5f5;"]);
+})(["padding:50px 0;background-color:#f5f5f5;min-height:100vh;"]);
 var Header = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Projects__Header",
   componentId: "yydpma-1"
-})(["display:flex;width:1228px;margin:auto;padding:20px;box-sizing:border-box;"]);
+})(["display:flex;max-width:1224px;align-items:center;margin:auto;padding:20px;align-items:flex-start;box-sizing:border-box;@media screen and (max-width:1036px){flex-direction:column;}"]);
 var Left = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Projects__Left",
   componentId: "yydpma-2"
-})(["display:flex;flex:1;flex-direction:column;font-size:52px !important;"]);
+})(["display:flex;flex:1;flex-direction:column;align-items:flex-start;font-size:52px !important;@media screen and (max-width:1036px){align-items:center;width:100%;margin-bottom:50px;}"]);
 var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.withConfig({
   displayName: "Projects__H2",
   componentId: "yydpma-3"
 })(["margin-right:10px;color:#2d2c32;"]);
-var Span = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
-  displayName: "Projects__Span",
+var Spani = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  displayName: "Projects__Spani",
   componentId: "yydpma-4"
-})(["letter-spacing:1.1px;line-height:1.6;font-size:17px;margin-bottom:20px;text-align:justify;color:#62535c;"]);
+})(["letter-spacing:1.1px;line-height:1.6;font-size:17px;margin-bottom:20px;text-align:justify;color:#62535c;@media screen and (max-width:900px){}"]);
 var WeAre = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Projects__WeAre",
   componentId: "yydpma-5"
 })(["display:flex;font-size:36px !important;", ":nth-child(2){color:#ff7e6d;}"], H2);
-var InnerSpan = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Projects__InnerSpan",
-  componentId: "yydpma-6"
-})([""]);
 var Right = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Projects__Right",
-  componentId: "yydpma-7"
-})(["flex:2;display:flex;flex-direction:column;"]);
+  componentId: "yydpma-6"
+})(["flex:2;display:flex;flex-direction:column;width:300px;@media screen and (max-width:1300px){align-items:center;width:100%;}"]);
 var ProjectItems = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Projects__ProjectItems",
-  componentId: "yydpma-8"
-})(["display:flex;justify-content:flex-start;flex-wrap:wrap;width:1228px;margin:auto;"]);
+  componentId: "yydpma-7"
+})(["display:flex;justify-content:flex-start;flex-wrap:wrap;max-width:1228px;margin:auto;@media screen and (max-width:1036px){justify-content:center;}"]);
 var Button = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Projects__Button",
-  componentId: "yydpma-9"
+  componentId: "yydpma-8"
 })(["margin-bottom:40px;"]);
 var ButtonContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Projects__ButtonContent",
-  componentId: "yydpma-10"
-})(["display:flex;align-items:center;"]);
-var BtnText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  componentId: "yydpma-9"
+})(["display:flex;align-items:center;a{text-decoration:none;margin-left:10px;font-weight:bold;font-size:13px;margin-top:5px;cursor:pointer;transition:color 200ms ease;transition:transform 200ms ease;color:#62535c;a{text-decoration:none;}&:hover{color:#ff7e6d;transform:translateX(10px);}}"]);
+var BtnText = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a).withConfig({
   displayName: "Projects__BtnText",
-  componentId: "yydpma-11"
-})(["margin-left:10px;font-weight:bold;font-size:13px;margin-top:5px;cursor:pointer;transition:color 200ms ease;transition:transform 200ms ease;color:#62535c;&:hover{color:#ff7e6d;transform:translateX(10px);}"]);
+  componentId: "yydpma-10"
+})([""]);
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
     (function (Component, route) {
       if(!Component) return

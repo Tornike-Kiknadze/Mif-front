@@ -1,10 +1,10 @@
-import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import Link from 'next/link';
-import RightPlay from '../../../static/svg/RightPlay';
-import { ProjectItem, PostItem } from '../../../components';
-import Right from '../../../static/svg/Right';
-import RightArrow from '../../../static/svg/RightArrow';
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import Link from "next/link";
+import RightPlay from "../../../static/svg/RightPlay";
+import { ProjectItem, PostItem } from "../../../components";
+import Right from "../../../static/svg/Right";
+import RightArrow from "../../../static/svg/RightArrow";
 
 export default props => {
   const { news } = props;
@@ -12,21 +12,39 @@ export default props => {
     <News>
       <NewsCenter>
         <NewsHeader>
-          <h1>
-            <Span>IN OUR</Span>
-            <Span>NEWS</Span>
-          </h1>
+          <Left>
+            <h1>
+              <Span>IN OUR</Span>
+              <Span>NEWS</Span>
+            </h1>
+          </Left>
+          <RightSide>
+            <Spani>
+              Technology moves fast. Luckily so do we. Because technology is
+              what we do. And we’re here to help. We are Dept. One agency
+              uniting creativity, technology and data. Helping reinvent &
+              accelerate your digital reality by creating experiences that
+              people want and businesses need.
+            </Spani>
+            <Spani>Check out some of our favourite projects below.</Spani>
+            <Button>
+              <ButtonContent>
+                <RightPlay width={15} height={15} />
+                <BtnText href={{ pathname: "/news" }}>ALL NEWS </BtnText>
+              </ButtonContent>
+            </Button>
+          </RightSide>
         </NewsHeader>
 
         <NewsItems>
           {news.map((item, index) => (
-            <PostItem data={item} />
+            <ProjectItem color={"#66D7D1"} data={item} />
           ))}
           <ViewAllNews>
             <ViewAllNewsContent>
-              <Link href={{ pathname: '/news' }}>All News</Link>
+              <Link href={{ pathname: "/news" }}>All News</Link>
               <Icon>
-                <RightArrow width={20} height={20} fill={'#27cba4'} />
+                <RightArrow width={20} height={20} fill={"#27cba4"} />
               </Icon>
             </ViewAllNewsContent>
           </ViewAllNews>
@@ -44,7 +62,8 @@ const News = styled.div`
 `;
 
 const NewsHeader = styled.div`
-  width: 100%;
+  min-width: 1224px;
+  margin: auto;
   display: flex;
   margin-bottom: 55px;
   font-weight: 800;
@@ -52,14 +71,16 @@ const NewsHeader = styled.div`
   h1 {
     font-size: 46px;
   }
-  span {
-    margin-top: 10px;
-    /* color:#ff7e6d */
+
+  @media screen and (max-width: 1036px) {
+    flex-direction: column;
   }
 `;
 
 const Span = styled.div`
   color: #2d2c32;
+  margin-top: 10px;
+
   font-size: 52px !important;
   &:nth-child(2) {
     font-size: 36px !important;
@@ -93,6 +114,24 @@ const NewsTitleRight = styled.div`
   }
 `;
 
+const Left = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 52px !important;
+
+  @media screen and (max-width: 1036px) {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+`;
+
+const H2 = styled.h2`
+  margin-right: 10px;
+  color: #2d2c32;
+`;
+
 const NewsHeaderRight = styled.div`
   display: flex;
   align-items: center;
@@ -102,13 +141,25 @@ const NewsHeaderRight = styled.div`
   }
 `;
 
+const RightSide = styled.div`
+  flex: 2;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  @media screen and (max-width: 1300px) {
+    align-items: center;
+
+    width: 100%;
+  }
+`;
+
 const NewsItems = styled.div`
-  width: 100%;
+  min-width: 1224px;
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 35px;
   @media (min-width: 30em) {
     grid-template-columns: 1fr 1fr;
   }
@@ -148,8 +199,47 @@ const Icon = styled.div`
   }
 `;
 
+const Spani = styled.span`
+  letter-spacing: 1.1px;
+  line-height: 1.6;
+  font-size: 17px;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #62535c;
+  @media screen and (max-width: 900px) {
+  }
+`;
+
+const Button = styled.div`
+  margin-bottom: 40px;
+`;
+
+const ButtonContent = styled.div`
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: color 200ms ease;
+    transition: transform 200ms ease;
+    color: #62535c;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      color: #ff7e6d;
+      transform: translateX(10px);
+    }
+  }
+`;
+
+const BtnText = styled(Link)``;
+
 const NewsCenter = styled.div`
-  width: 1224px;
   height: 100%;
   margin: auto;
   display: flex;

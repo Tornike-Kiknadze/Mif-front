@@ -1,60 +1,76 @@
-import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
-import Header from '../components/Header/Header'
-import { Link } from 'next/link'
-import Footer from '../components/Footer'
-import Responsive from '../components/Responsive/Footer'
-export default () => {
-  return (
-    <React.Fragment>
-      <Container>
-        <GlobalStyle />
-        <Header />
-        <Section>
-          <SectionHeader>About</SectionHeader>
-          <SectionContent>
-            <SectionContentText>
-              Feedback <br />
-              Feedback is really helpful, as I will be able to improve posts
-              further. It also helps me to focus on the right topics. If you
-              have any feedback or suggestions, I’ll be grateful for you taking
-              the time. <br /> Issues with a post <br /> If you’re stuck with a
-              post, I’ll be happy to steer you in the right direction. The
-              following will help speed things up: Don’t send login details by
-              email Promoting If you’re trying to promote a product, service or
-              build links, it’s very unlikely it’s relevant (based upon previous
-              experience). I encourage you to think twice about sending a
-              message. I don’t take readers time & attention for granted. Hiring
-              me I’m available for short term design related consulting.
-              However, for sake of clarity, I’m not available for longer term
-              design projects. If you have a project you think I can add value
-              to, send a messgae and we’ll see if there’s a good fit. Find me
-              elsewhere dribbble, twitter, behance and linkedin.
-            </SectionContentText>
-          </SectionContent>{' '}
-          <Footer />
-          <ResponsiveWrapper>
-            <Responsive />
-          </ResponsiveWrapper>
-        </Section>
-      </Container>
-    </React.Fragment>
-  )
+import React, { Component } from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import Header from "../components/Header/Header";
+import { Link } from "next/link";
+import Footer from "../components/Footer";
+import Responsive from "../components/Responsive/Footer";
+import Strapi from "strapi-sdk-javascript/build/main";
+
+const strapiApi = new Strapi("http://192.168.0.106:1337");
+const BackUrl = "http://localhost:1337";
+
+export default class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      about: ""
+    };
+  }
+  async componentDidMount() {
+    try {
+      const about = await strapiApi.getEntries("Abouts");
+      this.setState({ about });
+    } catch (err) {
+      alert(err);
+    }
+  }
+
+  render() {
+    const { about } = this.state;
+    return (
+      <React.Fragment>
+        <Container>
+          <GlobalStyle />
+          <Header />
+          <Section>
+            <SectionHeader>{about[0] && about[0].Heading}</SectionHeader>
+            <SectionContent>
+              <SubHeading>{about[0] && about[0].SubHeading}</SubHeading>
+              <Paragraph>{about[0] && about[0].Paragraph1}</Paragraph>
+              {about[0] && about[0].Media1 && (
+                <Media>
+                  <MediaImage src={`${BackUrl}/${about[0].Media1.url}`} />
+                </Media>
+              )}
+              <ParagraphHeading>
+                {about[0] && about[0].paragraph2Heading}
+              </ParagraphHeading>
+              <Paragraph>{about[0] && about[0].paragraph2}</Paragraph>
+            </SectionContent>
+            <Footer />
+            <ResponsiveWrapper>
+              <Responsive />
+            </ResponsiveWrapper>
+          </Section>
+        </Container>
+      </React.Fragment>
+    );
+  }
 }
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-`
+`;
 
-const ResponsiveWrapper = styled.div``
+const ResponsiveWrapper = styled.div``;
 
 const Section = styled.div`
   width: 100%;
   height: 100vh;
   padding-top: 6rem;
   box-sizing: border-box;
-`
+`;
 
 const SectionHeader = styled.div`
   width: 100%;
@@ -66,125 +82,56 @@ const SectionHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+  color: #543243;
+`;
 
 const SectionContent = styled.div`
-  width: 100%;
+  width: 60%;
+  max-width: 1024px;
   height: auto;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 6rem 6rem 6rem 6rem;
   box-sizing: border-box;
   display: flex;
-`
-
-const SectionContentText = styled.div`
-  height: auto;
-  flex: 0 0 65%;
-  line-height: 2rem;
-  font-size: 1.1rem;
-  text-align: justify;
-`
-
-const SectionContentMessage = styled.div`
-  height: 50%;
-
-  flex: 1;
-  padding: 2rem 2rem 2rem 0;
-  text-align: justify;
-`
-
-const Form = styled.form`
-  display: flex;
-  flex-wrap: wrap;
-`
-
-const InputGroup = styled.div`
-  width: 100%;
-  display: flex;
   flex-direction: column;
-`
+  margin: auto;
+`;
 
-const Input = styled.input`
-  flex: 1;
-  height: 2.5rem;
-  background: linear-gradient(to bottom, #ebe1e6, #fbf9fa 6px, #fff);
-  box-shadow: inset 0 2px #c5b9c0, inset 0 0 0 2px #d4cbd0,
-    0 2px 2px rgba(255, 255, 255, 0.8);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  outline: none;
-  max-width: 100%;
-  color: #301d28;
-  line-height: normal;
+const SubHeading = styled.div`
   width: 100%;
-  border-radius: 0.3rem;
-  font-size: 1.2rem;
-  padding-left: 0.5rem;
-`
-
-const Label = styled.label`
-  margin: 1.2rem 0 0.8rem 0;
+  text-align: center;
+  color: #ff7e6d;
+  font-size: 30px;
+  letter-spacing: -0.75px;
   font-weight: 600;
-`
+`;
 
-const Textarea = styled.textarea`
-  flex: 1;
-  padding: 0.5rem 0 0 0.5rem;
-  font-size: 1.5rem;
-  background: linear-gradient(to bottom, #ebe1e6, #fbf9fa 6px, #fff);
-  box-shadow: inset 0 2px #c5b9c0, inset 0 0 0 2px #d4cbd0,
-    0 2px 2px rgba(255, 255, 255, 0.8);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  outline: none;
-  max-width: 100%;
-  color: #301d28;
-  line-height: normal;
+const ParagraphHeading = styled.div`
+  font-size: 24px;
+  letter-spacing: -0.25px;
+  margin-top: 25px;
+`;
+
+const Paragraph = styled.div`
+  margin-top: 24px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: #62535c;
+  line-height: 1.5;
+  text-align: left;
+`;
+
+const Media = styled.div`
   width: 100%;
-  border-radius: 0.3rem;
-`
+  margin-top: 25px;
+`;
 
-const Button = styled.button`
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: none;
-  background-clip: padding-box;
-  position: relative;
-  cursor: pointer;
-  line-height: normal;
-  font-weight: 700;
-  display: inline-block;
-  vertical-align: top;
-  padding: 14px 24px;
-  border-radius: 4px;
-  color: currentcolor;
-  font-size: 18px !important;
-  margin-top: 1rem;
-  outline: none;
-  color: #543243;
-  transition: all ease 0.2s;
-  background-color: #ffdd74;
-
-  box-shadow: inset 0 0 0 2px #dba758, 0 1px 3px rgba(190, 216, 216, 0.6);
-
-  &:hover {
-    background-color: #ffcc33;
-    outline: none;
-    box-shadow: inset 0 0 0 2px #dba758, 1px 5px 10px rgba(190, 216, 216, 1);
-  }
-
-  &:active {
-    box-shadow: inset 0 0 0 2px #dba758, 0px 3px 5px rgba(190, 216, 216, 0.61);
-    outline: none;
-    background-color: #ffdd74;
-  }
-`
+const MediaImage = styled.img`
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+`;
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -202,4 +149,4 @@ const GlobalStyle = createGlobalStyle`
     font-family: Pacifico;
     src: url('../static/fonts/Pacifico-Regular.ttf');
   }
-`
+`;
